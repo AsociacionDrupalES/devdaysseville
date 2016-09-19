@@ -1,0 +1,13 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+
+# Ignore translation files.
+sites/*/translations
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
