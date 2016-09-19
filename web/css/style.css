@@ -148,3 +148,13 @@ article:last-child {
     background: #666;
     color: #FFF;
   }
+#mc_embed_signup  #mc_embed_signup_scroll input.email{
+  border: 2px solid #343434;
+  margin-right: -7px;
+}
+#mc_embed_signup #mc-embedded-subscribe{
+  background-color: #343434;
+}
+#content #mc_embed_signup{
+  background: transparent;
+}
