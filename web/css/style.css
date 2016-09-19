@@ -62,7 +62,7 @@ header {
 #logo {
   position: relative;
   z-index: 1;
-  background: url('../images/logo.png') center no-repeat;
+  background: url('../images/logo.svg') center no-repeat;
   font-size: 0;
   color: transparent;
   line-height: 0;
@@ -83,6 +83,8 @@ header {
 
 #main {
   flex: 1;
+  background:  url('../images/olas.svg') bottom no-repeat;
+  background-size: 100%;
 }
 
 #footer {
@@ -92,6 +94,7 @@ header {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 
 
 /*********************************************************************************/
