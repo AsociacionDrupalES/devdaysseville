@@ -1,0 +1,147 @@
+@charset 'UTF-8';
+
+/*********************************************************************************/
+/* General                                                                       */
+/*********************************************************************************/
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  text-align: center;
+}
+
+body,input,textarea,select {
+  font-family: 'Marcellus', serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.75em;
+  color: #333;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 300;
+  color: #777;
+}
+
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+a {
+  text-decoration: none;
+  color: #80BA8E;
+}
+  a:hover {
+    text-decoration: underline;
+  }
+
+.container {
+  padding: 0 1em;
+}
+
+
+/*********************************************************************************/
+/* Regions                                                                       */
+/*********************************************************************************/
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  margin-bottom: 1.6em;
+}
+
+#header {
+  position: relative;
+}
+
+#logo {
+  position: relative;
+  z-index: 1;
+  background: url('../images/logo.png') center no-repeat;
+  font-size: 0;
+  color: transparent;
+  line-height: 0;
+  width: 334px;
+  height: 365px;
+  margin: 0 auto;
+}
+
+#topbar {
+  background-color: #111;
+  color: rgba(255,255,255,0.9);
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-family: 'Marcellus SC', serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#main {
+  flex: 1;
+}
+
+#footer {
+  background-color: #111;
+  color: rgba(255,255,255,0.9);
+  font-size: 1.6em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+/*********************************************************************************/
+/* Sections                                                                      */
+/*********************************************************************************/
+
+section,
+article {
+  margin-bottom: 3em;
+}
+
+section > :last-child,
+article > :last-child {
+  margin-bottom: 0;
+}
+
+section:last-child,
+article:last-child {
+  margin-bottom: 0;
+}
+
+.row > section,
+.row > article {
+  margin-bottom: 0;
+}
+
+
+/*********************************************************************************/
+/* Buttons                                                                       */
+/*********************************************************************************/
+  
+.button {
+  position: relative;
+  display: inline-block;
+  background: #111;
+  padding: 0.8em 2em;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #FFF;
+  -moz-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+  -webkit-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+  -o-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+  -ms-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+  transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+  text-align: center;
+  border-radius: 0.25em;
+}
+
+  .button:hover {
+    background: #666;
+    color: #FFF;
+  }
