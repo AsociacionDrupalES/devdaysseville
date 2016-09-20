@@ -141,7 +141,10 @@ article:last-child {
   -ms-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
   transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
   text-align: center;
-  border-radius: 0.25em;
+  border: none;
+  border-radius: 3px;
+  letter-spacing: .03em;
+  padding: 0 18px;
 }
 
   .button:hover {
@@ -149,11 +152,31 @@ article:last-child {
     color: #FFF;
   }
 #mc_embed_signup  #mc_embed_signup_scroll input.email{
-  border: 2px solid #343434;
+  border: 2px solid #111;
   margin-right: -7px;
+  height: 50px;
+  max-width: 210px;
+  display: inline-block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 0px 0.4em;
+  width: 210px;
+  vertical-align: top;
+}
+#mc_embed_signup  #mc_embed_signup_scroll .clear {
+  display: inline-block;
 }
 #mc_embed_signup #mc-embedded-subscribe{
-  background-color: #343434;
+  background-color: #111;
+  height: 50px;
+  text-transform: uppercase;
+  font-size: 18px;
+  display: inline-block;
+  cursor: pointer;
+}
+#mc_embed_signup #mc-embedded-subscribe:hover {
+  background-color: #333;
+  
 }
 #content #mc_embed_signup{
   background: transparent;
