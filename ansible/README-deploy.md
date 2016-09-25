@@ -12,6 +12,6 @@ Deployment
 
 From repository's root:
 ```
-ansible-playbook ansible/deploy.yml -i ansible/hosts_production -e 'ansistrano_deploy_to=/var/www/lanasyovillos.com'
+ansible-playbook ansible/deploy.yml -i ansible/hosts_production -e 'ansistrano_deploy_to=/var/www/web-app'
 ```
 
