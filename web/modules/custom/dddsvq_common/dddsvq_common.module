@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Contains dddsvq_common.module
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function dddsvq_common_theme($existing, $type, $theme, $path) {
+  $themes = [];
+
+  return $themes;
+}
