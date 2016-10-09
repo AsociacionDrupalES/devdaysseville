@@ -1,0 +1,121 @@
+#globe-container
+  display: none
+  +breakpoint($large)
+    display: block
+
+  position: relative
+  .land 
+    fill: #1681B3
+    stroke: #1681B3
+    stroke-width: 1px
+
+  .land.opaque 
+    fill-opacity: 0.2
+    stroke-opacity: 0
+
+  .water 
+    fill: #2D221C
+
+  .wave 
+    fill:none
+    stroke: #FFF
+    stroke-opacity: 0.1
+
+  .wave.lg 
+    stroke-width: 30px
+    stroke-opacity: 0.05
+
+  .wave.md 
+    stroke-width: 20px
+    stroke-opacity: 0.1
+
+  .wave.sm 
+    stroke-width: 10px
+    stroke-opacity: 0.2
+
+  circle 
+    fill: none
+    stroke: #FFFFFF
+
+.d3-tip 
+  height: 40px
+  border-left: 1.5px solid #FFF
+  display: table-row
+  padding-bottom: 30px
+
+.d3-tooltip 
+  width: 330px
+  display: table-row
+  background-color: #FFFFFF
+  font-size: 12px
+
+.d3-tooltip .title, .d3-tooltip .contact 
+  display: table-cell
+
+.d3-tooltip .title 
+  color: #1F1F1F
+  border-bottom: 1px solid #B5B5B5
+  border-top: 1px solid #B5B5B5
+  padding: 12px 15px 5px 0
+  position: relative
+
+
+.d3-tooltip .title > *
+  margin: 0
+  padding: 5px 10px 5px 40px
+
+
+.d3-tooltip .title img
+  height: 30px
+  width: 30px
+  position: absolute
+  top: 6px
+  left: 0
+  padding: 5px
+
+
+.d3-tooltip .title p 
+  font-size: 9px
+  padding-bottom: 2px
+
+.d3-tooltip .title p 
+  font-size: 9px
+  padding-top: 2px
+
+
+.d3-tooltip .contact 
+  vertical-align: top
+  padding: 0
+  border: 1px solid #B5B5B5
+  background-color: #EBEBEB
+
+
+.d3-tooltip .contact *
+  padding: 5px 15px 5px 15px
+  margin: 0
+  text-align: center
+  color: #444
+
+
+.d3-tooltip .contact *:last-child 
+  border-top: 1px solid #B5B5B5
+
+
+.d3-overlay 
+  fill-opacity: 0.2
+  fill: #FFF
+  -webkit-user-select: none /* Chrome/Safari */
+  -moz-user-select: none /* Firefox */
+  -ms-user-select: none /* IE10+ */
+
+.d3-tip.animate 
+  animation: slideInDown 0.2s ease-out
+  -webkit-animation: slideInDown 0.2s ease-out
+
+@keyframes slideInDown 
+  from 
+    transform: translate3d(0, -100%, 0)
+    visibility: visible
+  to 
+    transform: translate3d(0, 0, 0)
+    

@@ -1,0 +1,104 @@
+#block-views-block-views-offices-block-1-2,
+#block-views-block-views-offices-block-2
+  .view-content
+    +clearfix
+    text-align: center
+  .views-row
+    position: relative
+    display: inline-block
+    vertical-align: top
+    width: 332px
+    max-width: 90%
+    margin-bottom: 1px
+    transition: all 0.2s
+    overflow: hidden
+
+
+    a
+      color: #fff
+      &:hover
+        text-decoration: underline
+          
+    +breakpoint($small)
+
+    +breakpoint($large)
+      width: 24%
+      max-width: 332px
+
+
+    &:after
+      position: absolute
+      content: ' '
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      background-color: rgba(0, 0, 0, .5)
+      z-index: 9997
+    &:hover
+      &:after
+        background-color: rgba($orange, .8)
+
+      .views-field-title-1 h2,
+      .views-field-title-1 h3
+        padding-top: 22%
+      .views-field-field-office-address
+        top: 0
+        opacity: 1
+    .views-field-title-1 h2,
+    .views-field-title-1 h3
+      position: absolute
+      transition: all 0.2s
+      z-index: 9999
+      left: 0
+      top: 0
+      right: 0
+      height: auto
+      display: block
+      padding-top: 40%
+      text-align: center
+      text-transform: uppercase
+      color: #fff
+      font-size: 1.3em
+      font-weight: 400
+      
+      &:after
+        content: ' '
+        display: block
+        border-bottom: 1px solid #fff
+        padding: .2em 1em
+        position: absolute
+        width: 30%
+        left: 35%
+        
+
+    .views-field-field-office-address
+      color: #fff
+      position: absolute
+      z-index: 9998
+      opacity: 0
+      transition: all 0.5s
+      top: 120%
+      left: 5%
+      right: 5%
+      height: auto
+      width: 90%
+      padding-top: 42%
+      text-align: center
+
+
+    .field-content-title
+      display: none
+    .field-content-country
+      font-size: 1.3em
+      margin-bottom: 1em
+    .field-content-mail
+      margin: 1em 0
+    .field-content-telephone
+      margin: 1em 0
+      font-size: .9em
+      font-weight: 300
+    
+    .field-content-address
+      font-weight: 300
+      font-size: 1.1em

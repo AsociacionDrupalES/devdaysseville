@@ -1,0 +1,44 @@
+global-css:
+  css:
+    theme:
+      css/main.css: {}
+      css/vendors/groundwork.css: {}
+
+global-js:
+  header: true
+  js:
+    js/da-vinci.js: {}
+    js/custom.js: {}
+    js/vendors/groundwork.all.js: {}
+  dependencies:
+    - core/jquery
+    - core/modernizr
+    - core/drupal
+
+globe:
+  js:
+    js/globe/d3.v3.min.js: {}
+    js/globe/topojson.v1.min.js: {}
+    js/globe/queue.v1.min.js: {}
+    http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js: {}
+    js/globe/script.js: {}
+    
+casestudy-menu:
+  js:
+    js/casestudy-menu.js: {}
+  dependencies:
+    - core/jquery
+
+services-animation:
+  js:
+    js/services-animation.js: {}
+  dependencies:
+    - core/jquery
+
+in-view:
+  js:
+    js/jquery.unevent.js: {}
+    js/jquery.viewport.js: {}
+    js/in-view.js: {}
+  dependencies:
+    - core/jquery

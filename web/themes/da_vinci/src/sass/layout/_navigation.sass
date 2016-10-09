@@ -1,0 +1,119 @@
+#menuButtonOpen,
+#menuButtonClose
+  display: block
+  float: right
+  position: relative
+  z-index: 2
+  width: 32px
+  height: 32px
+  right: 20px
+  text-align: right
+  background-image: url(../images/ico-menu-toggler.png)
+  background-repeat: no-repeat
+  background-position: right top
+  background-size: contain
+  +breakpoint($large)
+    display: none
+
+
+#menuButtonClose
+  background-image: url(../images/ico-close-thin.png)
+  right: 0
+  width: 24px
+  height: 24px
+
+
+.sliding_menu
+  a,
+  ul.menu a
+    color: #fff
+    text-transform: uppercase
+    &:hover,
+    &.is-active
+      color: $orange
+  #block-sitebrandingmobile
+    float: left
+    width: 30%
+  #block-menuprincipal-2
+    float: right
+    width: 70%
+    ul
+      margin-left: 0
+    
+    .menu-item
+      text-align: right
+      margin-bottom: 40px
+      a
+        font-weight: 700
+
+  #block-alternadordeidioma
+    float: right
+    width: 70%
+    text-align: right
+    li
+      @extend .simple-list
+      display: inline-block
+      &:nth-last-child(1):before
+        content: '/'
+    a
+      font-weight: 300
+      &.is-active
+        color: #fff
+        font-weight: 400
+
+
+header
+  #block-menuprincipal 
+    ul.menu
+      display: none
+      margin: 0
+      +breakpoint($large)
+        display: block
+        position: relative
+        z-index: 2
+        text-align: right
+        li
+          display: inline-block
+          margin-left: 1em
+          padding-bottom: .5em
+          a
+            text-transform: uppercase
+            color: white
+          &.menu-item--active-trail
+            border-bottom: 2px solid $orange
+            a
+              color: $orange
+          &:hover
+            a
+              color: $orange
+      +breakpoint($medium)
+        li
+          a
+            font-size: 0.75em
+      &.active
+        display: block
+        clear: both
+        +breakpoint($medium)
+          position: static
+
+
+  #block-languageswitcher
+    display: none
+    +breakpoint($large)
+      display: block
+      text-align: right
+    ul
+      @extend .simple-list
+      li
+        display: inline-block
+        padding-top: 0.2em
+        padding-bottom: .5em
+        a
+          font-size: 0.75em
+          color: #fff
+          font-weight: 400
+          &.is-active
+            color: #ddd
+            font-weight: 300
+        &:nth-last-child(1):before
+          content: '/'

@@ -1,0 +1,57 @@
+#block-views-block-views-partners-block-1
+  .view-content
+    +clearfix
+
+  .views-row
+    overflow: hidden
+
+  .views-field-field-partner-image 
+    .field-content
+      position: relative
+      img
+        width: auto !important
+        max-height: 80px !important
+        margin: auto
+
++breakpoint($below_medium)
+  #block-views-block-views-partners-block-1
+    .view-content
+      background-color: #2f2f2f
+
+    .views-row
+      float: left
+      width: 50%
+      border-bottom: 1px solid rgba(215, 215, 215, 0.45)
+      &:nth-child(1),
+      &:nth-child(3)
+        border-right: 1px solid rgba(215, 215, 215, 0.45)
+      &:nth-last-child(1)
+        width: 100%
+
+    .views-field-field-partner-image 
+      .field-content
+        height: 120px
+        padding: 20px
+        img
+          width: auto !important
+          max-height: 80px !important
+          margin: auto
+
++breakpoint($medium)
+  #block-views-block-views-partners-block-1
+    .view-content
+      background-color: rgba(245, 165, 35, 0.75)
+      padding: 20px 0 60px
+
+    .views-row
+      float: left
+      width: 20%
+      border-right: 1px solid #fff
+      padding: 10px
+      &:nth-last-child(1)
+        border-right: none
+
+    .views-field-field-partner-image
+      .field-content
+          height: 180px
+          padding-top: 50px

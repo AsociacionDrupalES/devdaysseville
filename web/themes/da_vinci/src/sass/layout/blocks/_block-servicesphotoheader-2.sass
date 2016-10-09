@@ -1,0 +1,198 @@
+@keyframes glow
+  0%
+    opacity: .6
+  100%
+    opacity: .9
+
+@keyframes appear
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+@keyframes appear1
+  0%
+    opacity: 0
+    top: 50% 
+    left: 50%
+  50%
+    opacity: 0
+  100%
+    opacity: 1
+    top: 40% 
+    left: 13%
+
+@keyframes appear2
+  0%
+    opacity: 0
+    top: 50% 
+    left: 50%
+  50%
+    opacity: 0
+  100%
+    opacity: 1
+    top: 1%
+    left: 13%
+
+@keyframes appear3
+  0%
+    opacity: 0
+    top: 50% 
+    left: 50%
+  50%
+    opacity: 0
+  100%
+    opacity: 1
+    top: 1%
+    left: 40%
+
+@keyframes appear4
+  0%
+    opacity: 0
+    top: 50% 
+    left: 50%
+  50%
+    opacity: 0
+  100%
+    opacity: 1
+    top: 15%
+    left: 70%
+
+@keyframes appear5
+  0%
+    opacity: 0
+    top: 50% 
+    left: 50%
+  50%
+    opacity: 0
+  100%
+    opacity: 1
+    top: 55%
+    left: 73%
+
+@keyframes appear6
+  0%
+    opacity: 0
+    top: 50% 
+    left: 50%
+  50%
+    opacity: 0
+  100%
+    opacity: 1
+    top: 75%
+    left: 60%
+
+@keyframes appear7
+  0%
+    opacity: 0
+    top: 50% 
+    left: 50%
+  50%
+    opacity: 0
+  100%
+    opacity: 1
+    top: 75%
+    left: 32%
+
+#block-servicesheaderlinks
+  +breakpoint($below_medium)
+    display: none
+  position: relative
+  padding: 2em 0
+  text-align: center
+  background-color: #2E2E2E
+  .field--name-body
+    @extend .restricted-container
+    position: relative
+    
+  .services-header-item-link
+    color: $orange
+    display: inline-block
+    width: 117px
+    height: 169px
+    vertical-align: top
+    overflow: hidden
+    text-align: left
+    text-indent: -9999px
+    background-position: center center
+    background-size: contain
+    background-repeat: no-repeat
+    opacity: .9
+    transition: all .2s
+
+    &:hover
+      text-decoration: none
+      color: #fff
+      opacity: 1
+
+  #services-header-drupal-consulting-link
+    background-image: url(../images/srvc-01-consulting.png)
+
+  #services-header-interface-ux-design-link
+    background-image: url(../images/srvc-02-uiux.png)
+
+  #services-header-drupal-migration-link
+    background-image: url(../images/srvc-03-migrating.png)
+
+  #services-header-drupal-development-link
+    background-image: url(../images/srvc-04-dev.png)
+
+  #services-header-drupal-qa-link
+    background-image: url(../images/srvc-05-dqa.png)
+
+  #services-header-performance-and-scalability-link
+    background-image: url(../images/srvc-06-performance.png)
+
+  #services-header-drupal-support-link
+    background-image: url(../images/srvc-07-maintenance.png)
+
++breakpoint($large)
+  #block-servicesheaderlinks
+    .field--name-body
+      position: relative
+      min-height: 80vh
+      background-position: center center
+      background-size: contain
+      background-repeat: no-repeat
+      background-image: url(../images/d-drupalera.png)
+      animation: glow 2s ease infinite alternate
+    .services-header-item-link
+      display: block
+      position: absolute
+      opacity: 0
+      
+      
+  #services-header-drupal-consulting-link
+    top: 40% 
+    left: 13%
+    animation: appear1 2s ease 10ms alternate 1 forwards
+
+  #services-header-interface-ux-design-link
+    top: 1%
+    left: 13%
+    animation: appear2 2s ease 200ms alternate 1 forwards
+
+  #services-header-drupal-migration-link
+    top: 1%
+    left: 40%
+    animation: appear3 2s ease 350ms alternate 1 forwards
+
+  #services-header-drupal-development-link
+    top: 15%
+    left: 70%
+    animation: appear4 2s ease 500ms alternate 1 forwards
+
+  #services-header-drupal-qa-link
+    top: 55%
+    left: 73%
+    animation: appear5 2s ease 650ms alternate 1 forwards
+
+  #services-header-performance-and-scalability-link
+    top: 75%
+    left: 60%
+    animation: appear6 2s ease 800ms alternate 1 forwards
+
+  #services-header-drupal-support-link
+    top: 75%
+    left: 32%
+    animation: appear7 2s ease 1000ms alternate 1 forwards
