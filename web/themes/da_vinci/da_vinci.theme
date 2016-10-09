@@ -22,7 +22,7 @@ function da_vinci_preprocess_html(&$variables) {
   if (theme_get_setting('border-region')) {
     $variables['html_attributes']['class'] = 'border-region no-grid';
   }
-  if (theme_get_setting('grid') && theme_get_setting('border-region')) {  
+  if (theme_get_setting('grid') && theme_get_setting('border-region')) {
     $variables['html_attributes']['class'] = 'grid border-region';
   }
   // Add information about the number of sidebars.
@@ -110,25 +110,29 @@ function da_vinci_preprocess_block(&$variables) {
   if ($variables['plugin_id'] == 'system_branding_block') {
     $variables['attributes']['class'][] = 'clearfix';
   }
-  $variables['drupalera'] = $GLOBALS['base_url'] . '/' . drupal_get_path('theme','da_vinci') . '/images/la_drupalera.png';
+  $variables['drupalera'] = $GLOBALS['base_url'] . '/' . drupal_get_path('theme', 'da_vinci') . '/images/la_drupalera.png';
 
   $variables['content']['#attributes']['block'] = $variables['attributes']['id'];
 
-  if($variables['plugin_id'] == 'system_menu_block:account') {
-      if(null !== Drupal::currentUser()->id()) {
-          $user = User::load(Drupal::currentUser()->id());
-          if(null !== $user->get('user_picture')->target_id) {
-              $file = File::load($user->get('user_picture')->target_id);
-              $img_user_account = file_url_transform_relative(file_create_url($file->get('uri')->value));
-              $u = $variables['user'];
-              $u->img_user_account = $img_user_account;
-              $variables['user'] = $u;
-          }else {
-              $u = $variables['user'];
-              $u->img_user_account = $GLOBALS['base_url'].'/' . $variables['directory'] . '/images/avatar/48.jpg';
-              $variables['user'] = $u;
-          }
+  if ($variables['plugin_id'] == 'system_menu_block:account') {
+
+    // @TODO: If is needed to render the user picture, render the user entity
+    // within the "compact" view mode.
+    /*if (NULL !== Drupal::currentUser()->id()) {
+      $user = User::load(Drupal::currentUser()->id());
+      if (NULL !== $user->get('user_picture')->target_id) {
+        $file = File::load($user->get('user_picture')->target_id);
+        $img_user_account = file_url_transform_relative(file_create_url($file->get('uri')->value));
+        $u = $variables['user'];
+        $u->img_user_account = $img_user_account;
+        $variables['user'] = $u;
       }
+      else {
+        $u = $variables['user'];
+        $u->img_user_account = $GLOBALS['base_url'] . '/' . $variables['directory'] . '/images/avatar/48.jpg';
+        $variables['user'] = $u;
+      }
+    }*/
   }
 }
 
