@@ -1,0 +1,94 @@
+html,
+body
+  min-height: 100vh
+
+html
+  background: $blue
+
+body
+  color: $color-body
+  background-color: $white
+
+// Add border to all region when "show region mode" is activated (See theme aparience to know more).
+// -----------------------------------------------------------------------------------------------//
+
+.border-region
+  .region, main
+    outline: 3px violet groove
+
+
+// Base layout: Header, main content, footer..
+//-------------------------------------------------------//
+
+.restricted-container
+  +clearfix
+  +container(91.407%)
+  +padding-container(100%, 2%)
+  +breakpoint($x-large)
+    max-width: 1170px
+.layout-container
+  background-color: #fff
+  // Header
+  > header
+    position: relative
+    overflow: hidden
+    .region
+      +clearfix
+  .region-header
+    @extend .restricted-container
+
+  // Main navigation
+  .region-primary-menu
+    @extend .restricted-container
+
+  // Main content
+  > main
+    // For Drupalera UK
+    .region
+      +clearfix
+    position: relative
+    background-color: #fff
+    z-index: 2
+    overflow: hidden
+
+  // Footer
+  > footer
+    .region-footer
+      //@extend .restricted-container
+
+
+// Dynamic main content
+
+.layout
+  &-one-sidebar
+    &.layout-sidebar-first
+      .layout-content
+        +breakpoint($medium)
+          +span(9 of 12 last)
+      .layout-sidebar-first
+        +breakpoint($medium)
+          +span(3 of 12 first)
+  &-one-sidebar
+    &.layout-sidebar-second
+      .layout-content
+        +breakpoint($medium)
+          +span(9 of 12 first)
+      .layout-sidebar-second
+        +breakpoint($medium)
+          +span(3 of 12 last)
+  &-two-sidebars
+    .layout-content
+      +breakpoint($medium)
+        +span(9 of 12 last)
+      +breakpoint($large)
+        +span(isolate 6 at 4 of 12)
+    .layout-sidebar-first
+      +breakpoint($medium)
+        +span(3 of 12 first)
+    .layout-sidebar-second
+      +breakpoint($medium)
+        clear: both
+        float: none
+      +breakpoint($large)
+        +span(3 of 12 last)
+        clear: none

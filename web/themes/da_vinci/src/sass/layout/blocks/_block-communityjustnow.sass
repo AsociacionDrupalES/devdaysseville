@@ -1,0 +1,136 @@
+@keyframes bubbles
+  0%
+    transform: scale(0.5, 0.5)
+  100%
+    transform: scale(1, 1)
+
+@keyframes floating
+  0%
+    transform: translate3d(0px, 0px, 0px)
+  65%
+    transform: translate3d(0px, 20px, 0px)
+  100%
+    transform: translate3d(0px, 0px, 0px)
+
+#block-community-past-present-future
+  +clearfix
++breakpoint($large)
+  #block-community-past-present-future
+    padding: 2em
+    .field--name-body
+      position: relative
+      height: 100vh
+      background-position: center center
+      background-size: contain
+      background-repeat: no-repeat
+      background-image: url(../images/community-infographic.png)     
+  #block-communityjustnow,
+  #block-communityourbeginning,
+  #block-communityourfuture
+    position: absolute
+    background-color: $orange
+    border-radius: 50%
+    text-align: center
+    padding: 10px
+    width: 360px
+    height: 360px
+    max-width: 100%
+    transform: scale(0.5, 0.5)
+    box-shadow: 0 0 5px rgba(0,0,0,0.2)
+    p
+      margin-bottom: 0
+
+  #block-communityjustnow
+    left: 35%
+    top: 15%
+    &.in-view
+      animation: bubbles 2s ease 500ms alternate 1 forwards
+  #block-communityourbeginning    
+    left: 2%
+    top: 50%
+    &.in-view
+      animation: bubbles 2s ease 100ms alternate 1 forwards
+  #block-communityourfuture
+    right: 2%
+    top: 50%
+    &.in-view
+      animation: bubbles 2s ease 1000ms alternate 1 forwards
+  .community-block-header
+    color: #000
+    text-transform: uppercase
+    font-size: 24px
+    letter-spacing: 10px
+    font-weight: 900
+    padding-bottom: 20px
+
+  .community-block-info
+    +clearfix
+    color: #fff
+    text-transform: uppercase
+    font-size: 16px
+    &:after
+      content: ' '
+      display: block
+      position: relative
+      width: 100px
+      height: 11px
+      border-bottom: 1px solid #fff
+      margin: 5px auto
+
+  .community-block-info-num
+    font-size: 48px
+    font-weight: 900
+    line-height: 1
+    display: block
+    float: left
+    width: 40%
+    text-align: right
+    padding-right: 10px
+
+  .community-block-info-title,
+  .community-now-block-title
+    display: block
+    float: left
+    width: 60%
+    text-align: left
+    line-height: 1.7
+
+  #community-now-issues-container
+    &:after
+      width: 0
+      height: 0
+      border-bottom: none
+      margin: 0
+
+    .community-block-info-title
+      padding-right: 40px
+
+  #community-beginning-event-container
+    &:after
+      width: 0
+      height: 0
+      border-bottom: none
+      margin: 0
+
+    .community-block-info-title
+      padding-right: 40px
+
+  #community-future-contrib-container
+    &:after
+      width: 0
+      height: 0
+      border-bottom: none
+      margin: 0
+
+  #community-future-d8-container
+    .community-block-info-title
+      text-align: right
+    .community-block-info-num
+      text-align: left
+      padding-left: 10px
+
+  #community-future-contrib-container
+    .community-now-block-title
+      float: none
+      text-align: center
+      width: 100%

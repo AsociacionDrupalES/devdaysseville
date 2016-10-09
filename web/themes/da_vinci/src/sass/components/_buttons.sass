@@ -1,0 +1,27 @@
+.button
+  display: inline-block
+  padding: .2em .5em
+  margin: 0 .5em .5em 0
+  text-align: center
+  background-color: transparent
+  color: $color-a
+  border: 1px solid $color-a
+  text-transform: uppercase
+  transition: all .5s
+
+  &:hover
+    cursor: pointer
+    text-decoration: none
+    border-color: $color-a-hover
+    color: $color-a-hover
+
+.form-submit,
+.button-main
+  @extend .button
+  padding: .2em 2em
+  border-color: rgba($orange, 0.3)
+  color: $orange
+  letter-spacing: 10px
+  &:hover
+    border-color: rgba($orange, 1)
+    color: #fff
