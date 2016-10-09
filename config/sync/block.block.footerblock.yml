@@ -1,0 +1,20 @@
+uuid: c7f5c509-936f-401c-b9b2-f73428b28179
+langcode: en
+status: true
+dependencies:
+  module:
+    - dddsvq_common
+  theme:
+    - da_vinci
+id: footerblock
+theme: da_vinci
+region: footer
+weight: -6
+provider: null
+plugin: footer_block
+settings:
+  id: footer_block
+  label: 'Footer block'
+  provider: dddsvq_common
+  label_display: '0'
+visibility: {  }

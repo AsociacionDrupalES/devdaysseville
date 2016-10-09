@@ -1,15 +1,15 @@
-uuid: cf20ff6b-0ad8-446b-a040-5c9184037498
+uuid: 0c124134-c712-43ac-8e07-7a689a47c644
 langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
+    - da_vinci
 _core:
-  default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
-id: bartik_local_tasks
-theme: bartik
+  default_config_hash: CX-piEqAPhFwavwQAecL_3rdQBn5mmm62d310m1NeTQ
+id: da_vinci_local_tasks
+theme: da_vinci
 region: content
-weight: -3
+weight: -6
 provider: null
 plugin: local_tasks_block
 settings:

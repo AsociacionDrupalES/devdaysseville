@@ -1,0 +1,20 @@
+uuid: 8c0aa53d-0b42-4d6a-8513-0c84757ccea4
+langcode: en
+status: true
+dependencies:
+  module:
+    - dddsvq_common
+  theme:
+    - da_vinci
+id: newsletterblock
+theme: da_vinci
+region: footer
+weight: -7
+provider: null
+plugin: newsletter_block
+settings:
+  id: newsletter_block
+  label: 'Newsletter block'
+  provider: dddsvq_common
+  label_display: '0'
+visibility: {  }
