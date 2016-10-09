@@ -1,15 +1,15 @@
-uuid: d534ff02-75d7-4dd8-8a78-6bafc8bb171a
+uuid: 3de79fd6-0762-47f1-b600-bf65b13d6bb5
 langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
+    - da_vinci
 _core:
-  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
-id: bartik_page_title
-theme: bartik
+  default_config_hash: dWKu2_v4NiLWWAxCmVO7nBpgBhJa867xmS216wsSNRI
+id: da_vinci_page_title
+theme: da_vinci
 region: content
-weight: -3
+weight: -7
 provider: null
 plugin: page_title_block
 settings:

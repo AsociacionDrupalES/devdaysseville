@@ -1,0 +1,20 @@
+uuid: aba947ba-979f-4ff4-96f4-525b16083a71
+langcode: en
+status: true
+dependencies:
+  module:
+    - dddsvq_common
+  theme:
+    - da_vinci
+id: headerblock
+theme: da_vinci
+region: header
+weight: 0
+provider: null
+plugin: header_block
+settings:
+  id: header_block
+  label: 'Header block'
+  provider: dddsvq_common
+  label_display: '0'
+visibility: {  }

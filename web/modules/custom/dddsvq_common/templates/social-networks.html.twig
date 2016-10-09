@@ -1,0 +1,7 @@
+<ul class="social-networks-list">
+    {% for network, url in networks %}
+        <li class="social, social-{{ network }}">
+            {{ link(network, url) }}
+        </li>
+    {% endfor %}
+</ul>

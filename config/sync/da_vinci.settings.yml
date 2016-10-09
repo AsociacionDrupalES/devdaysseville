@@ -1,0 +1,5 @@
+logo:
+  path: themes/da_vinci/logo.png
+  use_default: true
+_core:
+  default_config_hash: '--wlZcg4Xm0Z4YsSHdMH6JgxmsX4SCTNU1Vn7MXPABE'

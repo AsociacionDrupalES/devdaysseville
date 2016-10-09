@@ -1,0 +1,5 @@
+name: DDDays Seville Home
+type: module
+description: Custom module for the dddsvq home page customizations.
+core: 8.x
+package: dddsvq
