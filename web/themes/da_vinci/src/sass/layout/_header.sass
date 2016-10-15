@@ -20,13 +20,24 @@
   transition: all .25s linear
   &.is-visible
     transform: translateY(0)
-  .region-top-bar
+  .region-navigation
     +clearfix
     position: relative
     width: 100vw
     padding: 2em
+.region-top-bar
+  +clearfix
+  position: relative
+  width: 100vw
+  background-color: $black2
+  color: $white
+  font-family: $title
+  letter-spacing: 0.4em
+  padding: 10px
+  text-align: center
+  text-transform: uppercase
 .layout-container > header
-  background-color: black
+  background-color: $white
   color: #f1f1f1
   .region-header
     padding: 1em 0
@@ -42,9 +53,9 @@
       height: 0
       margin: 0
     a
-      color: $white  
+      color: $black2 
       &:hover
-        color: $white
+        color: $black
 
   .region-highlighted
     h1

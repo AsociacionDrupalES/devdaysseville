@@ -3,7 +3,7 @@ body
   min-height: 100vh
 
 html
-  background: $blue
+  background: $black2
 
 body
   color: $color-body
@@ -28,6 +28,9 @@ body
     max-width: 1170px
 .layout-container
   background-color: #fff
+  display: flex
+  min-height: 100vh
+  flex-direction: column
   // Header
   > header
     position: relative
@@ -44,6 +47,9 @@ body
   // Main content
   > main
     // For Drupalera UK
+    flex: 1
+    background: url(../images/olas.svg) bottom no-repeat
+    background-size: 100%
     .region
       +clearfix
     position: relative

@@ -12,7 +12,8 @@ stylesheets-remove:
   - core/modules/system/css/system.theme.css
   - core/modules/views/css/views.module.css
 regions:
-  top_bar: 'Extra Top bar'
+  navigation: 'Top navigation'
+  top_bar: 'Top bar'
   header: Header
   primary_menu: 'Primary menu'
   secondary_menu: 'Secondary menu'
