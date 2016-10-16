@@ -1,0 +1,17 @@
+uuid: 5a5ccbdd-3713-47e5-9442-2cda0c8b884f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Basic Page'
+type: basic_page
+description: 'Content type for publishing information pages.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
