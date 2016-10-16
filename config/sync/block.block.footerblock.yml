@@ -9,7 +9,7 @@ dependencies:
 id: footerblock
 theme: da_vinci
 region: footer
-weight: -6
+weight: -7
 provider: null
 plugin: footer_block
 settings:

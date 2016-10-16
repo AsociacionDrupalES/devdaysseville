@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900';
+@import url("https://fonts.googleapis.com/css?family=Marcellus|Marcellus+SC");
 *,
 :before,
 :after {
@@ -406,12 +406,12 @@ th {
  * Mixins
  */
 html {
-  font-size: 1em;
+  font-size: 15px;
 }
 
 body {
-  color: #5d5f65;
-  font-family: 'Lato', sans-serif;
+  color: #212121;
+  font-family: 'Marcellus', serif;
   font-weight: 400;
   line-height: 1.3;
 }
@@ -422,8 +422,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: #2b334a;
-  font-family: "Lato", sans-serif;
+  color: #212121;
+  font-family: "Marcellus SC", sans-serif;
   font-weight: 700;
 }
 
@@ -445,13 +445,13 @@ p {
 }
 
 a {
-  color: #212226;
+  color: black;
   text-decoration: none;
   transition: color .2s;
 }
 
 a:hover {
-  color: #2b334a;
+  color: #212121;
   text-decoration: none;
 }
 
@@ -525,20 +525,38 @@ head:before {
   transform: translateY(0);
 }
 
-.sliding_menu .region-top-bar {
+.sliding_menu .region-navigation {
   position: relative;
   width: 100vw;
   padding: 2em;
 }
 
-.sliding_menu .region-top-bar::after {
+.sliding_menu .region-navigation::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.region-top-bar {
+  position: relative;
+  width: 100vw;
+  background-color: #212121;
+  color: white;
+  font-family: "Marcellus SC", sans-serif;
+  letter-spacing: 0.4em;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.region-top-bar::after {
   clear: both;
   content: "";
   display: table;
 }
 
 .layout-container > header {
-  background-color: black;
+  background-color: white;
   color: #f1f1f1;
 }
 
@@ -561,11 +579,11 @@ head:before {
 }
 
 .layout-container > header .region-header a {
-  color: #f3f6f7;
+  color: #212121;
 }
 
 .layout-container > header .region-header a:hover {
-  color: #f3f6f7;
+  color: black;
 }
 
 .layout-container > header .region-highlighted h1 {
@@ -773,12 +791,12 @@ body {
 }
 
 html {
-  background: #2b334a;
+  background: #212121;
 }
 
 body {
-  color: #5d5f65;
-  background-color: #f3f6f7;
+  color: #212121;
+  background-color: white;
 }
 
 .border-region .region, .border-region main {
@@ -945,6 +963,9 @@ head:hover ~ body .field--name-body:before {
 
 .layout-container {
   background-color: #fff;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .layout-container > header {
@@ -959,6 +980,9 @@ head:hover ~ body .field--name-body:before {
 }
 
 .layout-container > main {
+  flex: 1;
+  background: url(../images/olas.svg) bottom no-repeat;
+  background-size: 100%;
   position: relative;
   background-color: #fff;
   z-index: 2;
@@ -1433,7 +1457,7 @@ head:hover ~ body .field--name-body:before {
 
 .block-formblock-contact .form-textarea {
   background-color: white;
-  color: #5d5f65;
+  color: #212121;
   border: 1px solid #ddd;
   padding: .5em;
   width: 100%;
@@ -2427,6 +2451,42 @@ head:hover ~ body #block-views-block-views-offices-block-3 .views-field-field-of
 
 footer {
   padding: 1em 0 0;
+  background: #212121;
+  text-align: center;
+  color: white;
+  font-size: 1.6em;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: inherit;
+}
+
+.path-frontpage {
+  text-align: center;
+}
+
+.path-frontpage .region-header .site-logo, .path-frontpage .region-header .site-name {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.path-frontpage .region-content #logo:before {
+  content: url("../images/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 330px;
+}
+
+.path-frontpage .region-content #logo h1 {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
 
 .node__links {
@@ -2444,8 +2504,8 @@ footer {
   margin: 0 .5em .5em 0;
   text-align: center;
   background-color: transparent;
-  color: #212226;
-  border: 1px solid #212226;
+  color: black;
+  border: 1px solid black;
   text-transform: uppercase;
   transition: all .5s;
 }
@@ -2458,8 +2518,8 @@ footer {
 #block-contactcommunitysection a:hover {
   cursor: pointer;
   text-decoration: none;
-  border-color: #2b334a;
-  color: #2b334a;
+  border-color: #212121;
+  color: #212121;
 }
 
 .form-submit,
@@ -2573,6 +2633,55 @@ footer {
   list-style-type: none;
 }
 
+div#mc_embed_signup {
+  margin-bottom: 5.143em;
+  margin-top: 1em;
+  background: transparent;
+}
+
+div#mc_embed_signup input.email {
+  outline: none;
+  height: 48px;
+  border: 2px solid #212121;
+  margin-right: -7px;
+  max-width: 210px;
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0px 0.4em;
+  width: 210px;
+}
+
+div#mc_embed_signup .button, div#mc_embed_signup .form-submit, div#mc_embed_signup
+.button-main, div#mc_embed_signup #block-contactheadermobile #contact-us-link, #block-contactheadermobile div#mc_embed_signup #contact-us-link, div#mc_embed_signup #block-contacto a, #block-contacto div#mc_embed_signup a, div#mc_embed_signup
+#block-contactoseccionservicios a,
+#block-contactoseccionservicios div#mc_embed_signup a, div#mc_embed_signup
+#block-contactoprojectssection a,
+#block-contactoprojectssection div#mc_embed_signup a, div#mc_embed_signup
+#block-contactoseccioncasodeestudiodeunproyecto a,
+#block-contactoseccioncasodeestudiodeunproyecto div#mc_embed_signup a, div#mc_embed_signup
+#block-contactcommunitysection a,
+#block-contactcommunitysection div#mc_embed_signup a {
+  background-color: #212121;
+  height: 48px;
+  font-size: 18px;
+  display: inline-block;
+  cursor: pointer;
+  font-family: "Marcellus SC", sans-serif;
+}
+
+div#mc_embed_signup .button:hover, div#mc_embed_signup .form-submit:hover, div#mc_embed_signup
+.button-main:hover, div#mc_embed_signup #block-contactheadermobile #contact-us-link:hover, #block-contactheadermobile div#mc_embed_signup #contact-us-link:hover, div#mc_embed_signup #block-contacto a:hover, #block-contacto div#mc_embed_signup a:hover, div#mc_embed_signup
+#block-contactoseccionservicios a:hover,
+#block-contactoseccionservicios div#mc_embed_signup a:hover, div#mc_embed_signup
+#block-contactoprojectssection a:hover,
+#block-contactoprojectssection div#mc_embed_signup a:hover, div#mc_embed_signup
+#block-contactoseccioncasodeestudiodeunproyecto a:hover,
+#block-contactoseccioncasodeestudiodeunproyecto div#mc_embed_signup a:hover, div#mc_embed_signup
+#block-contactcommunitysection a:hover,
+#block-contactcommunitysection div#mc_embed_signup a:hover {
+  background-color: black;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -2602,6 +2711,42 @@ img {
   height: 100%;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.social-networks-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 1em;
+}
+
+.social-networks-list li {
+  list-style-image: none;
+  list-style-type: none;
+  list-style: none;
+  padding: 0;
+}
+
+.social-networks-list li {
+  display: inline-block;
+}
+
+.social-networks-list li a {
+  display: block;
+  width: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: 2em;
+  margin: 0 8px;
+}
+
+.social-networks-list li a:before {
+  text-indent: 0;
+  float: left;
+  padding: 0;
+}
+
+.social-networks-list li a:hover {
+  color: #c7c7c7;
 }
 
 body {

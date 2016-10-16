@@ -1,6 +1,6 @@
 uuid: a4e77569-f806-4921-8205-5f05a60a45b4
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,7 +10,7 @@ _core:
   default_config_hash: HMKgB-vYA3t5cWMG3Ujss-doNwHExvEvDLaiaVhLNc4
 id: da_vinci_powered
 theme: da_vinci
-region: footer
+region: '-1'
 weight: -5
 provider: null
 plugin: system_powered_by_block

@@ -8,8 +8,8 @@ dependencies:
     - da_vinci
 id: newsletterblock
 theme: da_vinci
-region: footer
-weight: -7
+region: content
+weight: -3
 provider: null
 plugin: newsletter_block
 settings:

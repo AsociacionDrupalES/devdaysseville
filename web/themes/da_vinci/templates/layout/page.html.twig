@@ -47,10 +47,10 @@
 <div class="layout-container">
 
   <nav role="navigation" class="sliding_menu">
-    {{ page.top_bar }}
+    {{ page.navigation }}
   </nav role="navigation">
-
   <header role="banner" aria-label="{{ 'Site header'|t}}">
+    {{ page.top_bar }}
     {% if page.secondary_menu %}
       {{ page.secondary_menu }}
     {% endif %}
