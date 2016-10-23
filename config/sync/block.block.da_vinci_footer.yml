@@ -1,6 +1,6 @@
 uuid: ac927b70-8fde-419d-8550-8072b8e76731
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.footer
@@ -12,8 +12,8 @@ _core:
   default_config_hash: RgePdm7RvcCMJqFw8g7nVbWg4feMS28tjKj7FtWXr9M
 id: da_vinci_footer
 theme: da_vinci
-region: '-1'
-weight: -7
+region: footer
+weight: -6
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
