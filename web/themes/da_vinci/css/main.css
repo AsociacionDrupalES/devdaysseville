@@ -2496,37 +2496,6 @@ head:hover ~ body #block-views-block-views-offices-block-3 .views-field-field-of
   }
 }
 
-.user-login-form {
-  text-align: center;
-  display: inline-block;
-}
-
-.user-login-form #edit-name,
-.user-login-form #edit-pass {
-  background-color: white !important;
-}
-
-.user-login-form label {
-  display: block;
-  text-transform: uppercase;
-  text-align: left;
-}
-
-.user-login-form .description {
-  display: none;
-}
-
-.user-login-form .form-item {
-  display: inline-block;
-  margin-right: 2em;
-}
-
-.user-login-form #edit-submit {
-  margin-right: 1.5em;
-  display: inline-block;
-  float: right;
-}
-
 footer {
   padding: 1em 0 0;
   background: #212121;
@@ -2719,8 +2688,7 @@ td {
   display: block;
 }
 
-.form-input, .user-login-form #edit-name,
-.user-login-form #edit-pass, div#mc_embed_signup input.email {
+.form-input, div#mc_embed_signup input.email {
   outline: none;
   height: 48px;
   border: 2px solid #212121;
