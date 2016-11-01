@@ -406,7 +406,7 @@ th {
  * Mixins
  */
 html {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 body {
@@ -852,7 +852,7 @@ body {
   outline: 3px violet groove;
 }
 
-.restricted-container, .layout-container .region-header, .layout-container .region-primary-menu, #block-contactheadermobile, #block-contacto .field--name-body,
+.restricted-container, .layout-container .region-header, .layout-container .region-primary-menu, .layout-container > main .region, #block-contactheadermobile, #block-contacto .field--name-body,
 #block-contactoseccionservicios .field--name-body,
 #block-contactoprojectssection .field--name-body,
 #block-contactoseccioncasodeestudiodeunproyecto .field--name-body,
@@ -863,7 +863,7 @@ body {
   transition: padding .5s ease-in-out;
 }
 
-.restricted-container::after, .layout-container .region-header::after, .layout-container .region-primary-menu::after, #block-contactheadermobile::after, #block-contacto .field--name-body::after,
+.restricted-container::after, .layout-container .region-header::after, .layout-container .region-primary-menu::after, .layout-container > main .region::after, #block-contactheadermobile::after, #block-contacto .field--name-body::after,
 #block-contactoseccionservicios .field--name-body::after,
 #block-contactoprojectssection .field--name-body::after,
 #block-contactoseccioncasodeestudiodeunproyecto .field--name-body::after,
@@ -873,7 +873,7 @@ body {
   display: table;
 }
 
-.restricted-container:after, .layout-container .region-header:after, .layout-container .region-primary-menu:after, #block-contactheadermobile:after, #block-contacto .field--name-body:after,
+.restricted-container:after, .layout-container .region-header:after, .layout-container .region-primary-menu:after, .layout-container > main .region:after, #block-contactheadermobile:after, #block-contacto .field--name-body:after,
 #block-contactoseccionservicios .field--name-body:after,
 #block-contactoprojectssection .field--name-body:after,
 #block-contactoseccioncasodeestudiodeunproyecto .field--name-body:after,
@@ -907,7 +907,7 @@ head:hover {
   color: red;
 }
 
-head:hover ~ .restricted-container, .layout-container head:hover ~ .region-header, .layout-container head:hover ~ .region-primary-menu, head:hover ~ #block-contactheadermobile, #block-contacto head:hover ~ .field--name-body,
+head:hover ~ .restricted-container, .layout-container head:hover ~ .region-header, .layout-container head:hover ~ .region-primary-menu, .layout-container > main head:hover ~ .region, head:hover ~ #block-contactheadermobile, #block-contacto head:hover ~ .field--name-body,
 #block-contactoseccionservicios head:hover ~ .field--name-body,
 #block-contactoprojectssection head:hover ~ .field--name-body,
 #block-contactoseccioncasodeestudiodeunproyecto head:hover ~ .field--name-body,
@@ -917,6 +917,8 @@ head:hover ~ body .layout-container .region-header, .layout-container
 head:hover ~ body .region-header,
 head:hover ~ body .layout-container .region-primary-menu, .layout-container
 head:hover ~ body .region-primary-menu,
+head:hover ~ body .layout-container > main .region, .layout-container > main
+head:hover ~ body .region,
 head:hover ~ body #block-contactheadermobile,
 head:hover ~ body #block-contacto .field--name-body, #block-contacto
 head:hover ~ body .field--name-body,
@@ -942,7 +944,7 @@ head:hover ~ body .field--name-body {
   position: relative;
 }
 
-head:hover ~ .restricted-container:before, .layout-container head:hover ~ .region-header:before, .layout-container head:hover ~ .region-primary-menu:before, head:hover ~ #block-contactheadermobile:before, #block-contacto head:hover ~ .field--name-body:before,
+head:hover ~ .restricted-container:before, .layout-container head:hover ~ .region-header:before, .layout-container head:hover ~ .region-primary-menu:before, .layout-container > main head:hover ~ .region:before, head:hover ~ #block-contactheadermobile:before, #block-contacto head:hover ~ .field--name-body:before,
 #block-contactoseccionservicios head:hover ~ .field--name-body:before,
 #block-contactoprojectssection head:hover ~ .field--name-body:before,
 #block-contactoseccioncasodeestudiodeunproyecto head:hover ~ .field--name-body:before,
@@ -952,6 +954,8 @@ head:hover ~ body .layout-container .region-header:before, .layout-container
 head:hover ~ body .region-header:before,
 head:hover ~ body .layout-container .region-primary-menu:before, .layout-container
 head:hover ~ body .region-primary-menu:before,
+head:hover ~ body .layout-container > main .region:before, .layout-container > main
+head:hover ~ body .region:before,
 head:hover ~ body #block-contactheadermobile:before,
 head:hover ~ body #block-contacto .field--name-body:before, #block-contacto
 head:hover ~ body .field--name-body:before,
@@ -990,7 +994,7 @@ head:hover ~ body .field--name-body:before {
 }
 
 @media (max-width: 102%) {
-  .restricted-container, .layout-container .region-header, .layout-container .region-primary-menu, #block-contactheadermobile, #block-contacto .field--name-body,
+  .restricted-container, .layout-container .region-header, .layout-container .region-primary-menu, .layout-container > main .region, #block-contactheadermobile, #block-contacto .field--name-body,
   #block-contactoseccionservicios .field--name-body,
   #block-contactoprojectssection .field--name-body,
   #block-contactoseccioncasodeestudiodeunproyecto .field--name-body,
@@ -1001,7 +1005,7 @@ head:hover ~ body .field--name-body:before {
 }
 
 @media (min-width: 75em) {
-  .restricted-container, .layout-container .region-header, .layout-container .region-primary-menu, #block-contactheadermobile, #block-contacto .field--name-body,
+  .restricted-container, .layout-container .region-header, .layout-container .region-primary-menu, .layout-container > main .region, #block-contactheadermobile, #block-contacto .field--name-body,
   #block-contactoseccionservicios .field--name-body,
   #block-contactoprojectssection .field--name-body,
   #block-contactoseccioncasodeestudiodeunproyecto .field--name-body,
@@ -1036,12 +1040,6 @@ head:hover ~ body .field--name-body:before {
   background-color: #fff;
   z-index: 2;
   overflow: hidden;
-}
-
-.layout-container > main .region::after {
-  clear: both;
-  content: "";
-  display: table;
 }
 
 @media (min-width: 44em) {
@@ -2498,6 +2496,37 @@ head:hover ~ body #block-views-block-views-offices-block-3 .views-field-field-of
   }
 }
 
+.user-login-form {
+  text-align: center;
+  display: inline-block;
+}
+
+.user-login-form #edit-name,
+.user-login-form #edit-pass {
+  background-color: white !important;
+}
+
+.user-login-form label {
+  display: block;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.user-login-form .description {
+  display: none;
+}
+
+.user-login-form .form-item {
+  display: inline-block;
+  margin-right: 2em;
+}
+
+.user-login-form #edit-submit {
+  margin-right: 1.5em;
+  display: inline-block;
+  float: right;
+}
+
 footer {
   padding: 1em 0 0;
   background: #212121;
@@ -2513,6 +2542,39 @@ footer a {
 
 footer a:hover {
   color: inherit;
+}
+
+table {
+  width: 100%;
+  border: 0;
+}
+
+table thead {
+  background: #212121;
+  color: white;
+  font-family: "Marcellus", serif;
+  text-align: left;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+table thead th {
+  font-weight: normal;
+}
+
+tr {
+  border: 0;
+  border-bottom: 2px solid #212121;
+}
+
+th {
+  border: 0;
+  padding: 10px;
+}
+
+td {
+  border: 0;
+  padding: 15px 10px;
 }
 
 .path-frontpage {
@@ -2548,16 +2610,18 @@ footer a:hover {
 #block-contactoseccionservicios a,
 #block-contactoprojectssection a,
 #block-contactoseccioncasodeestudiodeunproyecto a,
-#block-contactcommunitysection a {
+#block-contactcommunitysection a, div#mc_embed_signup .button {
+  background-color: #212121;
+  height: 48px;
+  font-size: 18px;
   display: inline-block;
-  padding: .2em .5em;
-  margin: 0 .5em .5em 0;
-  text-align: center;
-  background-color: transparent;
-  color: black;
-  border: 1px solid black;
-  text-transform: uppercase;
-  transition: all .5s;
+  cursor: pointer;
+  color: white;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0 18px;
 }
 
 .button:hover, .form-submit:hover,
@@ -2565,11 +2629,8 @@ footer a:hover {
 #block-contactoseccionservicios a:hover,
 #block-contactoprojectssection a:hover,
 #block-contactoseccioncasodeestudiodeunproyecto a:hover,
-#block-contactcommunitysection a:hover {
-  cursor: pointer;
-  text-decoration: none;
-  border-color: #212121;
-  color: #212121;
+#block-contactcommunitysection a:hover, div#mc_embed_signup .button:hover {
+  background-color: black;
 }
 
 .form-submit,
@@ -2580,22 +2641,7 @@ footer a:hover {
 #block-contactoprojectssection a,
 #block-contactoseccioncasodeestudiodeunproyecto a,
 #block-contactcommunitysection a {
-  padding: .2em 2em;
-  border-color: rgba(245, 166, 35, 0.3);
-  color: #F5A623;
-  letter-spacing: 10px;
-}
-
-.form-submit:hover,
-.button-main:hover,
-#block-contactheadermobile #contact-us-link:hover,
-#block-contacto a:hover,
-#block-contactoseccionservicios a:hover,
-#block-contactoprojectssection a:hover,
-#block-contactoseccioncasodeestudiodeunproyecto a:hover,
-#block-contactcommunitysection a:hover {
-  border-color: #f5a623;
-  color: #fff;
+  border: none;
 }
 
 .dropdown {
@@ -2673,23 +2719,8 @@ footer a:hover {
   display: block;
 }
 
-.simple-list, .sliding_menu #block-alternadordeidioma li, header #block-languageswitcher ul {
-  margin: 0;
-  padding: 0;
-}
-
-.simple-list li, .sliding_menu #block-alternadordeidioma li li, header #block-languageswitcher ul li {
-  list-style-image: none;
-  list-style-type: none;
-}
-
-div#mc_embed_signup {
-  margin-bottom: 5.143em;
-  margin-top: 1em;
-  background: transparent;
-}
-
-div#mc_embed_signup input.email {
+.form-input, .user-login-form #edit-name,
+.user-login-form #edit-pass, div#mc_embed_signup input.email {
   outline: none;
   height: 48px;
   border: 2px solid #212121;
@@ -2701,35 +2732,37 @@ div#mc_embed_signup input.email {
   width: 210px;
 }
 
-div#mc_embed_signup .button, div#mc_embed_signup .form-submit, div#mc_embed_signup
-.button-main, div#mc_embed_signup #block-contactheadermobile #contact-us-link, #block-contactheadermobile div#mc_embed_signup #contact-us-link, div#mc_embed_signup #block-contacto a, #block-contacto div#mc_embed_signup a, div#mc_embed_signup
-#block-contactoseccionservicios a,
-#block-contactoseccionservicios div#mc_embed_signup a, div#mc_embed_signup
-#block-contactoprojectssection a,
-#block-contactoprojectssection div#mc_embed_signup a, div#mc_embed_signup
-#block-contactoseccioncasodeestudiodeunproyecto a,
-#block-contactoseccioncasodeestudiodeunproyecto div#mc_embed_signup a, div#mc_embed_signup
-#block-contactcommunitysection a,
-#block-contactcommunitysection div#mc_embed_signup a {
-  background-color: #212121;
-  height: 48px;
-  font-size: 18px;
-  display: inline-block;
-  cursor: pointer;
-  font-family: "Marcellus", serif;
+input::-webkit-input-placeholder {
+  color: #c7c7c7;
 }
 
-div#mc_embed_signup .button:hover, div#mc_embed_signup .form-submit:hover, div#mc_embed_signup
-.button-main:hover, div#mc_embed_signup #block-contactheadermobile #contact-us-link:hover, #block-contactheadermobile div#mc_embed_signup #contact-us-link:hover, div#mc_embed_signup #block-contacto a:hover, #block-contacto div#mc_embed_signup a:hover, div#mc_embed_signup
-#block-contactoseccionservicios a:hover,
-#block-contactoseccionservicios div#mc_embed_signup a:hover, div#mc_embed_signup
-#block-contactoprojectssection a:hover,
-#block-contactoprojectssection div#mc_embed_signup a:hover, div#mc_embed_signup
-#block-contactoseccioncasodeestudiodeunproyecto a:hover,
-#block-contactoseccioncasodeestudiodeunproyecto div#mc_embed_signup a:hover, div#mc_embed_signup
-#block-contactcommunitysection a:hover,
-#block-contactcommunitysection div#mc_embed_signup a:hover {
-  background-color: black;
+input::-moz-placeholder {
+  color: #c7c7c7;
+}
+
+input:-moz-placeholder {
+  color: #c7c7c7;
+}
+
+input:-ms-input-placeholder {
+  color: #c7c7c7;
+}
+
+.simple-list, .sliding_menu #block-alternadordeidioma li, header #block-languageswitcher ul {
+  margin: 0;
+  padding: 0;
+}
+
+.simple-list li, .sliding_menu #block-alternadordeidioma li li, header #block-languageswitcher ul li {
+  list-style-image: none;
+  list-style-type: none;
+}
+
+div#mc_embed_signup {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 5.143em;
+  margin-top: 1em;
+  background: transparent;
 }
 
 img {
