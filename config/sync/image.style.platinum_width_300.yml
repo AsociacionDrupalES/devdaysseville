@@ -1,0 +1,15 @@
+uuid: f7d68b9c-e8f5-48c2-bcb3-150fa774731d
+langcode: en
+status: true
+dependencies: {  }
+name: platinum_width_300
+label: 'Platinum (width_300)'
+effects:
+  f3c2a46b-9d2c-4f79-ad65-b1866ebb0b53:
+    uuid: f3c2a46b-9d2c-4f79-ad65-b1866ebb0b53
+    id: image_scale
+    weight: 1
+    data:
+      width: 300
+      height: null
+      upscale: false

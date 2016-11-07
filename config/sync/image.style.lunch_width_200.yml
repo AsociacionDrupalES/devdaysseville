@@ -1,0 +1,15 @@
+uuid: 8a2cfed5-a1e5-4e05-bfb4-f1213cb8b6ad
+langcode: en
+status: true
+dependencies: {  }
+name: lunch_width_200
+label: 'Lunch (width 200 )'
+effects:
+  5f68f23e-83a3-4d29-88b0-55ea05c59a88:
+    uuid: 5f68f23e-83a3-4d29-88b0-55ea05c59a88
+    id: image_scale
+    weight: 1
+    data:
+      width: 200
+      height: null
+      upscale: false

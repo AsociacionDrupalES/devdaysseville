@@ -1,0 +1,30 @@
+uuid: 1ed02ab5-12bf-4643-99b8-c6353acc5f18
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sponsors
+  module:
+    - system
+    - views
+  theme:
+    - da_vinci
+id: views_block__sponsors_block_3_2
+theme: da_vinci
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'views_block:sponsors-block_3'
+settings:
+  id: 'views_block:sponsors-block_3'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/sponsors"
+    negate: true
+    context_mapping: {  }

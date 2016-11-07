@@ -1,0 +1,15 @@
+uuid: 83b1556e-daf4-48f9-976a-171f1662adde
+langcode: en
+status: true
+dependencies: {  }
+name: code_sprint_width_200
+label: 'Code Sprint (width 200)'
+effects:
+  15e300eb-b407-4336-9842-b522d1dd5828:
+    uuid: 15e300eb-b407-4336-9842-b522d1dd5828
+    id: image_scale
+    weight: 1
+    data:
+      width: 200
+      height: null
+      upscale: false
