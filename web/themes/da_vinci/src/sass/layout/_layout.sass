@@ -46,12 +46,11 @@ body
 
   // Main content
   > main
-    // For Drupalera UK
     flex: 1
     background: url(../images/olas.svg) bottom no-repeat
     background-size: 100%
     .region
-      +clearfix
+      @extend .restricted-container
     position: relative
     background-color: #fff
     z-index: 2

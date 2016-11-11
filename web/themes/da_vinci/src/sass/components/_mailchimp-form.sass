@@ -1,23 +1,9 @@
 div#mc_embed_signup
+  font-family: $default
   margin-bottom: 5.143em
   margin-top: 1em
   background: transparent
   input.email
-    outline: none
-    height: 48px
-    border: 2px solid $black2
-    margin-right: -7px
-    max-width: 210px
-    display: inline-block
-    border-radius: 3px
-    padding: 0px 0.4em
-    width: 210px
+    @extend .form-input
   .button
-    background-color: $black2
-    height: 48px
-    font-size: 18px
-    display: inline-block
-    cursor: pointer
-    font-family: $title
-    &:hover
-      background-color: $black
+    @extend .button
