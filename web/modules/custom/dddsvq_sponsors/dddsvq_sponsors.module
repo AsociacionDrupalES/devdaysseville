@@ -20,3 +20,21 @@ function dddsvq_sponsors_node_access(\Drupal\node\NodeInterface $node, $op, \Dru
 
   return $access;
 }
+
+/**
+ * Implements hook_theme().
+ */
+function dddsvq_sponsors_theme($existing, $type, $theme, $path) {
+  $themes = [];
+
+  // Defines the Sponsor call to action theme.
+  $themes['sponsor_call_to_action'] = [
+    'variables' => [
+      'text' => '',
+      'link' => NULL,
+    ],
+  ];
+
+
+  return $themes;
+}
