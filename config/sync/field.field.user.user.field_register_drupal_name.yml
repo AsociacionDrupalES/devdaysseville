@@ -1,0 +1,20 @@
+uuid: dab18a0e-eb8a-472d-8a19-a7174d64bca7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_register_drupal_name
+  module:
+    - user
+id: user.user.field_register_drupal_name
+field_name: field_register_drupal_name
+entity_type: user
+bundle: user
+label: 'Drupal.org nickname'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

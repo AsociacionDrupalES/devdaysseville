@@ -1,0 +1,72 @@
+uuid: 46c0d70a-05dc-4aec-93fa-26f4c87382ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_register_drupal_link
+    - field.field.user.user.field_register_drupal_name
+    - field.field.user.user.field_register_name
+    - field.field.user.user.field_register_picture
+    - field.field.user.user.field_register_surname
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  contact:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_register_drupal_link:
+    weight: 8
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_register_drupal_name:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_register_name:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_register_picture:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_register_surname:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  language:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  timezone:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

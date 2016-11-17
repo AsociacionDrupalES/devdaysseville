@@ -1,0 +1,14 @@
+uuid: d9f997cd-101f-401e-b56a-422a1cf8fdc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.attendee
+  module:
+    - user
+id: user_remove_role_action.attendee
+label: 'Remove the Attendee role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: attendee

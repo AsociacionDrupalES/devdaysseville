@@ -1,0 +1,23 @@
+uuid: 67ab835d-b115-4b4a-ba47-7f89675a4a5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_register_drupal_link
+  module:
+    - link
+    - user
+id: user.user.field_register_drupal_link
+field_name: field_register_drupal_link
+entity_type: user
+bundle: user
+label: 'Drupal.org profile link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link
