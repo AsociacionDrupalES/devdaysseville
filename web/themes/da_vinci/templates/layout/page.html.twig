@@ -47,22 +47,27 @@
 <div class="layout-container">
 
   <nav role="navigation" class="sliding_menu">
-    {{ page.navigation }}
+    {% if page.sliding_menu %}
+      {{ page.sliding_menu }}
+    {% endif %}
   </nav role="navigation">
-  <header role="banner" aria-label="{{ 'Site header'|t}}">
+  {% if page.top_bar %}
     {{ page.top_bar }}
+  {% endif %}
+
+  <header role="banner" aria-label="{{ 'Site header'|t}}">
     {% if page.secondary_menu %}
       {{ page.secondary_menu }}
     {% endif %}
     <a href="#" class="menu-button-open" id="menuButtonOpen">
     </a>
     {{ page.header }}
-
-    {% if page.highlighted %}
-      {{ page.highlighted }}
-    {% endif %}
     
   </header>
+
+  {% if page.highlighted %}
+    {{ page.highlighted }}
+  {% endif %}
 
   {% if page.primary_menu %}
     {{ page.primary_menu }}

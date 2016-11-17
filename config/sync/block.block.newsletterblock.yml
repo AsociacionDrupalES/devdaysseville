@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - dddsvq_common
+    - system
   theme:
     - da_vinci
 id: newsletterblock
@@ -17,4 +18,9 @@ settings:
   label: 'Newsletter block'
   provider: dddsvq_common
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
