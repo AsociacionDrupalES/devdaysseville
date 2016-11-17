@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.basic_page.body
+    - field.field.node.basic_page.field_file
     - node.type.basic_page
   module:
     - text
@@ -23,4 +24,5 @@ content:
     third_party_settings: {  }
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_file: true

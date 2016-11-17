@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.basic_page.body
+    - field.field.node.basic_page.field_file
     - node.type.basic_page
   module:
+    - file
     - path
     - text
 id: node.basic_page.default
@@ -26,6 +28,12 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
+  field_file:
+    weight: 32
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
   path:
     type: path
     weight: 30
