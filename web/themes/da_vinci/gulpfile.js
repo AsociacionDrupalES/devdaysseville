@@ -19,7 +19,7 @@ var gulp            = require('gulp'),
 /********** VARIABLES *************/
 
 // Hosts
-var hosts = 'localhost';
+var hosts = 'local.devdays';
 
 // Paths
 
@@ -95,7 +95,7 @@ gulp.task('clean:css', function () {
 /************* COMPILING *****************/
 
 // Css to development
-gulp.task('styles:dev', ['clean:css'], function () {
+gulp.task('styles:dev', function () {
   return gulp.src([srcAssets.styles + '**/*.s+(a|c)ss'])
     .pipe(sourceMaps.init())
     .pipe(sassGlob())
@@ -157,7 +157,8 @@ gulp.task('sasslint', function () {
 gulp.task('jshint', function(){
   return gulp.src([distAssets.js + '**/*.js'])
     .pipe(jsHint())
-    .pipe(jsHint.reporter(jsHintStylish));
+    .pipe(jsHint.reporter(jsHintStylish))
+    .pipe(browserSync.stream());
 });
 
 /************** DEMONS **********************/
@@ -180,7 +181,10 @@ gulp.task('watch', function(){
 // Browser Sync
 gulp.task('browsersync', function() {
   browserSync.init({
-    proxy: hosts
+    proxy: {
+        target: hosts,
+        ws: false
+    }
   });
   gulp.watch(srcAssets.styles + '**/*.s+(a|c)ss', ['styles:dev'])
   .on('change', function(event) {
@@ -203,4 +207,4 @@ gulp.task('dev:watch', ['styles:dev', 'jshint', 'watch']);
 gulp.task('dev:browser', ['styles:dev', 'jshint', 'browsersync']);
 
 // Production enviroment
-gulp.task('pro', ['styles:pro', 'jshint', 'sassdoc']);
+gulp.task('pro', ['styles:pro', 'jshint']);
