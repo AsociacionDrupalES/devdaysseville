@@ -9,7 +9,6 @@ dependencies:
     - node.type.news
   module:
     - image
-    - metatag
     - text
     - user
 id: node.news.default
@@ -18,25 +17,19 @@ bundle: news
 mode: default
 content:
   body:
-    label: hidden
+    label: above
     type: text_default
-    weight: 101
+    weight: 1
     settings: {  }
     third_party_settings: {  }
   field_image:
-    weight: 104
+    weight: 0
     label: above
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
-  field_meta_tags:
-    weight: 103
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: metatag_empty_formatter
-  links:
-    weight: 100
-hidden: {  }
+hidden:
+  field_meta_tags: true
+  links: true
