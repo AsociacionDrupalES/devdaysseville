@@ -10,7 +10,7 @@ dependencies:
 id: newsletterblock
 theme: da_vinci
 region: content
-weight: 1
+weight: -2
 provider: null
 plugin: newsletter_block
 settings:

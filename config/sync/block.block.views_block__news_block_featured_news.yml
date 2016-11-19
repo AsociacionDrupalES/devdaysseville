@@ -1,22 +1,22 @@
-uuid: 638ec0b4-7223-441e-98a4-1443df9026fb
+uuid: 16c86972-1d8f-42a7-870c-92ce86123fbe
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.sponsors
+    - views.view.news
   module:
     - system
     - views
   theme:
     - da_vinci
-id: views_block__sponsors_block_5
+id: views_block__news_block_featured_news
 theme: da_vinci
 region: content
-weight: -4
+weight: -1
 provider: null
-plugin: 'views_block:sponsors-block_5'
+plugin: 'views_block:news-block_featured_news'
 settings:
-  id: 'views_block:sponsors-block_5'
+  id: 'views_block:news-block_featured_news'
   label: ''
   provider: views
   label_display: visible
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /sponsors
+    pages: '<front>'
     negate: false
     context_mapping: {  }

@@ -9,7 +9,7 @@ _core:
 id: da_vinci_local_tasks
 theme: da_vinci
 region: content
-weight: -9
+weight: -12
 provider: null
 plugin: local_tasks_block
 settings:
