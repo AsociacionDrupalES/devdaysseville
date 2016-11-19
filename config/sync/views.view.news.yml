@@ -335,6 +335,7 @@ display:
           tokenize: false
           content: '<a href="/news">More news</a>'
           plugin_id: text_custom
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
