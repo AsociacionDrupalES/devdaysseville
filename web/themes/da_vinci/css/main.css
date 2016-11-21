@@ -1175,6 +1175,24 @@ td {
   line-height: 1.5;
 }
 
+.path-contact label {
+  width: 100%;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.path-contact .form-text,
+.path-contact .form-textarea,
+.path-contact .form-email {
+  background: #eee;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #f5f5f5;
+  width: 100%;
+}
+
 .button, .form-submit,
 .button-main, div#mc_embed_signup .button {
   background-color: #212121;
