@@ -1181,9 +1181,9 @@ td {
   margin-bottom: 6px;
 }
 
-.form-text,
-.form-textarea,
-.form-email {
+.path-contact .form-text,
+.path-contact .form-textarea,
+.path-contact .form-email {
   background: #eeeeee;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
