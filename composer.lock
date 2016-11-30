@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "25320c2bc6af4cc573bf94ce77120df7",
-    "content-hash": "5b23f01c16d9102b16e3a26ae073c61d",
+    "hash": "1227870bd8ab00df75cb76103bfbf819",
+    "content-hash": "437b20922994be1a20e7fe075dc8afb3",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1248,6 +1248,31 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "time": "2016-11-16 18:45:36"
+        },
+        {
+            "name": "drupal/linked_field",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/linked_field",
+                "reference": "8a60fd2aa945ee61bbfed5255df4d0f7d7c1977a"
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Adds the functionality to link fields to a specific destination.",
+            "homepage": "https://www.drupal.org/project/linked_field",
+            "time": "2016-11-01 21:04:50"
         },
         {
             "name": "drupal/metatag",
@@ -5709,7 +5734,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/metatag": 20
+        "drupal/metatag": 20,
+        "drupal/linked_field": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

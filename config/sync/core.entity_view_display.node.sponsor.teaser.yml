@@ -12,6 +12,7 @@ dependencies:
     - node.type.sponsor
   module:
     - image
+    - linked_field
     - user
 id: node.sponsor.teaser
 targetEntityType: node
@@ -25,7 +26,12 @@ content:
     settings:
       image_style: medium
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: custom
+        destination: '[node:field_webpage:uri]'
+        advanced: {  }
 hidden:
   body: true
   field_sponsorship_type: true
