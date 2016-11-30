@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Entity\Entity\EntityViewDisplay;
 
 /**
  * Implements hook_node_access().
@@ -34,7 +35,13 @@ function dddsvq_sponsors_theme($existing, $type, $theme, $path) {
       'link' => NULL,
     ],
   ];
-
+  // Defines the rotation entity theme.
+  $themes['rotation_entity'] = [
+    'render element' => 'elements',
+    'variables' => [
+      'entities' => [],
+    ],
+  ];
 
   return $themes;
 }
