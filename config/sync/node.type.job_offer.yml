@@ -1,0 +1,17 @@
+uuid: c747a1bf-b7f4-419e-a576-75059e81b7c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Job offer'
+type: job_offer
+description: 'Specific content type for job offers.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

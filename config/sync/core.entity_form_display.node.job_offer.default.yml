@@ -1,0 +1,59 @@
+uuid: 634c36b6-ea38-4338-92ce-f9b6438c26de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.job_offer.body
+    - field.field.node.job_offer.field_sponsor_ref
+    - node.type.job_offer
+  module:
+    - path
+    - text
+id: node.job_offer.default
+targetEntityType: node
+bundle: job_offer
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_sponsor_ref:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  path:
+    type: path
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true
