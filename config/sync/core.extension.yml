@@ -6,6 +6,7 @@ module:
   config: 0
   contact: 0
   contextual: 0
+  ctools: 0
   dblog: 0
   dddsvq_common: 0
   dddsvq_home: 0
@@ -36,6 +37,7 @@ module:
   user: 0
   views: 0
   views_ui: 0
+  pathauto: 1
   minimal: 1000
 theme:
   stable: 0
