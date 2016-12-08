@@ -1,0 +1,5 @@
+name: dddsvq_users
+type: module
+description: Custom module for customize the users at the DrupalDevDays Seville 2017.
+core: 8.x
+package: Custom
