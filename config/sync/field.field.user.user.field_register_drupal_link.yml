@@ -12,7 +12,7 @@ field_name: field_register_drupal_link
 entity_type: user
 bundle: user
 label: 'Drupal.org profile link'
-description: ''
+description: 'Please specify, the URL to your profile at http://drupal.org. With this, other users will be able to check your profile for further information about you and your contributions.'
 required: false
 translatable: false
 default_value: {  }

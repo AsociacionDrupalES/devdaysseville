@@ -8,10 +8,7 @@ dependencies:
     - field.field.user.user.field_register_drupal_name
     - field.field.user.user.field_register_name
     - field.field.user.user.field_register_picture
-    - field.field.user.user.field_register_surname
-    - image.style.thumbnail
   module:
-    - image
     - link
     - user
 id: user.user.register
@@ -20,38 +17,24 @@ bundle: user
 mode: register
 content:
   account:
-    weight: 3
+    weight: 0
     settings: {  }
     third_party_settings: {  }
   field_register_drupal_link:
-    weight: 5
+    weight: 4
     settings:
-      placeholder_url: ''
+      placeholder_url: 'https://www.drupal.org/u/xxxxxx'
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
   field_register_drupal_name:
-    weight: 4
+    weight: 3
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
   field_register_name:
-    weight: 0
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-  field_register_picture:
-    weight: 2
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-  field_register_surname:
     weight: 1
     settings:
       size: 60
@@ -60,5 +43,7 @@ content:
     type: string_textfield
 hidden:
   contact: true
+  field_register_picture: true
   language: true
+  path: true
   timezone: true

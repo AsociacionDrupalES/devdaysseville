@@ -11,7 +11,7 @@ field_name: field_register_drupal_name
 entity_type: user
 bundle: user
 label: 'Drupal.org nickname'
-description: ''
+description: 'Please, specify your nickname at drupal.org. This will help to other users to localize you at drupal.org.'
 required: false
 translatable: false
 default_value: {  }
