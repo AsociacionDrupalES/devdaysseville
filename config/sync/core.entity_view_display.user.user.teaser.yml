@@ -1,56 +1,49 @@
-uuid: f53c88c6-7f75-41bd-a1f9-5c417d3272c2
+uuid: 6f961e19-1e0a-4c97-baaf-43937d5eb259
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.user.teaser
     - field.field.user.user.field_register_drupal_link
     - field.field.user.user.field_register_drupal_name
     - field.field.user.user.field_register_name
     - field.field.user.user.field_register_picture
+    - image.style.thumbnail
   module:
     - image
-    - link
     - user
-id: user.user.default
+id: user.user.teaser
 targetEntityType: user
 bundle: user
-mode: default
+mode: teaser
 content:
-  field_register_drupal_link:
-    weight: 10
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
   field_register_drupal_name:
-    weight: 9
-    label: above
+    weight: 2
+    label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: field
+        destination: field_register_drupal_link
+        advanced: {  }
     type: string
   field_register_name:
-    weight: 6
-    label: above
+    weight: 1
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_register_picture:
-    weight: 8
-    label: above
+    weight: 0
+    label: hidden
     settings:
-      image_style: ''
+      image_style: thumbnail
       image_link: ''
     third_party_settings: {  }
     type: image
-  member_for:
-    weight: 5
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_register_drupal_link: true
+  member_for: true

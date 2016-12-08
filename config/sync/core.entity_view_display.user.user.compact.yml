@@ -1,0 +1,32 @@
+uuid: 9ff33832-91af-4d91-aa1d-2332be811f4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_register_drupal_link
+    - field.field.user.user.field_register_drupal_name
+    - field.field.user.user.field_register_name
+    - field.field.user.user.field_register_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - user
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  field_register_picture:
+    weight: 0
+    label: visually_hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden:
+  field_register_drupal_link: true
+  field_register_drupal_name: true
+  field_register_name: true
+  member_for: true
