@@ -1,0 +1,13 @@
+uuid: f6f84825-3a9d-4aef-b8a1-2833ba55ea2f
+langcode: en
+status: true
+dependencies:
+  module:
+    - dddsvq_sessions
+_core:
+  default_config_hash: ABlcJLf7A-CHCQ6QrrzNP-u3GE0_Bf1R4y5v-7CatyQ
+id: approve_session_action
+label: 'Approve session'
+type: node
+plugin: approve_session_action
+configuration: {  }

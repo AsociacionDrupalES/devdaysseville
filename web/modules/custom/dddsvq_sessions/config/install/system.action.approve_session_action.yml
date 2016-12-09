@@ -1,0 +1,11 @@
+id: approve_session_action
+label: 'Approve session'
+status: true
+langcode: en
+type: node
+plugin: approve_session_action
+dependencies:
+  module:
+    - node
+    - dddsvq_sessions
+

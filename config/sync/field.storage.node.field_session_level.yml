@@ -1,0 +1,30 @@
+uuid: 8c9bb6bd-4d0e-49a0-a4c6-2134074a361c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_session_level
+field_name: field_session_level
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: beginner
+      label: Beginner
+    -
+      value: intermediate
+      label: Intermediate
+    -
+      value: advanced
+      label: Advanced
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
