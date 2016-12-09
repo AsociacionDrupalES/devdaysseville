@@ -1,0 +1,14 @@
+uuid: 261e3027-71c3-4115-b60d-62b18dc339fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: users
+label: Users
+type: 'canonical_entities:user'
+pattern: 'attendees/[user:display-name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }
