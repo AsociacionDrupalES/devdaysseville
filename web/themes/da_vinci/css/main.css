@@ -1093,7 +1093,7 @@ head:hover ~ body .layout-container > footer > :before {
 }
 
 .block-views-blocksponsors-block-1 {
-  border-top: 1px solid #c7c7c7;
+  border-top: 1px solid #eeeeee;
   margin-top: 4em;
 }
 
@@ -1173,6 +1173,24 @@ td {
 
 .node__links {
   line-height: 1.5;
+}
+
+.path-contact label {
+  width: 100%;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.path-contact .form-text,
+.path-contact .form-textarea,
+.path-contact .form-email {
+  background: #eeeeee;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #eeeeee;
+  width: 100%;
 }
 
 .button, .form-submit,
@@ -1288,19 +1306,19 @@ td {
 }
 
 input::-webkit-input-placeholder {
-  color: #c7c7c7;
+  color: #eeeeee;
 }
 
 input::-moz-placeholder {
-  color: #c7c7c7;
+  color: #eeeeee;
 }
 
 input:-moz-placeholder {
-  color: #c7c7c7;
+  color: #eeeeee;
 }
 
 input:-ms-input-placeholder {
-  color: #c7c7c7;
+  color: #eeeeee;
 }
 
 .simple-list, .sliding_menu #block-alternadordeidioma li, header #block-languageswitcher ul {
@@ -1385,7 +1403,7 @@ img {
 }
 
 .social-networks-list li a:hover {
-  color: #c7c7c7;
+  color: #eeeeee;
 }
 
 body {
