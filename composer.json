@@ -25,8 +25,8 @@
         "drupal/metatag": "8.1.x-dev",
         "drupal/captcha": "8.1.0-alpha1",
         "drupal/linked_field": "8.1.x-dev",
-        "drupal/token": "8.x",
-        "drupal/pathauto": "8.x"
+        "drupal/token": "~8.1",
+        "drupal/pathauto": "~8.1"
     },
     "require-dev": {
         "behat/mink": "~1.7",
