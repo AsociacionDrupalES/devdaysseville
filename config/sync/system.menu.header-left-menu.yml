@@ -1,0 +1,8 @@
+uuid: 0b5bea6b-cec5-47bb-977b-bc06a19332a6
+langcode: en
+status: true
+dependencies: {  }
+id: header-left-menu
+label: 'Header left menu'
+description: 'Header left menu'
+locked: false
