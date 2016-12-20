@@ -13,7 +13,6 @@ module:
   dddsvq_sessions: 0
   dddsvq_sponsors: 0
   dddsvq_users: 0
-  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
