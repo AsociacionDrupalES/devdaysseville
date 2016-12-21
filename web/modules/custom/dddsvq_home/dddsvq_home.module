@@ -15,5 +15,9 @@ function dddsvq_home_theme($existing, $type, $theme, $path) {
     'variables' => [],
   ];
 
+  $themes['about_home_block'] = [
+    'variables' => [],
+  ];
+
   return $themes;
 }
