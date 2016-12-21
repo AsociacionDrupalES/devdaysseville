@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7969468bf1a697f84af5241e2655b31d",
-    "content-hash": "a250558e196f02d1b911cefaa42216b2",
+    "hash": "d89cdcd823cfcc1527775b38ba215979",
+    "content-hash": "92c7a55f9c0ceeebc530e99fc93c974c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -946,6 +946,47 @@
             ],
             "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
             "time": "2016-08-29 16:56:02"
+        },
+        {
+            "name": "drupal/block_visibility_groups",
+            "version": "8.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/block_visibility_groups.git",
+                "reference": "a95c188811745165a80129e3d5b1e87a0d651ea6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/block_visibility_groups-8.x-1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/block": "8.*",
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/block_visibility_groups_admin": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/block_visibility_groups_admin"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows the site administrator to easily manage complex visibility settings that apply to any block placed in a visibility group.",
+            "homepage": "http://drupal.org/project/block_visibility_groups",
+            "keywords": [
+                "Drupal"
+            ],
+            "time": "2016-08-28 14:36:07"
         },
         {
             "name": "drupal/captcha",
