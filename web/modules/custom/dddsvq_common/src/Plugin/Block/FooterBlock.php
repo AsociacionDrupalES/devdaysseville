@@ -20,9 +20,6 @@ class FooterBlock extends BlockBase {
   public function build() {
     $build = [];
 
-    $build['footer_block'] = [
-      '#markup' => $this->t('500 anniversary of first circumnavigation of the globe'),
-    ];
     $build['footer_social'] = [
       '#theme' => 'social_networks',
       '#networks' => [
