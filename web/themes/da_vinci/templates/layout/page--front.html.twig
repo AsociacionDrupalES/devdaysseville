@@ -61,8 +61,9 @@
         {% endif %}
         <a href="#" class="menu-button-open" id="menuButtonOpen">
         </a>
+        {{ page.header_left }}
         {{ page.header }}
-
+        {{ page.header_right }}
     </header>
 
     {% if page.highlighted %}
@@ -87,33 +88,63 @@
 
 
     <main role="main">
-        <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+        <div id="fullPage">
+            <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+            <div class="section" id="slide-0">
+                {{ page.content|without(
+                    'devdaysabouthomeblock',
+                    'views_block__news_block_featured_news',
+                    'newsletterblock',
+                    'views_block__sponsors_block_1',
+                    'views_block__sponsors_gold_sponsors'
+                )}}
+                <a class=".go-to-slide-2">ANCHOR</a>
+            </div>
+            <div class="section" id="slide-news">
+                <span>{{ '500 anniversary of first circumnavigation of the globe'|t }}</span>
+                {{ page.content.devdaysabouthomeblock }}
+                {{ page.content.views_block__news_block_featured_news }}
+            </div>
+            <div class="section" id="slide-sponsors">
+                {{ page.content.views_block__sponsors_block_1 }}
+                {{ page.content.views_block__sponsors_gold_sponsors }}
+            </div>
+            <div class="section" id="slide-newsletter">
+                {{ page.content.newsletterblock }}
+            </div>
 
-        <div class="layout-content">
-            {{ page.content }}
-        </div>{# /.layout-content #}
-        {% if page.page_bottom %}
-            {{ page.page_bottom }}
-        {% endif %}
+            {% if page.sidebar_first %}
+                <aside class="layout-sidebar-first" role="complementary">
+                    {{ page.sidebar_first }}
+                </aside>
+            {% endif %}
 
-        {% if page.sidebar_first %}
-            <aside class="layout-sidebar-first" role="complementary">
-                {{ page.sidebar_first }}
-            </aside>
-        {% endif %}
-
-        {% if page.sidebar_second %}
-            <aside class="layout-sidebar-second" role="complementary">
-                {{ page.sidebar_second }}
-            </aside>
-        {% endif %}
+            {% if page.sidebar_second %}
+                <aside class="layout-sidebar-second" role="complementary">
+                    {{ page.sidebar_second }}
+                </aside>
+            {% endif %}
+        </div>
     </main>
 
     {% if page.footer %}
         <footer role="complementary">
-            {{ page.footer }}
+        {{ page.footer }}
+        {{ 'Drupal Developer Days 2017 &#174;' }}
+        </footer>
+        {% endif %}
+
+        {% if page.footer_left %}
+        <footer role="complementary">
+        {{ page.footer_left }}
         </footer>
     {% endif %}
+
+    <footer role="complementary">
+        <span>{{ 'Drupal.org issue queue tag: DevDaysSeville' }}</span>
+        <span>{{ 'Social media hashtag: #drupaldevdays' }}</span>
+        {{ page.footer_right }}
+    </footer>
 
     {% if page.footer_info %}
         <footer role="contentinfo">

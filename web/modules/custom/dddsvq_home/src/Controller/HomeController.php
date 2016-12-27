@@ -44,6 +44,9 @@ class HomeController extends ControllerBase {
   public function home() {
     return [
       '#theme' => 'home_main_content',
+      '#attached' => [
+        'library' => ['dddsvq_home/fullPage.home']
+      ]
     ];
   }
 
