@@ -1,18 +1,19 @@
-uuid: 03393063-2934-4cec-b935-38e4cc2f3043
+uuid: 556230ab-d2c8-4190-b11f-a210bb394b0c
 langcode: en
 status: true
 dependencies:
   config:
+    - block_visibility_groups.block_visibility_group.home
     - views.view.sponsors
   module:
-    - system
+    - block_visibility_groups
     - views
   theme:
     - da_vinci
-id: views_block__sponsors_block_2
+id: views_block__sponsors_gold_sponsors
 theme: da_vinci
 region: content
-weight: -8
+weight: -2
 provider: null
 plugin: 'views_block:sponsors-block_2'
 settings:
@@ -23,8 +24,8 @@ settings:
   views_label: ''
   items_per_page: none
 visibility:
-  request_path:
-    id: request_path
-    pages: /sponsors
+  condition_group:
+    id: condition_group
     negate: false
+    block_visibility_group: home
     context_mapping: {  }

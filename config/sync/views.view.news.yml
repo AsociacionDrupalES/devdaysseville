@@ -319,7 +319,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 5
+          items_per_page: 2
           offset: 0
       title: 'Featured news'
       block_description: 'Featured news'

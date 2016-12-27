@@ -1,28 +1,25 @@
-uuid: adf7219b-c598-4897-8788-f34a4d631b0d
+uuid: 0f257483-27a6-4ac9-8542-1b975dddec6f
 langcode: en
 status: true
 dependencies:
   config:
     - block_visibility_groups.block_visibility_group.home
-    - views.view.sponsors
   module:
     - block_visibility_groups
-    - views
+    - dddsvq_home
   theme:
     - da_vinci
-id: views_block__sponsors_block_1
+id: devdaysabouthomeblock
 theme: da_vinci
 region: content
-weight: -3
+weight: -6
 provider: null
-plugin: 'views_block:sponsors-block_1'
+plugin: dev_days_about_home_block
 settings:
-  id: 'views_block:sponsors-block_1'
-  label: ''
-  provider: views
-  label_display: visible
-  views_label: ''
-  items_per_page: none
+  id: dev_days_about_home_block
+  label: 'Dev days about home block'
+  provider: dddsvq_home
+  label_display: '0'
 visibility:
   condition_group:
     id: condition_group

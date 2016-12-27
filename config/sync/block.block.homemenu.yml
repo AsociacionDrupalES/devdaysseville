@@ -1,28 +1,28 @@
-uuid: 16c86972-1d8f-42a7-870c-92ce86123fbe
+uuid: 3d6c06d3-dff6-4cbb-8966-3c659856bf88
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.news
+    - block_visibility_groups.block_visibility_group.home
+    - system.menu.home-menu
   module:
     - block_visibility_groups
     - system
-    - views
   theme:
     - da_vinci
-id: views_block__news_block_featured_news
+id: homemenu
 theme: da_vinci
 region: content
-weight: -5
+weight: -7
 provider: null
-plugin: 'views_block:news-block_featured_news'
+plugin: 'system_menu_block:home-menu'
 settings:
-  id: 'views_block:news-block_featured_news'
-  label: ''
-  provider: views
+  id: 'system_menu_block:home-menu'
+  label: 'Home menu'
+  provider: system
   label_display: '0'
-  views_label: ''
-  items_per_page: none
+  level: 1
+  depth: 0
 visibility:
   request_path:
     id: request_path
@@ -32,5 +32,5 @@ visibility:
   condition_group:
     id: condition_group
     negate: false
-    block_visibility_group: ''
+    block_visibility_group: home
     context_mapping: {  }

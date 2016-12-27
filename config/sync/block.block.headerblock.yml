@@ -8,8 +8,8 @@ dependencies:
     - da_vinci
 id: headerblock
 theme: da_vinci
-region: top_bar
-weight: -7
+region: header
+weight: -8
 provider: null
 plugin: header_block
 settings:
