@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.sponsor.field_logo
     - field.field.node.sponsor.field_sponsorship_type
     - field.field.node.sponsor.field_webpage
-    - image.style.medium
     - node.type.sponsor
   module:
     - image
@@ -30,7 +29,7 @@ content:
     weight: 103
     label: above
     settings:
-      image_style: medium
+      image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image

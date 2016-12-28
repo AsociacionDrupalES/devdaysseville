@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.teaser
     - field.storage.node.field_logo
     - field.storage.node.field_webpage
     - image.style.bronze_width_150
@@ -67,12 +68,10 @@ display:
       style:
         type: html_list
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
+          relationship: none
+          view_mode: teaser
       fields:
         field_webpage:
           id: field_webpage

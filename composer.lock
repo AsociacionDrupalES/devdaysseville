@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d89cdcd823cfcc1527775b38ba215979",
-    "content-hash": "92c7a55f9c0ceeebc530e99fc93c974c",
+    "hash": "64bd3a5177ee096210f71c564e8ba2d0",
+    "content-hash": "f6e969803f1204975c482b1f96b8bd6c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -958,7 +958,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/block_visibility_groups-8.x-1.1.zip",
-                "reference": null,
+                "reference": "a95c188811745165a80129e3d5b1e87a0d651ea6",
                 "shasum": null
             },
             "require": {
@@ -1031,12 +1031,12 @@
             "version": "1.0.0-beta5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/hechoendrupal/DrupalConsole.git",
+                "url": "https://github.com/hechoendrupal/drupal-console.git",
                 "reference": "8905ee36a8339b8e237d370fea790a994350a6d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/8905ee36a8339b8e237d370fea790a994350a6d9",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console/zipball/8905ee36a8339b8e237d370fea790a994350a6d9",
                 "reference": "8905ee36a8339b8e237d370fea790a994350a6d9",
                 "shasum": ""
             },
@@ -1267,6 +1267,11 @@
                 "symfony/css-selector": "~2.8"
             },
             "type": "drupal-core",
+            "extra": {
+                "patches_applied": {
+                    "Allow svg images #1014816": "https://www.drupal.org/files/issues/1014816-69.patch"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Drupal\\Core\\": "lib/Drupal/Core",
@@ -1329,6 +1334,38 @@
             "description": "Provides a number of utility and helper APIs for Drupal developers and site builders.",
             "homepage": "https://www.drupal.org/project/ctools",
             "time": "2016-08-20 19:59:03"
+        },
+        {
+            "name": "drupal/imagemagick",
+            "version": "8.1.0-alpha5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/imagemagick",
+                "reference": "ca0d1d3498c015e2766e041c746bcc92c737c60e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/imagemagick-8.x-1.0-alpha5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/system": ">=8.1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides ImageMagick integration.",
+            "homepage": "https://www.drupal.org/project/imagemagick",
+            "time": "2016-12-08 14:19:04"
         },
         {
             "name": "drupal/linked_field",
