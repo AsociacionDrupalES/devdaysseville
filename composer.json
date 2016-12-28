@@ -72,6 +72,11 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+            "drupal/core": {
+                "Allow svg images #1014816": "https://www.drupal.org/files/issues/1014816-69.patch"
+            }
         }
     }
 }
