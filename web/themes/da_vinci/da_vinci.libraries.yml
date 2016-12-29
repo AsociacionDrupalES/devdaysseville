@@ -9,6 +9,7 @@ global-js:
   js:
     js/da-vinci.js: {}
     js/custom.js: {}
+    js/rwd_menu.js: {}
     js/vendors/groundwork.all.js: {}
   dependencies:
     - core/jquery

@@ -16,6 +16,10 @@ function dddsvq_common_theme($existing, $type, $theme, $path) {
     'render element' => 'element',
   ];
 
+  $themes['date_block'] = [
+    'render element' => 'element',
+  ];
+
   $themes['social_networks'] = [
     'variables' => ['networks' => []],
   ];

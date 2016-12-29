@@ -33,21 +33,11 @@
         return url;
       }
 
-      $('body').on('click', function(e) {
+      $('body').on('click', function (e) {
         $('body').fadeTo('fast', 1);
         $('iframe').remove();
       });
-
-      $('#menuButtonOpen').on('click', function(e) {
-        $('.sliding_menu').addClass('is-visible');
-      });
-      $('#menuButtonClose').on('click', function(e) {
-        $('.sliding_menu').removeClass('is-visible');
-      });
-
-
-
       // End your Code.
     }
-  }
+  };
 })(jQuery);
