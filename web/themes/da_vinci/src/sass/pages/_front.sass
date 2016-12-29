@@ -1,13 +1,6 @@
 .path-frontpage
   text-align: center
   .region
-    &-header
-      .site
-        &-logo,
-        &-name
-          position: absolute
-          top: -9999px
-          left: -9999px
     &-content
       #logo
         &:before
@@ -20,3 +13,14 @@
           position: absolute
           top: -9999px
           left: -9999px
+.hero
+  &__header
+    clear: both
+    margin: 38px 30px
+    border-top: 3px solid $black
+    border-right: 3px solid $black
+    border-left: 3px solid $black
+    +breakpoint($small)
+      margin: 38px 20px
+    +breakpoint($medium)
+      margin: 38px 0

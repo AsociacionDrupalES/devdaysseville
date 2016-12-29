@@ -3,9 +3,6 @@
 namespace Drupal\dddsvq_common\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
-use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\Core\Render\Renderer;
 
 /**
  * Provides a 'HeaderBlock' block.
@@ -22,11 +19,10 @@ class HeaderBlock extends BlockBase {
    */
   public function build() {
     $build = [];
-    $build['header_block'] = [
-      '#markup' => $this->t('March 21-25 2017 ¤ Seville, Spain'),
-    ];
 
+    $build = array(
+      '#theme' => 'date_block',
+    );
     return $build;
   }
-
 }
