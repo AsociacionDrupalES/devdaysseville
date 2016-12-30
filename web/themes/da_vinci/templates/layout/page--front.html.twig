@@ -80,53 +80,54 @@
     {% endif %}
 
 
-    <main role="main">
-        <div id="fullPage">
-            <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-            <div class="section hero__section" id="slide-0">
-                {{ page.header_left }}
-                {{ page.header_right }}
-                <header class="hero__header" role="banner" aria-label="{{ 'Site header'|t}}">
-                    {% if page.secondary_menu %}
-                        {{ page.secondary_menu }}
-                    {% endif %}
-                    {{ page.header }}
-                </header>
-                {{ page.content|without(
-                    'devdaysabouthomeblock',
-                    'views_block__news_block_featured_news',
-                    'newsletterblock',
-                    'views_block__sponsors_block_1',
-                    'views_block__sponsors_gold_sponsors'
-                )}}
-                <a class="go-to-slide-2">Go to slide 2</a>
-            </div>
-            <div class="section" id="slide-news">
-                <span>{{ '500 anniversary of first circumnavigation of the globe'|t }}</span>
-                {{ page.content.devdaysabouthomeblock }}
-                {{ page.content.views_block__news_block_featured_news }}
-            </div>
-            <div class="section" id="slide-sponsors">
-                {{ page.content.views_block__sponsors_block_1 }}
-                {{ page.content.views_block__sponsors_gold_sponsors }}
-            </div>
-            <div class="section" id="slide-newsletter">
-                {{ page.content.newsletterblock }}
-            </div>
 
-            {% if page.sidebar_first %}
-                <aside class="layout-sidebar-first" role="complementary">
-                    {{ page.sidebar_first }}
-                </aside>
-            {% endif %}
-
-            {% if page.sidebar_second %}
-                <aside class="layout-sidebar-second" role="complementary">
-                    {{ page.sidebar_second }}
-                </aside>
-            {% endif %}
+    <div id="fullPage">
+        <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+        <div class="section hero__section" id="slide-0">
+          <main role="main" class="hero__content">
+            {{ page.header_left }}
+            {{ page.header_right }}
+            <header class="hero__header" role="banner" aria-label="{{ 'Site header'|t}}">
+                {% if page.secondary_menu %}
+                    {{ page.secondary_menu }}
+                {% endif %}
+                {{ page.header }}
+            </header>
+            {{ page.content|without(
+                'devdaysabouthomeblock',
+                'views_block__news_block_featured_news',
+                'newsletterblock',
+                'views_block__sponsors_block_1',
+                'views_block__sponsors_gold_sponsors'
+            )}}
+          </main>
+          <a class="hero__next" id="heroNext">{{ 'Continue'|t }}</a>
         </div>
-    </main>
+        <div class="section" id="slide-news">
+            <span>{{ '500 anniversary of first circumnavigation of the globe'|t }}</span>
+            {{ page.content.devdaysabouthomeblock }}
+            {{ page.content.views_block__news_block_featured_news }}
+        </div>
+        <div class="section" id="slide-sponsors">
+            {{ page.content.views_block__sponsors_block_1 }}
+            {{ page.content.views_block__sponsors_gold_sponsors }}
+        </div>
+        <div class="section" id="slide-newsletter">
+            {{ page.content.newsletterblock }}
+        </div>
+
+        {% if page.sidebar_first %}
+            <aside class="layout-sidebar-first" role="complementary">
+                {{ page.sidebar_first }}
+            </aside>
+        {% endif %}
+
+        {% if page.sidebar_second %}
+            <aside class="layout-sidebar-second" role="complementary">
+                {{ page.sidebar_second }}
+            </aside>
+        {% endif %}
+    </div>
 
     {% if page.footer %}
         <footer role="complementary">

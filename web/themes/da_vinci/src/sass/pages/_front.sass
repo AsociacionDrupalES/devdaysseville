@@ -14,13 +14,116 @@
           top: -9999px
           left: -9999px
 .hero
+  &__section
+    position: relative
+    &:after
+      display: block
+      position: absolute
+      bottom: -50vw
+      width: 100vw
+      height: 100vw
+      content: ''
+      background: transparent url('../images/waves--s.svg')  no-repeat center center
+      background-size: 106%
+      +breakpoint($landscape)
+        transform: scaleY(0.7)
+      +breakpoint($medium)
+        height: 65vw
+        bottom: -21vw
+        background-image: url('../images/waves--m.svg')
+      +breakpoint($medium-landscape)
+        transform: scaleY(0.7)
+        bottom: -30vw
+      +breakpoint($large)
+        height: 45vw
+        background-image: url('../images/waves--xl.svg')
+      +breakpoint($large-landscape)
+        transform: scaleY(1)
+        bottom: -22vw
+    .region-content
+      height: 80vh
+      margin: 0 27px
+      border-right: 3px solid $black
+      border-left: 3px solid $black
+      +breakpoint($small)
+        margin: 0 20px
+      +breakpoint($medium)
+        height: 90vh
+        margin: 0
+  &__content
+    @extend .restricted-container
   &__header
     clear: both
-    margin: 38px 30px
+    margin: 38px 27px 0
     border-top: 3px solid $black
     border-right: 3px solid $black
     border-left: 3px solid $black
     +breakpoint($small)
-      margin: 38px 20px
+      margin: 38px 20px 0
     +breakpoint($medium)
-      margin: 38px 0
+      margin: 38px 0 0
+  &__text
+    display: inline-block
+    margin: 9vh 10px 0
+    font-size: 20px
+    letter-spacing: 0.1rem
+    +breakpoint($x-small)
+      margin-top: 12vh
+    +breakpoint($x-small-landscape)
+      margin-top: 5vh
+    +breakpoint($small)
+      margin-top: 15vh
+    +breakpoint($small-landscape)
+      margin-top: 5vh
+    +breakpoint($medium-small-landscape)
+      margin-top: 5vh
+      line-height: 26px
+    +breakpoint($medium)
+      margin-top: 15vh
+      font-size: 28px
+      span
+        display: block
+    +breakpoint($medium-landscape)
+      margin-top: 5vh
+    +breakpoint($large)
+      margin-top: 25vh
+      font-size: 36px
+    +breakpoint($large-landscape)
+      line-height: 38px
+  &__next
+    position: absolute
+    display: none
+    bottom: 10vh
+    left: 42%
+    width: 60px
+    height: 60px
+    font-size: 4px
+    background-color: $black
+    color: $black
+    z-index: 1
+    cursor: pointer
+    transition: transform 250ms ease-in-out
+    +breakpoint($medium)
+      display: block
+      left: 46%
+      bottom: 5vh
+    +breakpoint($medium-landscape)
+      bottom: 10vh
+    +breakpoint($large)
+      left: 48%
+      bottom: 2vh
+    &:hover
+      color: $black
+      transform: scale(1.1)
+      transition: transform 250ms ease-in-out
+    &::after
+      position: absolute
+      left: 18px
+      top: 13px
+      width: 25px
+      height: 25px
+      content: ''
+      border-top: 4px solid $white
+      border-right: 4px solid $white
+      transform: rotate(135deg)
+      pointer-events: none

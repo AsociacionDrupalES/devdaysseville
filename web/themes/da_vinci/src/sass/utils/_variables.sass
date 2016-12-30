@@ -30,24 +30,37 @@ $color-a-hover: $black2
 
 // Screen sizes (grid)
 
+$landscape: (orientation:landscape)
+
 // default
+// > 360px
 $x-small: 22.5em
+$x-small-landscape: (orientation landscape) (min-width 22.5em)
+// > 480px
 $small: 30em
+$small-landscape: (orientation landscape) (min-width 30em)
 
 $below_small: 0 29.99em
 
+// > 600px
+$medium-small: 37.5em
+$medium-small-landscape: (orientation landscape) (min-width 37.5em)
+
 // > 704
 $medium: 44em
+$medium-landscape: (orientation landscape) (min-width 44em)
 $medium-big: 50em
 
 $below_medium: 0 43.99em
 
 // > 1024
 $large: 64em
+$large-landscape: (orientation landscape) (min-width 64em)
 
 // > 1200
 $x-large: 75em
 $xx-large: 82em
+$xxx-large: 95em
 $monster: 118.75em
 
 // Legacy support
