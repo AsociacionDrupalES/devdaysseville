@@ -8,7 +8,7 @@
         }
       );
 
-      $('.go-to-slide-2').bind(
+      $('#heroNext').bind(
         'click',
         function () {
           $.fn.fullpage.moveSectionDown();
