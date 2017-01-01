@@ -71,6 +71,13 @@ display:
           quantity: 9
       style:
         type: html_list
+        options:
+          row_class: news-list__item
+          default_row_class: true
+          uses_fields: false
+          type: ul
+          wrapper_class: ''
+          class: 'news-list__list news-list__list--featured'
       row:
         type: 'entity:node'
         options:
@@ -310,7 +317,7 @@ display:
         filters: false
         filter_groups: false
         pager: false
-        title: false
+        title: true
         footer: false
       filter_groups:
         operator: AND
@@ -321,7 +328,6 @@ display:
         options:
           items_per_page: 2
           offset: 0
-      title: 'Featured news'
       block_description: 'Featured news'
       footer:
         area_text_custom:

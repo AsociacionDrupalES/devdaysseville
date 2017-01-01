@@ -20,7 +20,7 @@ settings:
   id: 'views_block:news-block_featured_news'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
   items_per_page: none
 visibility:

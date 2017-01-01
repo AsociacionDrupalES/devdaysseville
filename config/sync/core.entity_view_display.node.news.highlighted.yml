@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.news.body
     - field.field.node.news.field_image
     - field.field.node.news.field_meta_tags
-    - image.style.large
+    - image.style.thumbnail_crop
     - node.type.news
   module:
     - image
@@ -29,7 +29,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: large
+      image_style: thumbnail_crop
       image_link: content
     third_party_settings: {  }
     type: image

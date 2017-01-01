@@ -1,0 +1,15 @@
+uuid: bf864f97-88d9-489b-b2d5-b3ea784ca325
+langcode: en
+status: true
+dependencies: {  }
+name: thumbnail_crop
+label: 'Thumbnail crop (100x100)'
+effects:
+  1b19f0f5-5470-42a0-b3a6-d91eb997e9b7:
+    uuid: 1b19f0f5-5470-42a0-b3a6-d91eb997e9b7
+    id: image_crop
+    weight: 1
+    data:
+      width: 100
+      height: 100
+      anchor: center-center
