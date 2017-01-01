@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Template for the home featured news block.
+ */
+#}
+{%
+  set classes = [
+    'news-list__wrapper'|clean_class,
+    'news-list__wrapper--featured'|clean_class,
+  ]
+%}
+{%
+  set titleclasses = [
+    'news-list__title--featured'|clean_class,
+  ]
+%}
+<div{{ attributes|without('class').addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes.addClass(titleclasses) }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</div>
