@@ -52,7 +52,12 @@ function da_vinci_preprocess_html(&$variables) {
   }
 
 }
-
+/**
+ * Implements hook_preprocess_page()
+ */
+function da_vinci_preprocess_page(&$variables) {
+  $variables['base_path'] = base_path() . \Drupal::theme()->getActiveTheme()->getPath();
+}
 /**
  * Implements hook_preprocess_HOOK() for page templates.
  */

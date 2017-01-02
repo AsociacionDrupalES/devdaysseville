@@ -12,11 +12,7 @@
 %}
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
-  {% if content.field_image|render %}
-    <aside>
-      {{ content.field_image }}
-    </aside>
-  {% endif %}
+  {{ content.field_image }}
   <div{{ content_attributes.addClass('news__content', 'clearfix') }}>
   {{ title_prefix }}
   {% if not page %}
