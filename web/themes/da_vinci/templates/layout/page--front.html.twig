@@ -44,6 +44,7 @@
  * @see html.html.twig
  */
 #}
+
 <div class="layout-container">
     <a href="#" class="menu-trigger" id="menuButtonTrigger">
       <span></span>
@@ -84,35 +85,49 @@
     <div id="fullPage">
         <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
         <div class="section hero__section" id="slide-0">
-          <main role="main" class="hero__content">
-            {{ page.header_left }}
-            {{ page.header_right }}
-            <header class="hero__header" role="banner" aria-label="{{ 'Site header'|t}}">
-                {% if page.secondary_menu %}
-                    {{ page.secondary_menu }}
-                {% endif %}
-                {{ page.header }}
-            </header>
-            {{ page.content|without(
-                'devdaysabouthomeblock',
-                'views_block__news_block_featured_news',
-                'newsletterblock',
-                'views_block__sponsors_block_1',
-                'views_block__sponsors_gold_sponsors'
-            )}}
-          </main>
-          <a class="hero__next" id="heroNext">{{ 'Continue'|t }}</a>
+          <div class="hero__inner-wrapper">
+            <main role="main" class="hero__content">
+              {{ page.header_left }}
+              {{ page.header_right }}
+              <header class="hero__header" role="banner" aria-label="{{ 'Site header'|t}}">
+                  {% if page.secondary_menu %}
+                      {{ page.secondary_menu }}
+                  {% endif %}
+                  {{ page.header }}
+              </header>
+              {{ page.content|without(
+                  'devdaysabouthomeblock',
+                  'views_block__news_block_featured_news',
+                  'newsletterblock',
+                  'views_block__sponsors_block_1',
+                  'views_block__sponsors_gold_sponsors'
+              )}}
+            </main>
+            <a class="hero__next" id="heroNext">{{ 'Continue'|t }}</a>
+          </div>
         </div>
-        <div class="section info__section" id="slide-news">
-            <span class="info__intro">{{ '500 anniversary of first circumnavigation of the globe'|t }}</span>
-            {{ page.content.devdaysabouthomeblock }}
-            {{ page.content.views_block__news_block_featured_news }}
+        <div class="section fp-auto-height fp-auto-height-responsive info__section" id="slide-news">
+            <div class="info__section-content">
+              <div class="info__inner-wrapper">
+                <div class="info__intro-wrapper">
+                  <div class="info__anchor">
+                    <img src="{{ base_path }}/images/anchor.svg" alt="Anchor" width="48" />
+                  </div>
+                  <span class="info__intro">{{ '500 anniversary of first circumnavigation of the globe'|t }}</span>
+                </div>
+                {{ page.content.devdaysabouthomeblock }} 
+                {{ page.content.views_block__news_block_featured_news }}
+              </div>
+            </div>
+            <div class="info__map">
+              <img src="{{ base_path }}/images/bg-map.svg" alt="Map" />
+            </div>
         </div>
-        <div class="section" id="slide-sponsors">
+        <div class="section fp-auto-height sponsors-list" id="slide-sponsors">
             {{ page.content.views_block__sponsors_block_1 }}
             {{ page.content.views_block__sponsors_gold_sponsors }}
         </div>
-        <div class="section" id="slide-newsletter">
+        <div class="section fp-auto-height newsletter-block" id="slide-newsletter">
             {{ page.content.newsletterblock }}
         </div>
 

@@ -11,7 +11,8 @@ fullPage.js:
   js:
     /libraries/fullPage.js/jquery.fullPage.js: {}
   css:
-    /libraries/fullPage.js/jquery.fullPage.css: {}
+    theme:
+      /libraries/fullPage.js/jquery.fullPage.css: {}
   dependencies:
     - core/jquery
     - core/drupal

@@ -16,6 +16,8 @@
 .hero
   &__section
     position: relative
+  &__inner-wrapper
+    position: relative
     &:after
       display: block
       position: absolute
@@ -92,8 +94,8 @@
       line-height: 38px
   &__next
     position: absolute
-    display: none
-    bottom: 10vh
+    display: block
+    bottom: 12vh
     left: 42%
     width: 60px
     height: 60px
@@ -104,14 +106,13 @@
     cursor: pointer
     transition: transform 250ms ease-in-out
     +breakpoint($medium)
-      display: block
       left: 46%
-      bottom: 5vh
+      bottom: 10vh
     +breakpoint($medium-landscape)
       bottom: 10vh
     +breakpoint($large)
       left: 48%
-      bottom: 2vh
+      bottom: 15vh
     &:hover
       color: $black
       transform: scale(1.1)
@@ -127,3 +128,96 @@
       border-right: 4px solid $white
       transform: rotate(135deg)
       pointer-events: none
+
+.info
+  &__section
+    z-index: -1
+    color: $white
+    &-content
+      background-color: $black
+  &__inner-wrapper
+    position: relative
+    @extend .restricted-container
+  &__map
+      display: block
+      width: 100vw
+      margin-top: -2px
+      overflow: hidden
+      img
+        width: 170%
+        max-width: none
+        margin-left: -5%
+        transform: rotate(180deg)
+        +breakpoint($medium)
+          width: 101%
+          margin-left: -0.5%
+  &__intro
+    padding-top: 52vw
+    display: inline-block
+    margin: 2.5rem 15px 3rem
+    letter-spacing: 0.1rem
+    font-family: $title
+    +breakpoint($medium)
+      padding-top: 23vw
+      margin-bottom: 8rem
+    +breakpoint($large)
+      font-size: 20px
+    +breakpoint($x-large)
+      padding-top: 20vw
+    &-wrapper
+      width: 100%
+      position: relative
+  &__anchor
+    position: absolute
+    top: -20px
+    left: 45%
+    transition: 1s ease-in-out
+    +breakpoint($x-small)
+      top: 0px
+    +breakpoint($medium)
+      left: 5%
+    +breakpoint($large)
+      left: 13%
+    &::before
+      content: ''
+      position: absolute
+      display: block
+      top: -100px
+      left: 45%
+      width: 2px
+      height: 100px
+      background-color: $white
+      +breakpoint($x-small)
+        top: -150px
+        height: 150px
+      +breakpoint($small)
+          top: -200px
+          height: 200px
+      +breakpoint($xx-large)
+          top: -300px
+          height: 300px
+
+    .info__section.active &
+      top: 100px
+      transition: 1s ease-in-out
+      transition-delay: 1s
+      +breakpoint($x-small)
+        top: 150px
+      +breakpoint($small)
+        top: 200px
+      +breakpoint($large)
+        top: 300px
+      +breakpoint($xx-large)
+        top: 400px
+  &__quick-info
+    margin: 0 15px
+    +breakpoint($medium)
+      display: inline-block
+      width: 39%
+      margin: 0 5% 0 0
+      vertical-align: top
+    +breakpoint($medium-big)
+      width: 30%
+      margin: 0 14% 0 0
+    .quick-info__title
+      color: $white
