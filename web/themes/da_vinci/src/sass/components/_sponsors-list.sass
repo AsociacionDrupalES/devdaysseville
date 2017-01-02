@@ -1,0 +1,21 @@
+.sponsors-list
+  &__wrapper
+    @extend .restricted-container
+    border: 1px solid $black
+    background: $white
+  &__title
+    text-transform: uppercase
+    &--gold
+      font-size: 24px
+  ul
+    +hide-bullets
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    align-items: center
+    align-content: center
+    li
+      display: inline-block
+      margin: 0 1em
+  .views-field-field-logo
+    max-width: 200px

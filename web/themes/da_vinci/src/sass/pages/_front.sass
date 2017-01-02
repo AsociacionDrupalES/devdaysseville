@@ -139,18 +139,19 @@
     position: relative
     @extend .restricted-container
   &__map
-      display: block
-      width: 100vw
-      margin-top: -2px
-      overflow: hidden
-      img
-        width: 170%
-        max-width: none
-        margin-left: -5%
-        transform: rotate(180deg)
-        +breakpoint($medium)
-          width: 101%
-          margin-left: -0.5%
+    position: absolute
+    display: block
+    width: 100vw
+    margin-top: -2px
+    overflow: hidden
+    img
+      width: 170%
+      max-width: none
+      margin-left: -5%
+      transform: rotate(180deg)
+      +breakpoint($medium)
+        width: 101%
+        margin-left: -0.5%
   &__intro
     padding-top: 52vw
     display: inline-block
@@ -221,3 +222,23 @@
       margin: 0 14% 0 0
     .quick-info__title
       color: $white
+
+.sponsors
+  &__home-section
+    position: relative
+    background: transparent url('../images/bg-sea-map.svg') no-repeat left top
+    background-size: auto 102%
+    padding-top: 5rem
+    +breakpoint($medium)
+      padding-top: 10rem
+    +breakpoint($medium)
+      padding-top: 15rem
+  &-list__wrapper::after
+      content: ''
+      position: absolute
+      display: block
+      bottom: 10px
+      right: 10px
+      width: 100px
+      height: 100px
+      background: transparent url('../images/compass.svg') no-repeat right top
