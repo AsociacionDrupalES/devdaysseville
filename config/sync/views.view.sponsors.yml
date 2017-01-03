@@ -67,6 +67,13 @@ display:
           offset: 0
       style:
         type: html_list
+        options:
+          row_class: sponsors-list__item
+          default_row_class: false
+          uses_fields: false
+          type: ul
+          wrapper_class: ''
+          class: sponsors-list__list
       row:
         type: 'entity:node'
         options:

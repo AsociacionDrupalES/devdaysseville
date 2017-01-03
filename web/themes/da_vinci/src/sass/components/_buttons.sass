@@ -5,7 +5,10 @@
   display: inline-block
   cursor: pointer
   color: $white
-  +border-radius(3px)
+  font-family: $title
+  text-transform: uppercase
+  letter-spacing: 0.1rem
+  +border-radius(2px)
   padding: 0 18px
   &:hover
     background-color: $black
@@ -16,10 +19,11 @@
 .button-ghost
   padding: 5px 10px
   border: 1px solid $black
+  +border-radius(2px)
   color: $black
+  font-family: $title
   font-size: 14px
   text-transform: uppercase
-  font-family: $title
   letter-spacing: 0.1rem
   transition: .25s ease-in-out
   &:hover
