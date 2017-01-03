@@ -7,3 +7,10 @@ div#mc_embed_signup
     @extend .form-input
   .button
     @extend .button
+    max-width: 90%
+    +breakpoint($medium)
+      max-width: none
+.block-newsletter-block
+  margin-top: 4rem
+  +breakpoint($xx-large)
+    margin-top: 6rem

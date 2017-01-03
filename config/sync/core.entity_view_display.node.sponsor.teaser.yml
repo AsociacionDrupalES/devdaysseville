@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.sponsor.field_logo
     - field.field.node.sponsor.field_sponsorship_type
     - field.field.node.sponsor.field_webpage
+    - image.style.platinum_width_300
     - node.type.sponsor
   module:
     - image
@@ -23,14 +24,15 @@ content:
     weight: 2
     label: hidden
     settings:
-      image_style: ''
+      image_style: platinum_width_300
       image_link: ''
     third_party_settings:
       linked_field:
         linked: '1'
         type: custom
         destination: '[node:field_webpage:uri]'
-        advanced: {  }
+        advanced:
+          title: '[node:title]'
 hidden:
   body: true
   field_sponsorship_type: true
