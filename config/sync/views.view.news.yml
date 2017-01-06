@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.highlighted
+    - core.entity_view_mode.node.teaser
     - node.type.news
   module:
     - node
@@ -319,6 +320,8 @@ display:
         pager: false
         title: true
         footer: false
+        style: false
+        row: false
       filter_groups:
         operator: AND
         groups:
@@ -342,6 +345,20 @@ display:
           content: '<a href="/news">More news</a>'
           plugin_id: text_custom
       block_hide_empty: true
+      style:
+        type: html_list
+        options:
+          row_class: news-list__item
+          default_row_class: true
+          uses_fields: false
+          type: ul
+          wrapper_class: ''
+          class: 'news-list__list news-list__list--featured'
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: highlighted
     cache_metadata:
       max-age: -1
       contexts:
@@ -359,6 +376,23 @@ display:
       display_extenders: {  }
       path: news
       display_description: ''
+      style:
+        type: html_list
+        options:
+          row_class: news-list__item
+          default_row_class: true
+          uses_fields: false
+          type: ul
+          wrapper_class: ''
+          class: 'news-list__list news-list__list--featured'
+      defaults:
+        style: false
+        row: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
     cache_metadata:
       max-age: -1
       contexts:
