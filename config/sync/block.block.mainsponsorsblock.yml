@@ -1,0 +1,28 @@
+uuid: ee9752bf-57aa-421a-9881-603915a9dc5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.all_public_pages
+  module:
+    - block_visibility_groups
+    - dddsvq_sponsors
+  theme:
+    - da_vinci
+id: mainsponsorsblock
+theme: da_vinci
+region: content
+weight: -7
+provider: null
+plugin: main_sponsors_block
+settings:
+  id: main_sponsors_block
+  label: 'Main sponsors block'
+  provider: dddsvq_sponsors
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: all_public_pages
+    context_mapping: {  }
