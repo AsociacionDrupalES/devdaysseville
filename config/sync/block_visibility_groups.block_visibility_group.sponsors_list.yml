@@ -1,0 +1,17 @@
+uuid: 5cd01c14-b2da-4f5f-92cf-96ce431c9063
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: sponsors_list
+label: 'Sponsors list'
+logic: and
+conditions:
+  74a85de0-b95d-463f-97f3-bf8086c7a1ee:
+    id: request_path
+    pages: /sponsors
+    negate: false
+    context_mapping: {  }
+    uuid: 74a85de0-b95d-463f-97f3-bf8086c7a1ee
+allow_other_conditions: false
