@@ -1328,8 +1328,15 @@ footer {
   background: #212121;
   text-align: center;
   color: white;
-  font-size: 1.6em;
+  font-size: 1.3rem;
   font-family: "Marcellus", serif;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 44em) {
+  footer {
+    font-size: 1.2rem;
+  }
 }
 
 footer a {
@@ -1338,6 +1345,11 @@ footer a {
 
 footer a:hover {
   color: inherit;
+}
+
+footer .region {
+  width: 30%;
+  float: left;
 }
 
 table {

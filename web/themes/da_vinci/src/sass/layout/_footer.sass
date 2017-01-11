@@ -3,9 +3,16 @@ footer
   background: $black2
   text-align: center
   color: $white
-  font-size: 1.6em
+  font-size: 1.3rem
   font-family: $title
+  margin-top: 0.5rem
+  +breakpoint($medium)
+    font-size: 1.2rem
+    //margin-left: 15px
   a
     color: $white
     &:hover
       color: inherit
+  .region
+    width: 30%
+    float: left
