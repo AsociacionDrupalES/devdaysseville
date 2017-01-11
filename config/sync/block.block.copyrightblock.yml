@@ -1,0 +1,26 @@
+uuid: dea3d10a-cb3d-478c-95a6-4f48172ca555
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - dddsvq_common
+  theme:
+    - da_vinci
+id: copyrightblock
+theme: da_vinci
+region: footer
+weight: 0
+provider: null
+plugin: copy_right_block
+settings:
+  id: copy_right_block
+  label: 'Copy right block'
+  provider: dddsvq_common
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

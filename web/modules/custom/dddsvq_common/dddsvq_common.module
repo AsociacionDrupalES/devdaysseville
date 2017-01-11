@@ -20,6 +20,14 @@ function dddsvq_common_theme($existing, $type, $theme, $path) {
     'render element' => 'element',
   ];
 
+  $themes['copyright_block'] = [
+    'render element' => 'element',
+  ];
+
+  $themes['keywords_block'] = [
+    'render element' => 'element',
+  ];
+
   $themes['social_networks'] = [
     'variables' => ['networks' => []],
   ];

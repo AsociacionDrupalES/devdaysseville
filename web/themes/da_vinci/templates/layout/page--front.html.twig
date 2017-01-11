@@ -148,23 +148,10 @@
         {% endif %}
     </div>
 
-    {% if page.footer %}
-        <footer role="complementary">
-        {{ page.footer }}
-        {{ 'Drupal Developer Days 2017 &#174;' }}
-        </footer>
-        {% endif %}
-
-        {% if page.footer_left %}
-        <footer role="complementary">
-        {{ page.footer_left }}
-        </footer>
-    {% endif %}
-
     <footer role="complementary">
-        <span>{{ 'Drupal.org issue queue tag: DevDaysSeville' }}</span>
-        <span>{{ 'Social media hashtag: #drupaldevdays' }}</span>
-        {{ page.footer_right }}
+      {{ page.footer_left }}
+      {{ page.footer_right }}
+      {{ page.footer }}
     </footer>
 
     {% if page.footer_info %}

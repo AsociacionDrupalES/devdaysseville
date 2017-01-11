@@ -1,0 +1,26 @@
+uuid: 0399f2af-ebb5-4f9f-a8f5-8d31f15cec0d
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - dddsvq_common
+  theme:
+    - da_vinci
+id: keywordsfooterblock
+theme: da_vinci
+region: footer_right
+weight: 0
+provider: null
+plugin: keywords_footer_block
+settings:
+  id: keywords_footer_block
+  label: 'Keywords footer block'
+  provider: dddsvq_common
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
