@@ -1,5 +1,7 @@
 .path-frontpage
   text-align: center
+  .layout-container
+    background: transparent url('../images/bg-sea-map.svg') no-repeat center bottom
   .region
     &-content
       #logo
@@ -27,6 +29,7 @@
       content: ''
       background: transparent url('../images/waves--s.svg')  no-repeat center center
       background-size: 106%
+      max-width: 100%
       +breakpoint($landscape)
         transform: scaleY(0.7)
       +breakpoint($medium)
@@ -238,7 +241,6 @@
 
 .sponsors__home-section
     position: relative
-    background: transparent url('../images/bg-sea-map.svg') no-repeat center top
     background-size: auto 102%
     padding-top: 5rem
     +breakpoint($medium)
@@ -250,8 +252,9 @@
 
 .compass
   display: block
-  bottom: 10px
-  right: 10px
-  width: 100%
+  top: 80px
+  left: 10px
+  width: 100px
   height: 100px
-  background: transparent url('../images/compass.svg') no-repeat right top
+  background: transparent url(../images/compass.svg) no-repeat right top
+  position: absolute

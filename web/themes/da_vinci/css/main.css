@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Marcellus|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Marcellus|Open+Sans:300,400");
 *,
 :before,
 :after {
@@ -1202,15 +1202,18 @@ head:hover ~ body .info__inner-wrapper:before {
 
 @media (min-width: 75em) {
   .restricted-container, .layout-container > .region:not(.region-top-bar), .layout-container > header > *, .layout-container > main, .layout-container > footer > *, .hero__content, .info__inner-wrapper {
-    max-width: 1170px;
+    max-width: 1300px;
   }
 }
 
 .layout-container {
   background-color: white;
   min-height: 100vh;
+  max-width: 1300px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .layout-container > .region:not(.region-top-bar) {
@@ -1241,6 +1244,19 @@ head:hover ~ body .info__inner-wrapper:before {
   clear: both;
   content: "";
   display: table;
+}
+
+.content__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+@media (min-width: 44em) {
+  .content__wrapper {
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+  }
 }
 
 @media (min-width: 44em) {
@@ -1324,18 +1340,35 @@ head:hover ~ body .info__inner-wrapper:before {
 }
 
 footer {
-  padding: 1em 0 0;
-  background: #212121;
+  background: url(/themes/da_vinci/images/bg-map.svg) no-repeat top;
+  background-size: cover;
+  min-height: 400px;
   text-align: center;
   color: white;
   font-size: 1.3rem;
-  font-family: "Marcellus", serif;
-  margin-top: 0.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
 }
 
 @media (min-width: 44em) {
   footer {
     font-size: 1.2rem;
+    display: flex;
+  }
+}
+
+footer .footer__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 100px 0 0;
+}
+
+@media (min-width: 44em) {
+  footer .footer__wrapper {
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    display: flex;
+    flex-grow: 1;
   }
 }
 
@@ -1348,8 +1381,39 @@ footer a:hover {
 }
 
 footer .region {
-  width: 30%;
-  float: left;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 44em) {
+  footer .region {
+    width: 33%;
+    flex-basis: 33%;
+    align-self: flex-end;
+  }
+  footer .region.region-footer-right {
+    text-align: right;
+  }
+  footer .region.region-footer-left {
+    text-align: left;
+  }
+}
+
+footer .region.region-footer-left {
+  margin-top: 100px;
+}
+
+footer .region ul {
+  margin-left: 0;
+}
+
+footer .region ul li {
+  text-align: center;
+}
+
+.footer__push {
+  height: 50px;
+  background-color: black;
 }
 
 table {
@@ -1389,6 +1453,10 @@ td {
   text-align: center;
 }
 
+.path-frontpage .layout-container {
+  background: transparent url("../images/bg-sea-map.svg") no-repeat center bottom;
+}
+
 .path-frontpage .region-content #logo:before {
   content: url("../images/logo.svg");
   background-repeat: no-repeat;
@@ -1420,6 +1488,7 @@ td {
   content: '';
   background: transparent url("../images/waves--s.svg") no-repeat center center;
   background-size: 106%;
+  max-width: 100%;
 }
 
 @media (orientation: landscape) {
@@ -1824,7 +1893,6 @@ td {
 
 .sponsors__home-section {
   position: relative;
-  background: transparent url("../images/bg-sea-map.svg") no-repeat center top;
   background-size: auto 102%;
   padding-top: 5rem;
 }
@@ -1849,11 +1917,12 @@ td {
 
 .compass {
   display: block;
-  bottom: 10px;
-  right: 10px;
-  width: 100%;
+  top: 80px;
+  left: 10px;
+  width: 100px;
   height: 100px;
-  background: transparent url("../images/compass.svg") no-repeat right top;
+  background: transparent url(../images/compass.svg) no-repeat right top;
+  position: absolute;
 }
 
 .node__links {

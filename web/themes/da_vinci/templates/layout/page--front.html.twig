@@ -125,14 +125,16 @@
         </div>
         <div class="section fp-auto-height sponsors__home-section" id="slide-sponsors">
           <div class="measure"></div>
-          <div class="sponsors-list__wrapper">
-            <div class="sponsors-list__top-frame"></div>
-            {{ page.content.views_block__sponsors_block_1 }}
-            {{ page.content.views_block__sponsors_gold_sponsors }}
-            <div class="sponsors-list__bottom-frame"></div>
+          <div class="content__wrapper">
+            <div class="sponsors-list__wrapper">
+              <div class="sponsors-list__top-frame"></div>
+              {{ page.content.views_block__sponsors_block_1 }}
+              {{ page.content.views_block__sponsors_gold_sponsors }}
+              <div class="sponsors-list__bottom-frame"></div>
+            </div>
+            {{ page.content.newsletterblock }}
+            <div class="compass"></div>
           </div>
-          {{ page.content.newsletterblock }}
-          <div class="compass"></div>
         </div>
 
         {% if page.sidebar_first %}
@@ -149,15 +151,19 @@
     </div>
 
     <footer role="complementary">
-      {{ page.footer_left }}
-      {{ page.footer }}
-      {{ page.footer_right }}
+      <div class="footer__wrapper">
+        {{ page.footer_left }}
+        {{ page.footer }}
+        {{ page.footer_right }}
+      </div>
     </footer>
+    <div class="footer__push"></div>
 
     {% if page.footer_info %}
         <footer role="contentinfo">
             {{ page.footer_info }}
         </footer>
     {% endif %}
+
 
 </div>{# /.layout-container #}
