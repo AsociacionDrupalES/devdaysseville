@@ -6,6 +6,7 @@ body
   color: $color-body
   background-color: $white
 
+
 // Add border to all region when "show region mode" is activated (See theme aparience to know more).
 // -----------------------------------------------------------------------------------------------//
 .border-region
@@ -20,12 +21,15 @@ body
   +container(91.407%)
   +padding-container(100%, 2%)
   +breakpoint($x-large)
-    max-width: 1170px
+    max-width: 1300px
 .layout-container
   background-color: $white
   min-height: 100vh
+  max-width: 1300px
+  margin: 0 auto
   display: flex
   flex-direction: column
+  overflow: hidden
   > .region:not(.region-top-bar)
     @extend .restricted-container
     width: 100%
@@ -54,11 +58,22 @@ body
     z-index: 2
     overflow: hidden
 
+
   // Footer
   > footer
     > *
       @extend .restricted-container
+    .region-footer
       //@extend .restricted-container
+
+
+.content__wrapper
+  max-width: 1170px
+  margin: 0 auto
+  height: 100%
+  +breakpoint($medium)
+    border-left: 5px solid $black
+    border-right: 5px solid $black
 
 
 // Dynamic main content

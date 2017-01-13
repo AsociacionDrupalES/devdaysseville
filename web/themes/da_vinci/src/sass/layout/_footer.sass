@@ -1,18 +1,52 @@
 footer
-  padding: 1em 0 0
-  background: $black2
+  background: url(/themes/da_vinci/images/bg-map.svg) no-repeat top
+  background-size: cover
+  min-height: 400px
+  //background: $black2
   text-align: center
   color: $white
   font-size: 1.3rem
-  font-family: $title
-  margin-top: 0.5rem
+  font-family: $default
+  font-weight: lighter
+
   +breakpoint($medium)
     font-size: 1.2rem
+    display: flex
     //margin-left: 15px
+
+  .footer__wrapper
+    max-width: 1170px
+    margin: 0 auto
+    padding: 100px 0 0
+    +breakpoint($medium)
+      border-right: 5px solid $black
+      border-left: 5px solid $black
+      display: flex
+      flex-grow: 1
+
   a
     color: $white
     &:hover
       color: inherit
+
   .region
-    width: 30%
-    float: left
+    text-align: center
+    margin-bottom: 20px
+    +breakpoint($medium)
+      width: 33%
+      flex-basis: 33%
+      align-self: flex-end
+      &.region-footer-right
+        text-align: right
+      &.region-footer-left
+        text-align: left
+    &.region-footer-left
+      margin-top: 100px
+    ul
+      margin-left: 0
+      li
+        text-align: center
+
+.footer__push
+  height: 50px
+  background-color: $black

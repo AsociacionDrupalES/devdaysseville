@@ -45,17 +45,21 @@
  */
 #}
 <div class="layout-container">
-
+  <a href="#" class="menu-trigger" id="menuButtonTrigger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
   <nav role="navigation" class="sliding_menu">
-    {% if page.sliding_menu %}
-      {{ page.sliding_menu }}
-    {% endif %}
+      {% if page.sliding_menu %}
+          {{ page.sliding_menu }}
+      {% endif %}
   </nav role="navigation">
   {% if page.top_bar %}
     {{ page.top_bar }}
   {% endif %}
 
-  <header role="banner" aria-label="{{ 'Site header'|t}}">
+  <header class="hero__header" role="banner" aria-label="{{ 'Site header'|t}}">
     {% if page.secondary_menu %}
       {{ page.secondary_menu }}
     {% endif %}
