@@ -1,0 +1,10 @@
+uuid: 3adf5b68-ebfd-4ad1-aa54-193e3d2c41cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.platinum_sponsor
+label: 'Platinum sponsor'
+targetEntityType: node
+cache: true

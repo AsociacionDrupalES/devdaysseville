@@ -1,0 +1,10 @@
+uuid: 52329320-474d-4f1b-81c5-80d05239a752
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.gold_sponsor
+label: 'Gold sponsor'
+targetEntityType: node
+cache: true
