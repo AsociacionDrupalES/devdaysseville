@@ -1,0 +1,18 @@
+sponsors.carousel:
+  js:
+    js/sponsors_carousel.js: {}
+  dependencies:
+    - dddsvq_sponsors/slick.js
+    - core/jquery
+    - core/drupal
+
+slick.js:
+  version: 1.5
+  js:
+    /libraries/slick.js/slick.min.js: {}
+  css:
+    theme:
+      /libraries/slick.js/slick.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
