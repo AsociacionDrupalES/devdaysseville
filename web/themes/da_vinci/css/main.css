@@ -474,6 +474,10 @@ strong {
   margin: 3em 0;
 }
 
+.page-title {
+  text-align: center;
+}
+
 head:before {
   position: absolute;
   right: 0;
@@ -1290,6 +1294,13 @@ head:hover ~ body .info__inner-wrapper:before {
 .content__wrapper main {
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 10px;
+}
+
+@media (min-width: 44em) {
+  .content__wrapper main {
+    padding: 0;
+  }
 }
 
 @media (min-width: 44em) {
@@ -1454,6 +1465,13 @@ footer .region ul li {
 .region-breadcrumb {
   max-width: 900px;
   margin: 20px auto 0;
+  padding-left: 10px;
+}
+
+@media (min-width: 44em) {
+  .region-breadcrumb {
+    padding-left: 0;
+  }
 }
 
 table {
@@ -2427,6 +2445,11 @@ img {
 
 .social-networks-list li a:hover {
   color: #eeeeee;
+}
+
+.sponsors-list {
+  padding: 20px;
+  text-align: center;
 }
 
 .sponsors-list__wrapper {
