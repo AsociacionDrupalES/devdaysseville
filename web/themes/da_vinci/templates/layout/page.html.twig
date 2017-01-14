@@ -59,66 +59,72 @@
     {{ page.top_bar }}
   {% endif %}
 
-  <header class="hero__header" role="banner" aria-label="{{ 'Site header'|t}}">
-    {% if page.secondary_menu %}
-      {{ page.secondary_menu }}
-    {% endif %}
-    <a href="#" class="menu-button-open" id="menuButtonOpen">
-    </a>
+  <div class="content__wrapper">
       {{ page.header_left }}
-      {{ page.header }}
       {{ page.header_right }}
-  </header>
-
-  {% if page.highlighted %}
-    {{ page.highlighted }}
-  {% endif %}
-
-  {% if page.primary_menu %}
-    {{ page.primary_menu }}
-  {% endif %}
-
-  {% if page.breadcrumb %}
-    {{ page.breadcrumb }}
-  {% endif %}
-
-  {% if page.featured_top %}
-    {{ page.featured_top }}
-  {% endif %}
-
-  {% if page.help %}
-    {{ page.help }}
-  {% endif %}
+    <header class="page__header" role="banner" aria-label="{{ 'Site header'|t}}">
+        {% if page.secondary_menu %}
+            {{ page.secondary_menu }}
+        {% endif %}
+        {{ page.header }}
+      <a href="#" class="menu-button-open" id="menuButtonOpen">
+      </a>
+    </header>
 
 
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
-    {% if page.page_bottom %}
-      {{ page.page_bottom }}
+    {% if page.highlighted %}
+        {{ page.highlighted }}
     {% endif %}
 
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
+    {% if page.primary_menu %}
+        {{ page.primary_menu }}
     {% endif %}
 
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
+    {% if page.breadcrumb %}
+        {{ page.breadcrumb }}
     {% endif %}
-  </main>
+
+    {% if page.featured_top %}
+        {{ page.featured_top }}
+    {% endif %}
+
+    {% if page.help %}
+        {{ page.help }}
+    {% endif %}
+
+    <main role="main">
+      <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+      <div class="layout-content">
+          {{ page.content }}
+      </div>{# /.layout-content #}
+        {% if page.page_bottom %}
+            {{ page.page_bottom }}
+        {% endif %}
+
+        {% if page.sidebar_first %}
+          <aside class="layout-sidebar-first" role="complementary">
+              {{ page.sidebar_first }}
+          </aside>
+        {% endif %}
+
+        {% if page.sidebar_second %}
+          <aside class="layout-sidebar-second" role="complementary">
+              {{ page.sidebar_second }}
+          </aside>
+        {% endif %}
+    </main>
+
+  </div>
 
   <footer role="complementary">
-    {{ page.footer_left }}
-    {{ page.footer }}
-    {{ page.footer_right }}
+    <div class="footer__wrapper">
+        {{ page.footer_left }}
+        {{ page.footer }}
+        {{ page.footer_right }}
+    </div>
   </footer>
+  <div class="footer__push"></div>
 
   {% if page.footer_info %}
     <footer role="contentinfo">

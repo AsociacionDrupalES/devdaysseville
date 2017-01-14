@@ -87,21 +87,24 @@
         <div class="section hero__section" id="slide-0">
           <div class="hero__inner-wrapper">
             <main role="main" class="hero__content">
-              {{ page.header_left }}
-              {{ page.header_right }}
-              <header class="hero__header" role="banner" aria-label="{{ 'Site header'|t}}">
-                  {% if page.secondary_menu %}
-                      {{ page.secondary_menu }}
-                  {% endif %}
-                  {{ page.header }}
-              </header>
-              {{ page.content|without(
+              <div class="content__wrapper">
+                  {{ page.header_left }}
+                  {{ page.header_right }}
+                  <header class="hero__header" role="banner" aria-label="{{ 'Site header'|t}}">
+                      {% if page.secondary_menu %}
+                          {{ page.secondary_menu }}
+                      {% endif %}
+                      {{ page.header }}
+                  </header>
+                  {{ page.content|without(
                   'devdaysabouthomeblock',
                   'views_block__news_block_featured_news',
                   'newsletterblock',
                   'views_block__sponsors_block_1',
                   'views_block__sponsors_gold_sponsors'
-              )}}
+                  )}}
+              </div>
+
             </main>
             <a class="hero__next" id="heroNext">{{ 'Continue'|t }}</a>
           </div>

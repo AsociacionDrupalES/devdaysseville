@@ -82,6 +82,7 @@
   display: none
   +breakpoint($medium)
     display: block
+    margin-top: -60px
 .region-header-left
   float: left
 .region-header-right
@@ -96,3 +97,14 @@
       +span(isolate 8 at 4 of 12)
     #block-languageswitcher
       +span(1 of 12 last)
+
+
+.page__header
+  clear: both
+  margin: 0 27px 0
+  border-top: 3px solid $black
+  text-align: center
+  +breakpoint($small)
+    margin: 0 20px 0
+  +breakpoint($medium)
+    margin: 0
