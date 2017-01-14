@@ -620,6 +620,7 @@ head:before {
   .region-header-left,
   .region-header-right {
     display: block;
+    margin-top: -60px;
   }
 }
 
@@ -649,6 +650,25 @@ head:before {
     float: left;
     margin-left: 93.22034%;
     margin-right: -100%;
+  }
+}
+
+.page__header {
+  clear: both;
+  margin: 0 27px 0;
+  border-top: 3px solid black;
+  text-align: center;
+}
+
+@media (min-width: 30em) {
+  .page__header {
+    margin: 0 20px 0;
+  }
+}
+
+@media (min-width: 44em) {
+  .page__header {
+    margin: 0;
   }
 }
 
@@ -1210,10 +1230,16 @@ head:hover ~ body .info__inner-wrapper:before {
   background-color: white;
   min-height: 100vh;
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 30px auto 0;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+
+.page-node-type-basic-page .layout-container {
+  background: transparent url("../images/bg-sea-map.svg") no-repeat;
+  background-size: 110%;
+  background-position: top 60px left -50px;
 }
 
 .layout-container > .region:not(.region-top-bar) {
@@ -1248,15 +1274,22 @@ head:hover ~ body .info__inner-wrapper:before {
 
 .content__wrapper {
   max-width: 1170px;
-  margin: 0 auto;
+  margin: 40px auto 0;
   height: 100%;
+  width: 100%;
+  background-color: white;
 }
 
 @media (min-width: 44em) {
   .content__wrapper {
-    border-left: 5px solid black;
-    border-right: 5px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
   }
+}
+
+.content__wrapper main {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 @media (min-width: 44em) {
@@ -1342,7 +1375,7 @@ head:hover ~ body .info__inner-wrapper:before {
 footer {
   background: url(/themes/da_vinci/images/bg-map.svg) no-repeat top;
   background-size: cover;
-  min-height: 400px;
+  min-height: 500px;
   text-align: center;
   color: white;
   font-size: 1.3rem;
@@ -1365,8 +1398,8 @@ footer .footer__wrapper {
 
 @media (min-width: 44em) {
   footer .footer__wrapper {
-    border-right: 5px solid black;
-    border-left: 5px solid black;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
     display: flex;
     flex-grow: 1;
   }
@@ -1401,10 +1434,12 @@ footer .region {
 
 footer .region.region-footer-left {
   margin-top: 100px;
+  margin-bottom: 0;
 }
 
 footer .region ul {
   margin-left: 0;
+  margin-bottom: 0;
 }
 
 footer .region ul li {
@@ -1414,6 +1449,11 @@ footer .region ul li {
 .footer__push {
   height: 50px;
   background-color: black;
+}
+
+.region-breadcrumb {
+  max-width: 900px;
+  margin: 20px auto 0;
 }
 
 table {
@@ -1455,6 +1495,10 @@ td {
 
 .path-frontpage .layout-container {
   background: transparent url("../images/bg-sea-map.svg") no-repeat center bottom;
+}
+
+.path-frontpage .content__wrapper {
+  background-color: transparent;
 }
 
 .path-frontpage .region-content #logo:before {
@@ -1529,8 +1573,6 @@ td {
 .hero__inner-wrapper .region-content {
   height: 80vh;
   margin: 0 27px;
-  border-right: 3px solid black;
-  border-left: 3px solid black;
 }
 
 @media (min-width: 30em) {
@@ -1550,8 +1592,6 @@ td {
   clear: both;
   margin: 38px 27px 0;
   border-top: 3px solid black;
-  border-right: 3px solid black;
-  border-left: 3px solid black;
 }
 
 @media (min-width: 30em) {
