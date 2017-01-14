@@ -3,6 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.bronze_sponsor
+    - core.entity_view_mode.node.gold_sponsor
+    - core.entity_view_mode.node.platinum_sponsor
+    - core.entity_view_mode.node.silver_sponsor
     - core.entity_view_mode.node.teaser
     - field.storage.node.field_logo
     - field.storage.node.field_webpage
@@ -63,7 +67,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 40
+          items_per_page: 2
           offset: 0
       style:
         type: html_list
@@ -285,6 +289,9 @@ display:
         title: false
         filters: false
         filter_groups: false
+        style: false
+        row: false
+        pager: false
       filters:
         status:
           value: '1'
@@ -351,6 +358,25 @@ display:
         groups:
           1: AND
       block_hide_empty: true
+      style:
+        type: html_list
+        options:
+          row_class: sponsors-list__item
+          default_row_class: false
+          uses_fields: false
+          type: ul
+          wrapper_class: ''
+          class: sponsors-list__list
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: platinum_sponsor
+      pager:
+        type: some
+        options:
+          items_per_page: 2
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:
@@ -375,6 +401,9 @@ display:
         filters: false
         filter_groups: false
         fields: false
+        style: false
+        row: false
+        pager: false
       filters:
         status:
           value: '1'
@@ -573,6 +602,25 @@ display:
           field_api_classes: false
           plugin_id: field
       block_hide_empty: true
+      style:
+        type: html_list
+        options:
+          row_class: sponsors-list__item
+          default_row_class: false
+          uses_fields: false
+          type: ul
+          wrapper_class: ''
+          class: sponsors-list__list
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: gold_sponsor
+      pager:
+        type: some
+        options:
+          items_per_page: 5
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:
@@ -597,6 +645,9 @@ display:
         filters: false
         filter_groups: false
         fields: false
+        style: false
+        row: false
+        pager: false
       filters:
         status:
           value: '1'
@@ -795,6 +846,24 @@ display:
           field_api_classes: false
           plugin_id: field
       block_hide_empty: true
+      style:
+        type: html_list
+        options:
+          row_class: sponsors-list__item
+          default_row_class: false
+          uses_fields: false
+          type: ul
+          wrapper_class: ''
+          class: sponsors-list__list
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: silver_sponsor
+      pager:
+        type: none
+        options:
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:
@@ -819,6 +888,9 @@ display:
         filters: false
         filter_groups: false
         fields: false
+        style: false
+        row: false
+        pager: false
       filters:
         status:
           value: '1'
@@ -1017,6 +1089,24 @@ display:
           field_api_classes: false
           plugin_id: field
       block_hide_empty: true
+      style:
+        type: html_list
+        options:
+          row_class: sponsors-list__item
+          default_row_class: false
+          uses_fields: false
+          type: ul
+          wrapper_class: ''
+          class: sponsors-list__list
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: bronze_sponsor
+      pager:
+        type: none
+        options:
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:
