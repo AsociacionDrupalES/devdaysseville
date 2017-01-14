@@ -21,6 +21,24 @@
     list-style: none
     +breakpoint($small)
       margin-bottom: 1em
+    article
+      .node__content
+        display: flex
+        flex-flow: column wrap
+        .news__field-image,
+        .news__body
+          padding: 0 10px
+
+        +breakpoint($medium-big)
+          flex-flow: row wrap
+          .news__field-image
+            width: 20%
+            padding: 0 10px
+          .news__body
+            width: 80%
+            padding: 0 20px
+            p:first-child
+              margin-top: 0
   &__footer
     +breakpoint($small)
       text-align: right
