@@ -2383,6 +2383,42 @@ img {
   margin-top: 0.25em;
 }
 
+.page-node-type-news article .node__content {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.page-node-type-news article .node__content .news__field-image,
+.page-node-type-news article .node__content .news__body {
+  padding: 0 10px;
+}
+
+@media (min-width: 50em) {
+  .page-node-type-news article .node__content {
+    flex-flow: row wrap;
+  }
+  .page-node-type-news article .node__content .news__field-image {
+    width: 15%;
+    padding: 0 10px;
+  }
+  .page-node-type-news article .node__content .news__body {
+    width: 85%;
+    padding: 0 20px;
+  }
+  .page-node-type-news article .node__content .news__body p:first-child {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 64em) {
+  .page-node-type-news article .node__content .news__field-image {
+    width: 10%;
+  }
+  .page-node-type-news article .node__content .news__body {
+    width: 90%;
+  }
+}
+
 .quick-info__title {
   margin-bottom: 0.5rem;
   font-size: 18px;
