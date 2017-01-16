@@ -1233,7 +1233,6 @@ head:hover ~ body .info__inner-wrapper:before {
 .layout-container {
   background-color: white;
   min-height: 100vh;
-  max-width: 1300px;
   margin: 30px auto 0;
   display: flex;
   flex-direction: column;
