@@ -2044,6 +2044,15 @@ td {
   color: black;
 }
 
+.node__content a {
+  text-decoration: underline;
+  transition: opacity 0.3s;
+}
+
+.node__content a:hover {
+  opacity: 0.4;
+}
+
 .node__links {
   line-height: 1.5;
 }
