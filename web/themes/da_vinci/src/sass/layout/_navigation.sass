@@ -1,0 +1,292 @@
+#menuButtonOpen,
+#menuButtonClose
+  display: block
+  float: right
+  position: relative
+  z-index: 2
+  width: 32px
+  height: 32px
+  right: 20px
+  text-align: right
+  background-image: url(../images/ico-menu-toggler.png)
+  background-repeat: no-repeat
+  background-position: right top
+  background-size: contain
+  +breakpoint($large)
+    display: none
+
+
+#menuButtonClose
+  background-image: url(../images/ico-close-thin.png)
+  right: 0
+  width: 24px
+  height: 24px
+
+.menu-trigger
+  z-index: 100000
+  width: 35px
+  height: 45px
+  position: absolute
+  right: 7px
+  top: 5px
+  margin: 0
+  -webkit-transform: rotate(0deg)
+  -moz-transform: rotate(0deg)
+  -o-transform: rotate(0deg)
+  transform: rotate(0deg)
+  -webkit-transition: .5s ease-in-out
+  -moz-transition: .5s ease-in-out
+  -o-transition: .5s ease-in-out
+  transition: .5s ease-in-out
+  cursor: pointer
+  +breakpoint($medium)
+    display: none
+  span
+    display: block
+    position: absolute
+    height: 5px
+    width: 100%
+    background: $color-body
+    border-radius: 9px
+    opacity: 1
+    left: 0
+    -webkit-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
+    transform: rotate(0deg)
+    -webkit-transition: .25s ease-in-out
+    -moz-transition: .25s ease-in-out
+    -o-transition: .25s ease-in-out
+    transition: .25s ease-in-out
+    &:nth-child(1)
+      top: 4px
+      -webkit-transform-origin: left center
+      -moz-transform-origin: left center
+      -o-transform-origin: left center
+      transform-origin: left center
+    &:nth-child(2)
+      top: 14px
+      -webkit-transform-origin: left center
+      -moz-transform-origin: left center
+      -o-transform-origin: left center
+      transform-origin: left center
+    &:nth-child(3)
+      top: 24px
+      -webkit-transform-origin: left center
+      -moz-transform-origin: left center
+      -o-transform-origin: left center
+      transform-origin: left center
+  &.open span
+    background: $white
+    &:nth-child(1)
+      -webkit-transform: rotate(45deg)
+      -moz-transform: rotate(45deg)
+      -o-transform: rotate(45deg)
+      transform: rotate(45deg)
+      top: 1px
+      left: 8px
+    &:nth-child(2)
+      width: 0%
+      opacity: 0
+    &:nth-child(3)
+      -webkit-transform: rotate(-45deg)
+      -moz-transform: rotate(-45deg)
+      -o-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+      top: 26px
+      left: 8px
+
+.sliding_menu
+  font-family: $title
+  padding: 2rem 2rem 0
+  font-size: 1.2rem
+  a,
+  ul.menu
+    margin: 0
+    a
+      color: $white
+      text-transform: uppercase
+      line-height: 2rem
+      &:hover,
+      &.is-active
+        color: $white
+    .menu
+      margin-left: 1rem
+      margin-bottom: 0.5rem
+      .menu-item
+        line-height: 17px
+      a
+        font-size: 14px
+        line-height: 17px
+  #block-sitebrandingmobile
+    float: left
+    width: 30%
+  #block-menuprincipal-2
+    float: right
+    width: 70%
+    ul
+      margin-left: 0
+
+    .menu-item
+      text-align: right
+      margin-bottom: 40px
+      a
+        font-weight: 700
+
+  #block-alternadordeidioma
+    float: right
+    width: 70%
+    text-align: right
+    li
+      @extend .simple-list
+      display: inline-block
+      &:nth-last-child(1):before
+        content: '/'
+    a
+      font-weight: 300
+      &.is-active
+        color: #fff
+        font-weight: 400
+
+
+header
+  #block-menuprincipal
+    ul.menu
+      display: none
+      margin: 0
+      +breakpoint($large)
+        display: block
+        position: relative
+        z-index: 2
+        text-align: right
+        li
+          display: inline-block
+          margin-left: 1em
+          padding-bottom: .5em
+          a
+            text-transform: uppercase
+            color: white
+          &.menu-item--active-trail
+            border-bottom: 2px solid $orange
+            a
+              color: $orange
+          &:hover
+            a
+              color: $orange
+      +breakpoint($medium)
+        li
+          a
+            font-size: 0.75em
+      &.active
+        display: block
+        clear: both
+        +breakpoint($medium)
+          position: static
+
+
+  #block-languageswitcher
+    display: none
+    +breakpoint($large)
+      display: block
+      text-align: right
+    ul
+      @extend .simple-list
+      li
+        display: inline-block
+        padding-top: 0.2em
+        padding-bottom: .5em
+        a
+          font-size: 0.75em
+          color: #fff
+          font-weight: 400
+          &.is-active
+            color: #ddd
+            font-weight: 300
+        &:nth-last-child(1):before
+          content: '/'
+
+// Main menu
+.menu--main,
+.menu--header-left-menu,
+.menu--header-right-menu
+  letter-spacing: 0.1em
+  >ul.menu
+    margin-top: 0.75em
+    margin-left: 0
+    margin-bottom: 0.75em
+    +breakpoint($large)
+      margin-bottom: 1em
+  >ul > .menu-item
+    position: relative
+    font-family: $title
+    display: inline-block
+    text-transform: uppercase
+    margin: 0 0.75em 0 0
+    position: relative
+    font-size: 14px
+    +breakpoint($medium-big)
+      margin: 0 1em 0 0
+      font-size: 16px
+    +breakpoint($large)
+      margin: 0 2em 0 0
+      font-size: 17px
+    +breakpoint($x-large)
+      margin: 0 3em 0 0
+      font-size: 18px
+    &:after
+      display: block
+      content: ''
+      border-bottom: solid 3px $black
+      transform: scaleX(0)
+      transition: transform 250ms ease-in-out
+    &:hover:after
+      transform: scaleX(1)
+    .menu
+      position: absolute
+      visibility: hidden
+      opacity: 0
+      top: 100%
+      left: -10px
+      width: 100%
+      transform: translateY(-2em)
+      z-index: -1
+      transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.5s, z-index 0s linear 0.01s
+      margin-left: 0
+      margin-top: 2px
+      background: $black
+      text-align: center
+      text-transform: uppercase
+      color: $white
+      .menu-item
+        display: block
+        margin: 0
+        padding: 0
+        font-size: 0.7em
+        a
+          display: block
+          min-width: 120px
+          padding: 0.5em 1em
+          color: $white
+          background-color: $black
+          font-size: 12px
+          line-height: 12px
+          transition: all .5s ease-in-out
+          &:hover
+            color: $blue
+    &:hover .menu
+      position: absolute
+      display: block
+      visibility: visible
+      opacity: 1
+      z-index: 1
+      transform: translateY(0%)
+      transition-delay: 0s, 0s, 0.3s
+.menu--header-right-menu
+  >ul
+    text-align: right
+    >.menu-item
+      margin: 0 0 0 1em
+      +breakpoint($large)
+        margin: 0 0 0 2em
+      +breakpoint($x-large)
+        margin: 0 0 0 3em

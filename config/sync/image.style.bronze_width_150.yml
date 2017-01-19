@@ -1,0 +1,15 @@
+uuid: 2cd4a63d-46da-4bc3-8e4f-6ee3f83836e5
+langcode: en
+status: true
+dependencies: {  }
+name: bronze_width_150
+label: 'Bronze (width 150)'
+effects:
+  99633f26-dadf-4b5a-8505-e620ab439734:
+    uuid: 99633f26-dadf-4b5a-8505-e620ab439734
+    id: image_scale
+    weight: 1
+    data:
+      width: 150
+      height: null
+      upscale: false

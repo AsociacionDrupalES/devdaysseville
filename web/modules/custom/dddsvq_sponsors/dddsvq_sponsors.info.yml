@@ -1,0 +1,5 @@
+name: dddsvq_sponsors
+type: module
+description: Custom module for the sponsors feature at the dddsvq
+core: 8.x
+package: dddsvq

@@ -1,0 +1,18 @@
+fullPage.home:
+  js:
+    js/fullPage_home.js: {}
+  dependencies:
+    - dddsvq_home/fullPage.js
+    - core/jquery
+    - core/drupal
+
+fullPage.js:
+  version: 2.8.2
+  js:
+    /libraries/fullPage.js/jquery.fullPage.js: {}
+  css:
+    theme:
+      /libraries/fullPage.js/jquery.fullPage.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

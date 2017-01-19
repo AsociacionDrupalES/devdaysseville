@@ -1,0 +1,30 @@
+uuid: 89c24519-9d3f-4df8-8613-c5ab5618585e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.header-right-menu
+  module:
+    - block_visibility_groups
+    - system
+  theme:
+    - da_vinci
+id: headerrightmenu
+theme: da_vinci
+region: header_right
+weight: 0
+provider: null
+plugin: 'system_menu_block:header-right-menu'
+settings:
+  id: 'system_menu_block:header-right-menu'
+  label: 'Header right menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

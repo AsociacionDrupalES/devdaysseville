@@ -1,0 +1,51 @@
+.news-list
+  &__wrapper
+    &--featured
+      +breakpoint($medium)
+        display: inline-block
+        width: 54%
+        vertical-align: top
+  &__title--featured
+      margin-bottom: 1rem
+      color: $white
+      +breakpoint($medium)
+        text-align: left
+        margin-top: 0
+  &__list
+    padding: 0
+    &--featured
+      padding: 0 15px
+      +breakpoint($medium)
+        padding: 0 15px 0 0
+  &__item
+    list-style: none
+    +breakpoint($small)
+      margin-bottom: 1em
+    article
+      .node__content
+        display: flex
+        flex-flow: column wrap
+        .news__field-image,
+        .news__body
+          padding: 0 10px
+
+        +breakpoint($medium-big)
+          flex-flow: row wrap
+          .news__field-image
+            width: 20%
+            padding: 0 10px
+          .news__body
+            width: 80%
+            padding: 0 20px
+            p:first-child
+              margin-top: 0
+  &__footer
+    +breakpoint($small)
+      text-align: right
+    +breakpoint($medium)
+      padding-right: 15px
+    a
+      @extend .button-ghost--white
+      position: relative
+      display: inline-block
+      z-index: 2

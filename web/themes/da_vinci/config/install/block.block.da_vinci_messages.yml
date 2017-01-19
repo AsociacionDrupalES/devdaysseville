@@ -1,0 +1,22 @@
+uuid: 896429d4-60bf-4fd3-9238-568c66b0645b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - da_vinci
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: da_vinci_messages
+theme: da_vinci
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

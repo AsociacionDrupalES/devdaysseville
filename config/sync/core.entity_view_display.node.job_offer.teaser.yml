@@ -1,0 +1,42 @@
+uuid: aa830962-c129-4af3-845b-ca2950f4d825
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.job_offer.body
+    - field.field.node.job_offer.field_sponsor_ref
+    - node.type.job_offer
+  module:
+    - linked_field
+    - text
+    - user
+id: node.job_offer.teaser
+targetEntityType: node
+bundle: job_offer
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+  field_sponsor_ref:
+    type: entity_reference_label
+    weight: 0
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: custom
+        destination: '[node:field_sponsor_ref:entity:field_webpage]'
+        advanced: {  }
+  links:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

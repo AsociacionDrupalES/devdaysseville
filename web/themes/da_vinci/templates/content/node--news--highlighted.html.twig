@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Template for content type News in Highlighted viewmode.
+#}
+{%
+  set classes = [
+    node.bundle|clean_class,
+    view_mode ? node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+    'clearfix',
+  ]
+%}
+{{ attach_library('classy/node') }}
+<article{{ attributes.addClass(classes) }}>
+  {{ content.field_image }}
+  <div{{ content_attributes.addClass('news__content', 'clearfix') }}>
+  {{ title_prefix }}
+  {% if not page %}
+    <h2{{ title_attributes.addClass('news__title') }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+    {{ content|without('field_image') }}
+  </div>
+</article>

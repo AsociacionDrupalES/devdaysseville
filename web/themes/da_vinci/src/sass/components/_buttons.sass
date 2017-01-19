@@ -1,0 +1,39 @@
+.button
+  background-color: $black2
+  height: 48px
+  font-size: 18px
+  display: inline-block
+  cursor: pointer
+  color: $white
+  font-family: $title
+  text-transform: uppercase
+  letter-spacing: 0.1rem
+  +border-radius(2px)
+  padding: 0 18px
+  &:hover
+    background-color: $black
+.form-submit,
+.button-main
+  @extend .button
+  border: none
+.button-ghost
+  padding: 5px 10px
+  border: 1px solid $black
+  +border-radius(2px)
+  color: $black
+  font-family: $title
+  font-size: 14px
+  text-transform: uppercase
+  letter-spacing: 0.1rem
+  transition: .25s ease-in-out
+  &:hover
+    background-color: $black
+    color: $white
+    transition: .25s ease-in-out
+  &--white
+    @extend .button-ghost
+    border: 1px solid $white
+    color: $white
+    &:hover
+      background-color: $white
+      color: $black

@@ -1,0 +1,28 @@
+uuid: 09f874d2-5920-47f4-967b-1876f5456cd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponsor_ref
+    - node.type.job_offer
+    - node.type.sponsor
+id: node.job_offer.field_sponsor_ref
+field_name: field_sponsor_ref
+entity_type: node
+bundle: job_offer
+label: Sponsor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      sponsor: sponsor
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

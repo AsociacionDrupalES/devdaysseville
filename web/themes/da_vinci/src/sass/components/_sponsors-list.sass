@@ -1,0 +1,88 @@
+.sponsors-list
+  padding: 20px
+  text-align: center
+  &__wrapper
+    position: relative
+    max-width: 91%
+    margin-left: auto
+    margin-right: auto
+    background: $white
+    +breakpoint($large)
+      max-width: 900px
+    &::before,
+    &::after
+      content: ''
+      position: absolute
+      display: block
+      top: 0
+      height: 100%
+      width: 17px
+    &::before
+      left: 0
+      background: $white url('../images/frame__left.svg') repeat-y center bottom
+    &::after
+      right: 0
+      background: $white url('../images/frame__right.svg') repeat-y center bottom
+  &__title
+    text-transform: uppercase
+    &--gold
+      font-size: 24px
+  &__list
+    margin: 0
+    padding: 0
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    align-items: center
+    align-content: center
+  &__item
+    display: inline-block
+    margin: 0 1rem 1rem
+    list-style: none
+    +breakpoint($medium-small)
+      max-width: 45%
+      margin: 0 1% 1rem
+    +breakpoint($large)
+      max-width: 300px
+      margin: 0 1rem 1rem
+    .sponsors-list--gold &
+      max-width: 200px
+      +breakpoint($medium-small)
+        max-width: 30%
+        margin: 0 1% 1rem
+      +breakpoint($large)
+        max-width: 200px
+        margin: 0 1rem 1rem
+  &__bottom-frame
+    position: relative
+    width: 100%
+    height: 16px
+    background: $white url('../images/frame__bottom.svg') repeat-x center bottom
+    z-index: 1
+    +breakpoint($below_medium)
+      background-size: 819px
+    &::before,
+    &::after
+      position: absolute
+      content: ''
+      display: block
+      bottom: 0
+      width: 26px
+      height: 26px
+    &::before
+      left: 0
+      background: $white url('../images/frame__corner-left.svg') no-repeat right bottom
+    &::after
+      right: 0
+      background: $white url('../images/frame__corner-right.svg') no-repeat left bottom
+  &__top-frame
+    @extend .sponsors-list__bottom-frame
+    transform: rotate(180deg)
+    &::before
+      left: 0
+      background: $white url('../images/frame__corner-right.svg') no-repeat right bottom
+      transform: scaleX(-1)
+    &::after
+      right: 0
+      background: $white url('../images/frame__corner-left.svg') no-repeat left bottom
+      transform: scaleX(-1)

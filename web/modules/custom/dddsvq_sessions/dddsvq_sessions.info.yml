@@ -1,0 +1,5 @@
+name: dddsvq_sessions
+type: module
+description: Custom module for managing sessions for the DrupalDevDays Seville 2017.
+core: 8.x
+package: dddsvq

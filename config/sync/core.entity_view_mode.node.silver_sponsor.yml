@@ -1,0 +1,10 @@
+uuid: 014e8eec-ae99-4087-920a-0993332ac956
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.silver_sponsor
+label: 'Silver sponsor'
+targetEntityType: node
+cache: true

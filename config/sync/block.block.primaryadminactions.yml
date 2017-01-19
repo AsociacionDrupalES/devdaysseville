@@ -1,0 +1,18 @@
+uuid: a8f219f7-8c44-4bd4-aa0d-b1ce8a170551
+langcode: en
+status: true
+dependencies:
+  theme:
+    - da_vinci
+id: primaryadminactions
+theme: da_vinci
+region: content
+weight: -9
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

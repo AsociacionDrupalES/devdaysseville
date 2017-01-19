@@ -1,0 +1,27 @@
+uuid: 3de79fd6-0762-47f1-b600-bf65b13d6bb5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - da_vinci
+_core:
+  default_config_hash: dWKu2_v4NiLWWAxCmVO7nBpgBhJa867xmS216wsSNRI
+id: da_vinci_page_title
+theme: da_vinci
+region: content
+weight: -11
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

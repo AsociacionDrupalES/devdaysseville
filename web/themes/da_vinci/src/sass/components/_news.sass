@@ -1,0 +1,49 @@
+.news
+  &__content
+    +breakpoint($small)
+      float: left
+      width: 76%
+      margin-left: 4%
+  &--highlighted
+    overflow: hidden
+    color: $white
+    +breakpoint($small)
+      text-align: left
+    .news__field-image
+      display: none
+      float: left
+      width: 20%
+      +breakpoint($small)
+        display: block
+    .news__title
+      margin: 0
+      font-size: 18px
+      line-height: 20px
+      a
+        color: $white
+        &:not(.noicon)[rel=bookmark]:before
+          content: ''
+    .news__body
+      font-size: 14px
+      p
+        margin-top: 0.25em
+
+.page-node-type-news
+  article
+    .node__content
+      display: flex
+      flex-flow: column wrap
+      .news__field-image,
+      .news__body
+        padding: 0 10px
+
+      +breakpoint($medium-big)
+        flex-flow: row wrap
+        .news__field-image
+          width: 20%
+          padding: 0 10px
+        .news__body
+          width: 80%
+          padding: 0 20px
+          p:first-child
+            margin-top: 0

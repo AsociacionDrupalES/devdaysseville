@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains dddsvq_common.module
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function dddsvq_common_theme($existing, $type, $theme, $path) {
+  $themes = [];
+
+  // The newsletter theme:
+  $themes['newsletter_block'] = [
+    'render element' => 'element',
+  ];
+
+  $themes['date_block'] = [
+    'render element' => 'element',
+  ];
+
+  $themes['copyright_block'] = [
+    'render element' => 'element',
+  ];
+
+  $themes['keywords_block'] = [
+    'render element' => 'element',
+  ];
+
+  $themes['social_networks'] = [
+    'variables' => ['networks' => []],
+  ];
+
+  return $themes;
+}

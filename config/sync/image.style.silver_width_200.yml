@@ -1,0 +1,15 @@
+uuid: 369012a8-a29f-499e-b3d3-f4709a8bf47a
+langcode: en
+status: true
+dependencies: {  }
+name: silver_width_200
+label: 'Silver (width 200 )'
+effects:
+  47a7689b-456e-4871-b886-e908ee0388a0:
+    uuid: 47a7689b-456e-4871-b886-e908ee0388a0
+    id: image_scale
+    weight: 1
+    data:
+      width: 200
+      height: null
+      upscale: false

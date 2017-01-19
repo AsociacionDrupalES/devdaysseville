@@ -1,0 +1,21 @@
+uuid: 05a17fcf-47eb-4b63-ab56-44af144c46c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponsorship_type
+    - node.type.sponsor
+  module:
+    - options
+id: node.sponsor.field_sponsorship_type
+field_name: field_sponsorship_type
+entity_type: node
+bundle: sponsor
+label: 'Sponsorship type'
+description: 'Please select the sponsorship level. More than one are allowed.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

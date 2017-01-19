@@ -1,0 +1,296 @@
+.path-frontpage
+  text-align: center
+  .layout-container
+    background: transparent url('../images/bg-sea-map.svg') no-repeat center bottom
+  .content__wrapper
+    background-color: transparent
+  .region
+    &-content
+      #logo
+        &:before
+          content: url('../images/logo.svg')
+          background-repeat: no-repeat
+          background-position: center
+          width: 300px
+          height: 330px
+        h1
+          position: absolute
+          top: -9999px
+          left: -9999px
+.hero
+  &__section
+    position: relative
+  &__inner-wrapper
+    position: relative
+    &:after
+      display: block
+      position: absolute
+      bottom: -50vw
+      width: 100vw
+      height: 100vw
+      content: ''
+      background: transparent url('../images/waves--s.svg')  no-repeat center center
+      background-size: 106%
+      max-width: 100%
+      +breakpoint($landscape)
+        transform: scaleY(0.7)
+      +breakpoint($medium)
+        height: 65vw
+        bottom: -21vw
+        background-image: url('../images/waves--m.svg')
+      +breakpoint($medium-landscape)
+        transform: scaleY(0.7)
+        bottom: -30vw
+      +breakpoint($large)
+        height: 45vw
+        background-image: url('../images/waves--xl.svg')
+      +breakpoint($large-landscape)
+        transform: scaleY(1)
+        bottom: -22vw
+    .region-content
+      height: 80vh
+      margin: 0 27px
+      //border-right: 3px solid $black
+      //border-left: 3px solid $black
+      +breakpoint($small)
+        margin: 0 20px
+      +breakpoint($medium)
+        height: 90vh
+        margin: 0
+  &__content
+    @extend .restricted-container
+  &__header
+    clear: both
+    margin: 38px 27px 0
+    border-top: 3px solid $black
+    //border-right: 3px solid $black
+    //border-left: 3px solid $black
+    +breakpoint($small)
+      margin: 38px 20px 0
+    +breakpoint($medium)
+      margin: 38px 0 0
+  &__text
+    display: inline-block
+    margin: 9vh 10px 0
+    font-size: 20px
+    letter-spacing: 0.1rem
+    +breakpoint($x-small)
+      margin-top: 12vh
+    +breakpoint($x-small-landscape)
+      margin-top: 5vh
+    +breakpoint($small)
+      margin-top: 8vh
+    +breakpoint($small-landscape)
+      margin-top: 5vh
+    +breakpoint($medium-small-landscape)
+      margin-top: 5vh
+      line-height: 26px
+    +breakpoint($medium)
+      margin-top: 8vh
+      font-size: 28px
+      span
+        display: block
+    +breakpoint($medium-landscape)
+      margin-top: 17vh
+    +breakpoint($large)
+      margin-top: 17vh
+      font-size: 36px
+    +breakpoint($large-landscape)
+      line-height: 38px
+  &__next
+    position: absolute
+    display: block
+    bottom: 12vh
+    left: 42%
+    width: 60px
+    height: 60px
+    font-size: 4px
+    background-color: $black
+    color: $black
+    z-index: 1
+    cursor: pointer
+    transition: transform 250ms ease-in-out
+    +breakpoint($medium)
+      left: 46%
+      bottom: 10vh
+    +breakpoint($medium-landscape)
+      bottom: 10vh
+    +breakpoint($large)
+      left: 48%
+      bottom: 15vh
+    &:hover
+      color: $black
+      transform: scale(1.1)
+      transition: transform 250ms ease-in-out
+    &::after
+      position: absolute
+      left: 18px
+      top: 13px
+      width: 25px
+      height: 25px
+      content: ''
+      border-top: 4px solid $white
+      border-right: 4px solid $white
+      transform: rotate(135deg)
+      pointer-events: none
+
+.info
+  &__section
+    z-index: -1
+    color: $white
+    &-content
+      background-color: $black
+  &__inner-wrapper
+    position: relative
+    @extend .restricted-container
+  &__map
+    position: absolute
+    display: block
+    width: 100vw
+    margin-top: -2px
+    overflow: hidden
+    img
+      width: 170%
+      max-width: none
+      margin-left: -5%
+      transform: rotate(180deg)
+      +breakpoint($medium)
+        width: 101%
+        margin-left: -0.5%
+  &__intro
+    padding-top: 52vw
+    display: inline-block
+    margin: 2.5rem 15px 3rem
+    letter-spacing: 0.1rem
+    font-family: $title
+    +breakpoint($medium)
+      padding-top: 23vw
+      margin-bottom: 8rem
+    +breakpoint($large)
+      font-size: 20px
+    +breakpoint($x-large)
+      padding-top: 20vw
+    &-wrapper
+      width: 100%
+      position: relative
+  &__anchor
+    position: absolute
+    top: -20px
+    left: 45%
+    transition: 1s ease-in-out
+    +breakpoint($x-small)
+      top: 0px
+    +breakpoint($medium)
+      left: 5%
+    +breakpoint($large)
+      left: 13%
+    &::before
+      content: ''
+      position: absolute
+      display: block
+      top: -100px
+      left: 45%
+      width: 2px
+      height: 100px
+      background-color: $white
+      +breakpoint($x-small)
+        top: -150px
+        height: 150px
+      +breakpoint($small)
+          top: -200px
+          height: 200px
+      +breakpoint($xx-large)
+          top: -300px
+          height: 300px
+
+    .info__section.active &
+      top: 100px
+      transition: 1s ease-in-out
+      transition-delay: 1s
+      +breakpoint($x-small)
+        top: 150px
+      +breakpoint($small)
+        top: 200px
+      +breakpoint($large)
+        top: 300px
+      +breakpoint($xx-large)
+        top: 400px
+  &__quick-info
+    margin: 0 15px
+    +breakpoint($medium)
+      display: inline-block
+      width: 39%
+      margin: 0 5% 0 0
+      vertical-align: top
+    +breakpoint($medium-big)
+      width: 30%
+      margin: 0 14% 0 0
+    .quick-info__title
+      color: $white
+
+.measure
+  background: transparent url(../images/measure.svg) no-repeat right 10px top
+  width: 100%
+  height: 25px
+  margin: 1.5rem 0 1rem 0
+  +breakpoint($small)
+    margin-top: 4rem
+  +breakpoint($medium)
+    margin-top: -7rem
+    margin-bottom: 3rem
+  +breakpoint($xx-large)
+    margin-top: -4rem
+
+.sponsors__home-section
+    position: relative
+    background-size: auto 102%
+    padding-top: 5rem
+    +breakpoint($medium)
+      padding-top: 10rem
+    +breakpoint($large)
+      padding-top: 15rem
+    +breakpoint($x-large)
+      background-size: 102%
+
+.compass
+  display: block
+  top: 80px
+  left: 10px
+  width: 100px
+  height: 100px
+  background: transparent url(../images/compass.svg) no-repeat right top
+  position: absolute
+
+#block-homemenu
+  ul
+    margin: 6vh auto 0
+    width: 100%
+    +breakpoint($x-small)
+      width: 300px
+    +breakpoint($medium)
+      margin-top: 5vh
+    +breakpoint($medium-landscape)
+      margin-top: 10vh
+    +breakpoint($large)
+      margin-top: 6vh
+    li
+      padding: 10px 0
+      background-color: $black
+      border: 1px solid $black
+      text-align: center
+      width: 100%
+      margin-bottom: 10px
+      +breakpoint($x-small)
+        width: 300px
+      a
+        display: block
+        width: 100%
+        color: $white
+        text-align: center
+        font-family: $title
+        text-transform: uppercase
+        letter-spacing: 3px
+      &:last-child
+        background-color: $white
+        a
+          color: $black

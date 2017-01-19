@@ -1,0 +1,10 @@
+uuid: 3da0986d-29e0-413c-b9af-1a4174ac1eed
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.bronze_sponsor
+label: 'Bronze sponsor'
+targetEntityType: node
+cache: true

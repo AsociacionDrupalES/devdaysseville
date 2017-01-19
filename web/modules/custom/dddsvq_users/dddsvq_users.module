@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Contains dddsvq_users.module.
+ */
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ *
+ * Add the attendee role by default to new users.
+ */
+function dddsvq_sessions_user_presave(\Drupal\user\UserInterface $account) {
+  if ($account->isNew()) {
+    $account->addRole('attendee');
+  }
+}

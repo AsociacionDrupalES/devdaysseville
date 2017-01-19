@@ -1,0 +1,30 @@
+uuid: 08ced2fe-45f4-470f-a6ec-cdd1d8e9d534
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.header-left-menu
+  module:
+    - block_visibility_groups
+    - system
+  theme:
+    - da_vinci
+id: headerleftmenu
+theme: da_vinci
+region: header_left
+weight: 0
+provider: null
+plugin: 'system_menu_block:header-left-menu'
+settings:
+  id: 'system_menu_block:header-left-menu'
+  label: 'Header left menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

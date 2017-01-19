@@ -1,0 +1,28 @@
+uuid: f43e23f8-80a1-4f23-ac3b-46ebda3bb7d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.sponsors_list
+  module:
+    - block_visibility_groups
+    - dddsvq_sponsors
+  theme:
+    - da_vinci
+id: allsponsorsblock
+theme: da_vinci
+region: content
+weight: 0
+provider: null
+plugin: all_sponsors_block
+settings:
+  id: all_sponsors_block
+  label: 'All sponsors block'
+  provider: dddsvq_sponsors
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: sponsors_list
+    context_mapping: {  }

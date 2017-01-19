@@ -1,0 +1,124 @@
+html,
+body
+  min-height: 100vh
+
+body
+  color: $color-body
+  background-color: $white
+
+
+// Add border to all region when "show region mode" is activated (See theme aparience to know more).
+// -----------------------------------------------------------------------------------------------//
+.border-region
+  .region, main
+    outline: 3px violet groove
+
+
+// Base layout: Header, main content, footer..
+//-------------------------------------------------------//
+.restricted-container
+  +clearfix
+  +container(91.407%)
+  +padding-container(100%, 2%)
+  +breakpoint($x-large)
+    max-width: 1300px
+.layout-container
+  background-color: $white
+  min-height: 100vh
+  margin: 30px auto 0
+  display: flex
+  flex-direction: column
+  overflow: hidden
+  .page-node-type-basic-page &
+    background: transparent url('../images/bg-sea-map.svg') no-repeat
+    background-size: 110%
+    background-position: top 60px left -50px
+  > .region:not(.region-top-bar)
+    @extend .restricted-container
+    width: 100%
+  // Header
+  > header
+    position: relative
+    overflow: hidden
+    .region
+      +clearfix
+    > *
+      @extend .restricted-container
+  .region-header
+  // Main navigation
+  .region-primary-menu
+
+  // Main content
+  > main
+    @extend .restricted-container
+    flex: 1
+    width: 100%
+    // For Drupalera UK
+    .region
+      +clearfix
+    position: relative
+    background-color: #fff
+    z-index: 2
+    overflow: hidden
+
+
+  // Footer
+  > footer
+    > *
+      @extend .restricted-container
+    .region-footer
+      //@extend .restricted-container
+
+
+.content__wrapper
+  max-width: 1170px
+  margin: 40px auto 0
+  height: 100%
+  width: 100%
+  background-color: $white
+  +breakpoint($medium)
+    border-left: 3px solid $black
+    border-right: 3px solid $black
+  main
+    max-width: 900px
+    margin: 0 auto
+    padding: 0 10px
+    +breakpoint($medium)
+      padding: 0
+
+
+// Dynamic main content
+
+.layout
+  &-one-sidebar
+    &.layout-sidebar-first
+      .layout-content
+        +breakpoint($medium)
+          +span(9 of 12 last)
+      .layout-sidebar-first
+        +breakpoint($medium)
+          +span(3 of 12 first)
+  &-one-sidebar
+    &.layout-sidebar-second
+      .layout-content
+        +breakpoint($medium)
+          +span(9 of 12 first)
+      .layout-sidebar-second
+        +breakpoint($medium)
+          +span(3 of 12 last)
+  &-two-sidebars
+    .layout-content
+      +breakpoint($medium)
+        +span(9 of 12 last)
+      +breakpoint($large)
+        +span(isolate 6 at 4 of 12)
+    .layout-sidebar-first
+      +breakpoint($medium)
+        +span(3 of 12 first)
+    .layout-sidebar-second
+      +breakpoint($medium)
+        clear: both
+        float: none
+      +breakpoint($large)
+        +span(3 of 12 last)
+        clear: none

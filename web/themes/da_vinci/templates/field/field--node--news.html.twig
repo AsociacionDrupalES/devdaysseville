@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Template to override al node News content type fields.
+ */
+#}
+{%
+  set classes = [
+    'news__' ~ field_name|clean_class,
+  ]
+%}
+{%
+  set title_classes = [
+    'field__label',
+    label_display == 'visually_hidden' ? 'visually-hidden',
+  ]
+%}
+
+{% if label_hidden %}
+  {% for item in items %}
+    <div{{ item.attributes.addClass(classes) }}>{{ item.content }}</div>
+  {% endfor %}
+{% else %}
+  <div{{ attributes.addClass(classes) }}>
+    <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+    {% for item in items %}
+      <div{{ item.attributes.addClass(classes) }}>{{ item.content }}</div>
+    {% endfor %}
+  </div>
+{% endif %}

@@ -1,0 +1,40 @@
+uuid: c2a77a19-a7ec-4106-bb31-6a6af28b0160
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.platinum_sponsor
+    - field.field.node.sponsor.body
+    - field.field.node.sponsor.field_logo
+    - field.field.node.sponsor.field_sponsorship_type
+    - field.field.node.sponsor.field_webpage
+    - image.style.platinum_width_300
+    - node.type.sponsor
+  module:
+    - image
+    - linked_field
+    - user
+id: node.sponsor.platinum_sponsor
+targetEntityType: node
+bundle: sponsor
+mode: platinum_sponsor
+content:
+  field_logo:
+    weight: 103
+    label: hidden
+    settings:
+      image_style: platinum_width_300
+      image_link: ''
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: custom
+        destination: '[node:field_webpage:uri]'
+        advanced:
+          title: '[node:title]'
+    type: image
+hidden:
+  body: true
+  field_sponsorship_type: true
+  field_webpage: true
+  links: true

@@ -1,0 +1,68 @@
+<?php
+
+/**
+ * @file
+ * Contains dddsvq_sponsors.module..
+ */
+
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Entity\Entity\EntityViewDisplay;
+
+/**
+ * Implements hook_node_access().
+ */
+function dddsvq_sponsors_node_access(\Drupal\node\NodeInterface $node, $op, \Drupal\Core\Session\AccountInterface $account) {
+  $access = AccessResult::neutral();
+
+  if ($node->bundle() === 'sponsor' && $op == 'view') {
+    // Deny the access to the detail page if it hasn't the proper permission.
+    $access = AccessResult::forbiddenIf(!$account->hasPermission('view sponsor details'));
+  }
+
+  return $access;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function dddsvq_sponsors_theme($existing, $type, $theme, $path) {
+  $themes = [];
+
+  // Defines the Sponsor call to action theme.
+  $themes['sponsor_call_to_action'] = [
+    'variables' => [
+      'text' => '',
+      'link' => NULL,
+    ],
+  ];
+  // Defines the rotation entity theme.
+  $themes['rotation_entity'] = [
+    'render element' => 'elements',
+    'variables' => [
+      'entities' => [],
+    ],
+  ];
+
+  // Defines the the sponsors_wrapper theme_wrapper.
+  $themes['sponsors_wrapper'] = [
+    'render element' => 'element',
+  ];
+
+  // Defines a sponsor level block.
+  $themes['sponsors'] = [
+    'variables' => [
+      'title' => '',
+      'sponsor_type' => '',
+      'sponsors' => [],
+    ]
+  ];
+
+  return $themes;
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function dddsvq_sponsors_preprocess_sponsors_wrapper(&$variables) {
+  $variables['content'] = $variables['element']['#children'];
+}

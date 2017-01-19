@@ -1,0 +1,17 @@
+uuid: 14040707-a138-4115-954d-b0d9b4f60400
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: all_public_pages
+label: 'All public pages'
+logic: and
+conditions:
+  87f9beb6-cc83-41a0-8743-88aff54e38cd:
+    id: request_path
+    pages: "<front>\r\n/user/*\r\n/sponsors"
+    negate: true
+    context_mapping: {  }
+    uuid: 87f9beb6-cc83-41a0-8743-88aff54e38cd
+allow_other_conditions: true

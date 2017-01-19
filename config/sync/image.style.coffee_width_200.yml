@@ -1,0 +1,15 @@
+uuid: 76a09038-1281-4a49-9cb1-aa9f5b80700a
+langcode: en
+status: true
+dependencies: {  }
+name: coffee_width_200
+label: 'Coffee (width 200)'
+effects:
+  b9fc7754-2e7d-45b1-996e-fb46b2bc139a:
+    uuid: b9fc7754-2e7d-45b1-996e-fb46b2bc139a
+    id: image_scale
+    weight: 1
+    data:
+      width: 200
+      height: null
+      upscale: false

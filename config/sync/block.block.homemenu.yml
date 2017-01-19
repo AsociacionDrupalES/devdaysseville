@@ -1,0 +1,36 @@
+uuid: 3d6c06d3-dff6-4cbb-8966-3c659856bf88
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.home
+    - system.menu.home-menu
+  module:
+    - block_visibility_groups
+    - system
+  theme:
+    - da_vinci
+id: homemenu
+theme: da_vinci
+region: content
+weight: -6
+provider: null
+plugin: 'system_menu_block:home-menu'
+settings:
+  id: 'system_menu_block:home-menu'
+  label: 'Home menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: home
+    context_mapping: {  }

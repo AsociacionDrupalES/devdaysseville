@@ -1,0 +1,5 @@
+name: DDDays Seville common
+type: module
+description: Custom module that stores common components for DDDays Seville.
+core: 8.x
+package: dddsvq

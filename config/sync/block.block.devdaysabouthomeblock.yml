@@ -1,0 +1,28 @@
+uuid: 0f257483-27a6-4ac9-8542-1b975dddec6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.home
+  module:
+    - block_visibility_groups
+    - dddsvq_home
+  theme:
+    - da_vinci
+id: devdaysabouthomeblock
+theme: da_vinci
+region: content
+weight: -5
+provider: null
+plugin: dev_days_about_home_block
+settings:
+  id: dev_days_about_home_block
+  label: 'Dev days about home block'
+  provider: dddsvq_home
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: home
+    context_mapping: {  }

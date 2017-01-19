@@ -1,0 +1,45 @@
+uuid: 45dd98e0-3382-4644-967d-7c453d20a73e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.session.body
+    - field.field.node.session.field_session_level
+    - field.field.node.session.field_session_status
+    - field.field.node.session.field_user_ref
+    - node.type.session
+  module:
+    - options
+    - text
+    - user
+id: node.session.default
+targetEntityType: node
+bundle: session
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  field_session_level:
+    weight: 0
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_user_ref:
+    type: entity_reference_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: compact
+      link: false
+    third_party_settings: {  }
+  links:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_session_status: true

@@ -1,0 +1,18 @@
+{%
+set classes = [
+'sponsors-list',
+'sponsors-list--' ~ sponsor_type,
+]
+%}
+{%
+set titleclasses = [
+'sponsors-list__title',
+'sponsors-list__title--' ~ sponsor_type,
+]
+%}
+<div{{ attributes.addClass(classes) }}>
+    {% if title %}
+        <h2{{ title_attributes.addClass(titleclasses) }}>{{ title }}</h2>
+    {% endif %}
+    {{ sponsors }}
+</div>
