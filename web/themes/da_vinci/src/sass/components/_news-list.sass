@@ -20,25 +20,19 @@
   &__item
     list-style: none
     +breakpoint($small)
-      margin-bottom: 1em
+      margin-bottom: 2em
     article
       .node__content
         display: flex
         flex-flow: column wrap
-        .news__field-image,
-        .news__body
+        .news__field-image
           padding: 0 10px
-
         +breakpoint($medium-big)
           flex-flow: row wrap
           .news__field-image
             width: 20%
             padding: 0 10px
-          .news__body
-            width: 80%
-            padding: 0 20px
-            p:first-child
-              margin-top: 0
+
   &__footer
     +breakpoint($small)
       text-align: right
@@ -49,3 +43,26 @@
       position: relative
       display: inline-block
       z-index: 2
+  &__teaser
+    display: flex
+    flex-flow: column nowrap
+    +breakpoint($medium-big)
+      //.news__body
+      width: 80%
+      padding: 0 20px
+    .node__title
+      margin-top: 0
+      margin-bottom: 5px
+      font-size: 24px
+      a
+        text-decoration: none
+        &::before
+          display: none
+    .news__body
+      flex-grow: 2
+      font-size: 16px
+      p
+        margin-bottom: 0
+        margin-top: 0
+    .node__meta
+      font-size: 14px
