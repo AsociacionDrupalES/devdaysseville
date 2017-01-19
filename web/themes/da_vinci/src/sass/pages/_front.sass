@@ -79,21 +79,21 @@
     +breakpoint($x-small-landscape)
       margin-top: 5vh
     +breakpoint($small)
-      margin-top: 15vh
+      margin-top: 8vh
     +breakpoint($small-landscape)
       margin-top: 5vh
     +breakpoint($medium-small-landscape)
       margin-top: 5vh
       line-height: 26px
     +breakpoint($medium)
-      margin-top: 15vh
+      margin-top: 8vh
       font-size: 28px
       span
         display: block
     +breakpoint($medium-landscape)
-      margin-top: 5vh
+      margin-top: 17vh
     +breakpoint($large)
-      margin-top: 25vh
+      margin-top: 17vh
       font-size: 36px
     +breakpoint($large-landscape)
       line-height: 38px
@@ -260,3 +260,37 @@
   height: 100px
   background: transparent url(../images/compass.svg) no-repeat right top
   position: absolute
+
+#block-homemenu
+  ul
+    margin: 6vh auto 0
+    width: 100%
+    +breakpoint($x-small)
+      width: 300px
+    +breakpoint($medium)
+      margin-top: 5vh
+    +breakpoint($medium-landscape)
+      margin-top: 10vh
+    +breakpoint($large)
+      margin-top: 6vh
+    li
+      padding: 10px 0
+      background-color: $black
+      border: 1px solid $black
+      text-align: center
+      width: 100%
+      margin-bottom: 10px
+      +breakpoint($x-small)
+        width: 300px
+      a
+        display: block
+        width: 100%
+        color: $white
+        text-align: center
+        font-family: $title
+        text-transform: uppercase
+        letter-spacing: 3px
+      &:last-child
+        background-color: $white
+        a
+          color: $black

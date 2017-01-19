@@ -1644,7 +1644,7 @@ td {
 
 @media (min-width: 30em) {
   .hero__text {
-    margin-top: 15vh;
+    margin-top: 8vh;
   }
 }
 
@@ -1663,7 +1663,7 @@ td {
 
 @media (min-width: 44em) {
   .hero__text {
-    margin-top: 15vh;
+    margin-top: 8vh;
     font-size: 28px;
   }
   .hero__text span {
@@ -1673,13 +1673,13 @@ td {
 
 @media (orientation: landscape) and (min-width: 44em) {
   .hero__text {
-    margin-top: 5vh;
+    margin-top: 17vh;
   }
 }
 
 @media (min-width: 64em) {
   .hero__text {
-    margin-top: 25vh;
+    margin-top: 17vh;
     font-size: 36px;
   }
 }
@@ -1980,6 +1980,68 @@ td {
   height: 100px;
   background: transparent url(../images/compass.svg) no-repeat right top;
   position: absolute;
+}
+
+#block-homemenu ul {
+  margin: 6vh auto 0;
+  width: 100%;
+}
+
+@media (min-width: 22.5em) {
+  #block-homemenu ul {
+    width: 300px;
+  }
+}
+
+@media (min-width: 44em) {
+  #block-homemenu ul {
+    margin-top: 5vh;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 44em) {
+  #block-homemenu ul {
+    margin-top: 10vh;
+  }
+}
+
+@media (min-width: 64em) {
+  #block-homemenu ul {
+    margin-top: 6vh;
+  }
+}
+
+#block-homemenu ul li {
+  padding: 10px 0;
+  background-color: black;
+  border: 1px solid black;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 22.5em) {
+  #block-homemenu ul li {
+    width: 300px;
+  }
+}
+
+#block-homemenu ul li a {
+  display: block;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-family: "Marcellus", serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#block-homemenu ul li:last-child {
+  background-color: white;
+}
+
+#block-homemenu ul li:last-child a {
+  color: black;
 }
 
 .node__links {
