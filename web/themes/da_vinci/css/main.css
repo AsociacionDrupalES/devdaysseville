@@ -1283,13 +1283,6 @@ head:hover ~ body .info__inner-wrapper:before {
   background-color: white;
 }
 
-@media (min-width: 44em) {
-  .content__wrapper {
-    border-left: 3px solid black;
-    border-right: 3px solid black;
-  }
-}
-
 .content__wrapper main {
   max-width: 900px;
   margin: 0 auto;
@@ -1408,8 +1401,6 @@ footer .footer__wrapper {
 
 @media (min-width: 44em) {
   footer .footer__wrapper {
-    border-right: 3px solid black;
-    border-left: 3px solid black;
     display: flex;
     flex-grow: 1;
   }
@@ -1538,6 +1529,11 @@ td {
 
 .hero__inner-wrapper {
   position: relative;
+}
+
+.hero__inner-wrapper .content__wrapper {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
 }
 
 .hero__inner-wrapper:after {
@@ -2283,6 +2279,12 @@ div#mc_embed_signup {
   margin-bottom: 5.143em;
   margin-top: 1em;
   background: transparent;
+}
+
+@media (min-width: 37.5em) {
+  div#mc_embed_signup {
+    margin-bottom: 0;
+  }
 }
 
 div#mc_embed_signup .form-submit, div#mc_embed_signup
