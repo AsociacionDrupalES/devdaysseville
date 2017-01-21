@@ -1281,6 +1281,12 @@ head:hover ~ body .info__inner-wrapper:before {
   height: 100%;
   width: 100%;
   background-color: white;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+
+.path-frontpage .content__wrapper {
+  border: none;
 }
 
 .content__wrapper main {
@@ -1397,6 +1403,12 @@ footer .footer__wrapper {
   max-width: 1170px;
   margin: 0 auto;
   padding: 100px 0 0;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+
+.path-frontpage footer .footer__wrapper {
+  border: none;
 }
 
 @media (min-width: 44em) {
