@@ -126,8 +126,7 @@ class SponsorsRotationBlock extends BlockBase implements ContainerFactoryPluginI
         '#entities' => $this->entity_type_manager
           ->getViewBuilder('node')
           ->viewMultiple($nodes, 'teaser'),
-        // @TODO attach the library.
-        //'#attached' => ['library' => ['sponsors.rotation']],
+        '#attached' => ['library' => ['dddsvq_sponsors/sponsors.carousel']],
       ];
     }
     return $build;
