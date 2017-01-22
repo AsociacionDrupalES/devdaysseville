@@ -2173,6 +2173,15 @@ td {
   color: black;
 }
 
+.slick-slider .slick-slide {
+  padding: 10px;
+  text-align: center;
+}
+
+.slick-slider .slick-slide img {
+  margin: 0 auto;
+}
+
 .dropdown {
   position: relative;
   z-index: 8;
@@ -2618,8 +2627,14 @@ img {
 }
 
 .sponsors-list {
-  padding: 20px;
+  padding: 20px 30px;
   text-align: center;
+}
+
+@media (min-width: 44em) {
+  .sponsors-list {
+    padding: 20px 40px;
+  }
 }
 
 .sponsors-list__wrapper {
