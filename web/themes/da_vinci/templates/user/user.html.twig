@@ -18,6 +18,11 @@
 #}
 <article{{ attributes.addClass('profile') }}>
   {% if content %}
+    {% if user.field_register_picture.isEmpty() %}
+      <div class="field--name-field-register-picture">
+        <img src="/themes/da_vinci/images/avatar.svg">
+      </div>
+    {% endif %}
     {{- content -}}
   {% endif %}
 </article>
