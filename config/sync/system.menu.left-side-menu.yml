@@ -1,0 +1,8 @@
+uuid: 48f6e067-f7de-4cf2-a0a3-20343faf8eff
+langcode: en
+status: true
+dependencies: {  }
+id: left-side-menu
+label: 'Left side menu'
+description: 'Menu placed at the left side of the website.'
+locked: false
