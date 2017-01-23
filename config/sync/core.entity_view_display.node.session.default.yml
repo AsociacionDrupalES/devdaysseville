@@ -22,37 +22,37 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 5
     settings: {  }
     third_party_settings: {  }
   field_session_level:
-    weight: 0
-    label: inline
+    weight: 3
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
   field_session_track_type:
-    weight: 6
-    label: above
+    weight: 4
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
   field_session_type:
-    weight: 5
-    label: above
+    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
   field_user_ref:
     type: entity_reference_entity_view
-    weight: 2
-    label: above
+    weight: 1
+    label: hidden
     settings:
-      view_mode: compact
+      view_mode: teaser
       link: false
     third_party_settings: {  }
   links:
-    weight: 4
+    weight: 0
     settings: {  }
     third_party_settings: {  }
 hidden:
