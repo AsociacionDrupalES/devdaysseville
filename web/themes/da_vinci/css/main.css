@@ -1476,6 +1476,10 @@ footer .region ul li {
   }
 }
 
+.pager__items {
+  padding: 0;
+}
+
 table {
   width: 100%;
   border: 0;
@@ -2560,6 +2564,82 @@ img {
   .page-node-type-news article .node__content .news__body p:first-child {
     margin-top: 0;
   }
+}
+
+.view-attendees .view-content ul {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.view-attendees .view-content ul li {
+  margin: 0;
+  padding: 20px;
+  list-style: none;
+  text-align: center;
+  width: 50%;
+}
+
+@media (min-width: 37.5em) {
+  .view-attendees .view-content ul li {
+    width: 33.333%;
+  }
+}
+
+@media (min-width: 50em) {
+  .view-attendees .view-content ul li {
+    width: 25%;
+  }
+}
+
+@media (min-width: 64em) {
+  .view-attendees .view-content ul li {
+    width: 20%;
+  }
+}
+
+.profile .field--name-field-register-picture {
+  text-align: center;
+  position: relative;
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.profile .field--name-field-register-picture a {
+  position: absolute;
+  width: 83.33333%;
+  top: 8%;
+  left: 8.5%;
+  border-radius: 50%;
+  display: block;
+}
+
+@media (min-width: 64em) {
+  .profile .field--name-field-register-picture a {
+    width: 117px;
+    height: 100%;
+    top: 12px;
+    left: 12px;
+  }
+}
+
+.profile .field--name-field-register-picture img {
+  display: inline;
+  border-radius: 50%;
+}
+
+.profile .field--name-field-register-name {
+  font-family: "Marcellus", serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.profile .field--name-field-register-drupal-name {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  word-wrap: break-word;
 }
 
 .quick-info__title {

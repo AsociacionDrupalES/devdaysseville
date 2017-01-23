@@ -1,0 +1,50 @@
+.view-attendees
+  .view-content
+    ul
+      display: flex
+      flex-flow: row wrap
+      margin: 0
+      padding: 0
+      li
+        margin: 0
+        padding: 20px
+        list-style: none
+        text-align: center
+        width: 50%
+        +breakpoint($medium-small)
+          width: 33.333%
+        +breakpoint($medium-big)
+          width: 25%
+        +breakpoint($large)
+          width: 20%
+
+.profile
+  .field--name-field-register-picture
+    text-align: center
+    position: relative
+    max-width: 180px
+    margin: 0 auto
+    a
+      position: absolute
+      width: 83.33333%
+      top: 8%
+      left: 8.5%
+      border-radius: 50%
+      display: block
+      +breakpoint($large)
+        width: 117px
+        height: 100%
+        top: 12px
+        left: 12px
+    img
+      display: inline
+      border-radius: 50%
+  .field--name-field-register-name
+    font-family: $title
+    font-size: 18px
+    text-transform: uppercase
+    word-wrap: break-word
+  .field--name-field-register-drupal-name
+    font-family: $default
+    font-weight: bold
+    word-wrap: break-word
