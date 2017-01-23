@@ -6,4 +6,7 @@ id: attendee
 label: Attendee
 weight: 2
 is_admin: null
-permissions: {  }
+permissions:
+  - 'create session content'
+  - 'edit own session content'
+  - 'use text format filtered_html'

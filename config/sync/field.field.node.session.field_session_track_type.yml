@@ -1,0 +1,21 @@
+uuid: 50ad0f9b-02ab-4515-b767-b6ddb6246262
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_track_type
+    - node.type.session
+  module:
+    - options
+id: node.session.field_session_track_type
+field_name: field_session_track_type
+entity_type: node
+bundle: session
+label: Track
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,42 @@
+uuid: 4e5c144c-9977-40f5-800b-8a51043fc775
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_session_track_type
+field_name: field_session_track_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: case_studies
+      label: 'Case Studies'
+    -
+      value: development
+      label: Development
+    -
+      value: devops
+      label: DevOps
+    -
+      value: frontend
+      label: Frontend
+    -
+      value: performances
+      label: Performances
+    -
+      value: site_building
+      label: 'Site Building'
+    -
+      value: other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

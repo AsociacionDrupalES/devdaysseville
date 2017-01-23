@@ -6,6 +6,8 @@ dependencies:
     - field.field.node.session.body
     - field.field.node.session.field_session_level
     - field.field.node.session.field_session_status
+    - field.field.node.session.field_session_track_type
+    - field.field.node.session.field_session_type
     - field.field.node.session.field_user_ref
     - node.type.session
   module:
@@ -17,19 +19,29 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 31
+    weight: 1
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
   field_session_level:
-    weight: 32
+    weight: 4
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: options_buttons
+  field_session_track_type:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+  field_session_type:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
   field_user_ref:
-    weight: 33
+    weight: 2
     settings:
       match_operator: CONTAINS
       size: 60
@@ -38,7 +50,7 @@ content:
     type: entity_reference_autocomplete
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     settings:
       size: 60
       placeholder: ''

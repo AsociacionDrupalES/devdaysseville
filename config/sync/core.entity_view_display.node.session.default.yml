@@ -6,6 +6,8 @@ dependencies:
     - field.field.node.session.body
     - field.field.node.session.field_session_level
     - field.field.node.session.field_session_status
+    - field.field.node.session.field_session_track_type
+    - field.field.node.session.field_session_type
     - field.field.node.session.field_user_ref
     - node.type.session
   module:
@@ -26,6 +28,18 @@ content:
   field_session_level:
     weight: 0
     label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_session_track_type:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_session_type:
+    weight: 5
+    label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
