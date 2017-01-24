@@ -4,3 +4,44 @@
  * @file
  * Contains dddsvq_sessions.module.
  */
+
+use \Drupal\Core\StringTranslation\TranslatableMarkup;
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function dddsvq_sessions_entity_extra_field_info() {
+  $extra = [];
+
+  $extra['node']['session']['form'] = [
+      'session_intro' => [
+        'label' => t('Session intro text'),
+        'description' => new TranslatableMarkup('Intro text for the add/edit session form'),
+        'weight' => 0,
+      ],
+  ];
+
+  return $extra;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function dddsvq_sessions_theme($existing, $type, $theme, $path) {
+  $themes = [];
+
+  $themes['add_session_intro'] = [
+    'render element' => 'element'
+  ];
+
+  return $themes;
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function dddsvq_sessions_form_node_session_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+   $form['session_intro'] = [
+     '#theme' => 'add_session_intro',
+   ];
+}
