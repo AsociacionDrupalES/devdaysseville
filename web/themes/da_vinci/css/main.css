@@ -1992,6 +1992,7 @@ td {
   height: 100px;
   background: transparent url(../images/compass.svg) no-repeat right top;
   position: absolute;
+  z-index: -1;
 }
 
 #block-homemenu ul {
@@ -2927,17 +2928,25 @@ img {
   text-transform: uppercase;
 }
 
+.sponsors-list__title--platinum {
+  font-size: 32px;
+}
+
 .sponsors-list__title--gold {
+  font-size: 28px;
+}
+
+.sponsors-list__title--silver {
   font-size: 24px;
+}
+
+.sponsors-list__title--bronze {
+  font-size: 20px;
 }
 
 .sponsors-list__list {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
   align-content: center;
 }
 
