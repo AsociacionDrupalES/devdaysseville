@@ -8,7 +8,9 @@ dependencies:
     - field.field.user.user.field_register_drupal_name
     - field.field.user.user.field_register_name
     - field.field.user.user.field_register_picture
+    - image.style.crop_150x150
   module:
+    - image
     - linked_field
     - user
 id: user.user.full
@@ -17,7 +19,7 @@ bundle: user
 mode: full
 content:
   field_register_name:
-    weight: 6
+    weight: 1
     label: hidden
     settings:
       link_to_entity: false
@@ -29,8 +31,20 @@ content:
         advanced:
           target: _blank
     type: string
+  field_register_picture:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: crop_150x150
+      image_link: ''
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: custom
+        destination: '[user:field_register_drupal_link:uri]'
+        advanced: {  }
 hidden:
   field_register_drupal_link: true
   field_register_drupal_name: true
-  field_register_picture: true
   member_for: true

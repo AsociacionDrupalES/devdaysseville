@@ -9,48 +9,39 @@ dependencies:
     - field.field.user.user.field_register_picture
   module:
     - image
-    - link
     - user
 id: user.user.default
 targetEntityType: user
 bundle: user
 mode: default
 content:
-  field_register_drupal_link:
-    weight: 10
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
   field_register_drupal_name:
-    weight: 9
-    label: above
+    weight: 3
+    label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {  }
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: custom
+        destination: '[user:field_register_drupal_link:uri]'
+        advanced: {  }
     type: string
   field_register_name:
-    weight: 6
-    label: above
+    weight: 2
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_register_picture:
-    weight: 8
-    label: above
+    weight: 1
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
-  member_for:
-    weight: 5
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_register_drupal_link: true
+  member_for: true

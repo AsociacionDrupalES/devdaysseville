@@ -12,3 +12,4 @@ permissions:
   - 'access content'
   - 'access site-wide contact form'
   - 'use text format filtered_html'
+  - 'access user profiles'

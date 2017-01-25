@@ -10,3 +10,4 @@ permissions:
   - 'create session content'
   - 'edit own session content'
   - 'use text format filtered_html'
+  - 'cancel account'
