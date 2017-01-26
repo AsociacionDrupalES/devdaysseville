@@ -1540,6 +1540,10 @@ td {
   padding: 15px 10px;
 }
 
+.path-community .page-title {
+  text-decoration: none;
+}
+
 .path-frontpage {
   text-align: center;
 }
@@ -2931,7 +2935,8 @@ img {
 
 .profile .field--name-field-register-name {
   font-family: "Marcellus", serif;
-  font-size: 18px;
+  font-size: 16px;
+  margin-bottom: .33em;
   text-transform: uppercase;
   word-wrap: break-word;
 }
@@ -2940,6 +2945,18 @@ img {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   word-wrap: break-word;
+}
+
+.path-user .profile .field--name-field-register-picture a {
+  width: 157px;
+  top: 16px;
+  left: 11px;
+}
+
+.path-user .profile .field--name-field-register-name {
+  text-align: center;
+  margin-top: .5em;
+  font-size: 18px;
 }
 
 .quick-info__title {
