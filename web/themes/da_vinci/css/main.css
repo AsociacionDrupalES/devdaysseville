@@ -899,6 +899,14 @@ head:before {
   }
 }
 
+.sliding_menu #block-leftsidemenuList {
+  bottom: 69px;
+}
+
+.user-logged-in .sliding_menu #block-leftsidemenuList {
+  bottom: 103px;
+}
+
 header #block-menuprincipal ul.menu {
   display: none;
   margin: 0;
@@ -1288,13 +1296,30 @@ head:hover ~ body .info__inner-wrapper:before {
 
 .content__wrapper {
   position: relative;
-  max-width: 1170px;
   margin: 40px auto 0;
   height: 100%;
   width: 100%;
   background-color: white;
   border-left: 3px solid black;
   border-right: 3px solid black;
+}
+
+@media (min-width: 44em) {
+  .content__wrapper {
+    max-width: 720px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 64em) {
+  .content__wrapper {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 75em) {
+  .content__wrapper {
+    max-width: 1170px;
+  }
 }
 
 .path-frontpage .content__wrapper {
