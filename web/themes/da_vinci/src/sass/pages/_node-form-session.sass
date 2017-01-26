@@ -1,0 +1,86 @@
+// Form to add a Session
+.node-session-edit-form,
+.node-session-form
+  max-width: 650px
+  margin: 0 auto
+  .add-session-intro--text
+    line-height: 1.5em
+  .description
+    font-style: italic
+  legend
+    margin-bottom: 0.5em
+  label:not(.option)
+    display: block
+  label.option
+    margin-left: 0.25em
+    display: inline-block
+  input:not(.form-radio):not(.form-checkbox), textarea
+    border: 1px solid $black2
+    min-height: 48px
+    padding: 0.5em 1em
+    outline: none
+    width: 100%
+    &.form-autocomplete
+      background-position: 98% center
+    &.field-add-more-submit
+      background: transparent
+      color: $black2
+      font-size: 0.9em
+      min-height: 40px
+      height: 40px
+      width: auto
+      margin: 1em auto
+      display: block
+  .form-wrapper:not(.vertical-tabs__pane)
+    margin: 1.5em 0
+    &.field--name-title
+      margin-top: 3em
+  .tabledrag-toggle-weight-wrapper,
+  .filter-wrapper
+    height: 0
+    padding: 0
+    margin: 0!important
+    visibility: hidden
+  .field-
+    &-name-field-user-ref
+      thead
+        background: transparent
+      tr
+        border-width: 0
+      th
+        padding: 0
+      td
+        padding: 15px 0 0
+    &add-more-submit
+  a.tabledrag-handle
+    .handle
+      width: 25px
+      height: 25px
+      margin-right: 0
+  .form-actions
+    text-align: right
+    #edit-delete,
+    #edit-preview,
+    #edit-submit
+      width: 150px
+      margin: 0
+      &:hover
+        color: $white
+    #edit-delete
+      border: 1px solid $black2
+      padding: 0.6em 1em
+      outline: none
+      text-align: center
+    .dropbutton-multiple
+      float: right
+      width: 325px
+      display: inline-block
+      margin: 0 0 1em 0.5em
+      .dropbutton-widget
+        border: 0
+      input
+        margin: 0
+        width: 100%
+      li input
+        width: 100%
+        margin: 0
