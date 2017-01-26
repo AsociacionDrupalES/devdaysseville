@@ -2289,6 +2289,179 @@ input:-ms-input-placeholder {
   color: #eeeeee;
 }
 
+legend,
+label {
+  text-transform: uppercase;
+  font-family: "Marcellus", serif;
+  font-weight: 600;
+  margin-bottom: 0.25em;
+}
+
+.node-session-edit-form,
+.node-session-form {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.node-session-edit-form .add-session-intro--text,
+.node-session-form .add-session-intro--text {
+  line-height: 1.5em;
+}
+
+.node-session-edit-form .description,
+.node-session-form .description {
+  font-style: italic;
+}
+
+.node-session-edit-form legend,
+.node-session-form legend {
+  margin-bottom: 0.5em;
+}
+
+.node-session-edit-form label:not(.option),
+.node-session-form label:not(.option) {
+  display: block;
+}
+
+.node-session-edit-form label.option,
+.node-session-form label.option {
+  margin-left: 0.25em;
+  display: inline-block;
+}
+
+.node-session-edit-form input:not(.form-radio):not(.form-checkbox), .node-session-edit-form textarea,
+.node-session-form input:not(.form-radio):not(.form-checkbox),
+.node-session-form textarea {
+  border: 1px solid #212121;
+  min-height: 48px;
+  padding: 0.5em 1em;
+  outline: none;
+  width: 100%;
+}
+
+.node-session-edit-form input:not(.form-radio):not(.form-checkbox).form-autocomplete, .node-session-edit-form textarea.form-autocomplete,
+.node-session-form input:not(.form-radio):not(.form-checkbox).form-autocomplete,
+.node-session-form textarea.form-autocomplete {
+  background-position: 98% center;
+}
+
+.node-session-edit-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit, .node-session-edit-form textarea.field-add-more-submit,
+.node-session-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit,
+.node-session-form textarea.field-add-more-submit {
+  background: transparent;
+  color: #212121;
+  font-size: 0.9em;
+  min-height: 40px;
+  height: 40px;
+  width: auto;
+  margin: 1em auto;
+  display: block;
+}
+
+.node-session-edit-form .form-wrapper:not(.vertical-tabs__pane),
+.node-session-form .form-wrapper:not(.vertical-tabs__pane) {
+  margin: 1.5em 0;
+}
+
+.node-session-edit-form .form-wrapper:not(.vertical-tabs__pane).field--name-title,
+.node-session-form .form-wrapper:not(.vertical-tabs__pane).field--name-title {
+  margin-top: 3em;
+}
+
+.node-session-edit-form .tabledrag-toggle-weight-wrapper,
+.node-session-edit-form .filter-wrapper,
+.node-session-form .tabledrag-toggle-weight-wrapper,
+.node-session-form .filter-wrapper {
+  height: 0;
+  padding: 0;
+  margin: 0 !important;
+  visibility: hidden;
+}
+
+.node-session-edit-form .field--name-field-user-ref thead,
+.node-session-form .field--name-field-user-ref thead {
+  background: transparent;
+}
+
+.node-session-edit-form .field--name-field-user-ref tr,
+.node-session-form .field--name-field-user-ref tr {
+  border-width: 0;
+}
+
+.node-session-edit-form .field--name-field-user-ref th,
+.node-session-form .field--name-field-user-ref th {
+  padding: 0;
+}
+
+.node-session-edit-form .field--name-field-user-ref td,
+.node-session-form .field--name-field-user-ref td {
+  padding: 15px 0 0;
+}
+
+.node-session-edit-form a.tabledrag-handle .handle,
+.node-session-form a.tabledrag-handle .handle {
+  width: 25px;
+  height: 25px;
+  margin-right: 0;
+}
+
+.node-session-edit-form .form-actions,
+.node-session-form .form-actions {
+  text-align: right;
+}
+
+.node-session-edit-form .form-actions #edit-delete,
+.node-session-edit-form .form-actions #edit-preview,
+.node-session-edit-form .form-actions #edit-submit,
+.node-session-form .form-actions #edit-delete,
+.node-session-form .form-actions #edit-preview,
+.node-session-form .form-actions #edit-submit {
+  width: 150px;
+  margin: 0;
+}
+
+.node-session-edit-form .form-actions #edit-delete:hover,
+.node-session-edit-form .form-actions #edit-preview:hover,
+.node-session-edit-form .form-actions #edit-submit:hover,
+.node-session-form .form-actions #edit-delete:hover,
+.node-session-form .form-actions #edit-preview:hover,
+.node-session-form .form-actions #edit-submit:hover {
+  color: white;
+}
+
+.node-session-edit-form .form-actions #edit-delete,
+.node-session-form .form-actions #edit-delete {
+  border: 1px solid #212121;
+  padding: 0.6em 1em;
+  outline: none;
+  text-align: center;
+}
+
+.node-session-edit-form .form-actions .dropbutton-multiple,
+.node-session-form .form-actions .dropbutton-multiple {
+  float: right;
+  width: 325px;
+  display: inline-block;
+  margin: 0 0 1em 0.5em;
+}
+
+.node-session-edit-form .form-actions .dropbutton-multiple .dropbutton-widget,
+.node-session-form .form-actions .dropbutton-multiple .dropbutton-widget {
+  border: 0;
+}
+
+.node-session-edit-form .form-actions .dropbutton-multiple input,
+.node-session-form .form-actions .dropbutton-multiple input {
+  margin: 0;
+  width: 100%;
+}
+
+.node-session-edit-form .form-actions .dropbutton-multiple li input,
+.node-session-form .form-actions .dropbutton-multiple li input {
+  width: 100%;
+  margin: 0;
+}
+
 .simple-list, .sliding_menu #block-alternadordeidioma li, header #block-languageswitcher ul {
   margin: 0;
   padding: 0;
