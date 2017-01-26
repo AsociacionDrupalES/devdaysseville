@@ -714,13 +714,7 @@ head:before {
   right: 7px;
   top: 5px;
   margin: 0;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
 }
@@ -740,37 +734,22 @@ head:before {
   border-radius: 9px;
   opacity: 1;
   left: 0;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
 }
 
 .menu-trigger span:nth-child(1) {
   top: 4px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
   transform-origin: left center;
 }
 
 .menu-trigger span:nth-child(2) {
   top: 14px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
   transform-origin: left center;
 }
 
 .menu-trigger span:nth-child(3) {
   top: 24px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
   transform-origin: left center;
 }
 
@@ -779,9 +758,6 @@ head:before {
 }
 
 .menu-trigger.open span:nth-child(1) {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
   transform: rotate(45deg);
   top: 1px;
   left: 8px;
@@ -793,18 +769,22 @@ head:before {
 }
 
 .menu-trigger.open span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
   top: 26px;
   left: 8px;
 }
 
 .sliding_menu {
+  display: none;
   font-family: "Marcellus", serif;
   padding: 2rem 2rem 0;
   font-size: 1.2rem;
+}
+
+@media (min-width: 0) and (max-width: 43.99em) {
+  .sliding_menu {
+    display: block;
+  }
 }
 
 .sliding_menu a,
@@ -886,6 +866,37 @@ head:before {
 .sliding_menu #block-alternadordeidioma a.is-active {
   color: #fff;
   font-weight: 400;
+}
+
+.sliding_menu #block-leftsidemenuList,
+.sliding_menu #block-useraccountmenuList {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.sliding_menu #block-leftsidemenuList a,
+.sliding_menu #block-useraccountmenuList a {
+  background: white;
+  color: black;
+  width: 85vw;
+  display: block;
+  margin-top: 5px;
+}
+
+@media (min-width: 30em) {
+  .sliding_menu #block-leftsidemenuList a,
+  .sliding_menu #block-useraccountmenuList a {
+    width: 88vw;
+  }
+}
+
+@media (min-width: 37.5em) {
+  .sliding_menu #block-leftsidemenuList a,
+  .sliding_menu #block-useraccountmenuList a {
+    width: 90vw;
+  }
 }
 
 header #block-menuprincipal ul.menu {
@@ -1276,6 +1287,7 @@ head:hover ~ body .info__inner-wrapper:before {
 }
 
 .content__wrapper {
+  position: relative;
   max-width: 1170px;
   margin: 40px auto 0;
   height: 100%;
@@ -1301,84 +1313,65 @@ head:hover ~ body .info__inner-wrapper:before {
   }
 }
 
-@media (min-width: 44em) {
-  .layout-one-sidebar.layout-sidebar-first .layout-content {
-    width: 74.57627%;
-    float: left;
-    margin-left: 25.42373%;
-    margin-right: -100%;
-  }
+body:not(.path-frontpage) .layout-sidebar-first,
+body:not(.path-frontpage) .layout-sidebar-second {
+  position: absolute;
+  width: auto;
+  top: 0px;
+  transform: rotate(-90deg);
 }
 
-@media (min-width: 44em) {
-  .layout-one-sidebar.layout-sidebar-first .layout-sidebar-first {
-    width: 23.72881%;
-    float: left;
-    margin-left: 0;
-    margin-right: -100%;
-  }
+body:not(.path-frontpage) .layout-sidebar-first a,
+body:not(.path-frontpage) .layout-sidebar-second a {
+  display: inline-block;
+  font-family: "Marcellus", serif;
+  font-size: 18px;
+  padding: 10px 60px;
+  text-transform: uppercase;
 }
 
-@media (min-width: 44em) {
-  .layout-one-sidebar.layout-sidebar-second .layout-content {
-    width: 74.57627%;
-    float: left;
-    margin-left: 0;
-    margin-right: -100%;
-  }
+body:not(.path-frontpage) .layout-sidebar-first ul,
+body:not(.path-frontpage) .layout-sidebar-second ul {
+  position: absolute;
+  right: 25%;
+  min-width: 800px;
 }
 
-@media (min-width: 44em) {
-  .layout-one-sidebar.layout-sidebar-second .layout-sidebar-second {
-    width: 23.72881%;
-    float: left;
-    margin-left: 76.27119%;
-    margin-right: -100%;
-  }
+body:not(.path-frontpage) .layout-sidebar-first ul, body:not(.path-frontpage) .layout-sidebar-first li,
+body:not(.path-frontpage) .layout-sidebar-second ul,
+body:not(.path-frontpage) .layout-sidebar-second li {
+  margin: 0;
+  padding: 0;
 }
 
-@media (min-width: 44em) {
-  .layout-two-sidebars .layout-content {
-    width: 74.57627%;
-    float: left;
-    margin-left: 25.42373%;
-    margin-right: -100%;
-  }
+body:not(.path-frontpage) .layout-sidebar-first li,
+body:not(.path-frontpage) .layout-sidebar-second li {
+  float: right;
+  margin-left: 10px;
 }
 
-@media (min-width: 64em) {
-  .layout-two-sidebars .layout-content {
-    width: 49.15254%;
-    float: left;
-    margin-left: 25.42373%;
-    margin-right: -100%;
-  }
+body:not(.path-frontpage) .layout-sidebar-first {
+  left: -55px;
 }
 
-@media (min-width: 44em) {
-  .layout-two-sidebars .layout-sidebar-first {
-    width: 23.72881%;
-    float: left;
-    margin-left: 0;
-    margin-right: -100%;
-  }
+body:not(.path-frontpage) .layout-sidebar-first a {
+  background: black;
+  color: white;
 }
 
-@media (min-width: 44em) {
-  .layout-two-sidebars .layout-sidebar-second {
-    clear: both;
-    float: none;
-  }
+body:not(.path-frontpage) .layout-sidebar-second {
+  right: -15px;
 }
 
-@media (min-width: 64em) {
-  .layout-two-sidebars .layout-sidebar-second {
-    width: 23.72881%;
-    float: left;
-    margin-left: 76.27119%;
-    margin-right: -100%;
-    clear: none;
-  }
+body:not(.path-frontpage) .layout-sidebar-second a {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.path-frontpage .layout-sidebar-first,
+.path-frontpage .layout-sidebar-second {
+  display: none;
 }
 
 footer {
@@ -2057,6 +2050,171 @@ td {
   color: black;
 }
 
+.node-session-edit-form,
+.node-session-form {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.node-session-edit-form .add-session-intro--text,
+.node-session-form .add-session-intro--text {
+  line-height: 1.5em;
+}
+
+.node-session-edit-form .description,
+.node-session-form .description {
+  font-style: italic;
+}
+
+.node-session-edit-form legend,
+.node-session-form legend {
+  margin-bottom: 0.5em;
+}
+
+.node-session-edit-form label:not(.option),
+.node-session-form label:not(.option) {
+  display: block;
+}
+
+.node-session-edit-form label.option,
+.node-session-form label.option {
+  margin-left: 0.25em;
+  display: inline-block;
+}
+
+.node-session-edit-form input:not(.form-radio):not(.form-checkbox), .node-session-edit-form textarea,
+.node-session-form input:not(.form-radio):not(.form-checkbox),
+.node-session-form textarea {
+  border: 1px solid #212121;
+  min-height: 48px;
+  padding: 0.5em 1em;
+  outline: none;
+  width: 100%;
+}
+
+.node-session-edit-form input:not(.form-radio):not(.form-checkbox).form-autocomplete, .node-session-edit-form textarea.form-autocomplete,
+.node-session-form input:not(.form-radio):not(.form-checkbox).form-autocomplete,
+.node-session-form textarea.form-autocomplete {
+  background-position: 98% center;
+}
+
+.node-session-edit-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit, .node-session-edit-form textarea.field-add-more-submit,
+.node-session-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit,
+.node-session-form textarea.field-add-more-submit {
+  background: transparent;
+  color: #212121;
+  font-size: 0.9em;
+  min-height: 40px;
+  height: 40px;
+  width: auto;
+  margin: 1em auto;
+  display: block;
+}
+
+.node-session-edit-form .form-wrapper:not(.vertical-tabs__pane),
+.node-session-form .form-wrapper:not(.vertical-tabs__pane) {
+  margin: 1.5em 0;
+}
+
+.node-session-edit-form .form-wrapper:not(.vertical-tabs__pane).field--name-title,
+.node-session-form .form-wrapper:not(.vertical-tabs__pane).field--name-title {
+  margin-top: 3em;
+}
+
+.node-session-edit-form .tabledrag-toggle-weight-wrapper,
+.node-session-edit-form .filter-wrapper,
+.node-session-form .tabledrag-toggle-weight-wrapper,
+.node-session-form .filter-wrapper {
+  height: 0;
+  padding: 0;
+  margin: 0 !important;
+  visibility: hidden;
+}
+
+.node-session-edit-form .field--name-field-user-ref thead,
+.node-session-form .field--name-field-user-ref thead {
+  background: transparent;
+}
+
+.node-session-edit-form .field--name-field-user-ref tr,
+.node-session-form .field--name-field-user-ref tr {
+  border-width: 0;
+}
+
+.node-session-edit-form .field--name-field-user-ref th,
+.node-session-form .field--name-field-user-ref th {
+  padding: 0;
+}
+
+.node-session-edit-form .field--name-field-user-ref td,
+.node-session-form .field--name-field-user-ref td {
+  padding: 15px 0 0;
+}
+
+.node-session-edit-form a.tabledrag-handle .handle,
+.node-session-form a.tabledrag-handle .handle {
+  width: 25px;
+  height: 25px;
+  margin-right: 0;
+}
+
+.node-session-edit-form .form-actions,
+.node-session-form .form-actions {
+  text-align: right;
+}
+
+.node-session-edit-form .form-actions #edit-delete,
+.node-session-edit-form .form-actions #edit-preview,
+.node-session-edit-form .form-actions #edit-submit,
+.node-session-form .form-actions #edit-delete,
+.node-session-form .form-actions #edit-preview,
+.node-session-form .form-actions #edit-submit {
+  width: 150px;
+  margin: 0;
+}
+
+.node-session-edit-form .form-actions #edit-delete:hover,
+.node-session-edit-form .form-actions #edit-preview:hover,
+.node-session-edit-form .form-actions #edit-submit:hover,
+.node-session-form .form-actions #edit-delete:hover,
+.node-session-form .form-actions #edit-preview:hover,
+.node-session-form .form-actions #edit-submit:hover {
+  color: white;
+}
+
+.node-session-edit-form .form-actions #edit-delete,
+.node-session-form .form-actions #edit-delete {
+  border: 1px solid #212121;
+  padding: 0.6em 1em;
+  outline: none;
+  text-align: center;
+}
+
+.node-session-edit-form .form-actions .dropbutton-multiple,
+.node-session-form .form-actions .dropbutton-multiple {
+  float: right;
+  width: 325px;
+  display: inline-block;
+  margin: 0 0 1em 0.5em;
+}
+
+.node-session-edit-form .form-actions .dropbutton-multiple .dropbutton-widget,
+.node-session-form .form-actions .dropbutton-multiple .dropbutton-widget {
+  border: 0;
+}
+
+.node-session-edit-form .form-actions .dropbutton-multiple input,
+.node-session-form .form-actions .dropbutton-multiple input {
+  margin: 0;
+  width: 100%;
+}
+
+.node-session-edit-form .form-actions .dropbutton-multiple li input,
+.node-session-form .form-actions .dropbutton-multiple li input {
+  width: 100%;
+  margin: 0;
+}
+
 .node__content a {
   text-decoration: underline;
   transition: opacity 0.3s;
@@ -2296,171 +2454,6 @@ label {
   font-family: "Marcellus", serif;
   font-weight: 600;
   margin-bottom: 0.25em;
-}
-
-.node-session-edit-form,
-.node-session-form {
-  max-width: 650px;
-  margin: 0 auto;
-}
-
-.node-session-edit-form .add-session-intro--text,
-.node-session-form .add-session-intro--text {
-  line-height: 1.5em;
-}
-
-.node-session-edit-form .description,
-.node-session-form .description {
-  font-style: italic;
-}
-
-.node-session-edit-form legend,
-.node-session-form legend {
-  margin-bottom: 0.5em;
-}
-
-.node-session-edit-form label:not(.option),
-.node-session-form label:not(.option) {
-  display: block;
-}
-
-.node-session-edit-form label.option,
-.node-session-form label.option {
-  margin-left: 0.25em;
-  display: inline-block;
-}
-
-.node-session-edit-form input:not(.form-radio):not(.form-checkbox), .node-session-edit-form textarea,
-.node-session-form input:not(.form-radio):not(.form-checkbox),
-.node-session-form textarea {
-  border: 1px solid #212121;
-  min-height: 48px;
-  padding: 0.5em 1em;
-  outline: none;
-  width: 100%;
-}
-
-.node-session-edit-form input:not(.form-radio):not(.form-checkbox).form-autocomplete, .node-session-edit-form textarea.form-autocomplete,
-.node-session-form input:not(.form-radio):not(.form-checkbox).form-autocomplete,
-.node-session-form textarea.form-autocomplete {
-  background-position: 98% center;
-}
-
-.node-session-edit-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit, .node-session-edit-form textarea.field-add-more-submit,
-.node-session-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit,
-.node-session-form textarea.field-add-more-submit {
-  background: transparent;
-  color: #212121;
-  font-size: 0.9em;
-  min-height: 40px;
-  height: 40px;
-  width: auto;
-  margin: 1em auto;
-  display: block;
-}
-
-.node-session-edit-form .form-wrapper:not(.vertical-tabs__pane),
-.node-session-form .form-wrapper:not(.vertical-tabs__pane) {
-  margin: 1.5em 0;
-}
-
-.node-session-edit-form .form-wrapper:not(.vertical-tabs__pane).field--name-title,
-.node-session-form .form-wrapper:not(.vertical-tabs__pane).field--name-title {
-  margin-top: 3em;
-}
-
-.node-session-edit-form .tabledrag-toggle-weight-wrapper,
-.node-session-edit-form .filter-wrapper,
-.node-session-form .tabledrag-toggle-weight-wrapper,
-.node-session-form .filter-wrapper {
-  height: 0;
-  padding: 0;
-  margin: 0 !important;
-  visibility: hidden;
-}
-
-.node-session-edit-form .field--name-field-user-ref thead,
-.node-session-form .field--name-field-user-ref thead {
-  background: transparent;
-}
-
-.node-session-edit-form .field--name-field-user-ref tr,
-.node-session-form .field--name-field-user-ref tr {
-  border-width: 0;
-}
-
-.node-session-edit-form .field--name-field-user-ref th,
-.node-session-form .field--name-field-user-ref th {
-  padding: 0;
-}
-
-.node-session-edit-form .field--name-field-user-ref td,
-.node-session-form .field--name-field-user-ref td {
-  padding: 15px 0 0;
-}
-
-.node-session-edit-form a.tabledrag-handle .handle,
-.node-session-form a.tabledrag-handle .handle {
-  width: 25px;
-  height: 25px;
-  margin-right: 0;
-}
-
-.node-session-edit-form .form-actions,
-.node-session-form .form-actions {
-  text-align: right;
-}
-
-.node-session-edit-form .form-actions #edit-delete,
-.node-session-edit-form .form-actions #edit-preview,
-.node-session-edit-form .form-actions #edit-submit,
-.node-session-form .form-actions #edit-delete,
-.node-session-form .form-actions #edit-preview,
-.node-session-form .form-actions #edit-submit {
-  width: 150px;
-  margin: 0;
-}
-
-.node-session-edit-form .form-actions #edit-delete:hover,
-.node-session-edit-form .form-actions #edit-preview:hover,
-.node-session-edit-form .form-actions #edit-submit:hover,
-.node-session-form .form-actions #edit-delete:hover,
-.node-session-form .form-actions #edit-preview:hover,
-.node-session-form .form-actions #edit-submit:hover {
-  color: white;
-}
-
-.node-session-edit-form .form-actions #edit-delete,
-.node-session-form .form-actions #edit-delete {
-  border: 1px solid #212121;
-  padding: 0.6em 1em;
-  outline: none;
-  text-align: center;
-}
-
-.node-session-edit-form .form-actions .dropbutton-multiple,
-.node-session-form .form-actions .dropbutton-multiple {
-  float: right;
-  width: 325px;
-  display: inline-block;
-  margin: 0 0 1em 0.5em;
-}
-
-.node-session-edit-form .form-actions .dropbutton-multiple .dropbutton-widget,
-.node-session-form .form-actions .dropbutton-multiple .dropbutton-widget {
-  border: 0;
-}
-
-.node-session-edit-form .form-actions .dropbutton-multiple input,
-.node-session-form .form-actions .dropbutton-multiple input {
-  margin: 0;
-  width: 100%;
-}
-
-.node-session-edit-form .form-actions .dropbutton-multiple li input,
-.node-session-form .form-actions .dropbutton-multiple li input {
-  width: 100%;
-  margin: 0;
 }
 
 .simple-list, .sliding_menu #block-alternadordeidioma li, header #block-languageswitcher ul {
