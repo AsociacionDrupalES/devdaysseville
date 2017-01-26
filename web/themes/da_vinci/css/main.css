@@ -2028,10 +2028,10 @@ td {
 
 #block-homemenu ul {
   margin: 6vh auto 0;
-  width: 100%;
+  width: auto;
 }
 
-@media (min-width: 22.5em) {
+@media (min-width: 30em) {
   #block-homemenu ul {
     width: 300px;
   }
@@ -2064,7 +2064,7 @@ td {
   margin-bottom: 10px;
 }
 
-@media (min-width: 22.5em) {
+@media (min-width: 30em) {
   #block-homemenu ul li {
     width: 300px;
   }
