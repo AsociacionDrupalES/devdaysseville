@@ -908,6 +908,7 @@ display:
         row: false
         pager: false
         exposed_form: false
+        access: false
       relationships: {  }
       filters:
         status_extra:
@@ -1169,6 +1170,10 @@ display:
           expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
     cache_metadata:
       max-age: -1
       contexts:
