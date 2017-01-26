@@ -1,0 +1,5 @@
+services:
+  dddsvq_sessions.route_subscriber:
+    class: Drupal\dddsvq_sessions\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
