@@ -70,14 +70,19 @@ body
       //@extend .restricted-container
 
 
-.content__wrapper
+.content__wrapper, footer .footer__wrapper
   position: relative
-  +breakpoint($medium)
-    max-width: 720px
-  +breakpoint($large-landscape)
-    max-width: 960px
+  max-width: 90%
+  +breakpoint($medium-small)
+    max-width: 600px
+  +breakpoint($medium-big)
+    max-width: 800px
+  +breakpoint($large)
+    max-width: 900px
   +breakpoint($x-large)
     max-width: 1170px
+.content__wrapper
+  position: relative
   margin: 40px auto 0
   height: 100%
   width: 100%
