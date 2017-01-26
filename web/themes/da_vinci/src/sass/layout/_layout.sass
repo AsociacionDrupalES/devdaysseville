@@ -72,7 +72,12 @@ body
 
 .content__wrapper
   position: relative
-  max-width: 1170px
+  +breakpoint($medium)
+    max-width: 720px
+  +breakpoint($large-landscape)
+    max-width: 960px
+  +breakpoint($x-large)
+    max-width: 1170px
   margin: 40px auto 0
   height: 100%
   width: 100%
