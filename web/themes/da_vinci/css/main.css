@@ -2489,6 +2489,99 @@ td {
   width: 100%;
 }
 
+.view-sessions .views-exposed-form .js-form-type-select {
+  margin-right: 1em;
+  min-width: 25%;
+}
+
+.view-sessions .views-exposed-form label {
+  display: block;
+}
+
+.view-sessions .views-exposed-form select {
+  border: 1px solid #212121;
+  min-height: 48px;
+  padding: 0.5em 1em;
+  outline: none;
+  border-radius: 2px;
+  background: white;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat 95%;
+  background-size: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.view-sessions .views-exposed-form .form-actions {
+  display: inline-block;
+  margin-top: 2.4em;
+  margin-left: 1em;
+}
+
+.view-sessions .view-content {
+  max-width: 650px;
+  margin: 0 auto;
+  margin-top: 3em;
+}
+
+.view-sessions .view-content li {
+  margin: 0;
+  list-style-type: none;
+}
+
+.view-sessions .view-content li h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.view-sessions .view-content li h2 a:before {
+  content: none;
+}
+
+.view-sessions .view-content .session--speakers {
+  display: inline-block;
+}
+
+.view-sessions .view-content .session--speakers .field__items > div {
+  display: inline-block;
+  margin-right: 0.25em;
+}
+
+.view-sessions .view-content .session--speakers .field__items > div .field--name-field-register-name {
+  font-family: "Open Sans", sans-serif;
+  text-transform: none;
+  font-weight: 700;
+}
+
+.view-sessions .view-content .session--speakers .field__items > div .field--name-field-register-name a {
+  text-decoration: none;
+}
+
+.view-sessions .view-content .session--speakers .field__items > div .field--name-field-register-name:after {
+  content: ',';
+}
+
+.view-sessions .view-content .session--speakers .field__items > div:last-child .field--name-field-register-name:after {
+  content: none;
+}
+
+.view-sessions .view-content .session--sumary {
+  display: inline-block;
+}
+
+.view-sessions .view-content .session--sumary:before {
+  content: '|';
+  padding-right: 0.25em;
+}
+
+.view-sessions .view-content .session--sumary > div {
+  display: inline-block;
+  font-size: 0.9em;
+}
+
 .branding {
   margin: 0 auto;
 }
