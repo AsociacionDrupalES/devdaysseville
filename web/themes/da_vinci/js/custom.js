@@ -37,6 +37,11 @@
         $('body').fadeTo('fast', 1);
         $('iframe').remove();
       });
+
+      $('.page-node-type-session #block-da-vinci-page-title').prependTo('.node__content');
+
+      $('.page-node-type-session .node__content > div:not(.field--type-entity-reference)').wrapAll("<div class='session-info' />");
+      $('.page-node-type-session .session-info').appendTo('.node__content');
       // End your Code.
     }
   };

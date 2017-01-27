@@ -2352,6 +2352,112 @@ td {
   margin: 0;
 }
 
+.page-node-type-session .field--name-field-user-ref {
+  padding-bottom: 3em;
+}
+
+@media (min-width: 37.5em) {
+  .page-node-type-session .field--name-field-user-ref {
+    width: 32.20339%;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    padding-right: 8%;
+  }
+}
+
+.page-node-type-session .field--name-field-user-ref > .field__item {
+  margin-bottom: 2em;
+}
+
+.page-node-type-session .field--name-field-user-ref > .field__item .field--name-field-register-name {
+  font-family: "Open Sans", sans-serif;
+  text-transform: none;
+  text-align: center;
+  font-weight: 600;
+}
+
+.page-node-type-session .field--name-field-user-ref > .field__item .field--name-field-register-drupal-name {
+  text-align: right;
+  font-size: 0.9em;
+  margin-top: 0.25em;
+}
+
+.page-node-type-session .field--name-field-user-ref > .field__item .field--name-field-register-picture {
+  margin-bottom: 0.5em;
+}
+
+.page-node-type-session .field--name-field-user-ref > .field__item .field--name-field-register-picture img {
+  width: 170px;
+}
+
+.page-node-type-session .field--name-field-user-ref > .field__item .field--name-field-register-picture a {
+  transition: filter 0.8s;
+}
+
+@media (min-width: 64em) {
+  .page-node-type-session .field--name-field-user-ref > .field__item .field--name-field-register-picture a {
+    width: 150px;
+    max-width: 100%;
+    top: 13px;
+    left: 15px;
+  }
+}
+
+.page-node-type-session .field--name-field-user-ref > .field__item .field--name-field-register-picture a img {
+  width: 145px;
+  background: white;
+}
+
+.page-node-type-session .field--name-field-user-ref > .field__item .field--name-field-register-picture a:hover {
+  opacity: 1;
+  filter: grayscale(100%);
+}
+
+@media (min-width: 37.5em) {
+  .page-node-type-session .session-info {
+    width: 66.10169%;
+    float: left;
+    margin-left: 33.89831%;
+    margin-right: -100%;
+  }
+}
+
+.page-node-type-session .session-info .page-title {
+  text-align: left;
+  text-transform: none;
+  line-height: 1em;
+  margin-top: 0;
+  word-break: break-all;
+  font-size: 30px;
+}
+
+@media (min-width: 64em) {
+  .page-node-type-session .session-info .page-title {
+    font-size: 48px;
+  }
+}
+
+.page-node-type-session .session-info .field--type-list-string {
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  font-family: "Marcellus", serif;
+  margin-right: 0.5em;
+}
+
+.page-node-type-session .session-info .field--type-list-string:after {
+  content: ',';
+}
+
+.page-node-type-session .session-info .field--type-list-string.field--name-field-session-track-type:after {
+  content: none;
+}
+
+.page-node-type-session .session-info .text-formatted p {
+  line-height: 1.5em;
+}
+
 .node__content a {
   text-decoration: underline;
   transition: opacity 0.3s;
