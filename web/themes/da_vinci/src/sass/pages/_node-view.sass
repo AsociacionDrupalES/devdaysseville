@@ -1,0 +1,19 @@
+.node--view-mode
+  &-teaser
+    display: flex
+    flex-flow: column nowrap
+    margin-bottom: 3em
+    +breakpoint($medium-big)
+      width: 100%
+      padding: 0 20px
+    .node__title
+      margin-top: 0
+      margin-bottom: 5px
+      font-size: 24px
+      a
+        text-decoration: none
+        &::before
+          display: none
+    .node-readmore
+      a
+        text-decoration: none
