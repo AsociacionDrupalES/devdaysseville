@@ -15,3 +15,17 @@ function dddsvq_sessions_user_presave(\Drupal\user\UserInterface $account) {
     $account->addRole('attendee');
   }
 }
+
+/**
+ * Implements hook_entity_view().
+ */
+function dddsvq_users_entity_view(array &$build, \Drupal\Core\Entity\EntityInterface $entity, \Drupal\Core\Entity\Display\EntityViewDisplayInterface $display, $view_mode) {
+  if ($entity->getEntityTypeId() == 'user' && $view_mode !== 'compact') {
+    if ($entity->field_register_picture->isEmpty()) {
+      $build['user_image'] = ['#markup' => '
+      <div class="field--name-field-register-picture">
+        <img src="/themes/da_vinci/images/avatar.svg">
+      </div>'];
+    }
+  }
+}
