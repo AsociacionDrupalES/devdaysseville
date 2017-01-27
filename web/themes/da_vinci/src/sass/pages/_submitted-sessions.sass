@@ -1,0 +1,64 @@
+.view-sessions
+  .views-exposed-form
+    .js-form-type-select
+      margin-right: 1em
+      min-width: 25%
+    label
+      display: block
+    select
+      border: 1px solid $black2
+      min-height: 48px
+      padding: 0.5em 1em
+      outline: none
+      border-radius: 2px
+      background: $white
+      appearance: none
+      -moz-appearance: none
+      -webkit-appearance: none
+      background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat 95%
+      background-size: 10px
+      cursor: pointer
+      width: 100%
+    .form-actions
+      display: inline-block
+      margin-top: 2.4em
+      margin-left: 1em
+  .view-content
+    max-width: 650px
+    margin: 0 auto
+    margin-top: 3em
+    li
+      margin: 0
+      list-style-type: none
+      h2
+        font-size: 24px
+        font-weight: 600
+        margin-bottom: 5px
+        a:before
+          content: none
+    .session--
+      &speakers
+        display: inline-block
+        .field__items
+          > div
+            display: inline-block
+            margin-right: 0.25em
+            .field--name-field-register-name
+              font-family: $default
+              text-transform: none
+              font-weight: 700
+              a
+                text-decoration: none
+              &:after
+                content: ','
+            &:last-child
+              .field--name-field-register-name:after
+                content: none
+      &sumary
+        display: inline-block
+        &:before
+          content: '|'
+          padding-right: 0.25em
+        > div
+          display: inline-block
+          font-size: 0.9em
