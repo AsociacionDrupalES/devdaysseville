@@ -18,8 +18,8 @@
 #}
 <article{{ attributes.addClass('profile') }}>
   {% if content %}
-    {% if content['user_picture'] %}
-      {{ content['user_picture'] }}
+    {% if content['default_user_image'] %}
+      {{ content['default_user_image'] }}
     {% endif %}
     {{- content -}}
   {% endif %}
