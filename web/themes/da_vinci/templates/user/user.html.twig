@@ -21,6 +21,6 @@
     {% if content['default_user_image'] %}
       {{ content['default_user_image'] }}
     {% endif %}
-    {{- content -}}
+    {{- content|without('default_user_image') -}}
   {% endif %}
 </article>
