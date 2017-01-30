@@ -10,10 +10,27 @@
  *
  * Add the attendee role by default to new users.
  */
-function dddsvq_sessions_user_presave(\Drupal\user\UserInterface $account) {
+function dddsvq_users_user_presave(\Drupal\user\UserInterface $account) {
   if ($account->isNew()) {
     $account->addRole('attendee');
   }
+}
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function dddsvq_users_entity_extra_field_info() {
+  $extra = [];
+
+  $extra['user']['user']['form'] = [
+    'gender_info' => [
+      'label' => new \Drupal\Core\StringTranslation\TranslatableMarkup('Gender explanation info'),
+      'description' => new \Drupal\Core\StringTranslation\TranslatableMarkup('The gender explanation text below the gender field.'),
+      'weight' => 0,
+    ],
+  ];
+
+  return $extra;
 }
 
 /**
@@ -26,6 +43,28 @@ function dddsvq_users_entity_view(array &$build, \Drupal\Core\Entity\EntityInter
       <div class="field--name-field-register-picture">
         <img src="/themes/da_vinci/images/avatar.svg">
       </div>'];
+    }
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function dddsvq_users_form_user_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  // We add the states rules for the field field_gender_write_in:
+  if (isset($form['field_gender_write_in'])) {
+    $form['field_gender_write_in']['#states'] = [
+      'visible' => [
+        ':input[name="field_gender"]' => ['value' => 'other'],
+      ],
+    ];
+
+    if (isset($form['field_gender'])) {
+      $form['gender_info'] = ['#markup' => new \Drupal\Core\StringTranslation\TranslatableMarkup(
+        'The purpose of this information is to get data about the diversity of the
+       conference. It won\'t be public on your profile, will be only used by 
+       the organization team and will only be shared publicly in aggregated ways.'
+      )];
     }
   }
 }

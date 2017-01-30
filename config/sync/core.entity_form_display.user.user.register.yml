@@ -4,12 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.user.register
+    - field.field.user.user.field_gender
+    - field.field.user.user.field_gender_write_in
     - field.field.user.user.field_register_drupal_link
     - field.field.user.user.field_register_drupal_name
     - field.field.user.user.field_register_name
     - field.field.user.user.field_register_picture
   module:
-    - link
     - user
 id: user.user.register
 targetEntityType: user
@@ -20,20 +21,6 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-  field_register_drupal_link:
-    weight: 4
-    settings:
-      placeholder_url: 'https://www.drupal.org/u/xxxxxx'
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-  field_register_drupal_name:
-    weight: 3
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
   field_register_name:
     weight: 1
     settings:
@@ -43,7 +30,12 @@ content:
     type: string_textfield
 hidden:
   contact: true
+  field_gender: true
+  field_gender_write_in: true
+  field_register_drupal_link: true
+  field_register_drupal_name: true
   field_register_picture: true
+  gender_info: true
   language: true
   path: true
   timezone: true
