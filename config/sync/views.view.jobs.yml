@@ -180,7 +180,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: jobs
+      path: sponsors/jobs
       display_description: ''
     cache_metadata:
       max-age: -1
