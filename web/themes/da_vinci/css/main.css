@@ -2352,6 +2352,55 @@ td {
   margin: 0;
 }
 
+.node--type-job-offer {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 3em;
+}
+
+@media (min-width: 50em) {
+  .node--type-job-offer {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.node--type-job-offer .node__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.node--type-job-offer .node__title a {
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.node--type-job-offer .node__title a::before {
+  display: none;
+}
+
+.node--type-job-offer .node__title a:hover {
+  opacity: 0.4;
+}
+
+.node--type-job-offer .field--name-field-sponsor-ref {
+  font-weight: 700;
+  display: inline-block;
+}
+
+.node--type-job-offer .node-readmore {
+  float: right;
+}
+
+.node--type-job-offer .node-readmore a {
+  text-decoration: none;
+}
+
+.node--type-job-offer ul.inline li {
+  display: block;
+}
+
 .page-node-type-session .field--name-field-user-ref {
   padding-bottom: 3em;
 }
@@ -2800,6 +2849,10 @@ label {
 .simple-list li, .sliding_menu #block-alternadordeidioma li li, header #block-languageswitcher ul li {
   list-style-image: none;
   list-style-type: none;
+}
+
+.item-list li {
+  display: block;
 }
 
 div#mc_embed_signup {
