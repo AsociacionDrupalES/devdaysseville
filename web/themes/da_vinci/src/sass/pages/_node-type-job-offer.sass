@@ -1,0 +1,25 @@
+.node--type-job-offer
+  display: flex
+  flex-flow: column nowrap
+  margin-bottom: 3em
+  +breakpoint($medium-big)
+    width: 100%
+    padding: 0 20px
+  .node__title
+    margin-top: 0
+    margin-bottom: 5px
+    font-size: 24px
+    a
+      text-decoration: none
+      transition: opacity 0.3s
+      &::before
+        display: none
+      &:hover
+        opacity: 0.4
+  .field--name-field-sponsor-ref
+    font-weight: 700
+    display: inline-block
+  .node-readmore
+    a
+      text-decoration: none
+		
