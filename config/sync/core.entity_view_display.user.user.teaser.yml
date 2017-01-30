@@ -4,13 +4,15 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.teaser
+    - field.field.user.user.field_gender
     - field.field.user.user.field_register_drupal_link
     - field.field.user.user.field_register_drupal_name
     - field.field.user.user.field_register_name
     - field.field.user.user.field_register_picture
-    - image.style.thumbnail
+    - image.style.crop_150x150
   module:
     - image
+    - linked_field
     - user
 id: user.user.teaser
 targetEntityType: user
@@ -25,9 +27,10 @@ content:
     third_party_settings:
       linked_field:
         linked: '1'
-        type: field
-        destination: field_register_drupal_link
-        advanced: {  }
+        type: custom
+        destination: '[user:field_register_drupal_link:uri]'
+        advanced:
+          target: _blank
     type: string
   field_register_name:
     weight: 1
@@ -40,10 +43,17 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: crop_150x150
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: custom
+        destination: '[user:field_register_drupal_link:uri]'
+        advanced:
+          target: _blank
     type: image
 hidden:
+  field_gender: true
   field_register_drupal_link: true
   member_for: true

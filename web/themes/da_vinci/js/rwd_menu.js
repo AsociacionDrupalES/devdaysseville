@@ -14,14 +14,20 @@
           // First add ID to the main menu.
           $('#block-headerleftmenu>ul.menu').attr('id','block-headerleftmenuList');
           $('#block-headerrightmenu>ul.menu').attr('id','block-headerrightmenuList');
+          $('#block-leftsidemenu>ul.menu').attr('id','block-leftsidemenuList');
+          $('#block-useraccountmenu>ul.menu').attr('id','block-useraccountmenuList');
           // Move the main menu together with its children.
           $('#block-headerleftmenuList').appendTo('.sliding_menu');
           $('#block-headerrightmenuList').appendTo('.sliding_menu');
+          $('#block-leftsidemenuList').appendTo('.sliding_menu');
+          $('#block-useraccountmenuList').appendTo('.sliding_menu');
         }
         else {
           // Move back the lists into the desktop positions.
           $('#block-headerleftmenuList').appendTo('#block-headerleftmenu');
           $('#block-headerrightmenuList').appendTo('#block-headerrightmenu');
+          $('#block-leftsidemenuList').appendTo('#block-leftsidemenu');
+          $('#block-useraccountmenuList').appendTo('#block-useraccountmenu');
         }
       });
 

@@ -18,6 +18,9 @@
 #}
 <article{{ attributes.addClass('profile') }}>
   {% if content %}
-    {{- content -}}
+    {% if content['default_user_image'] %}
+      {{ content['default_user_image'] }}
+    {% endif %}
+    {{- content|without('default_user_image') -}}
   {% endif %}
 </article>

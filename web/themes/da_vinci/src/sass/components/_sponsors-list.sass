@@ -1,6 +1,8 @@
 .sponsors-list
-  padding: 20px
+  padding: 20px 30px
   text-align: center
+  +breakpoint($medium)
+    padding: 20px 40px
   &__wrapper
     position: relative
     max-width: 91%
@@ -25,15 +27,17 @@
       background: $white url('../images/frame__right.svg') repeat-y center bottom
   &__title
     text-transform: uppercase
+    &--platinum
+      font-size: 32px
     &--gold
+      font-size: 28px
+    &--silver
       font-size: 24px
+    &--bronze
+      font-size: 20px
   &__list
     margin: 0
     padding: 0
-    display: flex
-    flex-flow: row wrap
-    justify-content: center
-    align-items: center
     align-content: center
   &__item
     display: inline-block

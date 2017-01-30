@@ -28,7 +28,7 @@ body
   margin: 30px auto 0
   display: flex
   flex-direction: column
-  overflow: hidden
+  //overflow: hidden -----> menu cut in nexus mobile
   .page-node-type-basic-page &
     background: transparent url('../images/bg-sea-map.svg') no-repeat
     background-size: 110%
@@ -70,55 +70,30 @@ body
       //@extend .restricted-container
 
 
+.content__wrapper, footer .footer__wrapper
+  position: relative
+  max-width: 90%
+  +breakpoint($medium-small)
+    max-width: 600px
+  +breakpoint($medium-big)
+    max-width: 800px
+  +breakpoint($large)
+    max-width: 900px
+  +breakpoint($x-large)
+    max-width: 1170px
 .content__wrapper
-  max-width: 1170px
+  position: relative
   margin: 40px auto 0
   height: 100%
   width: 100%
   background-color: $white
-  +breakpoint($medium)
-    border-left: 3px solid $black
-    border-right: 3px solid $black
+  border-left: 3px solid $black
+  border-right: 3px solid $black
+  .path-frontpage &
+    border: none
   main
     max-width: 900px
     margin: 0 auto
     padding: 0 10px
     +breakpoint($medium)
       padding: 0
-
-
-// Dynamic main content
-
-.layout
-  &-one-sidebar
-    &.layout-sidebar-first
-      .layout-content
-        +breakpoint($medium)
-          +span(9 of 12 last)
-      .layout-sidebar-first
-        +breakpoint($medium)
-          +span(3 of 12 first)
-  &-one-sidebar
-    &.layout-sidebar-second
-      .layout-content
-        +breakpoint($medium)
-          +span(9 of 12 first)
-      .layout-sidebar-second
-        +breakpoint($medium)
-          +span(3 of 12 last)
-  &-two-sidebars
-    .layout-content
-      +breakpoint($medium)
-        +span(9 of 12 last)
-      +breakpoint($large)
-        +span(isolate 6 at 4 of 12)
-    .layout-sidebar-first
-      +breakpoint($medium)
-        +span(3 of 12 first)
-    .layout-sidebar-second
-      +breakpoint($medium)
-        clear: both
-        float: none
-      +breakpoint($large)
-        +span(3 of 12 last)
-        clear: none

@@ -25,7 +25,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'access user profiles'
+          perm: 'access content'
       cache:
         type: tag
         options: {  }
@@ -50,7 +50,7 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 50
+          items_per_page: 20
           offset: 0
           id: 0
           total_pages: null
@@ -197,7 +197,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: attendees
+      path: community/attendees
     cache_metadata:
       max-age: -1
       contexts:

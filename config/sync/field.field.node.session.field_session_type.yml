@@ -1,0 +1,23 @@
+uuid: 1ae51bdf-f619-4aa2-a4f1-7eba96942f5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_type
+    - node.type.session
+  module:
+    - options
+id: node.session.field_session_type
+field_name: field_session_type
+entity_type: node
+bundle: session
+label: 'Session type'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: session
+default_value_callback: ''
+settings: {  }
+field_type: list_string

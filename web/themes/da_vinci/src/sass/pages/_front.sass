@@ -22,6 +22,9 @@
     position: relative
   &__inner-wrapper
     position: relative
+    .content__wrapper
+      border-left: 3px solid $black
+      border-right: 3px solid $black
     &:after
       display: block
       position: absolute
@@ -260,12 +263,13 @@
   height: 100px
   background: transparent url(../images/compass.svg) no-repeat right top
   position: absolute
+  z-index: -1
 
 #block-homemenu
   ul
     margin: 6vh auto 0
-    width: 100%
-    +breakpoint($x-small)
+    width: auto
+    +breakpoint($small)
       width: 300px
     +breakpoint($medium)
       margin-top: 5vh
@@ -280,7 +284,7 @@
       text-align: center
       width: 100%
       margin-bottom: 10px
-      +breakpoint($x-small)
+      +breakpoint($small)
         width: 300px
       a
         display: block

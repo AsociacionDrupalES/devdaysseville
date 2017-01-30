@@ -15,15 +15,15 @@ footer
     //margin-left: 15px
 
   .footer__wrapper
-    max-width: 1170px
     margin: 0 auto
     padding: 100px 0 0
+    border-left: 3px solid $black
+    border-right: 3px solid $black
+    .path-frontpage &
+      border: none
     +breakpoint($medium)
-      border-right: 3px solid $black
-      border-left: 3px solid $black
       display: flex
       flex-grow: 1
-
   a
     color: $white
     &:hover
@@ -32,6 +32,35 @@ footer
   .region
     text-align: center
     margin-bottom: 20px
+    ul
+      margin-left: 0
+      margin-bottom: 0
+      li
+        text-align: center
+    &.region-footer-left
+      a.is-active
+        color: $white
+        font-weight: 700
+        &:hover
+          color: inherit
+      margin-top: 6em
+      margin-bottom: 0
+      .menu
+        text-align: center
+        li
+          text-align: center
+          display: inline-block
+          a
+            background-color: rgba($white, 0.9)
+            color: $black
+            padding: 0.5em 0.75em
+            display: inline-block
+            border-radius: 2px
+            border: 2px solid lighten($black2, 10%)
+            font-family: $title
+            font-size: 0.65em
+            font-weight: 500
+            text-transform: uppercase
     +breakpoint($medium)
       width: 33%
       flex-basis: 33%
@@ -40,14 +69,19 @@ footer
         text-align: right
       &.region-footer-left
         text-align: left
-    &.region-footer-left
-      margin-top: 100px
-      margin-bottom: 0
-    ul
-      margin-left: 0
-      margin-bottom: 0
-      li
-        text-align: center
+        margin-top: 100px
+        .menu
+          li
+            display: block
+            a
+              background-color: transparent
+              color: $white
+              font-size: 1em
+              border-width: 0
+              text-transform: none
+              font-weight: 400
+              font-family: $default
+              padding: 0
 
 .footer__push
   height: 50px

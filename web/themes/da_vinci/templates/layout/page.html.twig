@@ -60,6 +60,17 @@
   {% endif %}
 
   <div class="content__wrapper">
+    {% if page.sidebar_first %}
+      <aside class="layout-sidebar-first" role="complementary">
+          {{ page.sidebar_first }}
+      </aside>
+    {% endif %}
+
+    {% if page.sidebar_second %}
+      <aside class="layout-sidebar-second" role="complementary">
+          {{ page.sidebar_second }}
+      </aside>
+    {% endif %}
       {{ page.header_left }}
       {{ page.header_right }}
     <header class="page__header" role="banner" aria-label="{{ 'Site header'|t}}">
@@ -102,19 +113,7 @@
             {{ page.page_bottom }}
         {% endif %}
 
-        {% if page.sidebar_first %}
-          <aside class="layout-sidebar-first" role="complementary">
-              {{ page.sidebar_first }}
-          </aside>
-        {% endif %}
-
-        {% if page.sidebar_second %}
-          <aside class="layout-sidebar-second" role="complementary">
-              {{ page.sidebar_second }}
-          </aside>
-        {% endif %}
     </main>
-
   </div>
 
   <footer role="complementary">

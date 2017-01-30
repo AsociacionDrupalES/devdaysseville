@@ -11,7 +11,7 @@ id: node.session.body
 field_name: body
 entity_type: node
 bundle: session
-label: 'Detailed description'
+label: Description
 description: 'Tell us about your session! The more information you provide the better. '
 required: true
 translatable: true

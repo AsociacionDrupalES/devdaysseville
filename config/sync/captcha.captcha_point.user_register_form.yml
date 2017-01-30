@@ -1,6 +1,6 @@
 uuid: null
 langcode: en
-status: false
+status: true
 dependencies: {  }
 formId: user_register_form
 captchaType: default

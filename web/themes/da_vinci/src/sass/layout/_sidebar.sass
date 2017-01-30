@@ -1,0 +1,38 @@
+body:not(.path-frontpage)
+  .layout-sidebar-first,
+  .layout-sidebar-second
+    position: absolute
+    width: auto
+    top: 0px // because negative margin in header left and right
+    transform: rotate(-90deg)
+    a
+      display: inline-block
+      font-family: $title
+      font-size: 18px
+      padding: 10px 60px
+      text-transform: uppercase
+    ul
+      position: absolute
+      right: 25%
+      min-width: 800px
+    ul, li
+      margin: 0
+      padding: 0
+    li
+      float: right
+      margin-left: 10px
+  .layout-sidebar-first
+    left: -55px
+    a
+      background: $black
+      color: white
+  .layout-sidebar-second
+    right: -15px
+    a
+      background: white
+      color: $black
+      border: 1px solid $black
+.path-frontpage
+  .layout-sidebar-first,
+  .layout-sidebar-second
+    display: none

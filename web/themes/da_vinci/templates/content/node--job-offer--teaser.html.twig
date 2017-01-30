@@ -82,10 +82,10 @@
   <header>
     {{ title_prefix }}
     {% if not page %}
-      {{ content.field_sponsor_ref }}
       <h2{{ title_attributes.addClass('node__title') }}>
         <a href="{{ url }}" rel="bookmark">{{ label }}</a>
       </h2>
+      {{'A job offer from' | trans}} {{ content.field_sponsor_ref }}
     {% endif %}
     {{ title_suffix }}
     {% if display_submitted %}

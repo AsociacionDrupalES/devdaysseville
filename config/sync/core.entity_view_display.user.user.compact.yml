@@ -8,25 +8,28 @@ dependencies:
     - field.field.user.user.field_register_drupal_name
     - field.field.user.user.field_register_name
     - field.field.user.user.field_register_picture
-    - image.style.thumbnail
   module:
-    - image
+    - linked_field
     - user
 id: user.user.compact
 targetEntityType: user
 bundle: user
 mode: compact
 content:
-  field_register_picture:
+  field_register_name:
+    type: string
     weight: 0
-    label: visually_hidden
+    label: hidden
     settings:
-      image_style: thumbnail
-      image_link: ''
-    third_party_settings: {  }
-    type: image
+      link_to_entity: false
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: custom
+        destination: '[user:field_register_drupal_link:uri]'
+        advanced: {  }
 hidden:
   field_register_drupal_link: true
   field_register_drupal_name: true
-  field_register_name: true
+  field_register_picture: true
   member_for: true

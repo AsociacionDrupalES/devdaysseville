@@ -88,6 +88,18 @@
           <div class="hero__inner-wrapper">
             <main role="main" class="hero__content">
               <div class="content__wrapper">
+                  {% if page.sidebar_first %}
+                      <aside class="layout-sidebar-first" role="complementary">
+                          {{ page.sidebar_first }}
+                      </aside>
+                  {% endif %}
+
+                  {% if page.sidebar_second %}
+                      <aside class="layout-sidebar-second" role="complementary">
+                          {{ page.sidebar_second }}
+                      </aside>
+                  {% endif %}
+
                   {{ page.header_left }}
                   {{ page.header_right }}
                   <header class="hero__header" role="banner" aria-label="{{ 'Site header'|t}}">
@@ -140,19 +152,7 @@
           </div>
         </div>
 
-        {% if page.sidebar_first %}
-            <aside class="layout-sidebar-first" role="complementary">
-                {{ page.sidebar_first }}
-            </aside>
-        {% endif %}
-
-        {% if page.sidebar_second %}
-            <aside class="layout-sidebar-second" role="complementary">
-                {{ page.sidebar_second }}
-            </aside>
-        {% endif %}
     </div>
-
     <footer role="complementary">
       <div class="footer__wrapper">
         {{ page.footer_left }}

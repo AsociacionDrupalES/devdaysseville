@@ -1757,6 +1757,10 @@ a:not(.noicon)[rel=next]:after, button:not(.noicon)[rel=next]:after {
   content: "\f0a9";
 }
 
+a:not(.noicon)[rel=next] span:not(.visually-hidden), button:not(.noicon)[rel=next] span:not(.visually-hidden) {
+  display: none;
+}
+
 a:not(.noicon)[rel=directory]:after, button:not(.noicon)[rel=directory]:after {
   content: "\f115";
 }
