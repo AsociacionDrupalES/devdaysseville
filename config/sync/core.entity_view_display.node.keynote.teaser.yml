@@ -5,10 +5,43 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.keynote.body
+    - field.field.node.keynote.field_company_bio
+    - field.field.node.keynote.field_company_name
+    - field.field.node.keynote.field_image
+    - field.field.node.keynote.field_logo
+    - field.field.node.keynote.field_speaker_bio
+    - field.field.node.keynote.field_speaker_full_name
+    - field.field.node.keynote.field_speaker_position
+    - image.style.medium
     - node.type.keynote
   module:
+    - field_group
+    - image
     - text
     - user
+third_party_settings:
+  field_group:
+    group_keynote_main_info:
+      children:
+        - field_image
+        - field_logo
+        - field_speaker_full_name
+        - field_speaker_position
+        - field_speaker_bio
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        label: 'keynote main info'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: keynote-main-info
+      label: 'keynote main info'
 id: node.keynote.teaser
 targetEntityType: node
 bundle: keynote
@@ -17,10 +50,48 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 6
     settings:
-      trim_length: 600
+      trim_length: 150
     third_party_settings: {  }
-  links:
-    weight: 100
-hidden: {  }
+  field_image:
+    type: image
+    weight: 1
+    label: hidden
+    settings:
+      image_style: crop_150x150
+      image_link: ''
+    third_party_settings: {  }
+  field_logo:
+    type: image
+    weight: 2
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+  field_speaker_bio:
+    type: text_summary_or_trimmed
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 150
+    third_party_settings: {  }
+  field_speaker_full_name:
+    type: string
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_speaker_position:
+    type: string
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_company_bio: true
+  field_company_name: true
+  links: true
