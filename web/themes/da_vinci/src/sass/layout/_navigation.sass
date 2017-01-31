@@ -86,6 +86,7 @@
       &:hover,
       &.is-active
         color: $white
+        font-weight: bold
     .menu
       margin-left: 1rem
       margin-bottom: 0.5rem
@@ -94,6 +95,9 @@
       a
         font-size: 14px
         line-height: 17px
+        &:hover
+          color: $white
+          font-weight: bold
   #block-sitebrandingmobile
     float: left
     width: 30%
@@ -246,7 +250,7 @@ header
       left: -10px
       width: 100%
       transform: translateY(-2em)
-      z-index: -1
+      z-index: 5
       transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.5s, z-index 0s linear 0.01s
       margin-left: 0
       margin-top: 2px
@@ -269,7 +273,8 @@ header
           line-height: 12px
           transition: all .5s ease-in-out
           &:hover
-            color: $blue
+            color: $white
+            font-weight: bold
     &:hover .menu
       position: absolute
       display: block
@@ -279,11 +284,15 @@ header
       transform: translateY(0%)
       transition-delay: 0s, 0s, 0.3s
 .menu--header-right-menu
-  >ul
+  > ul
     text-align: right
-    >.menu-item
+    > .menu-item
       margin: 0 0 0 1em
       +breakpoint($large)
         margin: 0 0 0 2em
       +breakpoint($x-large)
         margin: 0 0 0 3em
+      &:first-child
+        .menu
+          left: 0
+        
