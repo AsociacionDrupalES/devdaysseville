@@ -1,0 +1,126 @@
+uuid: 0ec0a894-c08e-4184-afaf-b93eabe20961
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.keynote.body
+    - field.field.node.keynote.field_company_bio
+    - field.field.node.keynote.field_company_name
+    - field.field.node.keynote.field_image
+    - field.field.node.keynote.field_logo
+    - field.field.node.keynote.field_speaker_bio
+    - field.field.node.keynote.field_speaker_full_name
+    - field.field.node.keynote.field_speaker_position
+    - image.style.medium
+    - node.type.keynote
+  module:
+    - field_group
+    - image
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_company:
+      children:
+        - field_logo
+        - field_company_name
+        - field_company_bio
+      parent_name: ''
+      weight: 3
+      format_type: html_element
+      format_settings:
+        label: 'The company'
+        element: div
+        show_label: true
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: ''
+      label: 'The company'
+    group_speaker:
+      children:
+        - field_image
+        - field_speaker_full_name
+        - field_speaker_position
+        - field_speaker_bio
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      format_settings:
+        label: 'The speaker'
+        element: div
+        show_label: true
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: ''
+      label: 'The speaker'
+id: node.keynote.default
+targetEntityType: node
+bundle: keynote
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  field_company_bio:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_company_name:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_image:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: crop_150x150
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_logo:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_speaker_bio:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_speaker_full_name:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_speaker_position:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

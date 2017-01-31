@@ -1,0 +1,22 @@
+uuid: 8efde13a-8eb8-474e-a448-e2cc71c83cff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_speaker_bio
+    - node.type.keynote
+  module:
+    - text
+id: node.keynote.field_speaker_bio
+field_name: field_speaker_bio
+entity_type: node
+bundle: keynote
+label: 'Speaker Bio'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

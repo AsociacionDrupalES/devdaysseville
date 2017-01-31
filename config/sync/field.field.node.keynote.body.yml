@@ -1,0 +1,22 @@
+uuid: cbe5f2e7-b7bd-4e07-8a28-b6880a53f7b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.keynote
+  module:
+    - text
+id: node.keynote.body
+field_name: body
+entity_type: node
+bundle: keynote
+label: 'Keynote Body'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

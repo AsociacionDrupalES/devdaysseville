@@ -1,0 +1,17 @@
+uuid: ce222c09-c6db-4a4b-a808-99e32142a7df
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Keynote
+type: keynote
+description: 'Keynotes are highlighted session  '
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

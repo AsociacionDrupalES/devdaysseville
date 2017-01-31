@@ -1,0 +1,19 @@
+uuid: 78c97761-5383-4f79-b0e1-84637988c6eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company_name
+    - node.type.keynote
+id: node.keynote.field_company_name
+field_name: field_company_name
+entity_type: node
+bundle: keynote
+label: 'Company name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
