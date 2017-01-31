@@ -2533,7 +2533,6 @@ td {
 }
 
 .page-node-type-session .field--name-field-user-ref > .field__item .field--name-field-register-drupal-name {
-  text-align: right;
   font-size: 0.9em;
   margin-top: 0.25em;
 }
