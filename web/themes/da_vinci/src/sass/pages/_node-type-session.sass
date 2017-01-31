@@ -1,4 +1,4 @@
-.page-node-type-session
+.page-node-type-session:not(.page-node-edit):not(.page-node-add)
   .field--name-field-user-ref
     padding-bottom: 3em
     +breakpoint($medium-small)
@@ -12,7 +12,6 @@
         text-align: center
         font-weight: 600
       .field--name-field-register-drupal-name
-        text-align: right
         font-size: 0.9em
         margin-top: 0.25em
       .field--name-field-register-picture
@@ -32,7 +31,6 @@
           &:hover
             opacity: 1
             filter: grayscale(100%)
-            
   .session-info
     +breakpoint($medium-small)
       +span(8 of 12 last)
@@ -43,6 +41,8 @@
       margin-top: 0
       word-break: break-all
       font-size: 30px
+      +breakpoint($medium-small)
+        word-break: normal
       +breakpoint($large)
         font-size: 48px
     .field--type-list-string
