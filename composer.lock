@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f454d8b8615c77a67936b8c07c51e342",
-    "content-hash": "d2f3356d176a65205047961e9ea99794",
+    "hash": "752c56ad6d6413cc6b01d5ab1b36d995",
+    "content-hash": "89b8a822547c26918a71781d6d501035",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1337,6 +1337,43 @@
             "time": "2016-08-20 19:59:03"
         },
         {
+            "name": "drupal/field_group",
+            "version": "8.1.0-rc6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/field_group",
+                "reference": "acd3aaef1d0c9822b81ce7fdff8a12ef3844b4e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-1.0-rc6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/field_group_migrate": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/field_group_migrate"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides the ability to group your fields on both form and display.",
+            "homepage": "https://www.drupal.org/project/field_group",
+            "time": "2016-11-28 20:35:38"
+        },
+        {
             "name": "drupal/imagemagick",
             "version": "8.1.0-alpha5",
             "source": {
@@ -1485,7 +1522,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0-rc1.zip",
-                "reference": null,
+                "reference": "a3b68ccb7c5657a8138c999731dca293ed7991a8",
                 "shasum": null
             },
             "require": {
