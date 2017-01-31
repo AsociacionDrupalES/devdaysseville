@@ -477,6 +477,10 @@ strong {
   text-align: center;
 }
 
+details.captcha {
+  border-color: black;
+}
+
 head:before {
   position: absolute;
   right: 0;
@@ -2651,12 +2655,12 @@ td {
   line-height: 1.5em;
 }
 
-.page-node-type-session .field--name-field-user-ref {
+.page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref {
   padding-bottom: 3em;
 }
 
 @media (min-width: 37.5em) {
-  .page-node-type-session .field--name-field-user-ref {
+  .page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref {
     width: 32.20339%;
     float: left;
     margin-left: 0;
@@ -2665,36 +2669,36 @@ td {
   }
 }
 
-.page-node-type-session .field--name-field-user-ref > .field__item {
+.page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref > .field__item {
   margin-bottom: 2em;
 }
 
-.page-node-type-session .field--name-field-user-ref > .field__item .field--name-field-register-name {
+.page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref > .field__item .field--name-field-register-name {
   font-family: "Open Sans", sans-serif;
   text-transform: none;
   text-align: center;
   font-weight: 600;
 }
 
-.page-node-type-session .field--name-field-user-ref > .field__item .field--name-field-register-drupal-name {
+.page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref > .field__item .field--name-field-register-drupal-name {
   font-size: 0.9em;
   margin-top: 0.25em;
 }
 
-.page-node-type-session .field--name-field-user-ref > .field__item .field--name-field-register-picture {
+.page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref > .field__item .field--name-field-register-picture {
   margin-bottom: 0.5em;
 }
 
-.page-node-type-session .field--name-field-user-ref > .field__item .field--name-field-register-picture img {
+.page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref > .field__item .field--name-field-register-picture img {
   width: 170px;
 }
 
-.page-node-type-session .field--name-field-user-ref > .field__item .field--name-field-register-picture a {
+.page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref > .field__item .field--name-field-register-picture a {
   transition: filter 0.8s;
 }
 
 @media (min-width: 64em) {
-  .page-node-type-session .field--name-field-user-ref > .field__item .field--name-field-register-picture a {
+  .page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref > .field__item .field--name-field-register-picture a {
     width: 150px;
     max-width: 100%;
     top: 13px;
@@ -2702,18 +2706,18 @@ td {
   }
 }
 
-.page-node-type-session .field--name-field-user-ref > .field__item .field--name-field-register-picture a img {
+.page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref > .field__item .field--name-field-register-picture a img {
   width: 145px;
   background: white;
 }
 
-.page-node-type-session .field--name-field-user-ref > .field__item .field--name-field-register-picture a:hover {
+.page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref > .field__item .field--name-field-register-picture a:hover {
   opacity: 1;
   filter: grayscale(100%);
 }
 
 @media (min-width: 37.5em) {
-  .page-node-type-session .session-info {
+  .page-node-type-session:not(.page-node-edit):not(.page-node-add) .session-info {
     width: 66.10169%;
     float: left;
     margin-left: 33.89831%;
@@ -2721,7 +2725,7 @@ td {
   }
 }
 
-.page-node-type-session .session-info .page-title {
+.page-node-type-session:not(.page-node-edit):not(.page-node-add) .session-info .page-title {
   text-align: left;
   text-transform: none;
   line-height: 1em;
@@ -2731,18 +2735,18 @@ td {
 }
 
 @media (min-width: 37.5em) {
-  .page-node-type-session .session-info .page-title {
+  .page-node-type-session:not(.page-node-edit):not(.page-node-add) .session-info .page-title {
     word-break: normal;
   }
 }
 
 @media (min-width: 64em) {
-  .page-node-type-session .session-info .page-title {
+  .page-node-type-session:not(.page-node-edit):not(.page-node-add) .session-info .page-title {
     font-size: 48px;
   }
 }
 
-.page-node-type-session .session-info .field--type-list-string {
+.page-node-type-session:not(.page-node-edit):not(.page-node-add) .session-info .field--type-list-string {
   text-transform: uppercase;
   font-weight: 600;
   display: inline-block;
@@ -2750,15 +2754,15 @@ td {
   margin-right: 0.5em;
 }
 
-.page-node-type-session .session-info .field--type-list-string:after {
+.page-node-type-session:not(.page-node-edit):not(.page-node-add) .session-info .field--type-list-string:after {
   content: ',';
 }
 
-.page-node-type-session .session-info .field--type-list-string.field--name-field-session-track-type:after {
+.page-node-type-session:not(.page-node-edit):not(.page-node-add) .session-info .field--type-list-string.field--name-field-session-track-type:after {
   content: none;
 }
 
-.page-node-type-session .session-info .text-formatted p {
+.page-node-type-session:not(.page-node-edit):not(.page-node-add) .session-info .text-formatted p {
   line-height: 1.5em;
 }
 
