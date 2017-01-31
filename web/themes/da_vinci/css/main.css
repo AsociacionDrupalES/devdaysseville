@@ -426,7 +426,6 @@ h6 {
   color: #212121;
   font-family: "Marcellus", serif;
   font-weight: 400;
-  text-transform: uppercase;
 }
 
 h1 {
@@ -597,6 +596,7 @@ head:before {
   font-size: 0.9rem;
   letter-spacing: 0.15rem;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .date-location span {
@@ -803,6 +803,7 @@ head:before {
 .sliding_menu ul.menu a:hover,
 .sliding_menu ul.menu a.is-active {
   color: white;
+  font-weight: bold;
 }
 
 .sliding_menu a .menu,
@@ -820,6 +821,12 @@ head:before {
 .sliding_menu ul.menu .menu a {
   font-size: 14px;
   line-height: 17px;
+}
+
+.sliding_menu a .menu a:hover,
+.sliding_menu ul.menu .menu a:hover {
+  color: white;
+  font-weight: bold;
 }
 
 .sliding_menu #block-sitebrandingmobile {
@@ -1075,7 +1082,7 @@ header #block-languageswitcher ul li:nth-last-child(1):before {
   left: -10px;
   width: 100%;
   transform: translateY(-2em);
-  z-index: -1;
+  z-index: 5;
   transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.5s, z-index 0s linear 0.01s;
   margin-left: 0;
   margin-top: 2px;
@@ -1110,7 +1117,8 @@ header #block-languageswitcher ul li:nth-last-child(1):before {
 .menu--main > ul > .menu-item .menu .menu-item a:hover,
 .menu--header-left-menu > ul > .menu-item .menu .menu-item a:hover,
 .menu--header-right-menu > ul > .menu-item .menu .menu-item a:hover {
-  color: #2b334a;
+  color: white;
+  font-weight: bold;
 }
 
 .menu--main > ul > .menu-item:hover .menu,
@@ -1143,6 +1151,10 @@ header #block-languageswitcher ul li:nth-last-child(1):before {
   .menu--header-right-menu > ul > .menu-item {
     margin: 0 0 0 3em;
   }
+}
+
+.menu--header-right-menu > ul > .menu-item:first-child .menu {
+  left: 0;
 }
 
 html,
@@ -1531,6 +1543,10 @@ footer .region.region-footer-left .menu li a {
   }
 }
 
+footer .block-copy-right-block {
+  text-transform: uppercase;
+}
+
 .footer__push {
   height: 50px;
   background-color: black;
@@ -1613,6 +1629,10 @@ td {
   position: absolute;
   top: -9999px;
   left: -9999px;
+}
+
+.path-frontpage h1, .path-frontpage h2, .path-frontpage h3 {
+  text-transform: uppercase;
 }
 
 .hero__section {
@@ -2450,7 +2470,8 @@ td {
 #user-pass .form-actions #edit-delete,
 #user-pass .form-actions #edit-preview,
 #user-pass .form-actions #edit-submit {
-  width: 150px;
+  min-width: 150px;
+  max-width: 270px;
   margin: 0;
 }
 
@@ -2898,7 +2919,7 @@ td {
 
 .button, .form-submit,
 .button-main, div#mc_embed_signup .button {
-  background-color: #212121;
+  background-color: black;
   height: 48px;
   font-size: 18px;
   display: inline-block;
@@ -2916,7 +2937,7 @@ td {
 
 .button:hover, .form-submit:hover,
 .button-main:hover, div#mc_embed_signup .button:hover {
-  background-color: black;
+  background-color: #212121;
 }
 
 .form-submit,
@@ -3089,6 +3110,10 @@ label {
   display: block;
 }
 
+.view-content h2 {
+  text-transform: uppercase;
+}
+
 div#mc_embed_signup {
   font-family: "Open Sans", sans-serif;
   margin-bottom: 5.143em;
@@ -3206,6 +3231,16 @@ img {
 
 .news--highlighted .news__body p {
   margin-top: 0.25em;
+}
+
+.news--highlighted a {
+  color: white;
+  text-decoration: underline;
+}
+
+.news--highlighted a:hover {
+  color: inherit;
+  font-weight: 600;
 }
 
 .view-attendees .view-content ul {
@@ -3516,6 +3551,56 @@ img {
   right: 0;
   background: white url("../images/frame__corner-left.svg") no-repeat left bottom;
   transform: scaleX(-1);
+}
+
+.tabs.primary {
+  text-align: center;
+  margin: 2em 0 3em;
+}
+
+@media (min-width: 37.5em) {
+  .tabs.primary {
+    border-bottom: 1px solid black;
+  }
+}
+
+.tabs.primary li {
+  border: 1px solid black;
+  padding: 6px;
+  font-family: "Marcellus", serif;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 37.5em) {
+  .tabs.primary li {
+    border-bottom-width: 0;
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+
+.tabs.primary li a {
+  background: transparent;
+}
+
+.tabs.primary li a:hover {
+  font-weight: bold;
+}
+
+.tabs.primary li.is-active {
+  background: black;
+}
+
+.tabs.primary li.is-active a {
+  color: white;
+}
+
+.tabs.primary li.is-active a:hover {
+  font-weight: normal;
+  cursor: default;
 }
 
 body {
