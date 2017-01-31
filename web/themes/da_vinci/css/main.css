@@ -2459,6 +2459,54 @@ td {
   margin-left: 1em;
 }
 
+.page-node-type-news .news__field-image {
+  padding-bottom: 3em;
+}
+
+@media (min-width: 37.5em) {
+  .page-node-type-news .news__field-image {
+    width: 32.20339%;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    padding-right: 8%;
+  }
+}
+
+@media (min-width: 37.5em) {
+  .page-node-type-news .news-info {
+    width: 66.10169%;
+    float: left;
+    margin-left: 33.89831%;
+    margin-right: -100%;
+  }
+}
+
+.page-node-type-news .news-info .page-title {
+  text-align: left;
+  text-transform: none;
+  line-height: 1em;
+  margin-top: 0;
+  word-break: break-all;
+  font-size: 30px;
+}
+
+@media (min-width: 37.5em) {
+  .page-node-type-news .news-info .page-title {
+    word-break: normal;
+  }
+}
+
+@media (min-width: 64em) {
+  .page-node-type-news .news-info .page-title {
+    font-size: 48px;
+  }
+}
+
+.page-node-type-news .news-info .news__body p {
+  line-height: 1.5em;
+}
+
 .page-node-type-session .field--name-field-user-ref {
   padding-bottom: 3em;
 }
@@ -2537,6 +2585,12 @@ td {
   margin-top: 0;
   word-break: break-all;
   font-size: 30px;
+}
+
+@media (min-width: 37.5em) {
+  .page-node-type-session .session-info .page-title {
+    word-break: normal;
+  }
 }
 
 @media (min-width: 64em) {
@@ -3151,33 +3205,6 @@ img {
 
 .news--highlighted .news__body p {
   margin-top: 0.25em;
-}
-
-.page-node-type-news article .node__content {
-  display: flex;
-  flex-flow: column wrap;
-}
-
-.page-node-type-news article .node__content .news__field-image,
-.page-node-type-news article .node__content .news__body {
-  padding: 0 10px;
-}
-
-@media (min-width: 50em) {
-  .page-node-type-news article .node__content {
-    flex-flow: row wrap;
-  }
-  .page-node-type-news article .node__content .news__field-image {
-    width: 20%;
-    padding: 0 10px;
-  }
-  .page-node-type-news article .node__content .news__body {
-    width: 80%;
-    padding: 0 20px;
-  }
-  .page-node-type-news article .node__content .news__body p:first-child {
-    margin-top: 0;
-  }
 }
 
 .view-attendees .view-content ul {
