@@ -30,6 +30,9 @@ settings:
       value: site_building
       label: 'Site Building'
     -
+      value: being_human
+      label: 'Being human'
+    -
       value: other
       label: Other
   allowed_values_function: ''
