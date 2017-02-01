@@ -2,7 +2,6 @@ global-css:
   css:
     theme:
       css/main.css: {}
-      css/vendors/groundwork.css: {}
 
 global-js:
   header: true
@@ -10,7 +9,6 @@ global-js:
     js/da-vinci.js: {}
     js/custom.js: {}
     js/rwd_menu.js: {}
-    js/vendors/groundwork.all.js: {}
   dependencies:
     - core/jquery
     - core/modernizr
