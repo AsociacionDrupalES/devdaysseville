@@ -2244,13 +2244,13 @@ td {
   width: 100%;
 }
 
-.view-keynotes .view-content .field--name-field-speaker-full-name {
+.field--name-field-speaker-full-name {
   font-family: "Marcellus", serif;
   font-size: 1.25em;
-  line-height: 1.5em;
+  line-height: 1.25em;
 }
 
-.view-keynotes .view-content .field--name-field-speaker-position {
+.field--name-field-speaker-position {
   font-size: 0.75em;
   text-transform: uppercase;
   font-family: "Marcellus", serif;
@@ -2458,6 +2458,7 @@ td {
   padding: 0.5em 1em;
   outline: none;
   width: 100%;
+  margin: 0;
 }
 
 .node-keynote-edit-form input:not(.form-radio):not(.form-checkbox).form-autocomplete, .node-keynote-edit-form textarea.form-autocomplete,
@@ -2772,6 +2773,61 @@ td {
   margin-left: 1em;
 }
 
+.page-node-type-keynote .node__content h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: 37.5em) {
+  .page-node-type-keynote .node__content h3 {
+    text-align: left;
+  }
+}
+
+.page-node-type-keynote .node__content > div:not(.text-formatted) {
+  margin-bottom: 3em;
+}
+
+.page-node-type-keynote .node__content > div:not(.text-formatted) .field--type-image {
+  text-align: center;
+}
+
+.page-node-type-keynote .node__content > div:not(.text-formatted) .field--type-image img {
+  display: inline-block;
+}
+
+@media (min-width: 37.5em) {
+  .page-node-type-keynote .node__content > div:not(.text-formatted) .field--type-image {
+    float: left;
+    margin-right: 1.5em;
+  }
+  .page-node-type-keynote .node__content > div:not(.text-formatted) .field--type-image img {
+    max-width: 150px;
+  }
+}
+
+.page-node-type-keynote .node__content > div:not(.text-formatted) .field--type-string {
+  text-align: center;
+}
+
+@media (min-width: 37.5em) {
+  .page-node-type-keynote .node__content > div:not(.text-formatted) .field--type-string {
+    text-align: left;
+  }
+}
+
+.field--name-field-company-name, .field--name-field-speaker-full-name {
+  font-family: "Marcellus", serif;
+  font-size: 1.5em;
+  line-height: 1.25em;
+}
+
+.field--name-field-speaker-position {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-family: "Marcellus", serif;
+}
+
 .page-node-type-news .news__field-image {
   padding-bottom: 3em;
 }
@@ -2820,6 +2876,10 @@ td {
   line-height: 1.5em;
 }
 
+.page-node-type-session:not(.page-node-edit):not(.page-node-add) .node--type-session {
+  margin-top: 2em;
+}
+
 .page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref {
   padding-bottom: 3em;
 }
@@ -2848,6 +2908,7 @@ td {
 .page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref > .field__item .field--name-field-register-drupal-name {
   font-size: 0.9em;
   margin-top: 0.25em;
+  text-align: center;
 }
 
 .page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref > .field__item .field--name-field-register-picture {
@@ -3006,7 +3067,6 @@ td {
 
 .view-sessions .view-content li h2 {
   font-size: 24px;
-  font-weight: 600;
   margin-bottom: 5px;
 }
 
