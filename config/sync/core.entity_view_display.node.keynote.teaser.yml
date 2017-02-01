@@ -23,13 +23,11 @@ third_party_settings:
   field_group:
     group_keynote_main_info:
       children:
-        - field_image
-        - field_logo
         - field_speaker_full_name
         - field_speaker_position
         - field_speaker_bio
       parent_name: ''
-      weight: 0
+      weight: 1
       format_type: html_element
       format_settings:
         label: 'keynote main info'
@@ -50,13 +48,13 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 6
+    weight: 3
     settings:
       trim_length: 150
     third_party_settings: {  }
   field_image:
     type: image
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       image_style: crop_150x150
