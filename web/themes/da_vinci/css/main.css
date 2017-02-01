@@ -2174,17 +2174,72 @@ td {
 
 .view-keynotes .view-content .field--name-field-image {
   text-align: center;
+  position: relative;
+}
+
+.view-keynotes .view-content .field--name-field-image:before {
+  content: '';
+  width: 153px;
+  height: 153px;
+  background: url("../images/avatar.svg") no-repeat;
+  background-size: 100%;
+  display: block;
+  z-index: 0;
+  margin: 0 auto;
+}
+
+@media (min-width: 44em) {
+  .view-keynotes .view-content .field--name-field-image:before {
+    margin: auto;
+    width: 133px;
+    height: 133px;
+  }
+}
+
+@media (min-width: 50em) {
+  .view-keynotes .view-content .field--name-field-image:before {
+    width: 153px;
+    height: 153px;
+  }
 }
 
 .view-keynotes .view-content .field--name-field-image img {
   display: inline-block;
-  max-width: 100px;
   margin-bottom: 1.5em;
+  position: absolute;
+  z-index: 1;
+  border-radius: 100px;
+  background-color: white;
+  width: 130px;
+  left: 50%;
+  top: 11px;
+  transform: translate(-50%);
 }
 
-@media (min-width: 37.5em) {
+@media (min-width: 44em) {
+  .view-keynotes .view-content .field--name-field-image img {
+    transform: none;
+    width: 113px;
+    left: 10px;
+  }
+}
+
+@media (min-width: 50em) {
+  .view-keynotes .view-content .field--name-field-image img {
+    width: 130px;
+    left: 15px;
+  }
+}
+
+@media (min-width: 64em) {
+  .view-keynotes .view-content .field--name-field-image img {
+    left: 27px;
+  }
+}
+
+@media (min-width: 44em) {
   .view-keynotes .view-content .field--name-field-image {
-    width: 15.25424%;
+    width: 23.72881%;
     float: left;
     margin-left: 0;
     margin-right: -100%;
@@ -2208,7 +2263,7 @@ td {
   display: inline-block;
 }
 
-@media (min-width: 37.5em) {
+@media (min-width: 44em) {
   .view-keynotes .view-content .field--name-field-logo {
     width: 15.25424%;
     float: left;
@@ -2223,9 +2278,9 @@ td {
   }
 }
 
-@media (min-width: 37.5em) {
+@media (min-width: 44em) {
   .view-keynotes .view-content .keynote-main-info {
-    width: 66.10169%;
+    width: 57.62712%;
     float: left;
     margin-right: 1.69492%;
     margin-right: 0;
@@ -2301,6 +2356,12 @@ td {
 
 .news-list__item article .node__content .news__field-image {
   padding: 0 10px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.news-list__item article .node__content .news__field-image a {
+  display: inline-block;
 }
 
 @media (min-width: 50em) {
