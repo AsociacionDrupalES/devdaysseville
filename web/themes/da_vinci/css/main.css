@@ -1358,12 +1358,6 @@ head:hover ~ body .info__inner-wrapper:before {
   padding: 0 10px;
 }
 
-@media (min-width: 44em) {
-  .content__wrapper main {
-    padding: 0;
-  }
-}
-
 body:not(.path-frontpage) .layout-sidebar-first,
 body:not(.path-frontpage) .layout-sidebar-second {
   position: absolute;
@@ -2156,6 +2150,110 @@ td {
 
 #block-homemenu ul li:last-child a {
   color: black;
+}
+
+.view-keynotes .view-content li {
+  margin: 0 0 4em;
+}
+
+.view-keynotes .view-content h2 {
+  font-size: 24px;
+}
+
+.view-keynotes .view-content h2 a {
+  transition: opacity 0.5s ease;
+}
+
+.view-keynotes .view-content h2 a:before {
+  content: none;
+}
+
+.view-keynotes .view-content h2 a:hover {
+  opacity: 0.4;
+}
+
+.view-keynotes .view-content .field--name-field-image {
+  text-align: center;
+}
+
+.view-keynotes .view-content .field--name-field-image img {
+  display: inline-block;
+  max-width: 100px;
+  margin-bottom: 1.5em;
+}
+
+@media (min-width: 37.5em) {
+  .view-keynotes .view-content .field--name-field-image {
+    width: 15.25424%;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    text-align: left;
+    margin-right: 0;
+    padding-right: 1.5em;
+  }
+  .view-keynotes .view-content .field--name-field-image img {
+    max-width: 100%;
+  }
+}
+
+.view-keynotes .view-content .field--name-field-logo {
+  width: 23.72881%;
+  float: left;
+  margin-left: 76.27119%;
+  margin-right: -100%;
+  margin-left: 0;
+  padding-left: 1.5em;
+  text-align: right;
+  margin-bottom: 1.5em;
+}
+
+@media (min-width: 37.5em) {
+  .view-keynotes .view-content .field--name-field-logo {
+    width: 15.25424%;
+    float: left;
+    margin-left: 84.74576%;
+    margin-right: -100%;
+    margin-left: 0;
+  }
+}
+
+.view-keynotes .view-content .field--name-field-logo img {
+  display: inline-block;
+}
+
+.view-keynotes .view-content .keynote-main-info {
+  width: 74.57627%;
+  float: left;
+  margin-left: 0;
+  margin-right: -100%;
+  margin-bottom: 1.5em;
+  margin-right: 0;
+}
+
+@media (min-width: 37.5em) {
+  .view-keynotes .view-content .keynote-main-info {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+
+.view-keynotes .view-content .field--name-body {
+  display: inline-block;
+  width: 100%;
+}
+
+.view-keynotes .view-content .field--name-field-speaker-full-name {
+  font-family: "Marcellus", serif;
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
+.view-keynotes .view-content .field--name-field-speaker-position {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-family: "Marcellus", serif;
 }
 
 @media (min-width: 44em) {
@@ -3397,10 +3495,10 @@ img {
 
 @media (min-width: 64em) {
   .profile .field--name-field-register-picture a {
-    width: 117px;
-    height: 117px;
-    top: 12px;
-    left: 12px;
+    width: 118px;
+    height: 118px;
+    top: 11px;
+    left: 11px;
   }
 }
 
