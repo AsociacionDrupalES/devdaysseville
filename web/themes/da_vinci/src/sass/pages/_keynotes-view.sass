@@ -1,0 +1,55 @@
+.view-keynotes
+  .view-content
+    li
+      margin: 0 0 4em
+    h2
+      font-size: 24px
+      a
+        transition: opacity 0.5s ease
+        &:before
+          content: none
+        &:hover
+          opacity: 0.4
+    .field--name-field
+      &-image
+        text-align: center
+        img
+          display: inline-block
+          max-width: 100px
+          margin-bottom: 1.5em
+        +breakpoint($medium-small)
+          +span(2 of 12 first)
+          text-align: left
+          margin-right: 0
+          padding-right: 1.5em
+          img
+            max-width: 100%
+      &-logo
+        +span(3 of 12 last)
+        margin-left: 0
+        padding-left: 1.5em
+        text-align: right
+        margin-bottom: 1.5em
+        +breakpoint($medium-small)
+          +span(2 of 12 last)
+          margin-left: 0
+        img
+          display: inline-block
+    .keynote-main-info
+      +span(9 of 12 first)
+      margin-bottom: 1.5em
+      margin-right: 0
+      +breakpoint($medium-small)
+        +span(8 of 12)
+    .field--name-body
+      display: inline-block
+      width: 100%
+    .field--name-field-speaker
+      &-full-name
+        font-family: $title
+        font-size: 1.25em
+        line-height: 1.5em
+      &-position
+        font-size: 0.75em
+        text-transform: uppercase
+        font-family: $title
