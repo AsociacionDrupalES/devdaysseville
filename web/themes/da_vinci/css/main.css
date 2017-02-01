@@ -3537,10 +3537,10 @@ img {
 
 @media (min-width: 64em) {
   .profile .field--name-field-register-picture img:nth-child(2) {
-    width: 117px;
-    height: 117px;
-    top: 12px;
-    left: 12px;
+    width: 115px;
+    height: 115px;
+    top: 11px;
+    left: 11px;
   }
 }
 
@@ -3555,8 +3555,8 @@ img {
 
 @media (min-width: 64em) {
   .profile .field--name-field-register-picture a {
-    width: 118px;
-    height: 118px;
+    width: 115px;
+    height: 115px;
     top: 11px;
     left: 11px;
   }
@@ -3576,10 +3576,13 @@ img {
   word-wrap: break-word;
 }
 
-.path-user .profile .field--name-field-register-picture a {
-  width: 157px;
-  top: 16px;
-  left: 11px;
+.path-user .profile .field--name-field-register-picture a,
+.path-user .profile .field--name-field-register-picture img:nth-child(2) {
+  display: block;
+  width: 153px;
+  height: 153px;
+  top: 14px;
+  left: 13px;
 }
 
 .path-user .profile .field--name-field-register-name {
