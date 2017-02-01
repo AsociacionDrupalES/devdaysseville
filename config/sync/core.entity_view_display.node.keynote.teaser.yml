@@ -1,0 +1,95 @@
+uuid: c8cfeb48-4221-4568-815a-1a9e5d0db2b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.keynote.body
+    - field.field.node.keynote.field_company_bio
+    - field.field.node.keynote.field_company_name
+    - field.field.node.keynote.field_image
+    - field.field.node.keynote.field_logo
+    - field.field.node.keynote.field_speaker_bio
+    - field.field.node.keynote.field_speaker_full_name
+    - field.field.node.keynote.field_speaker_position
+    - image.style.medium
+    - node.type.keynote
+  module:
+    - field_group
+    - image
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_keynote_main_info:
+      children:
+        - field_speaker_full_name
+        - field_speaker_position
+        - field_speaker_bio
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        label: 'keynote main info'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: keynote-main-info
+      label: 'keynote main info'
+id: node.keynote.teaser
+targetEntityType: node
+bundle: keynote
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 3
+    settings:
+      trim_length: 150
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: crop_150x150
+      image_link: ''
+    third_party_settings: {  }
+  field_logo:
+    type: image
+    weight: 2
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+  field_speaker_bio:
+    type: text_summary_or_trimmed
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 150
+    third_party_settings: {  }
+  field_speaker_full_name:
+    type: string
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_speaker_position:
+    type: string
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_company_bio: true
+  field_company_name: true
+  links: true

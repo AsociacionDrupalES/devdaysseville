@@ -1,0 +1,22 @@
+uuid: a2c7bbf0-72e4-4594-a5f1-c986c13d76ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company_bio
+    - node.type.keynote
+  module:
+    - text
+id: node.keynote.field_company_bio
+field_name: field_company_bio
+entity_type: node
+bundle: keynote
+label: 'Company Bio'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -2280,6 +2280,8 @@ td {
   margin-top: 0.5em;
 }
 
+.node-keynote-edit-form,
+.node-keynote-form,
 .node-session-edit-form,
 .node-session-form,
 #user-login-form,
@@ -2289,6 +2291,8 @@ td {
   margin: 0 auto;
 }
 
+.node-keynote-edit-form .add-session-intro--text,
+.node-keynote-form .add-session-intro--text,
 .node-session-edit-form .add-session-intro--text,
 .node-session-form .add-session-intro--text,
 #user-login-form .add-session-intro--text,
@@ -2297,6 +2301,8 @@ td {
   line-height: 1.5em;
 }
 
+.node-keynote-edit-form .description,
+.node-keynote-form .description,
 .node-session-edit-form .description,
 .node-session-form .description,
 #user-login-form .description,
@@ -2305,6 +2311,8 @@ td {
   font-style: italic;
 }
 
+.node-keynote-edit-form legend,
+.node-keynote-form legend,
 .node-session-edit-form legend,
 .node-session-form legend,
 #user-login-form legend,
@@ -2313,6 +2321,8 @@ td {
   margin-bottom: 0.5em;
 }
 
+.node-keynote-edit-form label:not(.option),
+.node-keynote-form label:not(.option),
 .node-session-edit-form label:not(.option),
 .node-session-form label:not(.option),
 #user-login-form label:not(.option),
@@ -2321,6 +2331,8 @@ td {
   display: block;
 }
 
+.node-keynote-edit-form label.option,
+.node-keynote-form label.option,
 .node-session-edit-form label.option,
 .node-session-form label.option,
 #user-login-form label.option,
@@ -2330,7 +2342,11 @@ td {
   display: inline-block;
 }
 
-.node-session-edit-form input:not(.form-radio):not(.form-checkbox), .node-session-edit-form textarea,
+.node-keynote-edit-form input:not(.form-radio):not(.form-checkbox), .node-keynote-edit-form textarea,
+.node-keynote-form input:not(.form-radio):not(.form-checkbox),
+.node-keynote-form textarea,
+.node-session-edit-form input:not(.form-radio):not(.form-checkbox),
+.node-session-edit-form textarea,
 .node-session-form input:not(.form-radio):not(.form-checkbox),
 .node-session-form textarea,
 #user-login-form input:not(.form-radio):not(.form-checkbox),
@@ -2346,7 +2362,11 @@ td {
   width: 100%;
 }
 
-.node-session-edit-form input:not(.form-radio):not(.form-checkbox).form-autocomplete, .node-session-edit-form textarea.form-autocomplete,
+.node-keynote-edit-form input:not(.form-radio):not(.form-checkbox).form-autocomplete, .node-keynote-edit-form textarea.form-autocomplete,
+.node-keynote-form input:not(.form-radio):not(.form-checkbox).form-autocomplete,
+.node-keynote-form textarea.form-autocomplete,
+.node-session-edit-form input:not(.form-radio):not(.form-checkbox).form-autocomplete,
+.node-session-edit-form textarea.form-autocomplete,
 .node-session-form input:not(.form-radio):not(.form-checkbox).form-autocomplete,
 .node-session-form textarea.form-autocomplete,
 #user-login-form input:not(.form-radio):not(.form-checkbox).form-autocomplete,
@@ -2358,7 +2378,11 @@ td {
   background-position: 98% center;
 }
 
-.node-session-edit-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit, .node-session-edit-form textarea.field-add-more-submit,
+.node-keynote-edit-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit, .node-keynote-edit-form textarea.field-add-more-submit,
+.node-keynote-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit,
+.node-keynote-form textarea.field-add-more-submit,
+.node-session-edit-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit,
+.node-session-edit-form textarea.field-add-more-submit,
 .node-session-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit,
 .node-session-form textarea.field-add-more-submit,
 #user-login-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit,
@@ -2377,6 +2401,8 @@ td {
   display: block;
 }
 
+.node-keynote-edit-form .form-wrapper:not(.vertical-tabs__pane),
+.node-keynote-form .form-wrapper:not(.vertical-tabs__pane),
 .node-session-edit-form .form-wrapper:not(.vertical-tabs__pane),
 .node-session-form .form-wrapper:not(.vertical-tabs__pane),
 #user-login-form .form-wrapper:not(.vertical-tabs__pane),
@@ -2385,6 +2411,8 @@ td {
   margin: 1.5em 0;
 }
 
+.node-keynote-edit-form .form-wrapper:not(.vertical-tabs__pane).field--name-title,
+.node-keynote-form .form-wrapper:not(.vertical-tabs__pane).field--name-title,
 .node-session-edit-form .form-wrapper:not(.vertical-tabs__pane).field--name-title,
 .node-session-form .form-wrapper:not(.vertical-tabs__pane).field--name-title,
 #user-login-form .form-wrapper:not(.vertical-tabs__pane).field--name-title,
@@ -2393,6 +2421,10 @@ td {
   margin-top: 3em;
 }
 
+.node-keynote-edit-form .tabledrag-toggle-weight-wrapper,
+.node-keynote-edit-form .filter-wrapper,
+.node-keynote-form .tabledrag-toggle-weight-wrapper,
+.node-keynote-form .filter-wrapper,
 .node-session-edit-form .tabledrag-toggle-weight-wrapper,
 .node-session-edit-form .filter-wrapper,
 .node-session-form .tabledrag-toggle-weight-wrapper,
@@ -2409,6 +2441,8 @@ td {
   visibility: hidden;
 }
 
+.node-keynote-edit-form .field--name-field-user-ref thead,
+.node-keynote-form .field--name-field-user-ref thead,
 .node-session-edit-form .field--name-field-user-ref thead,
 .node-session-form .field--name-field-user-ref thead,
 #user-login-form .field--name-field-user-ref thead,
@@ -2417,6 +2451,8 @@ td {
   background: transparent;
 }
 
+.node-keynote-edit-form .field--name-field-user-ref tr,
+.node-keynote-form .field--name-field-user-ref tr,
 .node-session-edit-form .field--name-field-user-ref tr,
 .node-session-form .field--name-field-user-ref tr,
 #user-login-form .field--name-field-user-ref tr,
@@ -2425,6 +2461,8 @@ td {
   border-width: 0;
 }
 
+.node-keynote-edit-form .field--name-field-user-ref th,
+.node-keynote-form .field--name-field-user-ref th,
 .node-session-edit-form .field--name-field-user-ref th,
 .node-session-form .field--name-field-user-ref th,
 #user-login-form .field--name-field-user-ref th,
@@ -2433,6 +2471,8 @@ td {
   padding: 0;
 }
 
+.node-keynote-edit-form .field--name-field-user-ref td,
+.node-keynote-form .field--name-field-user-ref td,
 .node-session-edit-form .field--name-field-user-ref td,
 .node-session-form .field--name-field-user-ref td,
 #user-login-form .field--name-field-user-ref td,
@@ -2441,6 +2481,8 @@ td {
   padding: 15px 0 0;
 }
 
+.node-keynote-edit-form a.tabledrag-handle .handle,
+.node-keynote-form a.tabledrag-handle .handle,
 .node-session-edit-form a.tabledrag-handle .handle,
 .node-session-form a.tabledrag-handle .handle,
 #user-login-form a.tabledrag-handle .handle,
@@ -2451,14 +2493,23 @@ td {
   margin-right: 0;
 }
 
+.node-keynote-edit-form .form-actions,
+.node-keynote-form .form-actions,
 .node-session-edit-form .form-actions,
 .node-session-form .form-actions,
 #user-login-form .form-actions,
 #user-register-form .form-actions,
 #user-pass .form-actions {
+  overflow: hidden;
   text-align: right;
 }
 
+.node-keynote-edit-form .form-actions #edit-delete,
+.node-keynote-edit-form .form-actions #edit-preview,
+.node-keynote-edit-form .form-actions #edit-submit,
+.node-keynote-form .form-actions #edit-delete,
+.node-keynote-form .form-actions #edit-preview,
+.node-keynote-form .form-actions #edit-submit,
 .node-session-edit-form .form-actions #edit-delete,
 .node-session-edit-form .form-actions #edit-preview,
 .node-session-edit-form .form-actions #edit-submit,
@@ -2479,6 +2530,12 @@ td {
   margin: 0;
 }
 
+.node-keynote-edit-form .form-actions #edit-delete:hover,
+.node-keynote-edit-form .form-actions #edit-preview:hover,
+.node-keynote-edit-form .form-actions #edit-submit:hover,
+.node-keynote-form .form-actions #edit-delete:hover,
+.node-keynote-form .form-actions #edit-preview:hover,
+.node-keynote-form .form-actions #edit-submit:hover,
 .node-session-edit-form .form-actions #edit-delete:hover,
 .node-session-edit-form .form-actions #edit-preview:hover,
 .node-session-edit-form .form-actions #edit-submit:hover,
@@ -2497,6 +2554,8 @@ td {
   color: white;
 }
 
+.node-keynote-edit-form .form-actions #edit-delete,
+.node-keynote-form .form-actions #edit-delete,
 .node-session-edit-form .form-actions #edit-delete,
 .node-session-form .form-actions #edit-delete,
 #user-login-form .form-actions #edit-delete,
@@ -2508,6 +2567,8 @@ td {
   text-align: center;
 }
 
+.node-keynote-edit-form .form-actions .dropbutton-multiple,
+.node-keynote-form .form-actions .dropbutton-multiple,
 .node-session-edit-form .form-actions .dropbutton-multiple,
 .node-session-form .form-actions .dropbutton-multiple,
 #user-login-form .form-actions .dropbutton-multiple,
@@ -2519,6 +2580,8 @@ td {
   margin: 0 0 1em 0.5em;
 }
 
+.node-keynote-edit-form .form-actions .dropbutton-multiple .dropbutton-widget,
+.node-keynote-form .form-actions .dropbutton-multiple .dropbutton-widget,
 .node-session-edit-form .form-actions .dropbutton-multiple .dropbutton-widget,
 .node-session-form .form-actions .dropbutton-multiple .dropbutton-widget,
 #user-login-form .form-actions .dropbutton-multiple .dropbutton-widget,
@@ -2527,6 +2590,8 @@ td {
   border: 0;
 }
 
+.node-keynote-edit-form .form-actions .dropbutton-multiple input,
+.node-keynote-form .form-actions .dropbutton-multiple input,
 .node-session-edit-form .form-actions .dropbutton-multiple input,
 .node-session-form .form-actions .dropbutton-multiple input,
 #user-login-form .form-actions .dropbutton-multiple input,
@@ -2536,6 +2601,8 @@ td {
   width: 100%;
 }
 
+.node-keynote-edit-form .form-actions .dropbutton-multiple li input,
+.node-keynote-form .form-actions .dropbutton-multiple li input,
 .node-session-edit-form .form-actions .dropbutton-multiple li input,
 .node-session-form .form-actions .dropbutton-multiple li input,
 #user-login-form .form-actions .dropbutton-multiple li input,
@@ -3100,6 +3167,14 @@ label {
   margin-bottom: 0.25em;
 }
 
+fieldset {
+  border: 1px solid #212121;
+}
+
+fieldset legend {
+  padding: 0 0.5em;
+}
+
 .simple-list, .sliding_menu #block-alternadordeidioma li, header #block-languageswitcher ul {
   margin: 0;
   padding: 0;
@@ -3287,6 +3362,30 @@ img {
   margin: 0 auto;
 }
 
+.profile .field--name-field-register-picture img {
+  display: inline;
+  border-radius: 50%;
+}
+
+.profile .field--name-field-register-picture img:nth-child(2) {
+  position: absolute;
+  width: 83.33333%;
+  top: 8%;
+  left: 8.5%;
+  border-radius: 50%;
+  display: block;
+  background-color: white;
+}
+
+@media (min-width: 64em) {
+  .profile .field--name-field-register-picture img:nth-child(2) {
+    width: 117px;
+    height: 117px;
+    top: 12px;
+    left: 12px;
+  }
+}
+
 .profile .field--name-field-register-picture a {
   position: absolute;
   width: 83.33333%;
@@ -3299,15 +3398,10 @@ img {
 @media (min-width: 64em) {
   .profile .field--name-field-register-picture a {
     width: 117px;
-    height: 100%;
+    height: 117px;
     top: 12px;
     left: 12px;
   }
-}
-
-.profile .field--name-field-register-picture img {
-  display: inline;
-  border-radius: 50%;
 }
 
 .profile .field--name-field-register-name {
