@@ -2198,14 +2198,14 @@ td {
 }
 
 .view-keynotes .view-content .field--name-field-logo {
-  width: 23.72881%;
-  float: left;
-  margin-left: 76.27119%;
-  margin-right: -100%;
-  margin-left: 0;
-  padding-left: 1.5em;
-  text-align: right;
+  text-align: center;
   margin-bottom: 1.5em;
+}
+
+.view-keynotes .view-content .field--name-field-logo img {
+  max-height: 100px;
+  width: auto;
+  display: inline-block;
 }
 
 @media (min-width: 37.5em) {
@@ -2215,20 +2215,12 @@ td {
     margin-left: 84.74576%;
     margin-right: -100%;
     margin-left: 0;
+    padding-left: 1.5em;
+    text-align: right;
   }
-}
-
-.view-keynotes .view-content .field--name-field-logo img {
-  display: inline-block;
-}
-
-.view-keynotes .view-content .keynote-main-info {
-  width: 74.57627%;
-  float: left;
-  margin-left: 0;
-  margin-right: -100%;
-  margin-bottom: 1.5em;
-  margin-right: 0;
+  .view-keynotes .view-content .field--name-field-logo img {
+    max-height: 100%;
+  }
 }
 
 @media (min-width: 37.5em) {
@@ -2236,6 +2228,8 @@ td {
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%;
+    margin-right: 0;
+    margin-bottom: 1.5em;
   }
 }
 
@@ -2790,6 +2784,7 @@ td {
 
 .page-node-type-keynote .node__content > div:not(.text-formatted) .field--type-image {
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .page-node-type-keynote .node__content > div:not(.text-formatted) .field--type-image img {
