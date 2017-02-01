@@ -34,5 +34,6 @@ content:
     third_party_settings: {  }
     type: image
 hidden:
+  created: true
   field_meta_tags: true
   links: true

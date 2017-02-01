@@ -25,6 +25,15 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
+  created:
+    label: hidden
+    type: timestamp
+    weight: 2
+    settings:
+      date_format: custom
+      custom_date_format: d.m.Y
+      timezone: ''
+    third_party_settings: {  }
   field_image:
     type: image
     weight: 0

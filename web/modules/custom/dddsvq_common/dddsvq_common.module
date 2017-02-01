@@ -34,3 +34,13 @@ function dddsvq_common_theme($existing, $type, $theme, $path) {
 
   return $themes;
 }
+
+/**
+ * Implements hook_entity_base_field_info_alter().
+ */
+function dddsvq_common_entity_base_field_info_alter(&$fields, \Drupal\Core\Entity\EntityTypeInterface $entity_type) {
+  // Make created field configurable on view modes.
+  if ($entity_type->id() == 'node' && !empty($fields['created'])) {
+    $fields['created']->setDisplayConfigurable('view', TRUE);
+  }
+}
