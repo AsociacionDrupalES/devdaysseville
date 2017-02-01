@@ -1358,12 +1358,6 @@ head:hover ~ body .info__inner-wrapper:before {
   padding: 0 10px;
 }
 
-@media (min-width: 44em) {
-  .content__wrapper main {
-    padding: 0;
-  }
-}
-
 body:not(.path-frontpage) .layout-sidebar-first,
 body:not(.path-frontpage) .layout-sidebar-second {
   position: absolute;
@@ -2158,6 +2152,110 @@ td {
   color: black;
 }
 
+.view-keynotes .view-content li {
+  margin: 0 0 4em;
+}
+
+.view-keynotes .view-content h2 {
+  font-size: 24px;
+}
+
+.view-keynotes .view-content h2 a {
+  transition: opacity 0.5s ease;
+}
+
+.view-keynotes .view-content h2 a:before {
+  content: none;
+}
+
+.view-keynotes .view-content h2 a:hover {
+  opacity: 0.4;
+}
+
+.view-keynotes .view-content .field--name-field-image {
+  text-align: center;
+}
+
+.view-keynotes .view-content .field--name-field-image img {
+  display: inline-block;
+  max-width: 100px;
+  margin-bottom: 1.5em;
+}
+
+@media (min-width: 37.5em) {
+  .view-keynotes .view-content .field--name-field-image {
+    width: 15.25424%;
+    float: left;
+    margin-left: 0;
+    margin-right: -100%;
+    text-align: left;
+    margin-right: 0;
+    padding-right: 1.5em;
+  }
+  .view-keynotes .view-content .field--name-field-image img {
+    max-width: 100%;
+  }
+}
+
+.view-keynotes .view-content .field--name-field-logo {
+  width: 23.72881%;
+  float: left;
+  margin-left: 76.27119%;
+  margin-right: -100%;
+  margin-left: 0;
+  padding-left: 1.5em;
+  text-align: right;
+  margin-bottom: 1.5em;
+}
+
+@media (min-width: 37.5em) {
+  .view-keynotes .view-content .field--name-field-logo {
+    width: 15.25424%;
+    float: left;
+    margin-left: 84.74576%;
+    margin-right: -100%;
+    margin-left: 0;
+  }
+}
+
+.view-keynotes .view-content .field--name-field-logo img {
+  display: inline-block;
+}
+
+.view-keynotes .view-content .keynote-main-info {
+  width: 74.57627%;
+  float: left;
+  margin-left: 0;
+  margin-right: -100%;
+  margin-bottom: 1.5em;
+  margin-right: 0;
+}
+
+@media (min-width: 37.5em) {
+  .view-keynotes .view-content .keynote-main-info {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+
+.view-keynotes .view-content .field--name-body {
+  display: inline-block;
+  width: 100%;
+}
+
+.field--name-field-speaker-full-name {
+  font-family: "Marcellus", serif;
+  font-size: 1.25em;
+  line-height: 1.25em;
+}
+
+.field--name-field-speaker-position {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-family: "Marcellus", serif;
+}
+
 @media (min-width: 44em) {
   .news-list__wrapper--featured {
     display: inline-block;
@@ -2360,6 +2458,7 @@ td {
   padding: 0.5em 1em;
   outline: none;
   width: 100%;
+  margin: 0;
 }
 
 .node-keynote-edit-form input:not(.form-radio):not(.form-checkbox).form-autocomplete, .node-keynote-edit-form textarea.form-autocomplete,
@@ -2674,6 +2773,61 @@ td {
   margin-left: 1em;
 }
 
+.page-node-type-keynote .node__content h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: 37.5em) {
+  .page-node-type-keynote .node__content h3 {
+    text-align: left;
+  }
+}
+
+.page-node-type-keynote .node__content > div:not(.text-formatted) {
+  margin-bottom: 3em;
+}
+
+.page-node-type-keynote .node__content > div:not(.text-formatted) .field--type-image {
+  text-align: center;
+}
+
+.page-node-type-keynote .node__content > div:not(.text-formatted) .field--type-image img {
+  display: inline-block;
+}
+
+@media (min-width: 37.5em) {
+  .page-node-type-keynote .node__content > div:not(.text-formatted) .field--type-image {
+    float: left;
+    margin-right: 1.5em;
+  }
+  .page-node-type-keynote .node__content > div:not(.text-formatted) .field--type-image img {
+    max-width: 150px;
+  }
+}
+
+.page-node-type-keynote .node__content > div:not(.text-formatted) .field--type-string {
+  text-align: center;
+}
+
+@media (min-width: 37.5em) {
+  .page-node-type-keynote .node__content > div:not(.text-formatted) .field--type-string {
+    text-align: left;
+  }
+}
+
+.field--name-field-company-name, .field--name-field-speaker-full-name {
+  font-family: "Marcellus", serif;
+  font-size: 1.5em;
+  line-height: 1.25em;
+}
+
+.field--name-field-speaker-position {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-family: "Marcellus", serif;
+}
+
 .page-node-type-news .news__field-image {
   padding-bottom: 3em;
 }
@@ -2722,6 +2876,10 @@ td {
   line-height: 1.5em;
 }
 
+.page-node-type-session:not(.page-node-edit):not(.page-node-add) .node--type-session {
+  margin-top: 2em;
+}
+
 .page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref {
   padding-bottom: 3em;
 }
@@ -2750,32 +2908,15 @@ td {
 .page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref > .field__item .field--name-field-register-drupal-name {
   font-size: 0.9em;
   margin-top: 0.25em;
+  text-align: center;
 }
 
 .page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref > .field__item .field--name-field-register-picture {
   margin-bottom: 0.5em;
 }
 
-.page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref > .field__item .field--name-field-register-picture img {
-  width: 170px;
-}
-
 .page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref > .field__item .field--name-field-register-picture a {
   transition: filter 0.8s;
-}
-
-@media (min-width: 64em) {
-  .page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref > .field__item .field--name-field-register-picture a {
-    width: 150px;
-    max-width: 100%;
-    top: 13px;
-    left: 15px;
-  }
-}
-
-.page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref > .field__item .field--name-field-register-picture a img {
-  width: 145px;
-  background: white;
 }
 
 .page-node-type-session:not(.page-node-edit):not(.page-node-add) .field--name-field-user-ref > .field__item .field--name-field-register-picture a:hover {
@@ -2908,7 +3049,6 @@ td {
 
 .view-sessions .view-content li h2 {
   font-size: 24px;
-  font-weight: 600;
   margin-bottom: 5px;
 }
 
@@ -3379,10 +3519,10 @@ img {
 
 @media (min-width: 64em) {
   .profile .field--name-field-register-picture img:nth-child(2) {
-    width: 117px;
-    height: 117px;
-    top: 12px;
-    left: 12px;
+    width: 115px;
+    height: 115px;
+    top: 11px;
+    left: 11px;
   }
 }
 
@@ -3393,15 +3533,20 @@ img {
   left: 8.5%;
   border-radius: 50%;
   display: block;
+  transition: filter 0.8s;
 }
 
 @media (min-width: 64em) {
   .profile .field--name-field-register-picture a {
-    width: 117px;
-    height: 117px;
-    top: 12px;
-    left: 12px;
+    width: 115px;
+    height: 115px;
+    top: 11px;
+    left: 11px;
   }
+}
+
+.profile .field--name-field-register-picture a:hover {
+  filter: grayscale(100%);
 }
 
 .profile .field--name-field-register-name {
@@ -3418,12 +3563,18 @@ img {
   word-wrap: break-word;
 }
 
-.path-user .profile .field--name-field-register-picture a {
-  width: 157px;
-  top: 16px;
-  left: 11px;
+.path-node .profile .field--name-field-register-picture a,
+.path-node .profile .field--name-field-register-picture img:nth-child(2),
+.path-user .profile .field--name-field-register-picture a,
+.path-user .profile .field--name-field-register-picture img:nth-child(2) {
+  display: block;
+  width: 153px;
+  height: 153px;
+  top: 14px;
+  left: 13px;
 }
 
+.path-node .profile .field--name-field-register-name,
 .path-user .profile .field--name-field-register-name {
   text-align: center;
   margin-top: .5em;

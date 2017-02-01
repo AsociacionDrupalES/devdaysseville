@@ -1,4 +1,6 @@
 .page-node-type-session:not(.page-node-edit):not(.page-node-add)
+  .node--type-session
+    margin-top: 2em
   .field--name-field-user-ref
     padding-bottom: 3em
     +breakpoint($medium-small)
@@ -14,20 +16,11 @@
       .field--name-field-register-drupal-name
         font-size: 0.9em
         margin-top: 0.25em
+        text-align: center
       .field--name-field-register-picture
         margin-bottom: 0.5em
-        img
-          width: 170px
         a
           transition: filter 0.8s
-          +breakpoint($large)
-            width: 150px
-            max-width: 100%
-            top: 13px
-            left: 15px
-          img
-            width: 145px
-            background: $white
           &:hover
             opacity: 1
             filter: grayscale(100%)

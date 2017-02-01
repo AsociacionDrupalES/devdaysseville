@@ -36,10 +36,10 @@
         display: block
         background-color: $white
         +breakpoint($large)
-          width: 117px
-          height: 117px
-          top: 12px
-          left: 12px
+          width: 115px
+          height: 115px
+          top: 11px
+          left: 11px
     a
       position: absolute
       width: 83.33333%
@@ -47,11 +47,14 @@
       left: 8.5%
       border-radius: 50%
       display: block
+      transition: filter 0.8s
       +breakpoint($large)
-        width: 117px
-        height: 117px
-        top: 12px
-        left: 12px
+        width: 115px
+        height: 115px
+        top: 11px
+        left: 11px
+      &:hover                                                    
+        filter: grayscale(100%)
   .field--name-field-register-name
     font-family: $title
     font-size: 16px
@@ -62,12 +65,17 @@
     font-family: $default
     font-weight: bold
     word-wrap: break-word
+.path-node,
 .path-user
   .profile
-    .field--name-field-register-picture a
-      width: 157px
-      top: 16px
-      left: 11px
+    .field--name-field-register-picture
+      a,
+      img:nth-child(2)
+        display: block
+        width: 153px
+        height: 153px
+        top: 14px
+        left: 13px
     .field--name-field-register-name
       text-align: center
       margin-top: .5em

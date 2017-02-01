@@ -1,0 +1,33 @@
+.page-node-type-keynote
+  .node__content
+    h3
+      text-transform: uppercase
+      text-align: center
+      +breakpoint($medium-small)
+        text-align: left
+    > div:not(.text-formatted)
+      margin-bottom: 3em
+      .field--type-image
+        text-align: center
+        img
+          display: inline-block
+        +breakpoint($medium-small)
+          float: left
+          margin-right: 1.5em
+          img
+            max-width: 150px
+      .field--type-string
+        text-align: center
+        +breakpoint($medium-small)
+          text-align: left
+.field--name-field
+  &-company-name,
+  &-speaker-full-name
+    font-family: $title
+    font-size: 1.5em
+    line-height: 1.25em                                              
+  &-speaker-position
+    font-size: 0.75em
+    text-transform: uppercase
+    font-family: $title
+
