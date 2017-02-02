@@ -4,7 +4,6 @@ namespace Drupal\dddsvq_sponsors\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
-use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\dddsvq_sponsors\SponsorsManager;
 
@@ -59,7 +58,6 @@ class AllSponsorsBlock extends BlockBase implements ContainerFactoryPluginInterf
     );
   }
 
-
   /**
    * {@inheritdoc}
    */
@@ -82,13 +80,11 @@ class AllSponsorsBlock extends BlockBase implements ContainerFactoryPluginInterf
       '#theme' => 'rotation_entity',
       '#level' => 'silver',
       '#entities' => $this->sponsors_manager->getRenderableSponsorsByLevel('silver', 'silver_sponsor'),
-      '#attached' => ['library' => ['dddsvq_sponsors/sponsors.carousel']],
     ];
     $bronze_sponsors = [
       '#theme' => 'rotation_entity',
       '#level' => 'bronze',
       '#entities' => $this->sponsors_manager->getRenderableSponsorsByLevel('bronze', 'bronze_sponsor'),
-      '#attached' => ['library' => ['dddsvq_sponsors/sponsors.carousel']],
     ];
 
     $build = [
@@ -116,7 +112,7 @@ class AllSponsorsBlock extends BlockBase implements ContainerFactoryPluginInterf
         '#title' => 'Bronze sponsors',
         '#sponsor_type' => 'bronze',
         '#sponsors' => $bronze_sponsors,
-      ]
+      ],
     ];
 
     return $build;
