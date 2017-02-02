@@ -1,0 +1,33 @@
+uuid: ac105825-3eda-46ff-b131-4c34cb278a46
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - dddsvq_common
+    - system
+  theme:
+    - da_vinci
+id: mentorscontactformmessageblock
+theme: da_vinci
+region: content
+weight: -11
+provider: null
+plugin: mentors_contact_block
+settings:
+  id: mentors_contact_block
+  label: 'Mentors contact form message block'
+  provider: dddsvq_common
+  label_display: '0'
+  message_text: 'Vivamus suscipit tortor eget felis porttitor volutpat. Proin eget tortor risus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /contact/mentors
+    negate: false
+    context_mapping: {  }
