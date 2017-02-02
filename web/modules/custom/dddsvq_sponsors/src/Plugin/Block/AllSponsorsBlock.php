@@ -6,6 +6,7 @@ use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\dddsvq_sponsors\SponsorsManager;
 
 /**
  * Provides a 'AllSponsorsBlock' block.
@@ -20,9 +21,9 @@ class AllSponsorsBlock extends BlockBase implements ContainerFactoryPluginInterf
   /**
    * The Entity type manager service.
    *
-   * @var \Drupal\Core\Entity\EntityTypeManagerInterface
+   * @var \Drupal\dddsvq_sponsors\SponsorsManager
    */
-  protected $entity_type_manager;
+  protected $sponsors_manager;
 
   /**
    * Construct.
@@ -33,16 +34,17 @@ class AllSponsorsBlock extends BlockBase implements ContainerFactoryPluginInterf
    *   The plugin_id for the plugin instance.
    * @param string $plugin_definition
    *   The plugin implementation definition.
-   * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entity_type_manager
+   * @param \Drupal\dddsvq_sponsors\SponsorsManager $sponsors_manager
+   * @internal param \Drupal\Core\Entity\EntityTypeManagerInterface $entity_type_manager
    */
   public function __construct(
     array $configuration,
     $plugin_id,
     $plugin_definition,
-    EntityTypeManagerInterface $entity_type_manager
+    SponsorsManager $sponsors_manager
   ) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
-    $this->entity_type_manager = $entity_type_manager;
+    $this->sponsors_manager = $sponsors_manager;
   }
 
   /**
@@ -53,7 +55,7 @@ class AllSponsorsBlock extends BlockBase implements ContainerFactoryPluginInterf
       $configuration,
       $plugin_id,
       $plugin_definition,
-      $container->get('entity_type.manager')
+      $container->get('dddsvq_sponsors.manager')
     );
   }
 
@@ -76,31 +78,16 @@ class AllSponsorsBlock extends BlockBase implements ContainerFactoryPluginInterf
       '#arguments' => [],
     ];
 
-    $storage = $this->entity_type_manager->getStorage('node');
-    $nodes = $storage->loadByProperties([
-      'field_sponsorship_type' => 3,
-      'status' => 1,
-    ]);
-
     $silver_sponsors = [
       '#theme' => 'rotation_entity',
       '#level' => 'silver',
-      '#entities' => $this->entity_type_manager
-        ->getViewBuilder('node')
-        ->viewMultiple($nodes, 'silver_sponsor'),
+      '#entities' => $this->sponsors_manager->getRenderableSponsorsByLevel('silver', 'silver_sponsor'),
       '#attached' => ['library' => ['dddsvq_sponsors/sponsors.carousel']],
     ];
-
-    $nodes = $storage->loadByProperties([
-      'field_sponsorship_type' => 4,
-      'status' => 1,
-    ]);
     $bronze_sponsors = [
       '#theme' => 'rotation_entity',
       '#level' => 'bronze',
-      '#entities' => $this->entity_type_manager
-        ->getViewBuilder('node')
-        ->viewMultiple($nodes, 'bronze_sponsor'),
+      '#entities' => $this->sponsors_manager->getRenderableSponsorsByLevel('bronze', 'bronze_sponsor'),
       '#attached' => ['library' => ['dddsvq_sponsors/sponsors.carousel']],
     ];
 

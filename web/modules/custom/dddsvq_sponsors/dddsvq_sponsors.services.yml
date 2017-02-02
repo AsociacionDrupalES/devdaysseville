@@ -1,0 +1,6 @@
+services:
+  dddsvq_sponsors.manager:
+    class: Drupal\dddsvq_sponsors\SponsorsManager
+    arguments:
+      - '@entity_type.manager'
+
