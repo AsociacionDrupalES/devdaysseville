@@ -21,6 +21,28 @@
         text-align: center
         +breakpoint($medium-small)
           text-align: left
+      .field--name-field-image
+        position: relative
+        &:before
+          content: ''
+          width: 153px
+          height: 153px
+          background: url('../images/avatar.svg') no-repeat
+          background-size: 100%
+          display: block
+          z-index: 0
+          margin: 0 auto
+        img
+          display: inline-block
+          margin-bottom: 1.5em
+          position: absolute
+          z-index: 1
+          border-radius: 100px
+          background-color: $white
+          width: 130px
+          left: 50%
+          top: 11px
+          transform: translate(-50%)
 .field--name-field
   &-company-name,
   &-speaker-full-name
