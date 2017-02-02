@@ -791,6 +791,11 @@ head:before {
   }
 }
 
+.sliding_menu .wrapper-menu-rw {
+  overflow-y: auto;
+  height: calc( 100vh - 150px);
+}
+
 .sliding_menu a,
 .sliding_menu ul.menu {
   margin: 0;
@@ -912,6 +917,10 @@ head:before {
 
 .sliding_menu #block-leftsidemenuList {
   bottom: 69px;
+}
+
+.user-logged-in .sliding_menu .wrapper-menu-rw {
+  height: calc( 100vh - 188px);
 }
 
 .user-logged-in .sliding_menu #block-leftsidemenuList {
@@ -1159,6 +1168,13 @@ header #block-languageswitcher ul li:nth-last-child(1):before {
 
 .menu--header-right-menu > ul > .menu-item:first-child .menu {
   left: 0;
+}
+
+@media (min-width: 0) and (max-width: 43.99em) {
+  html,
+  body {
+    overflow: hidden;
+  }
 }
 
 html,
