@@ -1190,6 +1190,9 @@ display:
         filter_groups: false
         title: false
         fields: false
+        style: false
+        row: false
+        pager: false
       filter_groups:
         operator: AND
         groups:
@@ -1329,6 +1332,25 @@ display:
           field_api_classes: false
           plugin_id: field
       block_hide_empty: true
+      style:
+        type: html_list
+        options:
+          row_class: sponsors-list__item
+          default_row_class: false
+          uses_fields: false
+          type: ul
+          wrapper_class: ''
+          class: sponsors-list__list
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: bronze_sponsor
+      pager:
+        type: some
+        options:
+          items_per_page: 5
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:
@@ -1412,6 +1434,9 @@ display:
         filter_groups: false
         title: false
         fields: false
+        style: false
+        row: false
+        pager: false
       filter_groups:
         operator: AND
         groups:
@@ -1551,6 +1576,25 @@ display:
           field_api_classes: false
           plugin_id: field
       block_hide_empty: true
+      style:
+        type: html_list
+        options:
+          row_class: sponsors-list__item
+          default_row_class: false
+          uses_fields: false
+          type: ul
+          wrapper_class: ''
+          class: sponsors-list__list
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: silver_sponsor
+      pager:
+        type: some
+        options:
+          items_per_page: 5
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:
@@ -1564,7 +1608,7 @@ display:
   block_7:
     display_plugin: block
     id: block_7
-    display_title: 'Code Sprint'
+    display_title: 'Social event sprint'
     position: 8
     display_options:
       display_extenders: {  }
@@ -1634,12 +1678,15 @@ display:
         filter_groups: false
         title: false
         fields: false
+        style: false
+        row: false
+        pager: false
       filter_groups:
         operator: AND
         groups:
           1: AND
       display_description: ''
-      title: 'Code Sprint Sponsors'
+      title: 'Social event Sponsors'
       fields:
         field_webpage:
           id: field_webpage
@@ -1773,6 +1820,68 @@ display:
           field_api_classes: false
           plugin_id: field
       block_hide_empty: true
+      style:
+        type: html_list
+        options:
+          row_class: sponsors-list__item
+          default_row_class: false
+          uses_fields: false
+          type: ul
+          wrapper_class: ''
+          class: sponsors-list__list
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: silver_sponsor
+      pager:
+        type: some
+        options:
+          items_per_page: 3
+          offset: 0
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_logo'
+        - 'config:field.storage.node.field_webpage'
+  block_8:
+    display_plugin: block
+    id: block_8
+    display_title: 'Bull sponsors'
+    position: 9
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      title: 'Bull Sponsors'
+      defaults:
+        title: false
+        style: false
+        row: false
+        pager: false
+      style:
+        type: html_list
+        options:
+          row_class: sponsors-list__item
+          default_row_class: false
+          uses_fields: false
+          type: ul
+          wrapper_class: ''
+          class: sponsors-list__list
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: silver_sponsor
+      pager:
+        type: some
+        options:
+          items_per_page: 5
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:

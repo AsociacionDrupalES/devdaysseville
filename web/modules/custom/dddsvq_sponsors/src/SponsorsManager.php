@@ -29,6 +29,7 @@ class SponsorsManager {
     'coffee' => 5,
     'food' => 6,
     'social' => 7,
+    'bull' => 8,
   ];
 
   /**

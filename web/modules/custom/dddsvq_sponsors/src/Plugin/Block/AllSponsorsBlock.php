@@ -77,14 +77,44 @@ class AllSponsorsBlock extends BlockBase implements ContainerFactoryPluginInterf
     ];
 
     $silver_sponsors = [
-      '#theme' => 'rotation_entity',
-      '#level' => 'silver',
-      '#entities' => $this->sponsors_manager->getRenderableSponsorsByLevel('silver', 'silver_sponsor'),
+      '#type' => 'view',
+      '#name' => 'sponsors',
+      '#display_id' => 'block_3',
+      '#arguments' => [],
     ];
     $bronze_sponsors = [
-      '#theme' => 'rotation_entity',
-      '#level' => 'bronze',
-      '#entities' => $this->sponsors_manager->getRenderableSponsorsByLevel('bronze', 'bronze_sponsor'),
+      '#type' => 'view',
+      '#name' => 'sponsors',
+      '#display_id' => 'block_4',
+      '#arguments' => [],
+    ];
+
+    $bull_sponsors = [
+      '#type' => 'view',
+      '#name' => 'sponsors',
+      '#display_id' => 'block_8',
+      '#arguments' => [],
+    ];
+
+    $food_sponsors = [
+      '#type' => 'view',
+      '#name' => 'sponsors',
+      '#display_id' => 'block_6',
+      '#arguments' => [],
+    ];
+
+    $social_sponsors = [
+      '#type' => 'view',
+      '#name' => 'sponsors',
+      '#display_id' => 'block_7',
+      '#arguments' => [],
+    ];
+
+    $coffee_sponsors = [
+      '#type' => 'view',
+      '#name' => 'sponsors',
+      '#display_id' => 'block_5',
+      '#arguments' => [],
     ];
 
     $build = [
@@ -112,6 +142,30 @@ class AllSponsorsBlock extends BlockBase implements ContainerFactoryPluginInterf
         '#title' => 'Bronze sponsors',
         '#sponsor_type' => 'bronze',
         '#sponsors' => $bronze_sponsors,
+      ],
+      'food_sponsors' => [
+        '#theme' => 'sponsors',
+        '#title' => 'Food sponsors',
+        '#sponsor_type' => 'silver',
+        '#sponsors' => $food_sponsors,
+      ],
+      'bull' => [
+        '#theme' => 'sponsors',
+        '#title' => 'Bull sponsors',
+        '#sponsor_type' => 'silver',
+        '#sponsors' => $bull_sponsors,
+      ],
+      'coffee' => [
+        '#theme' => 'sponsors',
+        '#title' => 'Coffee sponsors',
+        '#sponsor_type' => 'bronze',
+        '#sponsors' => $coffee_sponsors,
+      ],
+      'social_event' => [
+        '#theme' => 'sponsors',
+        '#title' => 'Social event sponsors',
+        '#sponsor_type' => 'silver',
+        '#sponsors' => $social_sponsors,
       ],
     ];
 

@@ -31,7 +31,10 @@ settings:
       label: Lunch
     -
       value: 7
-      label: 'Code Sprint'
+      label: 'Social event'
+    -
+      value: 8
+      label: Bull
   allowed_values_function: ''
 module: options
 locked: false
