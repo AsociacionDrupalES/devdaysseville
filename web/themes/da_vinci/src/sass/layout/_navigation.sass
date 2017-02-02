@@ -76,6 +76,9 @@
   font-family: $title
   padding: 2rem 2rem 0
   font-size: 1.2rem
+  .wrapper-menu-rw
+    overflow-y: auto
+    height: calc( 100vh - 150px )
   a,
   ul.menu
     margin: 0
@@ -147,6 +150,8 @@
     bottom: 69px
 .user-logged-in
   .sliding_menu
+    .wrapper-menu-rw
+      height: calc( 100vh - 188px )
     #block-leftsidemenuList
       bottom: 103px
 
@@ -296,3 +301,9 @@ header
         .menu
           left: 0
         
+
++breakpoint($below_medium)
+  html,
+  body
+    overflow: hidden
+
