@@ -2776,6 +2776,34 @@ td {
   }
 }
 
+.page-node-type-keynote .node__content > div:not(.text-formatted) .field--name-field-image {
+  position: relative;
+}
+
+.page-node-type-keynote .node__content > div:not(.text-formatted) .field--name-field-image:before {
+  content: '';
+  width: 153px;
+  height: 153px;
+  background: url("../images/avatar.svg") no-repeat;
+  background-size: 100%;
+  display: block;
+  z-index: 0;
+  margin: 0 auto;
+}
+
+.page-node-type-keynote .node__content > div:not(.text-formatted) .field--name-field-image img {
+  display: inline-block;
+  margin-bottom: 1.5em;
+  position: absolute;
+  z-index: 1;
+  border-radius: 100px;
+  background-color: white;
+  width: 130px;
+  left: 50%;
+  top: 11px;
+  transform: translate(-50%);
+}
+
 .field--name-field-company-name, .field--name-field-speaker-full-name {
   font-family: "Marcellus", serif;
   font-size: 1.5em;
