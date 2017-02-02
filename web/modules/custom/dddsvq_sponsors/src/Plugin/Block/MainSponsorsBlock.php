@@ -45,6 +45,9 @@ class MainSponsorsBlock extends BlockBase {
         '#title' => 'Gold sponsors',
         '#sponsor_type' => 'gold',
         '#sponsors' => $gold_sponsors,
+      ],
+      '#cache' => [
+        'contexts' => ['url.path']
       ]
     ];
 

@@ -66,4 +66,5 @@ function dddsvq_sponsors_theme($existing, $type, $theme, $path) {
  */
 function dddsvq_sponsors_preprocess_sponsors_wrapper(&$variables) {
   $variables['content'] = $variables['element']['#children'];
+  $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
 }
