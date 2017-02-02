@@ -1,0 +1,9 @@
+uuid: c9f6b653-2933-4da3-bdf9-37c924fd9608
+langcode: en
+status: true
+dependencies: {  }
+id: individual_sponsor
+label: 'Individual sponsor'
+weight: 3
+is_admin: null
+permissions: {  }
