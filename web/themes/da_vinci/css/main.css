@@ -2433,81 +2433,57 @@ td {
   margin-top: 0.5em;
 }
 
-.node-keynote-edit-form,
-.node-keynote-form,
-.node-session-edit-form,
-.node-session-form,
-#user-login-form,
-#user-register-form,
-#user-pass {
+.user-form,
+.user-login-form,
+.user-pass,
+.node-form {
   max-width: 650px;
   margin: 0 auto;
 }
 
-.node-keynote-edit-form .add-session-intro--text,
-.node-keynote-form .add-session-intro--text,
-.node-session-edit-form .add-session-intro--text,
-.node-session-form .add-session-intro--text,
-#user-login-form .add-session-intro--text,
-#user-register-form .add-session-intro--text,
-#user-pass .add-session-intro--text {
+.user-form .add-session-intro--text,
+.user-login-form .add-session-intro--text,
+.user-pass .add-session-intro--text,
+.node-form .add-session-intro--text {
   line-height: 1.5em;
 }
 
-.node-keynote-edit-form .description,
-.node-keynote-form .description,
-.node-session-edit-form .description,
-.node-session-form .description,
-#user-login-form .description,
-#user-register-form .description,
-#user-pass .description {
+.user-form .description,
+.user-login-form .description,
+.user-pass .description,
+.node-form .description {
   font-style: italic;
 }
 
-.node-keynote-edit-form legend,
-.node-keynote-form legend,
-.node-session-edit-form legend,
-.node-session-form legend,
-#user-login-form legend,
-#user-register-form legend,
-#user-pass legend {
+.user-form legend,
+.user-login-form legend,
+.user-pass legend,
+.node-form legend {
   margin-bottom: 0.5em;
 }
 
-.node-keynote-edit-form label:not(.option),
-.node-keynote-form label:not(.option),
-.node-session-edit-form label:not(.option),
-.node-session-form label:not(.option),
-#user-login-form label:not(.option),
-#user-register-form label:not(.option),
-#user-pass label:not(.option) {
+.user-form label:not(.option),
+.user-login-form label:not(.option),
+.user-pass label:not(.option),
+.node-form label:not(.option) {
   display: block;
 }
 
-.node-keynote-edit-form label.option,
-.node-keynote-form label.option,
-.node-session-edit-form label.option,
-.node-session-form label.option,
-#user-login-form label.option,
-#user-register-form label.option,
-#user-pass label.option {
+.user-form label.option,
+.user-login-form label.option,
+.user-pass label.option,
+.node-form label.option {
   margin-left: 0.25em;
   display: inline-block;
 }
 
-.node-keynote-edit-form input:not(.form-radio):not(.form-checkbox), .node-keynote-edit-form textarea,
-.node-keynote-form input:not(.form-radio):not(.form-checkbox),
-.node-keynote-form textarea,
-.node-session-edit-form input:not(.form-radio):not(.form-checkbox),
-.node-session-edit-form textarea,
-.node-session-form input:not(.form-radio):not(.form-checkbox),
-.node-session-form textarea,
-#user-login-form input:not(.form-radio):not(.form-checkbox),
-#user-login-form textarea,
-#user-register-form input:not(.form-radio):not(.form-checkbox),
-#user-register-form textarea,
-#user-pass input:not(.form-radio):not(.form-checkbox),
-#user-pass textarea {
+.user-form input:not(.form-radio):not(.form-checkbox), .user-form textarea,
+.user-login-form input:not(.form-radio):not(.form-checkbox),
+.user-login-form textarea,
+.user-pass input:not(.form-radio):not(.form-checkbox),
+.user-pass textarea,
+.node-form input:not(.form-radio):not(.form-checkbox),
+.node-form textarea {
   border: 1px solid #212121;
   min-height: 48px;
   padding: 0.5em 1em;
@@ -2516,35 +2492,23 @@ td {
   margin: 0;
 }
 
-.node-keynote-edit-form input:not(.form-radio):not(.form-checkbox).form-autocomplete, .node-keynote-edit-form textarea.form-autocomplete,
-.node-keynote-form input:not(.form-radio):not(.form-checkbox).form-autocomplete,
-.node-keynote-form textarea.form-autocomplete,
-.node-session-edit-form input:not(.form-radio):not(.form-checkbox).form-autocomplete,
-.node-session-edit-form textarea.form-autocomplete,
-.node-session-form input:not(.form-radio):not(.form-checkbox).form-autocomplete,
-.node-session-form textarea.form-autocomplete,
-#user-login-form input:not(.form-radio):not(.form-checkbox).form-autocomplete,
-#user-login-form textarea.form-autocomplete,
-#user-register-form input:not(.form-radio):not(.form-checkbox).form-autocomplete,
-#user-register-form textarea.form-autocomplete,
-#user-pass input:not(.form-radio):not(.form-checkbox).form-autocomplete,
-#user-pass textarea.form-autocomplete {
+.user-form input:not(.form-radio):not(.form-checkbox).form-autocomplete, .user-form textarea.form-autocomplete,
+.user-login-form input:not(.form-radio):not(.form-checkbox).form-autocomplete,
+.user-login-form textarea.form-autocomplete,
+.user-pass input:not(.form-radio):not(.form-checkbox).form-autocomplete,
+.user-pass textarea.form-autocomplete,
+.node-form input:not(.form-radio):not(.form-checkbox).form-autocomplete,
+.node-form textarea.form-autocomplete {
   background-position: 98% center;
 }
 
-.node-keynote-edit-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit, .node-keynote-edit-form textarea.field-add-more-submit,
-.node-keynote-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit,
-.node-keynote-form textarea.field-add-more-submit,
-.node-session-edit-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit,
-.node-session-edit-form textarea.field-add-more-submit,
-.node-session-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit,
-.node-session-form textarea.field-add-more-submit,
-#user-login-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit,
-#user-login-form textarea.field-add-more-submit,
-#user-register-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit,
-#user-register-form textarea.field-add-more-submit,
-#user-pass input:not(.form-radio):not(.form-checkbox).field-add-more-submit,
-#user-pass textarea.field-add-more-submit {
+.user-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit, .user-form textarea.field-add-more-submit,
+.user-login-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit,
+.user-login-form textarea.field-add-more-submit,
+.user-pass input:not(.form-radio):not(.form-checkbox).field-add-more-submit,
+.user-pass textarea.field-add-more-submit,
+.node-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit,
+.node-form textarea.field-add-more-submit {
   background: transparent;
   color: #212121;
   font-size: 0.9em;
@@ -2555,213 +2519,150 @@ td {
   display: block;
 }
 
-.node-keynote-edit-form .form-wrapper:not(.vertical-tabs__pane),
-.node-keynote-form .form-wrapper:not(.vertical-tabs__pane),
-.node-session-edit-form .form-wrapper:not(.vertical-tabs__pane),
-.node-session-form .form-wrapper:not(.vertical-tabs__pane),
-#user-login-form .form-wrapper:not(.vertical-tabs__pane),
-#user-register-form .form-wrapper:not(.vertical-tabs__pane),
-#user-pass .form-wrapper:not(.vertical-tabs__pane) {
+.user-form .form-wrapper:not(.vertical-tabs__pane),
+.user-login-form .form-wrapper:not(.vertical-tabs__pane),
+.user-pass .form-wrapper:not(.vertical-tabs__pane),
+.node-form .form-wrapper:not(.vertical-tabs__pane) {
   margin: 1.5em 0;
 }
 
-.node-keynote-edit-form .form-wrapper:not(.vertical-tabs__pane).field--name-title,
-.node-keynote-form .form-wrapper:not(.vertical-tabs__pane).field--name-title,
-.node-session-edit-form .form-wrapper:not(.vertical-tabs__pane).field--name-title,
-.node-session-form .form-wrapper:not(.vertical-tabs__pane).field--name-title,
-#user-login-form .form-wrapper:not(.vertical-tabs__pane).field--name-title,
-#user-register-form .form-wrapper:not(.vertical-tabs__pane).field--name-title,
-#user-pass .form-wrapper:not(.vertical-tabs__pane).field--name-title {
+.user-form .form-wrapper:not(.vertical-tabs__pane).field--name-title,
+.user-login-form .form-wrapper:not(.vertical-tabs__pane).field--name-title,
+.user-pass .form-wrapper:not(.vertical-tabs__pane).field--name-title,
+.node-form .form-wrapper:not(.vertical-tabs__pane).field--name-title {
   margin-top: 3em;
 }
 
-.node-keynote-edit-form .tabledrag-toggle-weight-wrapper,
-.node-keynote-edit-form .filter-wrapper,
-.node-keynote-form .tabledrag-toggle-weight-wrapper,
-.node-keynote-form .filter-wrapper,
-.node-session-edit-form .tabledrag-toggle-weight-wrapper,
-.node-session-edit-form .filter-wrapper,
-.node-session-form .tabledrag-toggle-weight-wrapper,
-.node-session-form .filter-wrapper,
-#user-login-form .tabledrag-toggle-weight-wrapper,
-#user-login-form .filter-wrapper,
-#user-register-form .tabledrag-toggle-weight-wrapper,
-#user-register-form .filter-wrapper,
-#user-pass .tabledrag-toggle-weight-wrapper,
-#user-pass .filter-wrapper {
+.user-form .tabledrag-toggle-weight-wrapper,
+.user-form .filter-wrapper,
+.user-login-form .tabledrag-toggle-weight-wrapper,
+.user-login-form .filter-wrapper,
+.user-pass .tabledrag-toggle-weight-wrapper,
+.user-pass .filter-wrapper,
+.node-form .tabledrag-toggle-weight-wrapper,
+.node-form .filter-wrapper {
   height: 0;
   padding: 0;
   margin: 0 !important;
   visibility: hidden;
 }
 
-.node-keynote-edit-form .field--name-field-user-ref thead,
-.node-keynote-form .field--name-field-user-ref thead,
-.node-session-edit-form .field--name-field-user-ref thead,
-.node-session-form .field--name-field-user-ref thead,
-#user-login-form .field--name-field-user-ref thead,
-#user-register-form .field--name-field-user-ref thead,
-#user-pass .field--name-field-user-ref thead {
+.user-form .field--name-field-user-ref thead,
+.user-login-form .field--name-field-user-ref thead,
+.user-pass .field--name-field-user-ref thead,
+.node-form .field--name-field-user-ref thead {
   background: transparent;
 }
 
-.node-keynote-edit-form .field--name-field-user-ref tr,
-.node-keynote-form .field--name-field-user-ref tr,
-.node-session-edit-form .field--name-field-user-ref tr,
-.node-session-form .field--name-field-user-ref tr,
-#user-login-form .field--name-field-user-ref tr,
-#user-register-form .field--name-field-user-ref tr,
-#user-pass .field--name-field-user-ref tr {
+.user-form .field--name-field-user-ref tr,
+.user-login-form .field--name-field-user-ref tr,
+.user-pass .field--name-field-user-ref tr,
+.node-form .field--name-field-user-ref tr {
   border-width: 0;
 }
 
-.node-keynote-edit-form .field--name-field-user-ref th,
-.node-keynote-form .field--name-field-user-ref th,
-.node-session-edit-form .field--name-field-user-ref th,
-.node-session-form .field--name-field-user-ref th,
-#user-login-form .field--name-field-user-ref th,
-#user-register-form .field--name-field-user-ref th,
-#user-pass .field--name-field-user-ref th {
+.user-form .field--name-field-user-ref th,
+.user-login-form .field--name-field-user-ref th,
+.user-pass .field--name-field-user-ref th,
+.node-form .field--name-field-user-ref th {
   padding: 0;
 }
 
-.node-keynote-edit-form .field--name-field-user-ref td,
-.node-keynote-form .field--name-field-user-ref td,
-.node-session-edit-form .field--name-field-user-ref td,
-.node-session-form .field--name-field-user-ref td,
-#user-login-form .field--name-field-user-ref td,
-#user-register-form .field--name-field-user-ref td,
-#user-pass .field--name-field-user-ref td {
+.user-form .field--name-field-user-ref td,
+.user-login-form .field--name-field-user-ref td,
+.user-pass .field--name-field-user-ref td,
+.node-form .field--name-field-user-ref td {
   padding: 15px 0 0;
 }
 
-.node-keynote-edit-form a.tabledrag-handle .handle,
-.node-keynote-form a.tabledrag-handle .handle,
-.node-session-edit-form a.tabledrag-handle .handle,
-.node-session-form a.tabledrag-handle .handle,
-#user-login-form a.tabledrag-handle .handle,
-#user-register-form a.tabledrag-handle .handle,
-#user-pass a.tabledrag-handle .handle {
+.user-form a.tabledrag-handle .handle,
+.user-login-form a.tabledrag-handle .handle,
+.user-pass a.tabledrag-handle .handle,
+.node-form a.tabledrag-handle .handle {
   width: 25px;
   height: 25px;
   margin-right: 0;
 }
 
-.node-keynote-edit-form .form-actions,
-.node-keynote-form .form-actions,
-.node-session-edit-form .form-actions,
-.node-session-form .form-actions,
-#user-login-form .form-actions,
-#user-register-form .form-actions,
-#user-pass .form-actions {
+.user-form .form-actions,
+.user-login-form .form-actions,
+.user-pass .form-actions,
+.node-form .form-actions {
   overflow: hidden;
   text-align: right;
 }
 
-.node-keynote-edit-form .form-actions #edit-delete,
-.node-keynote-edit-form .form-actions #edit-preview,
-.node-keynote-edit-form .form-actions #edit-submit,
-.node-keynote-form .form-actions #edit-delete,
-.node-keynote-form .form-actions #edit-preview,
-.node-keynote-form .form-actions #edit-submit,
-.node-session-edit-form .form-actions #edit-delete,
-.node-session-edit-form .form-actions #edit-preview,
-.node-session-edit-form .form-actions #edit-submit,
-.node-session-form .form-actions #edit-delete,
-.node-session-form .form-actions #edit-preview,
-.node-session-form .form-actions #edit-submit,
-#user-login-form .form-actions #edit-delete,
-#user-login-form .form-actions #edit-preview,
-#user-login-form .form-actions #edit-submit,
-#user-register-form .form-actions #edit-delete,
-#user-register-form .form-actions #edit-preview,
-#user-register-form .form-actions #edit-submit,
-#user-pass .form-actions #edit-delete,
-#user-pass .form-actions #edit-preview,
-#user-pass .form-actions #edit-submit {
+.user-form .form-actions #edit-delete,
+.user-form .form-actions #edit-preview,
+.user-form .form-actions #edit-submit,
+.user-login-form .form-actions #edit-delete,
+.user-login-form .form-actions #edit-preview,
+.user-login-form .form-actions #edit-submit,
+.user-pass .form-actions #edit-delete,
+.user-pass .form-actions #edit-preview,
+.user-pass .form-actions #edit-submit,
+.node-form .form-actions #edit-delete,
+.node-form .form-actions #edit-preview,
+.node-form .form-actions #edit-submit {
   min-width: 150px;
   max-width: 270px;
   margin: 0;
 }
 
-.node-keynote-edit-form .form-actions #edit-delete:hover,
-.node-keynote-edit-form .form-actions #edit-preview:hover,
-.node-keynote-edit-form .form-actions #edit-submit:hover,
-.node-keynote-form .form-actions #edit-delete:hover,
-.node-keynote-form .form-actions #edit-preview:hover,
-.node-keynote-form .form-actions #edit-submit:hover,
-.node-session-edit-form .form-actions #edit-delete:hover,
-.node-session-edit-form .form-actions #edit-preview:hover,
-.node-session-edit-form .form-actions #edit-submit:hover,
-.node-session-form .form-actions #edit-delete:hover,
-.node-session-form .form-actions #edit-preview:hover,
-.node-session-form .form-actions #edit-submit:hover,
-#user-login-form .form-actions #edit-delete:hover,
-#user-login-form .form-actions #edit-preview:hover,
-#user-login-form .form-actions #edit-submit:hover,
-#user-register-form .form-actions #edit-delete:hover,
-#user-register-form .form-actions #edit-preview:hover,
-#user-register-form .form-actions #edit-submit:hover,
-#user-pass .form-actions #edit-delete:hover,
-#user-pass .form-actions #edit-preview:hover,
-#user-pass .form-actions #edit-submit:hover {
+.user-form .form-actions #edit-delete:hover,
+.user-form .form-actions #edit-preview:hover,
+.user-form .form-actions #edit-submit:hover,
+.user-login-form .form-actions #edit-delete:hover,
+.user-login-form .form-actions #edit-preview:hover,
+.user-login-form .form-actions #edit-submit:hover,
+.user-pass .form-actions #edit-delete:hover,
+.user-pass .form-actions #edit-preview:hover,
+.user-pass .form-actions #edit-submit:hover,
+.node-form .form-actions #edit-delete:hover,
+.node-form .form-actions #edit-preview:hover,
+.node-form .form-actions #edit-submit:hover {
   color: white;
 }
 
-.node-keynote-edit-form .form-actions #edit-delete,
-.node-keynote-form .form-actions #edit-delete,
-.node-session-edit-form .form-actions #edit-delete,
-.node-session-form .form-actions #edit-delete,
-#user-login-form .form-actions #edit-delete,
-#user-register-form .form-actions #edit-delete,
-#user-pass .form-actions #edit-delete {
+.user-form .form-actions #edit-delete,
+.user-login-form .form-actions #edit-delete,
+.user-pass .form-actions #edit-delete,
+.node-form .form-actions #edit-delete {
   border: 1px solid #212121;
   padding: 0.6em 1em;
   outline: none;
   text-align: center;
 }
 
-.node-keynote-edit-form .form-actions .dropbutton-multiple,
-.node-keynote-form .form-actions .dropbutton-multiple,
-.node-session-edit-form .form-actions .dropbutton-multiple,
-.node-session-form .form-actions .dropbutton-multiple,
-#user-login-form .form-actions .dropbutton-multiple,
-#user-register-form .form-actions .dropbutton-multiple,
-#user-pass .form-actions .dropbutton-multiple {
+.user-form .form-actions .dropbutton-multiple,
+.user-login-form .form-actions .dropbutton-multiple,
+.user-pass .form-actions .dropbutton-multiple,
+.node-form .form-actions .dropbutton-multiple {
   float: right;
   width: 325px;
   display: inline-block;
   margin: 0 0 1em 0.5em;
 }
 
-.node-keynote-edit-form .form-actions .dropbutton-multiple .dropbutton-widget,
-.node-keynote-form .form-actions .dropbutton-multiple .dropbutton-widget,
-.node-session-edit-form .form-actions .dropbutton-multiple .dropbutton-widget,
-.node-session-form .form-actions .dropbutton-multiple .dropbutton-widget,
-#user-login-form .form-actions .dropbutton-multiple .dropbutton-widget,
-#user-register-form .form-actions .dropbutton-multiple .dropbutton-widget,
-#user-pass .form-actions .dropbutton-multiple .dropbutton-widget {
+.user-form .form-actions .dropbutton-multiple .dropbutton-widget,
+.user-login-form .form-actions .dropbutton-multiple .dropbutton-widget,
+.user-pass .form-actions .dropbutton-multiple .dropbutton-widget,
+.node-form .form-actions .dropbutton-multiple .dropbutton-widget {
   border: 0;
 }
 
-.node-keynote-edit-form .form-actions .dropbutton-multiple input,
-.node-keynote-form .form-actions .dropbutton-multiple input,
-.node-session-edit-form .form-actions .dropbutton-multiple input,
-.node-session-form .form-actions .dropbutton-multiple input,
-#user-login-form .form-actions .dropbutton-multiple input,
-#user-register-form .form-actions .dropbutton-multiple input,
-#user-pass .form-actions .dropbutton-multiple input {
+.user-form .form-actions .dropbutton-multiple input,
+.user-login-form .form-actions .dropbutton-multiple input,
+.user-pass .form-actions .dropbutton-multiple input,
+.node-form .form-actions .dropbutton-multiple input {
   margin: 0;
   width: 100%;
 }
 
-.node-keynote-edit-form .form-actions .dropbutton-multiple li input,
-.node-keynote-form .form-actions .dropbutton-multiple li input,
-.node-session-edit-form .form-actions .dropbutton-multiple li input,
-.node-session-form .form-actions .dropbutton-multiple li input,
-#user-login-form .form-actions .dropbutton-multiple li input,
-#user-register-form .form-actions .dropbutton-multiple li input,
-#user-pass .form-actions .dropbutton-multiple li input {
+.user-form .form-actions .dropbutton-multiple li input,
+.user-login-form .form-actions .dropbutton-multiple li input,
+.user-pass .form-actions .dropbutton-multiple li input,
+.node-form .form-actions .dropbutton-multiple li input {
   width: 100%;
   margin: 0;
 }
@@ -2803,14 +2704,6 @@ td {
   display: inline-block;
 }
 
-.node--type-job-offer .node-readmore {
-  float: right;
-}
-
-.node--type-job-offer .node-readmore a {
-  text-decoration: none;
-}
-
 .node--type-job-offer ul.inline li {
   display: block;
 }
@@ -2826,6 +2719,17 @@ td {
 .node--type-job-offer .sponsor-offer img {
   width: 120px;
   margin-left: 1em;
+}
+
+.node-readmore {
+  float: right;
+}
+
+.node-readmore a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-family: "Marcellus", serif;
 }
 
 .page-node-type-keynote .node__content h3 {
@@ -2882,6 +2786,10 @@ td {
   font-size: 0.75em;
   text-transform: uppercase;
   font-family: "Marcellus", serif;
+}
+
+.page-node-type-news .node--type-news {
+  margin-top: 2em;
 }
 
 .page-node-type-news .news__field-image {
