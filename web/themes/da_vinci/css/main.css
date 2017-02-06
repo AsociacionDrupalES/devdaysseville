@@ -2449,6 +2449,7 @@ td {
   margin-top: 0.5em;
 }
 
+.contact-form,
 .user-form,
 .user-login-form,
 .user-pass,
@@ -2457,6 +2458,7 @@ td {
   margin: 0 auto;
 }
 
+.contact-form .add-session-intro--text,
 .user-form .add-session-intro--text,
 .user-login-form .add-session-intro--text,
 .user-pass .add-session-intro--text,
@@ -2464,6 +2466,7 @@ td {
   line-height: 1.5em;
 }
 
+.contact-form .description,
 .user-form .description,
 .user-login-form .description,
 .user-pass .description,
@@ -2471,6 +2474,7 @@ td {
   font-style: italic;
 }
 
+.contact-form legend,
 .user-form legend,
 .user-login-form legend,
 .user-pass legend,
@@ -2478,6 +2482,7 @@ td {
   margin-bottom: 0.5em;
 }
 
+.contact-form label:not(.option),
 .user-form label:not(.option),
 .user-login-form label:not(.option),
 .user-pass label:not(.option),
@@ -2485,6 +2490,7 @@ td {
   display: block;
 }
 
+.contact-form label.option,
 .user-form label.option,
 .user-login-form label.option,
 .user-pass label.option,
@@ -2493,14 +2499,18 @@ td {
   display: inline-block;
 }
 
-.user-form input:not(.form-radio):not(.form-checkbox), .user-form textarea,
-.user-login-form input:not(.form-radio):not(.form-checkbox),
+.contact-form input:not(.form-radio):not(.form-checkbox):not(.form-submit), .contact-form textarea,
+.user-form input:not(.form-radio):not(.form-checkbox):not(.form-submit),
+.user-form textarea,
+.user-login-form input:not(.form-radio):not(.form-checkbox):not(.form-submit),
 .user-login-form textarea,
-.user-pass input:not(.form-radio):not(.form-checkbox),
+.user-pass input:not(.form-radio):not(.form-checkbox):not(.form-submit),
 .user-pass textarea,
-.node-form input:not(.form-radio):not(.form-checkbox),
+.node-form input:not(.form-radio):not(.form-checkbox):not(.form-submit),
 .node-form textarea {
   border: 1px solid #212121;
+  background-color: white;
+  border-radius: 0;
   min-height: 48px;
   padding: 0.5em 1em;
   outline: none;
@@ -2508,22 +2518,26 @@ td {
   margin: 0;
 }
 
-.user-form input:not(.form-radio):not(.form-checkbox).form-autocomplete, .user-form textarea.form-autocomplete,
-.user-login-form input:not(.form-radio):not(.form-checkbox).form-autocomplete,
+.contact-form input:not(.form-radio):not(.form-checkbox):not(.form-submit).form-autocomplete, .contact-form textarea.form-autocomplete,
+.user-form input:not(.form-radio):not(.form-checkbox):not(.form-submit).form-autocomplete,
+.user-form textarea.form-autocomplete,
+.user-login-form input:not(.form-radio):not(.form-checkbox):not(.form-submit).form-autocomplete,
 .user-login-form textarea.form-autocomplete,
-.user-pass input:not(.form-radio):not(.form-checkbox).form-autocomplete,
+.user-pass input:not(.form-radio):not(.form-checkbox):not(.form-submit).form-autocomplete,
 .user-pass textarea.form-autocomplete,
-.node-form input:not(.form-radio):not(.form-checkbox).form-autocomplete,
+.node-form input:not(.form-radio):not(.form-checkbox):not(.form-submit).form-autocomplete,
 .node-form textarea.form-autocomplete {
   background-position: 98% center;
 }
 
-.user-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit, .user-form textarea.field-add-more-submit,
-.user-login-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit,
+.contact-form input:not(.form-radio):not(.form-checkbox):not(.form-submit).field-add-more-submit, .contact-form textarea.field-add-more-submit,
+.user-form input:not(.form-radio):not(.form-checkbox):not(.form-submit).field-add-more-submit,
+.user-form textarea.field-add-more-submit,
+.user-login-form input:not(.form-radio):not(.form-checkbox):not(.form-submit).field-add-more-submit,
 .user-login-form textarea.field-add-more-submit,
-.user-pass input:not(.form-radio):not(.form-checkbox).field-add-more-submit,
+.user-pass input:not(.form-radio):not(.form-checkbox):not(.form-submit).field-add-more-submit,
 .user-pass textarea.field-add-more-submit,
-.node-form input:not(.form-radio):not(.form-checkbox).field-add-more-submit,
+.node-form input:not(.form-radio):not(.form-checkbox):not(.form-submit).field-add-more-submit,
 .node-form textarea.field-add-more-submit {
   background: transparent;
   color: #212121;
@@ -2535,6 +2549,7 @@ td {
   display: block;
 }
 
+.contact-form .form-wrapper:not(.vertical-tabs__pane),
 .user-form .form-wrapper:not(.vertical-tabs__pane),
 .user-login-form .form-wrapper:not(.vertical-tabs__pane),
 .user-pass .form-wrapper:not(.vertical-tabs__pane),
@@ -2542,6 +2557,7 @@ td {
   margin: 1.5em 0;
 }
 
+.contact-form .form-wrapper:not(.vertical-tabs__pane).field--name-title,
 .user-form .form-wrapper:not(.vertical-tabs__pane).field--name-title,
 .user-login-form .form-wrapper:not(.vertical-tabs__pane).field--name-title,
 .user-pass .form-wrapper:not(.vertical-tabs__pane).field--name-title,
@@ -2549,6 +2565,8 @@ td {
   margin-top: 3em;
 }
 
+.contact-form .tabledrag-toggle-weight-wrapper,
+.contact-form .filter-wrapper,
 .user-form .tabledrag-toggle-weight-wrapper,
 .user-form .filter-wrapper,
 .user-login-form .tabledrag-toggle-weight-wrapper,
@@ -2563,6 +2581,7 @@ td {
   visibility: hidden;
 }
 
+.contact-form .field--name-field-user-ref thead,
 .user-form .field--name-field-user-ref thead,
 .user-login-form .field--name-field-user-ref thead,
 .user-pass .field--name-field-user-ref thead,
@@ -2570,6 +2589,7 @@ td {
   background: transparent;
 }
 
+.contact-form .field--name-field-user-ref tr,
 .user-form .field--name-field-user-ref tr,
 .user-login-form .field--name-field-user-ref tr,
 .user-pass .field--name-field-user-ref tr,
@@ -2577,6 +2597,7 @@ td {
   border-width: 0;
 }
 
+.contact-form .field--name-field-user-ref th,
 .user-form .field--name-field-user-ref th,
 .user-login-form .field--name-field-user-ref th,
 .user-pass .field--name-field-user-ref th,
@@ -2584,6 +2605,7 @@ td {
   padding: 0;
 }
 
+.contact-form .field--name-field-user-ref td,
 .user-form .field--name-field-user-ref td,
 .user-login-form .field--name-field-user-ref td,
 .user-pass .field--name-field-user-ref td,
@@ -2591,6 +2613,7 @@ td {
   padding: 15px 0 0;
 }
 
+.contact-form a.tabledrag-handle .handle,
 .user-form a.tabledrag-handle .handle,
 .user-login-form a.tabledrag-handle .handle,
 .user-pass a.tabledrag-handle .handle,
@@ -2600,6 +2623,7 @@ td {
   margin-right: 0;
 }
 
+.contact-form .form-actions,
 .user-form .form-actions,
 .user-login-form .form-actions,
 .user-pass .form-actions,
@@ -2608,6 +2632,9 @@ td {
   text-align: right;
 }
 
+.contact-form .form-actions #edit-delete,
+.contact-form .form-actions #edit-preview,
+.contact-form .form-actions #edit-submit,
 .user-form .form-actions #edit-delete,
 .user-form .form-actions #edit-preview,
 .user-form .form-actions #edit-submit,
@@ -2625,6 +2652,9 @@ td {
   margin: 0;
 }
 
+.contact-form .form-actions #edit-delete:hover,
+.contact-form .form-actions #edit-preview:hover,
+.contact-form .form-actions #edit-submit:hover,
 .user-form .form-actions #edit-delete:hover,
 .user-form .form-actions #edit-preview:hover,
 .user-form .form-actions #edit-submit:hover,
@@ -2640,6 +2670,7 @@ td {
   color: white;
 }
 
+.contact-form .form-actions #edit-delete,
 .user-form .form-actions #edit-delete,
 .user-login-form .form-actions #edit-delete,
 .user-pass .form-actions #edit-delete,
@@ -2650,6 +2681,7 @@ td {
   text-align: center;
 }
 
+.contact-form .form-actions .dropbutton-multiple,
 .user-form .form-actions .dropbutton-multiple,
 .user-login-form .form-actions .dropbutton-multiple,
 .user-pass .form-actions .dropbutton-multiple,
@@ -2660,6 +2692,7 @@ td {
   margin: 0 0 1em 0.5em;
 }
 
+.contact-form .form-actions .dropbutton-multiple .dropbutton-widget,
 .user-form .form-actions .dropbutton-multiple .dropbutton-widget,
 .user-login-form .form-actions .dropbutton-multiple .dropbutton-widget,
 .user-pass .form-actions .dropbutton-multiple .dropbutton-widget,
@@ -2667,6 +2700,7 @@ td {
   border: 0;
 }
 
+.contact-form .form-actions .dropbutton-multiple input,
 .user-form .form-actions .dropbutton-multiple input,
 .user-login-form .form-actions .dropbutton-multiple input,
 .user-pass .form-actions .dropbutton-multiple input,
@@ -2675,6 +2709,7 @@ td {
   width: 100%;
 }
 
+.contact-form .form-actions .dropbutton-multiple li input,
 .user-form .form-actions .dropbutton-multiple li input,
 .user-login-form .form-actions .dropbutton-multiple li input,
 .user-pass .form-actions .dropbutton-multiple li input,
@@ -2993,24 +3028,6 @@ td {
 
 .node__links {
   line-height: 1.5;
-}
-
-.path-contact label {
-  width: 100%;
-  display: block;
-  margin-bottom: 6px;
-}
-
-.path-contact .form-text,
-.path-contact .form-textarea,
-.path-contact .form-email {
-  background: #eeeeee;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  border-radius: 6px;
-  border: 1px solid #eeeeee;
-  width: 100%;
 }
 
 .view-sessions .views-exposed-form .js-form-type-select {
