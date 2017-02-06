@@ -2523,15 +2523,11 @@ td {
   background-position: 98% center;
 }
 
-.contact-form input:not(.form-radio):not(.form-checkbox):not(.form-submit).field-add-more-submit, .contact-form textarea.field-add-more-submit,
-.user-form input:not(.form-radio):not(.form-checkbox):not(.form-submit).field-add-more-submit,
-.user-form textarea.field-add-more-submit,
-.user-login-form input:not(.form-radio):not(.form-checkbox):not(.form-submit).field-add-more-submit,
-.user-login-form textarea.field-add-more-submit,
-.user-pass input:not(.form-radio):not(.form-checkbox):not(.form-submit).field-add-more-submit,
-.user-pass textarea.field-add-more-submit,
-.node-form input:not(.form-radio):not(.form-checkbox):not(.form-submit).field-add-more-submit,
-.node-form textarea.field-add-more-submit {
+.contact-form input.field-add-more-submit,
+.user-form input.field-add-more-submit,
+.user-login-form input.field-add-more-submit,
+.user-pass input.field-add-more-submit,
+.node-form input.field-add-more-submit {
   background: transparent;
   color: #212121;
   font-size: 0.9em;
@@ -2540,6 +2536,10 @@ td {
   width: auto;
   margin: 1em auto;
   display: block;
+  border: 1px solid #212121;
+  border-radius: 0;
+  padding: 0.5em 1em;
+  outline: none;
 }
 
 .contact-form .form-wrapper:not(.vertical-tabs__pane),
