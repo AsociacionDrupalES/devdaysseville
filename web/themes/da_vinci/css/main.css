@@ -1683,7 +1683,7 @@ td {
 
 @media (min-width: 22.5em) {
   .hero__text {
-    margin-top: 12vh;
+    margin-top: 6vh;
   }
 }
 
@@ -3147,6 +3147,10 @@ td {
 }
 
 .slick-slider .slick-slide img {
+  margin: 0 auto;
+}
+
+.slick-track {
   margin: 0 auto;
 }
 
