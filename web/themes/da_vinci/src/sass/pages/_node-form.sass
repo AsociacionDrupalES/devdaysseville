@@ -1,11 +1,9 @@
 // Form to add a Session
-.node-keynote-edit-form,
-.node-keynote-form,
-.node-session-edit-form,
-.node-session-form,
-#user-login-form,
-#user-register-form,
-#user-pass
+.contact-form,
+.user-form,
+.user-login-form,
+.user-pass,
+.node-form
   max-width: 650px
   margin: 0 auto
   .add-session-intro--text
@@ -19,8 +17,10 @@
   label.option
     margin-left: 0.25em
     display: inline-block
-  input:not(.form-radio):not(.form-checkbox), textarea
+  input:not(.form-radio):not(.form-checkbox):not(.form-submit), textarea
     border: 1px solid $black2
+    background-color: $white
+    border-radius: 0
     min-height: 48px
     padding: 0.5em 1em
     outline: none
@@ -28,15 +28,19 @@
     margin: 0
     &.form-autocomplete
       background-position: 98% center
-    &.field-add-more-submit
-      background: transparent
-      color: $black2
-      font-size: 0.9em
-      min-height: 40px
-      height: 40px
-      width: auto
-      margin: 1em auto
-      display: block
+  input.field-add-more-submit
+    background: transparent
+    color: $black2
+    font-size: 0.9em
+    min-height: 40px
+    height: 40px
+    width: auto
+    margin: 1em auto
+    display: block
+    border: 1px solid $black2
+    border-radius: 0
+    padding: 0.5em 1em
+    outline: none
   .form-wrapper:not(.vertical-tabs__pane)
     margin: 1.5em 0
     &.field--name-title

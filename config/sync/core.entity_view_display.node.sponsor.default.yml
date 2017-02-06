@@ -25,6 +25,15 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+  created:
+    label: hidden
+    type: timestamp
+    weight: 0
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
   field_logo:
     weight: 103
     label: above

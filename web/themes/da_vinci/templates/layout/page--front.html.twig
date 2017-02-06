@@ -52,6 +52,7 @@
       <span></span>
     </a>
     <nav role="navigation" class="sliding_menu">
+      <div class="wrapper-menu-rw"></div>
         {% if page.sliding_menu %}
             {{ page.sliding_menu }}
         {% endif %}
@@ -109,11 +110,10 @@
                       {{ page.header }}
                   </header>
                   {{ page.content|without(
-                  'devdaysabouthomeblock',
-                  'views_block__news_block_featured_news',
-                  'newsletterblock',
-                  'views_block__sponsors_block_1',
-                  'views_block__sponsors_gold_sponsors'
+                    'devdaysabouthomeblock',
+                    'views_block__news_block_featured_news',
+                    'newsletterblock',
+                    'mainsponsorsblock'
                   )}}
               </div>
 
@@ -141,17 +141,11 @@
         <div class="section fp-auto-height sponsors__home-section" id="slide-sponsors">
           <div class="measure"></div>
           <div class="content__wrapper">
-            <div class="sponsors-list__wrapper">
-              <div class="sponsors-list__top-frame"></div>
-              {{ page.content.views_block__sponsors_block_1 }}
-              {{ page.content.views_block__sponsors_gold_sponsors }}
-              <div class="sponsors-list__bottom-frame"></div>
-            </div>
+            {{ page.content.mainsponsorsblock }}
             {{ page.content.newsletterblock }}
             <div class="compass"></div>
           </div>
         </div>
-
     </div>
     <footer role="complementary">
       <div class="footer__wrapper">

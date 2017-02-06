@@ -4,7 +4,6 @@
  */
 
  (function (Drupal, $) {
-
   'use strict';
 
   Drupal.behaviors.rwdMenu = {
@@ -17,8 +16,8 @@
           $('#block-leftsidemenu>ul.menu').attr('id','block-leftsidemenuList');
           $('#block-useraccountmenu>ul.menu').attr('id','block-useraccountmenuList');
           // Move the main menu together with its children.
-          $('#block-headerleftmenuList').appendTo('.sliding_menu');
-          $('#block-headerrightmenuList').appendTo('.sliding_menu');
+          $('#block-headerleftmenuList').appendTo('.wrapper-menu-rw');
+          $('#block-headerrightmenuList').appendTo('.wrapper-menu-rw');
           $('#block-leftsidemenuList').appendTo('.sliding_menu');
           $('#block-useraccountmenuList').appendTo('.sliding_menu');
         }
@@ -35,6 +34,12 @@
       $('#menuButtonTrigger').on('click', function (e) {
         $(this).toggleClass('open');
         $('.sliding_menu').toggleClass('is-visible');
+        if($('.sliding_menu.is-visible').length) {
+        $('body, html').css('overflow', 'hidden');
+        }
+        else {
+          $('body, html').css('overflow', 'visible');
+        }
       });
 
       // Trigger the check for the windows width.

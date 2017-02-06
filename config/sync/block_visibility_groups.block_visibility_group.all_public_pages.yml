@@ -10,7 +10,7 @@ logic: and
 conditions:
   87f9beb6-cc83-41a0-8743-88aff54e38cd:
     id: request_path
-    pages: "<front>\r\n/user/*\r\n/sponsors"
+    pages: "/user/*\r\n/sponsors"
     negate: true
     context_mapping: {  }
     uuid: 87f9beb6-cc83-41a0-8743-88aff54e38cd

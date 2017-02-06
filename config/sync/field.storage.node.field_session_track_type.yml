@@ -25,7 +25,7 @@ settings:
       label: Frontend
     -
       value: performances
-      label: Performances
+      label: Performance
     -
       value: site_building
       label: 'Site Building'

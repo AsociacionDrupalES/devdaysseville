@@ -1,7 +1,11 @@
-<div class="section fp-auto-height sponsors__home-section" id="slide-sponsors">
-    <div class="sponsors-list__wrapper">
-        <div class="sponsors-list__top-frame"></div>
-            {{ content }}
-        <div class="sponsors-list__bottom-frame"></div>
-    </div>
+{% if not is_front %}
+<div class="section fp-auto-height sponsors__home-section">
+{% endif %}
+<div class="sponsors-list__wrapper">
+  <div class="sponsors-list__top-frame"></div>
+  {{ content }}
+  <div class="sponsors-list__bottom-frame"></div>
 </div>
+{% if not is_front %}
+</div>
+{% endif %}
