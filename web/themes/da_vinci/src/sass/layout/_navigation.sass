@@ -116,20 +116,6 @@
       a
         font-weight: 700
 
-  #block-alternadordeidioma
-    float: right
-    width: 70%
-    text-align: right
-    li
-      @extend .simple-list
-      display: inline-block
-      &:nth-last-child(1):before
-        content: '/'
-    a
-      font-weight: 300
-      &.is-active
-        color: #fff
-        font-weight: 400
   #block-leftsidemenuList,
   #block-useraccountmenuList
     position: absolute
@@ -172,13 +158,6 @@ header
           a
             text-transform: uppercase
             color: white
-          &.menu-item--active-trail
-            border-bottom: 2px solid $orange
-            a
-              color: $orange
-          &:hover
-            a
-              color: $orange
       +breakpoint($medium)
         li
           a
@@ -188,28 +167,6 @@ header
         clear: both
         +breakpoint($medium)
           position: static
-
-
-  #block-languageswitcher
-    display: none
-    +breakpoint($large)
-      display: block
-      text-align: right
-    ul
-      @extend .simple-list
-      li
-        display: inline-block
-        padding-top: 0.2em
-        padding-bottom: .5em
-        a
-          font-size: 0.75em
-          color: #fff
-          font-weight: 400
-          &.is-active
-            color: #ddd
-            font-weight: 300
-        &:nth-last-child(1):before
-          content: '/'
 
 // Main menu
 .menu--main,
