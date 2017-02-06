@@ -1,4 +1,5 @@
 // Form to add a Session
+.contact-form,
 .user-form,
 .user-login-form,
 .user-pass,
@@ -16,8 +17,10 @@
   label.option
     margin-left: 0.25em
     display: inline-block
-  input:not(.form-radio):not(.form-checkbox), textarea
+  input:not(.form-radio):not(.form-checkbox):not(.form-submit), textarea
     border: 1px solid $black2
+    background-color: $white
+    border-radius: 0
     min-height: 48px
     padding: 0.5em 1em
     outline: none
