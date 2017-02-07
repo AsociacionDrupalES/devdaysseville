@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_gender
+    - field.field.user.user.field_gender_write_in
     - field.field.user.user.field_register_drupal_link
     - field.field.user.user.field_register_drupal_name
     - field.field.user.user.field_register_name
@@ -29,6 +31,8 @@ content:
         destination: '[user:field_register_drupal_link:uri]'
         advanced: {  }
 hidden:
+  field_gender: true
+  field_gender_write_in: true
   field_register_drupal_link: true
   field_register_drupal_name: true
   field_register_picture: true

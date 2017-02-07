@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.user.teaser
     - field.field.user.user.field_gender
+    - field.field.user.user.field_gender_write_in
     - field.field.user.user.field_register_drupal_link
     - field.field.user.user.field_register_drupal_name
     - field.field.user.user.field_register_name
@@ -55,5 +56,6 @@ content:
     type: image
 hidden:
   field_gender: true
+  field_gender_write_in: true
   field_register_drupal_link: true
   member_for: true
