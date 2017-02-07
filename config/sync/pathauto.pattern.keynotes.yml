@@ -9,14 +9,14 @@ label: Keynotes
 type: 'canonical_entities:node'
 pattern: 'keynote/[node:field_speaker_full_name]/[node:title]'
 selection_criteria:
-  90d2fa9b-76f8-4cf9-8ac3-6d9983cc2ec2:
+  7f9248c9-06bc-4a16-9ada-a65e091f3bf8:
     id: node_type
     bundles:
       keynote: keynote
     negate: false
     context_mapping:
       node: node
-    uuid: 90d2fa9b-76f8-4cf9-8ac3-6d9983cc2ec2
+    uuid: 7f9248c9-06bc-4a16-9ada-a65e091f3bf8
 selection_logic: and
 weight: -5
 relationships: {  }
