@@ -1,0 +1,7 @@
+services:
+  dddsvq_common.subscriber:
+    class: Drupal\dddsvq_common\EventSubscriber\RedirectOnAccessDenied
+    arguments:
+      - '@current_user'
+    tags:
+      - { name: event_subscriber }
