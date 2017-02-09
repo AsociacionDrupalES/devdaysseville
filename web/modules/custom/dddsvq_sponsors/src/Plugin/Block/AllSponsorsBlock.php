@@ -117,6 +117,20 @@ class AllSponsorsBlock extends BlockBase implements ContainerFactoryPluginInterf
       '#arguments' => [],
     ];
 
+    $partner_sponsors = [
+      '#type' => 'view',
+      '#name' => 'sponsors',
+      '#display_id' => 'block_9',
+      '#arguments' => [],
+    ];
+
+    $media_partner_sponsors = [
+      '#type' => 'view',
+      '#name' => 'sponsors',
+      '#display_id' => 'block_10',
+      '#arguments' => [],
+    ];
+
     $build = [
       '#theme_wrappers' => ['sponsors_wrapper'],
       'platinum' => [
@@ -143,6 +157,18 @@ class AllSponsorsBlock extends BlockBase implements ContainerFactoryPluginInterf
         '#sponsor_type' => 'bronze',
         '#sponsors' => $bronze_sponsors,
       ],
+      'partner' => [
+        '#theme' => 'sponsors',
+        '#title' => 'Partners',
+        '#sponsor_type' => 'bronze',
+        '#sponsors' => $partner_sponsors,
+      ],
+      'media_partner' => [
+        '#theme' => 'sponsors',
+        '#title' => 'Media partners',
+        '#sponsor_type' => 'bronze',
+        '#sponsors' => $media_partner_sponsors,
+      ],
       'food_sponsors' => [
         '#theme' => 'sponsors',
         '#title' => 'Food sponsors',
@@ -155,17 +181,17 @@ class AllSponsorsBlock extends BlockBase implements ContainerFactoryPluginInterf
         '#sponsor_type' => 'silver',
         '#sponsors' => $bull_sponsors,
       ],
-      'coffee' => [
-        '#theme' => 'sponsors',
-        '#title' => 'Coffee sponsors',
-        '#sponsor_type' => 'bronze',
-        '#sponsors' => $coffee_sponsors,
-      ],
       'social_event' => [
         '#theme' => 'sponsors',
         '#title' => 'Social event sponsors',
         '#sponsor_type' => 'silver',
         '#sponsors' => $social_sponsors,
+      ],
+      'coffee' => [
+        '#theme' => 'sponsors',
+        '#title' => 'Coffee sponsors',
+        '#sponsor_type' => 'bronze',
+        '#sponsors' => $coffee_sponsors,
       ],
     ];
 
