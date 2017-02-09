@@ -680,6 +680,11 @@ head:before {
   }
 }
 
+.menu--home-menu {
+  position: relative;
+  z-index: 88;
+}
+
 #menuButtonOpen,
 #menuButtonClose {
   display: block;
@@ -2495,19 +2500,24 @@ td {
 }
 
 .contact-form .tabledrag-toggle-weight-wrapper,
-.contact-form .filter-wrapper,
 .user-form .tabledrag-toggle-weight-wrapper,
-.user-form .filter-wrapper,
 .user-login-form .tabledrag-toggle-weight-wrapper,
-.user-login-form .filter-wrapper,
 .user-pass .tabledrag-toggle-weight-wrapper,
-.user-pass .filter-wrapper,
-.node-form .tabledrag-toggle-weight-wrapper,
-.node-form .filter-wrapper {
+.node-form .tabledrag-toggle-weight-wrapper {
   height: 0;
   padding: 0;
   margin: 0 !important;
   visibility: hidden;
+}
+
+.contact-form .filter-wrapper,
+.user-form .filter-wrapper,
+.user-login-form .filter-wrapper,
+.user-pass .filter-wrapper,
+.node-form .filter-wrapper {
+  margin-top: 0 !important;
+  border-top: 0;
+  border-color: black;
 }
 
 .contact-form .field--name-field-user-ref thead,
@@ -3536,6 +3546,14 @@ img {
 .sponsors-list {
   padding: 20px 30px;
   text-align: center;
+}
+
+.sponsors-list--silver {
+  font-size: 24px;
+}
+
+.sponsors-list--bronze {
+  font-size: 20px;
 }
 
 @media (min-width: 44em) {
