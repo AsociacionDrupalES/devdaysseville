@@ -35,6 +35,12 @@ settings:
     -
       value: 8
       label: Bull
+    -
+      value: 9
+      label: Partner
+    -
+      value: 10
+      label: 'Media partner'
   allowed_values_function: ''
 module: options
 locked: false

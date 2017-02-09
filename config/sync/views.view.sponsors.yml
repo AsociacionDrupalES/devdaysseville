@@ -387,6 +387,115 @@ display:
       tags:
         - 'config:field.storage.node.field_logo'
         - 'config:field.storage.node.field_webpage'
+  block_10:
+    display_plugin: block
+    id: block_10
+    display_title: 'Media Partners'
+    position: 11
+    display_options:
+      display_extenders: {  }
+      title: 'Media Partners'
+      defaults:
+        title: false
+        style: false
+        row: false
+        filters: false
+        filter_groups: false
+        pager: false
+      display_description: ''
+      style:
+        type: html_list
+        options:
+          row_class: sponsors-list__item
+          default_row_class: false
+          uses_fields: false
+          type: ul
+          wrapper_class: ''
+          class: sponsors-list__list
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: bronze_sponsor
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            sponsor: sponsor
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        field_sponsorship_type_value:
+          id: field_sponsorship_type_value
+          table: node__field_sponsorship_type
+          field: field_sponsorship_type_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            10: '10'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      pager:
+        type: none
+        options:
+          offset: 0
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_logo'
+        - 'config:field.storage.node.field_webpage'
   block_2:
     display_plugin: block
     id: block_2
@@ -1950,6 +2059,115 @@ display:
         groups:
           1: AND
       block_hide_empty: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_logo'
+        - 'config:field.storage.node.field_webpage'
+  block_9:
+    display_plugin: block
+    id: block_9
+    display_title: Partners
+    position: 10
+    display_options:
+      display_extenders: {  }
+      style:
+        type: html_list
+        options:
+          row_class: sponsors-list__item
+          default_row_class: false
+          uses_fields: false
+          type: ul
+          wrapper_class: ''
+          class: sponsors-list__list
+      defaults:
+        style: false
+        row: false
+        title: false
+        filters: false
+        filter_groups: false
+        pager: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: bronze_sponsor
+      title: Partners
+      display_description: ''
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            sponsor: sponsor
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          group: 1
+        field_sponsorship_type_value:
+          id: field_sponsorship_type_value
+          table: node__field_sponsorship_type
+          field: field_sponsorship_type_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            9: '9'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      pager:
+        type: none
+        options:
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:
