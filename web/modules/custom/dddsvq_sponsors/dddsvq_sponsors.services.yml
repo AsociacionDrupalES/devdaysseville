@@ -3,4 +3,10 @@ services:
     class: Drupal\dddsvq_sponsors\SponsorsManager
     arguments:
       - '@entity_type.manager'
+  dddsvq_sponsors.subscriber:
+      class: Drupal\dddsvq_sponsors\EventSubscriber\SponsorsEventSubscriber
+      arguments:
+        - "@current_user"
+      tags:
+        - { name: event_subscriber }
 

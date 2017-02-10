@@ -5,23 +5,6 @@
  * Contains dddsvq_sponsors.module..
  */
 
-use Drupal\Core\Access\AccessResult;
-use Drupal\Core\Entity\Entity\EntityViewDisplay;
-
-/**
- * Implements hook_node_access().
- */
-function dddsvq_sponsors_node_access(\Drupal\node\NodeInterface $node, $op, \Drupal\Core\Session\AccountInterface $account) {
-  $access = AccessResult::neutral();
-
-  if ($node->bundle() === 'sponsor' && $op == 'view') {
-    // Deny the access to the detail page if it hasn't the proper permission.
-    $access = AccessResult::forbiddenIf(!$account->hasPermission('view sponsor details'));
-  }
-
-  return $access;
-}
-
 /**
  * Implements hook_theme().
  */
