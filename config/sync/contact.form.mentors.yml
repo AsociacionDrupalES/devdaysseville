@@ -1,0 +1,14 @@
+uuid: 612a31b2-9273-4ccd-a2db-e374f66acbd8
+langcode: en
+status: true
+dependencies: {  }
+id: mentors
+label: Mentors
+recipients:
+  - seville2017@drupal.es
+  - pose16@gmail.com
+  - penyaskito@gmail.com
+reply: ''
+weight: 0
+message: 'Your message was submitted successfully in a bottle. It will cross the sea until it gets to our secret island.'
+redirect: ''
