@@ -19,7 +19,7 @@ settings:
   label: 'Mentors contact form message block'
   provider: dddsvq_common
   label_display: '0'
-  message_text: 'Vivamus suscipit tortor eget felis porttitor volutpat. Proin eget tortor risus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.'
+  message_text: "<a href=\"/program/sprints\">Sprints at Drupal Dev Days</a> will be mentored by experienced developers who can offer helpful insights to beginners.</br>\r\nThis is a crucial role for the success of the sprints and we're seekiing experienced community members willing to help.</br></br>\r\nFeel like you might be one? Contact us! We'd be more than glad to have you helping out new and old developers alike to help Drupal rockin' more than ever!</br></br>\r\n\r\nIf you're curious about what sprints are available or if you want to add your own, check out the <a href=\"https://docs.google.com/spreadsheets/d/19d8cdZgjAdrKj-jrzHe9NPzUMHatLlCgThAZlh1dpb4/edit#gid=0\">sprints planning document</a>"
 visibility:
   condition_group:
     id: condition_group

@@ -2,6 +2,7 @@
 
 namespace Drupal\dddsvq_common\Plugin\Block;
 
+use Drupal\Component\Render\FormattableMarkup;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Form\FormStateInterface;
 
@@ -33,7 +34,7 @@ class MentorsContactBlock extends BlockBase{
       '#title' => $this->t('Message'),
       '#default_value' => $this->configuration['message_text'],
     ];
-    
+
     return $form;
   }
 
@@ -52,7 +53,7 @@ class MentorsContactBlock extends BlockBase{
   public function build() {
     $build['message'] = [
       '#theme' => 'mentors_contact_block',
-      '#message' => $this->configuration['message_text'],
+      '#message' => new FormattableMarkup($this->configuration['message_text'], []),
     ];
 
     return $build;
