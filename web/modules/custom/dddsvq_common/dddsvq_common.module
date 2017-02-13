@@ -32,6 +32,10 @@ function dddsvq_common_theme($existing, $type, $theme, $path) {
     'variables' => ['networks' => []],
   ];
 
+  $themes['mentors_contact_block'] = [
+    'variables' => ['message' => ''],
+  ];
+
   return $themes;
 }
 
