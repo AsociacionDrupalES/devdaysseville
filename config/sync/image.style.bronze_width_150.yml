@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 name: bronze_width_150
-label: 'Bronze (width 150)'
+label: 'Bronze (width 150 x height 80)'
 effects:
   99633f26-dadf-4b5a-8505-e620ab439734:
     uuid: 99633f26-dadf-4b5a-8505-e620ab439734
@@ -11,5 +11,5 @@ effects:
     weight: 1
     data:
       width: 150
-      height: null
+      height: 80
       upscale: false

@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 name: silver_width_200
-label: 'Silver (width 200 )'
+label: 'Silver (width 200 x height 100 )'
 effects:
   47a7689b-456e-4871-b886-e908ee0388a0:
     uuid: 47a7689b-456e-4871-b886-e908ee0388a0
@@ -11,5 +11,5 @@ effects:
     weight: 1
     data:
       width: 200
-      height: null
+      height: 100
       upscale: false
