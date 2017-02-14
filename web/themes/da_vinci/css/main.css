@@ -3162,6 +3162,8 @@ td {
 
 .slick-track {
   margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 .form-input, div#mc_embed_signup input.email {
@@ -3712,6 +3714,16 @@ iframe {
   right: 0;
   background: white url("../images/frame__corner-left.svg") no-repeat left bottom;
   transform: scaleX(-1);
+}
+
+img.image-style-bronze-width-150 {
+  max-height: 80px;
+  width: auto !important;
+}
+
+img.image-style-silver-width-200 {
+  max-height: 100px;
+  width: auto !important;
 }
 
 .tabs.primary {
