@@ -3292,6 +3292,12 @@ img {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+iframe {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 @media (min-width: 30em) {
   .news__content {
     float: left;
