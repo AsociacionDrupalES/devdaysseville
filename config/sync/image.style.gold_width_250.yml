@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 name: gold_width_250
-label: 'Gold (width 250)'
+label: 'Gold (width 250 x height 100)'
 effects:
   36d790cf-4108-42b6-92e8-eff90f129398:
     uuid: 36d790cf-4108-42b6-92e8-eff90f129398
@@ -11,5 +11,5 @@ effects:
     weight: 1
     data:
       width: 250
-      height: null
+      height: 100
       upscale: false
