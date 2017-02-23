@@ -7,7 +7,6 @@ label: Attendee
 weight: 2
 is_admin: null
 permissions:
-  - 'create session content'
-  - 'edit own session content'
-  - 'use text format filtered_html'
-  - 'cancel account'
+  1: 'edit own session content'
+  2: 'use text format filtered_html'
+  3: 'cancel account'

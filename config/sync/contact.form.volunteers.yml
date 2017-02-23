@@ -1,0 +1,14 @@
+uuid: e2bda8c9-9894-4944-aa97-3ff194b6282a
+langcode: en
+status: true
+dependencies: {  }
+id: volunteers
+label: Volunteers
+recipients:
+  - seville2017@drupal.es
+  - pose16@gmail.com
+  - penyaskito@gmail.com
+reply: "Thanks for being a volunteer at Drupal Dev Days! We added you to our list of volunteers. We will contact you some days before the event to give you more information.\r\n\r\nThanks a lot!"
+weight: 0
+message: 'Your message was submitted successfully in a bottle. It will cross the sea until it gets to our secret island.'
+redirect: ''

@@ -66,14 +66,14 @@
     @extend .restricted-container
   &__header
     clear: both
-    margin: 38px 27px 0
+    margin: 38px 0 0
     border-top: 3px solid $black
     //border-right: 3px solid $black
     //border-left: 3px solid $black
-    +breakpoint($small)
-      margin: 38px 20px 0
-    +breakpoint($medium)
-      margin: 38px 0 0
+    //+breakpoint($small)
+    //  margin: 38px 20px 0
+    //+breakpoint($medium)
+    //  margin: 38px 0 0
   &__text
     display: inline-block
     margin: 9vh 10px 0
@@ -252,11 +252,16 @@
     background-size: auto 102%
     padding-top: 5rem
     +breakpoint($medium)
+      padding-top: 3em
+    +breakpoint($x-large)
+      background-size: 102%
+
+.path-frontpage
+  .sponsors__home-section
+    +breakpoint($medium)
       padding-top: 10rem
     +breakpoint($large)
       padding-top: 15rem
-    +breakpoint($x-large)
-      background-size: 102%
 
 .compass
   display: block

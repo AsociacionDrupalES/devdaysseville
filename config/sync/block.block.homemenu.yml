@@ -13,7 +13,7 @@ dependencies:
 id: homemenu
 theme: da_vinci
 region: content
-weight: -8
+weight: -6
 provider: null
 plugin: 'system_menu_block:home-menu'
 settings:
