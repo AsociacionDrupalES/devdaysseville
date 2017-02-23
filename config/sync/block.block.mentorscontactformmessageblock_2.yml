@@ -1,0 +1,33 @@
+uuid: a4162a11-89da-4d82-a792-8452fb35e067
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - dddsvq_common
+    - system
+  theme:
+    - da_vinci
+id: mentorscontactformmessageblock_2
+theme: da_vinci
+region: content
+weight: -9
+provider: null
+plugin: mentors_contact_block
+settings:
+  id: mentors_contact_block
+  label: 'Volunteers contact form message block'
+  provider: dddsvq_common
+  label_display: '0'
+  message_text: "Arr!</br>\r\nAt Drupal Dev Days we need a brave crew to manage the ship during the event on site. </br></br>\r\nVolunteering is a great experience, and especially helpful if you don't know many people in the Drupal community, as it is a great way to meet others: they will have to speak with you in the event registration, in session rooms for ensuring speakers get anything they may need and while helping run the event with other volunteers. </br></br>\r\nIf you think you would be able to contribute a bit of your time, contact us!</br> We are looking forward to work side by side with you!"
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: /contact/volunteers
+    negate: false
+    context_mapping: {  }
