@@ -12,3 +12,5 @@ permissions:
   - 'access content'
   - 'access site-wide contact form'
   - 'access user profiles'
+  - 'view own field_room'
+  - 'view field_room'

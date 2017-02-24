@@ -1,4 +1,4 @@
-uuid: d7619f35-c118-451e-a421-0add8e2b59ee
+uuid: 08c5c1bd-8885-4da2-a49a-971acb4a36cd
 langcode: en
 status: true
 dependencies:
@@ -9,18 +9,18 @@ dependencies:
 third_party_settings:
   field_permissions:
     permission_type: custom
-id: node.field_session_status
-field_name: field_session_status
+id: node.field_room
+field_name: field_room
 entity_type: node
-type: list_string
+type: list_integer
 settings:
   allowed_values:
     -
-      value: submitted
-      label: Submitted
+      value: 1
+      label: 'Room 1'
     -
-      value: approved
-      label: Approved
+      value: 2
+      label: 'Room 2'
   allowed_values_function: ''
 module: options
 locked: false

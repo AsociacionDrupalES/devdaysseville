@@ -13,3 +13,5 @@ permissions:
   - 'access site-wide contact form'
   - 'use text format filtered_html'
   - 'access user profiles'
+  - 'view own field_room'
+  - 'view field_room'
