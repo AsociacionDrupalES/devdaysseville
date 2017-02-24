@@ -1,0 +1,8 @@
+uuid: 3e66398e-321b-41cd-b90b-6f78ab3cf109
+langcode: en
+status: true
+dependencies: {  }
+id: schedule-menu
+label: 'Schedule menu'
+description: 'Show the scheduled days.'
+locked: false

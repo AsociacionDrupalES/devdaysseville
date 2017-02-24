@@ -1,0 +1,19 @@
+uuid: 00c69d5a-4749-4d0a-a0db-4ad7049465af
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: program_pages
+label: 'Program pages'
+logic: and
+conditions:
+  d9fc6419-6639-49a1-9bf2-ffd5582250ce:
+    id: 'entity_bundle:node'
+    bundles:
+      schedule_page: schedule_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: d9fc6419-6639-49a1-9bf2-ffd5582250ce
+allow_other_conditions: true
