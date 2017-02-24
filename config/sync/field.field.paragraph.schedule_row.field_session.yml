@@ -1,0 +1,30 @@
+uuid: 6ff8dfdd-94ed-4cb6-b3e2-17d523854f13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_session
+    - node.type.keynote
+    - node.type.session
+    - paragraphs.paragraphs_type.schedule_row
+id: paragraph.schedule_row.field_session
+field_name: field_session
+entity_type: paragraph
+bundle: schedule_row
+label: Session
+description: 'Specify a Keynote, session or workshop.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      keynote: keynote
+      session: session
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: keynote
+field_type: entity_reference

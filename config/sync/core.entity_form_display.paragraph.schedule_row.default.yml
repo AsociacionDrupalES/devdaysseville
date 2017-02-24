@@ -1,0 +1,55 @@
+uuid: 6c618263-f8b3-4c1b-b718-98eaabf90491
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.schedule_row.field_break
+    - field.field.paragraph.schedule_row.field_break_description
+    - field.field.paragraph.schedule_row.field_break_title
+    - field.field.paragraph.schedule_row.field_session
+    - field.field.paragraph.schedule_row.field_start_end_period
+    - paragraphs.paragraphs_type.schedule_row
+id: paragraph.schedule_row.default
+targetEntityType: paragraph
+bundle: schedule_row
+mode: default
+content:
+  field_break:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+  field_break_description:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_break_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_session:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_start_end_period:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+hidden:
+  created: true
+  status: true
+  uid: true

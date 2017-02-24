@@ -1,0 +1,23 @@
+uuid: 5fe67544-9ddc-44f8-8066-a8abc6134661
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_break
+    - paragraphs.paragraphs_type.schedule_row
+id: paragraph.schedule_row.field_break
+field_name: field_break
+entity_type: paragraph
+bundle: schedule_row
+label: 'Check in case of non sessions period'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -21,6 +21,9 @@ settings:
     -
       value: 2
       label: 'Room 2'
+    -
+      value: 3
+      label: 'Main scenario'
   allowed_values_function: ''
 module: options
 locked: false

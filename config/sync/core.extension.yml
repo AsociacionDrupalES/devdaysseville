@@ -16,6 +16,7 @@ module:
   dddsvq_users: 0
   dynamic_page_cache: 0
   editor: 0
+  entity_reference_revisions: 0
   field: 0
   field_group: 0
   field_permissions: 0
@@ -45,6 +46,7 @@ module:
   views: 0
   views_ui: 0
   pathauto: 1
+  paragraphs: 11
   minimal: 1000
 theme:
   stable: 0

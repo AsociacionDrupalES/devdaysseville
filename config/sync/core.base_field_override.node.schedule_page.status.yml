@@ -1,0 +1,22 @@
+uuid: 5f32a889-922c-47f0-826a-a7322bdabf62
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.schedule_page
+id: node.schedule_page.status
+field_name: status
+entity_type: node
+bundle: schedule_page
+label: 'Publishing status'
+description: 'A boolean indicating whether the node is published.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
