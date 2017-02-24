@@ -1,0 +1,17 @@
+{% set tracks = [
+  'Development',
+  'Frontend',
+  'Being Human',
+  'Case Studies',
+  'DevOps',
+  'Performance',
+  'Other',
+  'Site Building',
+]%}
+<ul class="program-legend-list">
+  {% for track in tracks %}
+    <li class="legend--{{ track|clean_class|lower }}">
+      {{ track }}
+    </li>
+  {% endfor %}
+</ul>

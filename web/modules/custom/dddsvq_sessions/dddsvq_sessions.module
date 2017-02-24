@@ -34,6 +34,10 @@ function dddsvq_sessions_theme($existing, $type, $theme, $path) {
     'render element' => 'element'
   ];
 
+  $themes['program_legend'] = [
+    'render element' => 'element'
+  ];
+
   return $themes;
 }
 

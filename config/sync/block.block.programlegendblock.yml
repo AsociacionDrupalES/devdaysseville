@@ -1,0 +1,28 @@
+uuid: 3228158b-abae-4cb4-a867-6d65eb605f43
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.program_pages
+  module:
+    - block_visibility_groups
+    - dddsvq_sessions
+  theme:
+    - da_vinci
+id: programlegendblock
+theme: da_vinci
+region: content
+weight: -8
+provider: null
+plugin: program_legend_block
+settings:
+  id: program_legend_block
+  label: 'Program legend block'
+  provider: dddsvq_sessions
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: program_pages
+    context_mapping: {  }
