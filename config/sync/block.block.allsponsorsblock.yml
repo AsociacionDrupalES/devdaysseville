@@ -12,7 +12,7 @@ dependencies:
 id: allsponsorsblock
 theme: da_vinci
 region: content
-weight: -2
+weight: -1
 provider: null
 plugin: all_sponsors_block
 settings:

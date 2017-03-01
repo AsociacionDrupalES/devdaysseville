@@ -1,0 +1,37 @@
+uuid: 354fd523-da13-4119-8271-6fda07544a76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.schedule_page.field_sessions
+    - node.type.schedule_page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.schedule_page.default
+targetEntityType: node
+bundle: schedule_page
+mode: default
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 1
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_sessions:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

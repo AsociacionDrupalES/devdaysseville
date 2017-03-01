@@ -11,7 +11,7 @@ dependencies:
 id: mentorscontactformmessageblock_2
 theme: da_vinci
 region: content
-weight: -9
+weight: -10
 provider: null
 plugin: mentors_contact_block
 settings:

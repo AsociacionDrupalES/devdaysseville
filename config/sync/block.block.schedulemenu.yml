@@ -1,0 +1,31 @@
+uuid: ca640a7e-2404-4361-a629-e9f3968b4de5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.program_pages
+    - system.menu.schedule-menu
+  module:
+    - block_visibility_groups
+    - system
+  theme:
+    - da_vinci
+id: schedulemenu
+theme: da_vinci
+region: content
+weight: -9
+provider: null
+plugin: 'system_menu_block:schedule-menu'
+settings:
+  id: 'system_menu_block:schedule-menu'
+  label: 'Schedule menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: program_pages
+    context_mapping: {  }

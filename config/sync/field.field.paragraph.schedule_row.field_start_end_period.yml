@@ -1,0 +1,19 @@
+uuid: 0a9711ff-75a7-482f-b818-523d37c7300f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_start_end_period
+    - paragraphs.paragraphs_type.schedule_row
+id: paragraph.schedule_row.field_start_end_period
+field_name: field_start_end_period
+entity_type: paragraph
+bundle: schedule_row
+label: 'Start-End period'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

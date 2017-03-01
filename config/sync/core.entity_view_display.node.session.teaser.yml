@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.session.body
+    - field.field.node.session.field_room
     - field.field.node.session.field_session_level
     - field.field.node.session.field_session_status
     - field.field.node.session.field_session_track_type
@@ -19,6 +20,15 @@ targetEntityType: node
 bundle: session
 mode: teaser
 content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 0
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
   field_session_level:
     type: list_default
     weight: 2
@@ -47,5 +57,6 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_room: true
   field_session_status: true
   links: true

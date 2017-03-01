@@ -1,0 +1,10 @@
+uuid: 8f589a84-9d35-446e-b489-c961bb8f3e9d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.program
+label: Program
+targetEntityType: node
+cache: true

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.session.body
+    - field.field.node.session.field_room
     - field.field.node.session.field_session_level
     - field.field.node.session.field_session_status
     - field.field.node.session.field_session_track_type
@@ -22,38 +23,48 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 5
+    weight: 6
     settings: {  }
+    third_party_settings: {  }
+  created:
+    label: hidden
+    type: timestamp
+    weight: 0
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
     third_party_settings: {  }
   field_session_level:
-    weight: 3
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-  field_session_track_type:
     weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
+  field_session_track_type:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
   field_session_type:
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
   field_user_ref:
     type: entity_reference_entity_view
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       view_mode: teaser
       link: false
     third_party_settings: {  }
   links:
-    weight: 0
+    weight: 1
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_room: true
   field_session_status: true

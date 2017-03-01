@@ -30,7 +30,9 @@
         "drupal/block_visibility_groups": "~8.1",
         "drupal/imagemagick": "~8.1",
         "drupal/field_group": "~8.0",
-        "drupal/recaptcha": "^8.2"
+        "drupal/recaptcha": "^8.2",
+        "drupal/field_permissions": "~8.1",
+        "drupal/paragraphs": "~8.1"
     },
     "require-dev": {
         "behat/mink": "~1.7",

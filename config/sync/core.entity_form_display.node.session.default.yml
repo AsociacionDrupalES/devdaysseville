@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.session.body
+    - field.field.node.session.field_room
     - field.field.node.session.field_session_level
     - field.field.node.session.field_session_status
     - field.field.node.session.field_session_track_type
@@ -25,11 +26,21 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+  field_room:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
   field_session_level:
     weight: 5
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+  field_session_status:
+    type: options_buttons
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
   field_session_track_type:
     weight: 6
     settings: {  }
@@ -61,7 +72,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  field_session_status: true
   path: true
   promote: true
   sticky: true

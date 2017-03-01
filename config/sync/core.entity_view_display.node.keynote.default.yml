@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.keynote.field_company_name
     - field.field.node.keynote.field_image
     - field.field.node.keynote.field_logo
+    - field.field.node.keynote.field_room
     - field.field.node.keynote.field_speaker_bio
     - field.field.node.keynote.field_speaker_full_name
     - field.field.node.keynote.field_speaker_position
@@ -70,6 +71,15 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
+  created:
+    label: hidden
+    type: timestamp
+    weight: 0
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
   field_company_bio:
     weight: 6
     label: hidden
@@ -123,4 +133,5 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_room: true

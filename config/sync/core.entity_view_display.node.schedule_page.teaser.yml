@@ -1,0 +1,26 @@
+uuid: 2dcd2c42-e36d-4324-9374-ffa0741225da
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.schedule_page
+  module:
+    - user
+id: node.schedule_page.teaser
+targetEntityType: node
+bundle: schedule_page
+mode: teaser
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 0
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

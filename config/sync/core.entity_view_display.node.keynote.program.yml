@@ -1,0 +1,50 @@
+uuid: 8a3c83fe-fb60-4d08-bc0e-c139da6b6965
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.program
+    - field.field.node.keynote.body
+    - field.field.node.keynote.field_company_bio
+    - field.field.node.keynote.field_company_name
+    - field.field.node.keynote.field_image
+    - field.field.node.keynote.field_logo
+    - field.field.node.keynote.field_room
+    - field.field.node.keynote.field_speaker_bio
+    - field.field.node.keynote.field_speaker_full_name
+    - field.field.node.keynote.field_speaker_position
+    - node.type.keynote
+  module:
+    - options
+    - user
+id: node.keynote.program
+targetEntityType: node
+bundle: keynote
+mode: program
+content:
+  field_room:
+    type: list_default
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_speaker_full_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: true
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  field_company_bio: true
+  field_company_name: true
+  field_image: true
+  field_logo: true
+  field_speaker_bio: true
+  field_speaker_position: true

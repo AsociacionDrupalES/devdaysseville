@@ -1,0 +1,7 @@
+uuid: 1c1fd8c6-eaee-48ce-881f-c4ba7fb3a0d2
+langcode: en
+status: true
+dependencies: {  }
+id: schedule_row
+label: 'Schedule row'
+behavior_plugins: {  }

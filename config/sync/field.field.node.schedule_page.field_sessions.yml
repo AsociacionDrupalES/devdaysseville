@@ -1,0 +1,30 @@
+uuid: d33afa41-1788-48f6-b876-3d0924bb6287
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sessions
+    - node.type.schedule_page
+    - paragraphs.paragraphs_type.schedule_row
+  module:
+    - entity_reference_revisions
+id: node.schedule_page.field_sessions
+field_name: field_sessions
+entity_type: node
+bundle: schedule_page
+label: Sessions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      schedule_row: schedule_row
+    target_bundles_drag_drop:
+      schedule_row:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions
