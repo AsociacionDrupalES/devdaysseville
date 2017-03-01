@@ -1,0 +1,218 @@
+//Menu
+.menu--schedule-menu
+  .menu
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin: 0 0 2em
+    &-item
+      display: flex
+      align-items: center
+      width: 19%
+      min-width: 115px
+      margin-left: 0.5%
+      margin-right: 0.5%
+      margin-bottom: 0.5em
+      background-color: $white
+      min-height: 40px
+      border: 1px solid $black
+      padding: 4px 8px
+      +breakpoint($below_small)
+        width: 100%
+        margin-right: 0
+        margin-left: 0
+        min-width: 100%
+      a
+        font-family: $title
+        text-transform: uppercase
+        color: $black
+        transition: all 0.5s ease
+        display: block
+        width: 100%
+        text-align: center
+        &.is-active
+          cursor: default
+          color: $white
+      &--active-trail
+        background-color: $black
+
+// Legend block
+$legend: development frontend being-human case-studies devops performance other site-building
+.block-program-legend-block
+  overflow: hidden
+  margin-bottom: 2em
+  +breakpoint($below_small)
+    visibility: hidden
+    height: 0
+  .contextual
+    visibility: hidden
+  ul
+    +hide-bullets
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    li
+      width: 180px
+      background-repeat: no-repeat
+      background-position: center left
+      text-transform: uppercase
+      padding: 13px
+      font-weight: 600
+      background-size: 30px
+      padding-left: 45px
+      font-size: 12px
+      margin-bottom: 16px
+    @each $type in $legend
+      .legend--#{$type}
+        background-image: url("../images/icons/#{$type}.svg")
+
+// Schedule
+article.node--type-schedule-page
+  margin-top: 3em
+  .node--type-session
+    position: relative
+    height: 100%
+    padding-bottom: 4em
+    .node__content
+      min-height: 60px
+      height: 100%
+  > .node__content
+    a
+      text-decoration: none
+    > .field__items
+      > .field__item
+        margin-bottom: 2em
+        border-top: 2px solid $black
+        position: relative
+        padding: 8px
+        text-align: center
+        .field--name-field
+          &-start-end-period
+            font-weight: 600
+            font-size: 0.9em
+            position: absolute
+            top: -30px
+            float: left
+            +breakpoint($x-large)
+              float: none
+              top: 0
+              left: -95px
+          &-break-title
+            font-family: $title
+            text-transform: uppercase
+            font-size: 18px
+            margin-bottom: 8px
+          &-break-description
+            font-size: 14px
+          &-session
+            display: flex
+            justify-content: center
+            > .field__item
+              min-width: 50%
+            &.multiple
+              text-align: left
+              .field--name-field-session-type
+                +breakpoint($x-large)
+                  position: absolute
+                  top: 0
+                  right: 20px
+          &-user-ref,
+          &-register-name,
+          &-speaker-full-name
+            font-family: $default
+            font-weight: 700
+            font-size: 15px
+            a
+              text-transform: none
+          &-user-ref
+            .field__item
+              display: inline-block
+          &-session-type,
+          &-room
+            font-size: 13px
+            margin-top: 4px
+          &-session-track-type
+            float: left
+            position: relative
+            padding-left: 40px
+            &:before
+              width: 40px
+              height: 40px
+              background-repeat: no-repeat
+              background-position: center left
+              background-size: 30px
+              content: ''
+              display: inline-block
+              position: absolute
+              left: 0
+              top: -15px
+            @each $type in $legend
+              &.legend--#{$type}:before
+                background-image: url("../images/icons/#{$type}.svg")
+          &-session-level
+            float: right
+            text-align: right
+            position: relative
+            &:after
+              font-weight: bold
+              font-size: 60px
+              display: inline-block
+              line-height: 0px
+              top: 6px
+              right: 0
+              position: absolute
+              margin-left: 6px
+              letter-spacing: -5px
+            &.legend
+              &--beginner
+                padding-right: 15px
+                &:after
+                  content: '·'
+              &--intermediate
+                padding-right: 25px
+                &:after
+                  content: '··'
+              &--advanced
+                padding-right: 35px
+                &:after
+                  content: '···'
+          &-session-track-type,
+          &-session-level
+            text-transform: uppercase
+            font-size: 13px
+          &-session
+            display: flex
+            justify-content: center
+            > .field__item
+              min-width: 50%
+              width: 100%
+            &.multiple
+              text-align: left
+              > .field__item
+                width: auto
+              .field--name-field-session-type
+                +breakpoint($x-large)
+                  position: absolute
+                  top: 0
+                  right: 20px
+              +breakpoint(0 37.5em)
+                .field--name-field
+                  &-session-track-type,
+                  &-session-level
+                    float: right
+                    text-align: right
+                    clear: both
+                  &-session-track-type
+                    padding-left: 25px
+                    &:before
+                      background-size: 20px
+                      height: 35px
+        .category-wrapper
+          position: absolute
+          bottom: 24px
+          width: calc(100% - 20px)
+        h2.node__title
+          font-family: $title
+          text-transform: uppercase
+          font-size: 18px
+          margin-bottom: 8px
