@@ -1,0 +1,7 @@
+uuid: 187d0104-90f3-406d-be1e-212bcece6717
+langcode: en
+status: true
+dependencies: {  }
+formId: contact_message_volunteers_form
+captchaType: recaptcha/reCAPTCHA
+label: contact_message_volunteers_form

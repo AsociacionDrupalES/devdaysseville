@@ -17,10 +17,10 @@ settings:
   allowed_values:
     -
       value: 1
-      label: 'Room 1'
+      label: Magallanes
     -
       value: 2
-      label: 'Room 2'
+      label: Elcano
     -
       value: 3
       label: 'Main scenario'
