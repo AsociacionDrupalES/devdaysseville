@@ -3157,27 +3157,6 @@ article.node--type-schedule-page > .node__content > .field__items > .field__item
   font-size: 14px;
 }
 
-article.node--type-schedule-page > .node__content > .field__items > .field__item .field--name-field-session {
-  display: flex;
-  justify-content: center;
-}
-
-article.node--type-schedule-page > .node__content > .field__items > .field__item .field--name-field-session > .field__item {
-  min-width: 50%;
-}
-
-article.node--type-schedule-page > .node__content > .field__items > .field__item .field--name-field-session.multiple {
-  text-align: left;
-}
-
-@media (min-width: 75em) {
-  article.node--type-schedule-page > .node__content > .field__items > .field__item .field--name-field-session.multiple .field--name-field-session-type {
-    position: absolute;
-    top: 0;
-    right: 20px;
-  }
-}
-
 article.node--type-schedule-page > .node__content > .field__items > .field__item .field--name-field-user-ref, article.node--type-schedule-page > .node__content > .field__items > .field__item .field--name-field-register-name, article.node--type-schedule-page > .node__content > .field__items > .field__item .field--name-field-speaker-full-name {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -3300,6 +3279,12 @@ article.node--type-schedule-page > .node__content > .field__items > .field__item
   justify-content: center;
 }
 
+@media (min-width: 0) and (max-width: 29.99em) {
+  article.node--type-schedule-page > .node__content > .field__items > .field__item .field--name-field-session {
+    display: block;
+  }
+}
+
 article.node--type-schedule-page > .node__content > .field__items > .field__item .field--name-field-session > .field__item {
   min-width: 50%;
   width: 100%;
@@ -3313,15 +3298,25 @@ article.node--type-schedule-page > .node__content > .field__items > .field__item
   width: auto;
 }
 
-@media (min-width: 75em) {
+@media (min-width: 0) and (max-width: 29.99em) {
+  article.node--type-schedule-page > .node__content > .field__items > .field__item .field--name-field-session.multiple > .field__item {
+    width: 100%;
+    text-align: center;
+  }
+  article.node--type-schedule-page > .node__content > .field__items > .field__item .field--name-field-session.multiple > .field__item:first-child {
+    border-bottom: 1px dashed black;
+  }
+}
+
+@media (min-width: 44em) {
   article.node--type-schedule-page > .node__content > .field__items > .field__item .field--name-field-session.multiple .field--name-field-session-type {
     position: absolute;
-    top: 0;
+    top: -20px;
     right: 20px;
   }
 }
 
-@media (min-width: 0) and (max-width: 37.5em) {
+@media (min-width: 30em) and (max-width: 37.5em) {
   article.node--type-schedule-page > .node__content > .field__items > .field__item .field--name-field-session.multiple .field--name-field-session-track-type, article.node--type-schedule-page > .node__content > .field__items > .field__item .field--name-field-session.multiple .field--name-field-session-level {
     float: right;
     text-align: right;

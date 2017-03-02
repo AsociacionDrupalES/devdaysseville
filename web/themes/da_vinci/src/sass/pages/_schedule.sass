@@ -104,18 +104,6 @@ article.node--type-schedule-page
             margin-bottom: 8px
           &-break-description
             font-size: 14px
-          &-session
-            display: flex
-            justify-content: center
-            > .field__item
-              min-width: 50%
-            &.multiple
-              text-align: left
-              .field--name-field-session-type
-                +breakpoint($x-large)
-                  position: absolute
-                  top: 0
-                  right: 20px
           &-user-ref,
           &-register-name,
           &-speaker-full-name
@@ -183,6 +171,8 @@ article.node--type-schedule-page
           &-session
             display: flex
             justify-content: center
+            +breakpoint($below_small)
+              display: block
             > .field__item
               min-width: 50%
               width: 100%
@@ -190,12 +180,17 @@ article.node--type-schedule-page
               text-align: left
               > .field__item
                 width: auto
+                +breakpoint($below_small)
+                  width: 100%
+                  text-align: center
+                  &:first-child
+                    border-bottom: 1px dashed $black
               .field--name-field-session-type
-                +breakpoint($x-large)
+                +breakpoint($medium)
                   position: absolute
-                  top: 0
+                  top: -20px
                   right: 20px
-              +breakpoint(0 37.5em)
+              +breakpoint(30em 37.5em)
                 .field--name-field
                   &-session-track-type,
                   &-session-level
