@@ -21,6 +21,8 @@
     list-style: none
     +breakpoint($small)
       margin-bottom: 2em
+    h2:not(.node__title)
+      font-size: 1em
     article
       .node__content
         display: flex
@@ -31,6 +33,9 @@
           margin-bottom: 1em
           a
             display: inline-block
+        .field--name-created
+          visibility: hidden
+          height: 0
         +breakpoint($medium-big)
           flex-flow: row wrap
           .news__field-image
