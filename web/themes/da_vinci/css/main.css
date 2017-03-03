@@ -3786,6 +3786,7 @@ iframe {
 .profile .field--name-field-register-picture img {
   display: inline;
   border-radius: 50%;
+  width: 100%;
 }
 
 .profile .field--name-field-register-picture img:nth-child(2) {
@@ -3988,6 +3989,20 @@ iframe {
 
 .sponsors-list__title--gold {
   font-size: 28px;
+}
+
+.sponsors-list__title--gold .sponsors-list__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sponsors-list__title--gold .sponsors-list__list li {
+  min-width: 28%;
+}
+
+.sponsors-list__title--gold .sponsors-list__list li:nth-child(2) {
+  margin-top: 10px;
 }
 
 .sponsors-list__title--silver {
