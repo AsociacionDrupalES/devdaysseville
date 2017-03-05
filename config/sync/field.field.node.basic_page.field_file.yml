@@ -19,7 +19,7 @@ default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: basic-pages
-  file_extensions: 'txt pdf'
+  file_extensions: 'txt pdf zip key odp pptx'
   max_filesize: ''
   description_field: true
   handler: 'default:file'
