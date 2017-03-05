@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.basic_page.field_file
     - node.type.basic_page
   module:
-    - file
     - text
     - user
 id: node.basic_page.default
@@ -21,14 +20,18 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-  field_file:
-    weight: 1
+  created:
     label: hidden
-    settings: {  }
+    type: timestamp
+    weight: 0
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
     third_party_settings: {  }
-    type: file_default
   links:
     weight: 2
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_file: true
