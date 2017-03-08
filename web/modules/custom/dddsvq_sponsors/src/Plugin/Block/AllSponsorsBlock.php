@@ -131,6 +131,13 @@ class AllSponsorsBlock extends BlockBase implements ContainerFactoryPluginInterf
       '#arguments' => [],
     ];
 
+    $special_partner_sponsors = [
+      '#type' => 'view',
+      '#name' => 'sponsors',
+      '#display_id' => 'block_11',
+      '#arguments' => [],
+    ];
+
     $build = [
       '#theme_wrappers' => ['sponsors_wrapper'],
       'platinum' => [
@@ -156,6 +163,12 @@ class AllSponsorsBlock extends BlockBase implements ContainerFactoryPluginInterf
         '#title' => 'Bronze sponsors',
         '#sponsor_type' => 'bronze',
         '#sponsors' => $bronze_sponsors,
+      ],
+      'special_partner' => [
+        '#theme' => 'sponsors',
+        '#title' => 'With the special collaboration',
+        '#sponsor_type' => 'bronze',
+        '#sponsors' => $special_partner_sponsors,
       ],
       'partner' => [
         '#theme' => 'sponsors',
