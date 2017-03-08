@@ -41,6 +41,9 @@ settings:
     -
       value: 10
       label: 'Media partner'
+    -
+      value: 11
+      label: 'Special partner'
   allowed_values_function: ''
 module: options
 locked: false
