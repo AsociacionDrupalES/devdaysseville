@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5a3a927b5e230873d375d3cbf9d1ad97",
-    "content-hash": "3020136e7a33fc066de60d26806389ea",
+    "hash": "82ebbb0e9ff69708133b1619c3fcaf8c",
+    "content-hash": "d3a15567b1e56ab1e0ad423f70ce8048",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1794,7 +1794,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/paragraphs-8.x-1.1.zip",
-                "reference": null,
+                "reference": "7308c6dee3086f8afae0f6d62676c3bb14c34441",
                 "shasum": null
             },
             "require": {
@@ -1897,6 +1897,62 @@
             "description": "Protect your website from spam and abuse while letting real people pass through with ease.",
             "homepage": "https://www.drupal.org/project/recaptcha",
             "time": "2016-07-30 06:17:09"
+        },
+        {
+            "name": "drupal/restui",
+            "version": "8.1.13",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/restui",
+                "reference": "ada367e7a26fff7dc0340f07ab504c9d9020e957"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/restui-8.x-1.13.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/rest": "8.*",
+                "drupal/system": ">=8.2.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Juampy NR",
+                    "homepage": "https://www.drupal.org/u/juampynr"
+                },
+                {
+                    "name": "Clemens Tolboom",
+                    "homepage": "https://www.drupal.org/u/clemens.tolboom"
+                },
+                {
+                    "name": "Eduardo García",
+                    "homepage": "https://www.drupal.org/u/enzo"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/1938140/committers"
+                }
+            ],
+            "description": "Provides a user interface to manage REST resources",
+            "homepage": "https://www.drupal.org/project/restui",
+            "keywords": [
+                "rest",
+                "restdata",
+                "webservice"
+            ],
+            "time": "2016-10-17 08:03:48"
         },
         {
             "name": "drupal/token",
