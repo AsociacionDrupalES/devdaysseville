@@ -12,7 +12,7 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://packagist.drupal-composer.org"
+            "url": "https://packages.drupal.org/8"
         }
     ],
     "require": {
@@ -33,7 +33,8 @@
         "drupal/recaptcha": "^8.2",
         "drupal/field_permissions": "~8.1",
         "drupal/paragraphs": "~8.1",
-        "drupal/restui": "~8.1"
+        "drupal/restui": "~8.1",
+        "drupal/cors": "~1.0"
     },
     "require-dev": {
         "behat/mink": "~1.7",
