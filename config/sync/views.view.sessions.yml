@@ -1810,6 +1810,7 @@ display:
         filters: false
         filter_groups: false
         arguments: false
+        access: false
       filter_groups:
         operator: AND
         groups:
@@ -1854,6 +1855,10 @@ display:
           entity_field: nid
           plugin_id: node_nid
       display_description: ''
+      access:
+        type: perm
+        options:
+          perm: 'access content'
     cache_metadata:
       max-age: 0
       contexts:
