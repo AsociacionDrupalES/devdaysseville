@@ -1,4 +1,4 @@
 domains:
-  'api/*': '*|OPTIONS,HEAD,GET'
+  '/api/*': '*|OPTIONS,HEAD,GET'
 _core:
   default_config_hash: nCJuMn5x07t9O5N-iSHrh4M1-cEN43AOdMu32YtvYbc
