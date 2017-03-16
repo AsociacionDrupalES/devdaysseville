@@ -1876,7 +1876,7 @@ display:
           field_options:
             title:
               alias: ''
-              raw_output: false
+              raw_output: true
             field_room:
               alias: ''
               raw_output: false
