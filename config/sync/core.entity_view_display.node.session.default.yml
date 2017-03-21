@@ -23,7 +23,7 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 6
+    weight: 7
     settings: {  }
     third_party_settings: {  }
   created:
@@ -34,6 +34,12 @@ content:
       date_format: medium
       custom_date_format: ''
       timezone: ''
+    third_party_settings: {  }
+  field_room:
+    type: list_default
+    weight: 6
+    label: inline
+    settings: {  }
     third_party_settings: {  }
   field_session_level:
     weight: 4
@@ -66,5 +72,4 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_room: true
   field_session_status: true

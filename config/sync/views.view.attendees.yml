@@ -528,6 +528,11 @@ display:
           admin_label: 'image from field_register_picture'
           required: false
           plugin_id: standard
+      pager:
+        type: some
+        options:
+          items_per_page: 20
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:
