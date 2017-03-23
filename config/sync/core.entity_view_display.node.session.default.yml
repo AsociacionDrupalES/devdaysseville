@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.session.body
+    - field.field.node.session.field_file
     - field.field.node.session.field_room
     - field.field.node.session.field_session_level
     - field.field.node.session.field_session_status
@@ -12,6 +13,7 @@ dependencies:
     - field.field.node.session.field_user_ref
     - node.type.session
   module:
+    - file
     - options
     - text
     - user
@@ -35,6 +37,12 @@ content:
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
+  field_file:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
   field_room:
     type: list_default
     weight: 6

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.session.body
+    - field.field.node.session.field_file
     - field.field.node.session.field_room
     - field.field.node.session.field_session_level
     - field.field.node.session.field_session_status
@@ -12,6 +13,7 @@ dependencies:
     - field.field.node.session.field_user_ref
     - node.type.session
   module:
+    - file
     - text
 id: node.session.default
 targetEntityType: node
@@ -26,6 +28,12 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+  field_file:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
   field_room:
     weight: 7
     settings: {  }
